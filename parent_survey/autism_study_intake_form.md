@@ -30,10 +30,31 @@
 
 ---
 
-### Symptoms Present at Onset
+### Vaccination History Relative to Onset
 
-*Check all novel behaviors observed at the time of the sudden change:*
+6. **Was your child vaccinated in the 30 days BEFORE the onset of behavioral changes?**
 
+   ☐ Yes  ☐ No  ☐ Unsure
+
+   **If yes,** how many days before onset was the **most recent** vaccination?
+
+   ____ days
+
+   *If unsure of exact days:*
+
+   ☐ Same day or next day (0–1 days prior)
+
+   ☐ Within a week (2–7 days prior)
+
+   ☐ Within 30 days (8–30 days prior)
+
+
+
+### New behaviors post-vaccination
+
+5a. **If your child was vaccinated within 30 days prior to onet, check all newly exhibited behaviors that happened within 10 days after vaccination:**
+
+☐ High pitched screaming
 ☐ Loss of eye contact
 ☐ Loss of social interaction / responsiveness to name
 ☐ Loss of spoken words or vocabulary
@@ -57,44 +78,13 @@
 ☐ Refusal of foods formerly eaten, or a reduction of the diet to  a small number of foods
 ☐ Flapping of hands
 ☐ Sensitivity to sound, light, or touch
+☐ Difficulty breastfeeding or eating after vaccine/s
+☐ Loss of fine motor skills (drawing, using utensils, etc.)
+☐ Increased floppiness or low tone 
 ☐ Other: ____________________
 
 ---
 
-### Vaccination History Relative to Onset
-
-6. **Was your child vaccinated in the 30 days BEFORE the onset of behavioral changes?**
-
-   ☐ Yes  ☐ No  ☐ Unsure
-
-   **If yes,** how many days before onset was the **most recent** vaccination?
-
-   ____ days
-
-   *If unsure of exact days:*
-
-   ☐ Same day or next day (0–1)
-
-   ☐ Within the same week (2–7)
-
-   ☐ Within the same month (8–30)
-
-7a. **Did your child receive any further vaccinations after the onset of behavioral changes?**
-
-    ☐ Yes — continued on schedule
-    ☐ Yes — but delayed or selective
-    ☐ No — stopped all vaccinations after onset
-    ☐ Unsure
-
-7b. **Was your child vaccinated in the 30 days AFTER onset?**
-
-    ☐ Yes  ☐ No  ☐ Don't remember
-
-    **If yes,** how many days after onset was the **nearest** vaccination?
-
-    ____ days
-
----
 
 ### Events Between Vaccination and Onset
 
@@ -105,6 +95,7 @@
 ☐ Tylenol (acetaminophen/paracetamol) administered
 ☐ Seizures (including febrile seizures)
 ☐ Cried all night / Inconsolable crying
+☐ High pitched screaming
 ☐ Anaphylactic reaction
 ☐ Surgery
 ☐ Anesthesia
@@ -130,6 +121,23 @@
    **If yes,** how many days before onset was Tylenol given?
 
    ____ days
+
+---
+
+7a. **Did your child receive any further vaccinations after the onset of behavioral changes?**
+
+    ☐ Yes — continued on schedule
+    ☐ Yes — but delayed or selective
+    ☐ No — stopped all vaccinations after onset
+    ☐ Unsure
+
+7b. **Was your child vaccinated in the 30 days AFTER onset?**
+
+    ☐ Yes  ☐ No  ☐ Don't remember
+
+    **If yes,** how many days after onset was the **nearest** vaccination?
+
+    ____ days
 
 ---
 
