@@ -78,7 +78,7 @@
 
 7b. **Was your child vaccinated in the 30 days AFTER onset?**
 
-    ☐ Yes  ☐ No  ☐ Unsure
+    ☐ Yes  ☐ No  ☐ Don't remember
 
     **If yes,** how many days after onset was the **nearest** vaccination?
 
@@ -86,18 +86,21 @@
 
 ---
 
-### Vaccination at Birth
+### Events Between Vaccination and Onset
 
-8. **Was your child vaccinated in the first 48 hours after birth?**
+8. **If your child was vaccinated in the 30 days before onset, did any of the following occur between the vaccination and the behavioral changes? (Check all that apply)**
 
-   ☐ Yes  ☐ No  ☐ Unsure
-
-   **If yes,** which vaccine(s)?
-
-   ☐ Hepatitis B
-   ☐ Vitamin K shot
-   ☐ Other: ____________________
-   ☐ Unsure which
+☐ Illness
+☐ Fever
+☐ Tylenol (acetaminophen/paracetamol) administered
+☐ Seizures (including febrile seizures)
+☐ Cried all night / Inconsolable crying
+☐ Anaphylactic reaction
+☐ Surgery
+☐ Anesthesia
+☐ Encephalitis (inflammation of the brain)
+☐ None of the above
+☐ Don't remember
 
 ---
 
@@ -105,7 +108,7 @@
 
 9. **Was your child given Tylenol (acetaminophen) in the 14 days BEFORE onset?**
 
-   ☐ Yes  ☐ No  ☐ Unsure
+   ☐ Yes  ☐ No  ☐ Don't remember
 
    **If yes,** was the Tylenol given:
 
@@ -124,7 +127,7 @@
 
 10. **After any vaccination, did your child experience prolonged high-pitched screaming or inconsolable crying?**
 
-    ☐ Yes  ☐ No  ☐ Unsure
+    ☐ Yes  ☐ No  ☐ Don't remember
 
     **If yes,** how many hours or days after the vaccination did it begin?
 
