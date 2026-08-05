@@ -1,6 +1,6 @@
 # Autism Diagnosis Clinic — Supplementary Intake Form
 
-## Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism
+## Temporal Associations with Onset of Behavioral Changes
 
 ---
 
@@ -32,7 +32,7 @@
 
 ### Symptoms Present at Onset
 
-*Check all novel behaviors observed at the time of the sudden change:*
+*Check all that applied at the time of the sudden change:*
 
 ☐ Loss of eye contact
 ☐ Loss of social interaction / responsiveness to name
@@ -43,19 +43,9 @@
 ☐ Onset of extreme picky eating / food refusal
 ☐ Head banging
 ☐ Toe walking
-☐ Arching back
 ☐ Sleep disturbance (new onset or worsening)
 ☐ Gastrointestinal issues (diarrhea, constipation, pain)
 ☐ Excessive crying or irritability
-☐ Sensitivity to sound, light, or touch
-☐ Inappropriate play with toys
-☐ Appearance of deafness or loss of hearing
-☐ Loss of sense of pain
-☐ Focus on a repetitive action such as flipping a toy or object back and forth
-☐ Prolonged or intense concentration on things in motion such as a rotating ceiling fan or a tree branch swaying in the wind
-☐ Use of peripheral vision to look at things rather than looking directly at something
-☐ Refusal of foods formerly eaten, or a reduction of the diet to  a small number of foods
-☐ Flapping of hands
 ☐ Sensitivity to sound, light, or touch
 ☐ Other: ____________________
 
@@ -105,6 +95,7 @@
 ☐ Tylenol (acetaminophen/paracetamol) administered
 ☐ Seizures (including febrile seizures)
 ☐ Cried all night / Inconsolable crying
+
 ☐ Anaphylactic reaction
 ☐ Surgery
 ☐ Anesthesia
