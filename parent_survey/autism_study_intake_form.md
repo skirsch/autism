@@ -69,13 +69,20 @@
 
    ☐ Within the same month (8–30)
 
-7. **Was your child vaccinated in the 30 days AFTER onset?**
+7a. **Did your child receive any further vaccinations after the onset of behavioral changes?**
 
-   ☐ Yes  ☐ No  ☐ Unsure
+    ☐ Yes — continued on schedule
+    ☐ Yes — but delayed or selective
+    ☐ No — stopped all vaccinations after onset
+    ☐ Unsure
 
-   **If yes,** how many days after onset was the **nearest** vaccination?
+7b. **Was your child vaccinated in the 30 days AFTER onset?**
 
-   ____ days
+    ☐ Yes  ☐ No  ☐ Unsure
+
+    **If yes,** how many days after onset was the **nearest** vaccination?
+
+    ____ days
 
 ---
 
