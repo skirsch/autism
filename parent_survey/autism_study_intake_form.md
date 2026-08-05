@@ -132,6 +132,25 @@
 
 ---
 
+11. **How did you establish the onset date?**
+
+    ☐ Contemporaneous record (baby book, dated photo/video, pediatrician note)
+    ☐ Specific memorable event (birthday, holiday, family gathering)
+    ☐ General recall (approximate month)
+    ☐ Reconstructed from medical records
+
+---
+
+12. **Before the date identified above, had anyone raised any concern about your child's development?**
+
+    ☐ Yes  ☐ No  ☐ Unsure
+
+    **If yes,** who raised the concern and what was noted?
+
+    ____________________________________________________________
+
+
+
 ### Additional Notes
 
 *For clinic use only — parent may leave blank.*
