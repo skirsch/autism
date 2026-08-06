@@ -1,15 +1,45 @@
 # Autism Diagnosis Clinic — Supplementary Intake Form
 
-## Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism
+## Sudden-Onset Regressive Autism (SORA) data collection study
 
-### To do
--   everything is relative to onset date
+Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of less than 10 days, developed  significant sustained changes in ONE or more behaviors listed below.
 
-DOB==> age at onset in months
+Please check all that apply to your child:
+☐ Loss of eye contact
+☐ Loss of social interaction / responsiveness to name
+☐ Loss of spoken words or vocabulary
+☐ Loss of motor skills (crawling, walking, coordination)
+☐ Loss of fine motor skills (drawing, using utensils, etc.)
+☐ Loss of play skills
+☐ Loss of previously established toileting skills
+☐ Onset of extreme picky eating / food refusal
+☐ Refusal of foods formerly eaten, or a reduction of the diet to a small number of foods
+☐ Head banging
+☐ Hand flapping
+☐ Toe walking
+☐ Heightened sensitivity to sound, light, or touch
+☐ Arching back
+☐ Inappropriate play with toys
+☐ Loss of hearing or appearance of deafness 
+☐ Loss of sense of pain
+☐ Focus on a repetitive action such as flipping a toy or object back and forth
+☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
+☐ Use of peripheral vision to look at things rather than looking directly at something
+☐ Other significant change in behavior: ____________________
+☐ None of the above
+
+
+
+
+
+If you checked None of the above, we are done.
+
+Now, let's define the "Onset Date (OD)" to be the point in time when you FIRST noticed ANY of the items on the list above.
+
 
 ### Demographics
 
-1. **Date of Birth:** ____ / ____ / ____
+1. **Age at onset (months)**
 
 2. **Sex:** ☐ Male  ☐ Female
 
@@ -34,93 +64,78 @@ DOB==> age at onset in months
 ---
 
 ### Narrative Timeline
-6. **Tell us about the sequence of events leading up to the onset date. What do you recall happened within the 2 weeks before onset that might have triggered the regression?**
+6a. **Tell us about the sequence of events leading up to the onset date. What do you recall happened within the 2 weeks before onset that might have triggered the regression?**
 
    ____________________________________________________________
    ____________________________________________________________
    ____________________________________________________________
+
+6b. **Can you identify any potentially external triggering event(s) that happened within 24 hours of onset?**
+____________________________________________
+
+6c. **What was the interval in hours between those event(s) and onset?**
+_________
 
 ### Cause of onset
-7 **What is your best guess as to what might have caused YOUR child's sudden regression?"
+7 **What is your best guess as to what might have triggered YOUR child's sudden regression? (select up to 3 triggers)"
 - genetics/heredity 
-- I have no idea
+- I honestly have no idea
+- gastrointestinal issue
 - infection
 - prescription drug
 - over the counter medication
 - vaccination
+- vaccination given while the child had an active infection
 - fever
 - Tylenol
 - surgery
 - anesthesia
 - food allergy
-- Other (specify)
+- Other 
+
+Please specify details on your answer, e.g., the type of infection or the suspect drug, etc.
 ### Vaccination History Relative to Onset
 
-8. **Was your child vaccinated in the 30 days BEFORE the onset of the first noticeable behavioral changes?**
+8. **Was your child vaccinated in the 2 weeks BEFORE the onset date?**
 
    ☐ Yes  ☐ No  ☐ Unsure
 
-   **If yes,** how many days before onset was the **most recent** vaccination?
+   **If yes,** approximately how many days before onset was the **most recent** vaccination?
 
-   ____ days
+   ____ days or if hours, ____ hours
 
-   *If unsure of exact days:*
-
-   ☐ Same day or next day (0–1 days prior)
-
-   ☐ Within a week (2–7 days prior)
-
-   ☐ Within 30 days (8–30 days prior)
+   How confident are you in that number:
+   Very confident, vividly remember
+   Reasonably confident it was that number or close to that number
+   Unsure, that was my best recollection
+   
 
 
 
-### Symptoms and Reactions Following Vaccination
+### Pre- and Post-onset observations
 
-9. **Thinking of the 30-day period after your child's most recent vaccination, please check ALL of the following that occurred, in the order they appeared if possible:**
 
-**Phase 1: Immediate/Inflammatory Reactions (0–72 hours)**
+**Phase 1: Pre-onset observations (within 7 days before onset)**
 ☐ High-pitched screaming / inconsolable crying
 ☐ Cried all night
+☐ Excessive daytime crying or irritability
 ☐ Fever
 ☐ Tylenol (acetaminophen/paracetamol) administered
 ☐ Illness
+☐ Eczema
 ☐ Seizures (including febrile seizures)
 ☐ Encephalitis (inflammation of the brain)
 ☐ Anaphylactic reaction
-☐ Arching back
-☐ Excessive crying or irritability
 ☐ Difficulty breastfeeding or eating after vaccine(s)
-☐ Increased floppiness or low tone
 ☐ Surgery
 ☐ Anesthesia
+☐ New prescription drug(s)
+☐ Sleep disturbance (new onset or worsening)
+☐ Gastrointestinal issues (diarrhea, constipation, pain)
 ☐ None of the above
 ☐ Don't remember
 
-**Phase 2: Behavioral and Developmental Changes (Days to Weeks)**
-☐ Loss of eye contact
-☐ Loss of social interaction / responsiveness to name
-☐ Loss of spoken words or vocabulary
-☐ Loss of motor skills (crawling, walking, coordination)
-☐ Loss of fine motor skills (drawing, using utensils, etc.)
-☐ Loss of play skills
-☐ Loss of previously established toileting skills
-☐ Onset of extreme picky eating / food refusal
-☐ Refusal of foods formerly eaten, or a reduction of the diet to a small number of foods
-☐ Head banging
-☐ Toe walking
-☐ Sleep disturbance (new onset or worsening)
-☐ Gastrointestinal issues (diarrhea, constipation, pain)
-☐ Sensitivity to sound, light, or touch
-☐ Inappropriate play with toys
-☐ Appearance of deafness or loss of hearing
-☐ Loss of sense of pain
-☐ Focus on a repetitive action such as flipping a toy or object back and forth
-☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
-☐ Use of peripheral vision to look at things rather than looking directly at something
-☐ Flapping of hands
-☐ Other: ____________________
-☐ None of the above
-☐ Don't remember
+
 
 
 
