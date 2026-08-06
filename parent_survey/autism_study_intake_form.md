@@ -2,7 +2,10 @@
 
 ## Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism
 
----
+### To do
+-   everything is relative to onset date
+
+DOB==> age at onset in months
 
 ### Demographics
 
@@ -26,13 +29,34 @@
 
    ☐ Gradual (over weeks or months)
 
-   ☐ Sudden — a definite onset when everything changed quickly
+   ☐ Sudden — a definite onset when there was a clearly noticeable decline in specific behaviors
 
 ---
 
+### Narrative Timeline
+6. **Tell us about the sequence of events leading up to the onset date. What do you recall happened within the 2 weeks before onset that might have triggered the regression?**
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+### Cause of onset
+7 **What is your best guess as to what might have caused YOUR child's sudden regression?"
+- genetics/heredity 
+- I have no idea
+- infection
+- prescription drug
+- over the counter medication
+- vaccination
+- fever
+- Tylenol
+- surgery
+- anesthesia
+- food allergy
+- Other (specify)
 ### Vaccination History Relative to Onset
 
-6. **Was your child vaccinated in the 30 days BEFORE the onset of the first noticeable behavioral changes?**
+8. **Was your child vaccinated in the 30 days BEFORE the onset of the first noticeable behavioral changes?**
 
    ☐ Yes  ☐ No  ☐ Unsure
 
@@ -50,74 +74,70 @@
 
 
 
-### New behaviors post-vaccination
+### Symptoms and Reactions Following Vaccination
 
-5a. **If your child was vaccinated within 30 days prior to onet, check all newly exhibited behaviors that happened within 14 days after vaccination:**
+9. **Thinking of the 30-day period after your child's most recent vaccination, please check ALL of the following that occurred, in the order they appeared if possible:**
 
-☐ High pitched screaming
+**Phase 1: Immediate/Inflammatory Reactions (0–72 hours)**
+☐ High-pitched screaming / inconsolable crying
+☐ Cried all night
+☐ Fever
+☐ Tylenol (acetaminophen/paracetamol) administered
+☐ Illness
+☐ Seizures (including febrile seizures)
+☐ Encephalitis (inflammation of the brain)
+☐ Anaphylactic reaction
+☐ Arching back
+☐ Excessive crying or irritability
+☐ Difficulty breastfeeding or eating after vaccine(s)
+☐ Increased floppiness or low tone
+☐ Surgery
+☐ Anesthesia
+☐ None of the above
+☐ Don't remember
+
+**Phase 2: Behavioral and Developmental Changes (Days to Weeks)**
 ☐ Loss of eye contact
 ☐ Loss of social interaction / responsiveness to name
 ☐ Loss of spoken words or vocabulary
 ☐ Loss of motor skills (crawling, walking, coordination)
+☐ Loss of fine motor skills (drawing, using utensils, etc.)
 ☐ Loss of play skills
 ☐ Loss of previously established toileting skills
 ☐ Onset of extreme picky eating / food refusal
+☐ Refusal of foods formerly eaten, or a reduction of the diet to a small number of foods
 ☐ Head banging
 ☐ Toe walking
-☐ Arching back
 ☐ Sleep disturbance (new onset or worsening)
 ☐ Gastrointestinal issues (diarrhea, constipation, pain)
-☐ Excessive crying or irritability
 ☐ Sensitivity to sound, light, or touch
 ☐ Inappropriate play with toys
 ☐ Appearance of deafness or loss of hearing
 ☐ Loss of sense of pain
 ☐ Focus on a repetitive action such as flipping a toy or object back and forth
-☐ Prolonged or intense concentration on things in motion such as a rotating ceiling fan or a tree branch swaying in the wind
+☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
 ☐ Use of peripheral vision to look at things rather than looking directly at something
-☐ Refusal of foods formerly eaten, or a reduction of the diet to  a small number of foods
 ☐ Flapping of hands
-☐ Sensitivity to sound, light, or touch
-☐ Difficulty breastfeeding or eating after vaccine/s
-☐ Loss of fine motor skills (drawing, using utensils, etc.)
-☐ Increased floppiness or low tone 
 ☐ Other: ____________________
+☐ None of the above
+☐ Don't remember
 
----
 
-5b. ** Over how many days did a majority of the symptoms noted in the previous question appear?**
+
+10. **Over how many days did a majority of the symptoms noted in the previous question appear?**
 ☐ Most symptoms first appeared over a 24 hour period 
 ☐ Most symptoms first appeared over a 48 hour period 
 ☐ Most symptoms first appeared over a 72 hour period
 ☐ Most symptoms took 3 to 7 days to appear
 ☐ Most symptoms developed over more than 7 days
-
-
-
-
-
-### Events Between Vaccination and Onset
-
-8. **If your child was vaccinated in the 30 days before onset, did any of the following occur between the vaccination and the behavioral changes? (Check all that apply)**
-
-☐ Illness
-☐ Fever
-☐ Tylenol (acetaminophen/paracetamol) administered
-☐ Seizures (including febrile seizures)
-☐ Cried all night / Inconsolable crying
-☐ High pitched screaming
-☐ Anaphylactic reaction
-☐ Surgery
-☐ Anesthesia
-☐ Encephalitis (inflammation of the brain)
-☐ None of the above
 ☐ Don't remember
+
 
 ---
 
 ### Tylenol (Acetaminophen) Exposure
 
-9. **Was your child given Tylenol (acetaminophen) in the 14 days BEFORE onset?**
+11. **Was your child given Tylenol (acetaminophen) in the days between vaccination and first onset?**
 
    ☐ Yes  ☐ No  ☐ Don't remember
 
@@ -126,7 +146,7 @@
    ☐ At the same time as a vaccination (before, during, or right after the appointment)
    ☐ To reduce a fever that developed after vaccination
    ☐ For an unrelated reason (teething, illness, etc.)
-   ☐ Unsure why
+   ☐ Unsure why or don't remember
 
    **If yes,** how many days before onset was Tylenol given?
 
@@ -134,69 +154,19 @@
 
 ---
 
-7a. **Did your child receive any further vaccinations after the onset of behavioral changes?**
+12. **Did your child receive any further vaccinations after the initial onset of behavioral changes?**
 
     ☐ Yes — continued on schedule
     ☐ Yes — but delayed or selective
     ☐ No — stopped all vaccinations after onset
-    ☐ Unsure
+    ☐ Don't remember
 
-7b. **Was your child vaccinated in the 30 days AFTER onset?**
+13. **If your child continued vaccinations after onset, was your child vaccinated within 90 days AFTER onset?**
 
     ☐ Yes  ☐ No  ☐ Don't remember
 
-    **If yes,** how many days after onset was the **nearest** vaccination?
+    **If yes,** how many days after onset was that vaccination?
 
     ____ days
 
 ---
-
-### Post-Vaccination Reaction
-
-10. **After any vaccination, did your child experience prolonged high-pitched screaming or inconsolable crying?**
-
-    ☐ Yes  ☐ No  ☐ Don't remember
-
-    **If yes,** how many hours or days after the vaccination did it begin?
-
-    ____ hours / ____ days
-
-    **If yes,** how long did it last?
-
-    ☐ Less than 1 hour
-    ☐ Several hours
-    ☐ 1–2 days
-    ☐ 3 or more days
-
----
-
-11. **How did you establish the onset date?**
-
-    ☐ Contemporaneous record (baby book, dated photo/video, pediatrician note)
-    ☐ Specific memorable event (birthday, holiday, family gathering)
-    ☐ General recall (approximate month)
-    ☐ Reconstructed from medical records
-
----
-
-12. **Before the date identified above, had anyone raised any concern about your child's development?**
-
-    ☐ Yes  ☐ No  ☐ Unsure
-
-    **If yes,** who raised the concern and what was noted?
-
-    ____________________________________________________________
-
-
-
-### Additional Notes
-
-*For clinic use only — parent may leave blank.*
-
-____________________________________________________________
-
-____________________________________________________________
-
-____________________________________________________________
-```
-

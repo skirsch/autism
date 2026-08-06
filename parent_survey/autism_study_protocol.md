@@ -12,7 +12,7 @@ Prospective clinical case series utilizing structured intake and blinded chart a
 *   **Exclusion Criteria:** Children with a documented genetic syndrome (e.g., Fragile X, Rett) or clear evidence of regression beginning prior to the first vaccination.
 
 ## 4. Data Collection Instrument
-Data will be collected at participating autism diagnostic centers via the *Supplementary Intake Form: Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism*. This form captures:
+Data will be collected at participating autism diagnostic centers via the *Supplementary Intake Form: Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism* which is filled out online so the parent cannot skip ahead to see what is coming. This form captures:
 1.  **Onset Provenance:** Categorization of the evidence used to establish the onset date (contemporaneous record vs. recall).
 2.  **Symptom Phenotype:** Checklist of regressive behaviors (e.g., loss of speech, loss of eye contact, head banging).
 3.  **Temporal Exposure:** Days elapsed between most recent vaccination and onset (0–30 day window).
