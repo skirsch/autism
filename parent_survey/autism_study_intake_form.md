@@ -8,6 +8,7 @@ Please check all that apply to your child:
 ☐ Loss of eye contact
 ☐ Loss of social interaction / responsiveness to name
 ☐ Loss of spoken words or vocabulary
+☐ Child blurts out things that are irrelevant/inappropriate 
 ☐ Loss of motor skills (crawling, walking, coordination)
 ☐ Loss of fine motor skills (drawing, using utensils, etc.)
 ☐ Loss of play skills
