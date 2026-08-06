@@ -32,7 +32,7 @@
 
 ### Vaccination History Relative to Onset
 
-6. **Was your child vaccinated in the 30 days BEFORE the onset of behavioral changes?**
+6. **Was your child vaccinated in the 30 days BEFORE the onset of the first noticeable behavioral changes?**
 
    ☐ Yes  ☐ No  ☐ Unsure
 
@@ -52,7 +52,7 @@
 
 ### New behaviors post-vaccination
 
-5a. **If your child was vaccinated within 30 days prior to onet, check all newly exhibited behaviors that happened within 10 days after vaccination:**
+5a. **If your child was vaccinated within 30 days prior to onet, check all newly exhibited behaviors that happened within 14 days after vaccination:**
 
 ☐ High pitched screaming
 ☐ Loss of eye contact
@@ -84,6 +84,16 @@
 ☐ Other: ____________________
 
 ---
+
+5b. ** Over how many days did a majority of the symptoms noted in the previous question appear?**
+☐ Most symptoms first appeared over a 24 hour period 
+☐ Most symptoms first appeared over a 48 hour period 
+☐ Most symptoms first appeared over a 72 hour period
+☐ Most symptoms took 3 to 7 days to appear
+☐ Most symptoms developed over more than 7 days
+
+
+
 
 
 ### Events Between Vaccination and Onset
