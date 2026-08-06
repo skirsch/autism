@@ -2,7 +2,7 @@
 
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
-Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of less than 10 days, developed  significant sustained changes in ONE or more behaviors listed below.
+Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed  significant lasting changes in ONE or more behaviors listed below.
 
 Please check all that apply to your child:
 ☐ Loss of eye contact
