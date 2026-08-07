@@ -5,6 +5,9 @@
 Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed  significant lasting changes in ONE or more behaviors listed below. Often, this happens between 6 months and 3 years of age.
 
 1. Please check all that apply to your child (this will be referred to as the "List")
+☐ High-pitched screaming / inconsolable crying
+☐ Cried all night
+☐ Excessive daytime crying or irritability
 ☐ Loss of eye contact
 ☐ Loss of social interaction / responsiveness to name
 ☐ Loss of spoken words or vocabulary
@@ -27,6 +30,8 @@ Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study 
 ☐ Focus on a repetitive action such as flipping a toy or object back and forth
 ☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
 ☐ Use of peripheral vision to look at things rather than looking directly at something
+☐ Sleep disturbance (new onset or worsening)
+☐ Gastrointestinal issues (diarrhea, constipation, pain)
 ☐ Other significant change in behavior: ____________________
 ☐ None of the above
 
@@ -83,7 +88,7 @@ _________
 - gastrointestinal issue
 - infection
 - new prescription drug
-- over the counter medication
+- new over the counter medication
 - vaccination(s)
 - vaccination(s) given while the child still had an active infection
 - fever
@@ -119,9 +124,6 @@ Please specify details on your answer, e.g., the type of infection or the suspec
 
 **Pre-onset observations**
 Check all observed within 7 days prior to SORA onset:
-☐ High-pitched screaming / inconsolable crying
-☐ Cried all night
-☐ Excessive daytime crying or irritability
 ☐ Fever
 ☐ Tylenol (acetaminophen/paracetamol) administered
 ☐ Vaccine(s) given
@@ -130,13 +132,10 @@ Check all observed within 7 days prior to SORA onset:
 ☐ Eczema
 ☐ Seizures (including febrile seizures)
 ☐ Encephalitis (inflammation of the brain)
-☐ Anaphylactic reaction
-☐ Difficulty breastfeeding or eating after vaccine(s)
+☐ Anaphylactic reaction to an oral or injected medicine
 ☐ Surgery
 ☐ Anesthesia
 ☐ New prescription drug(s)
-☐ Sleep disturbance (new onset or worsening)
-☐ Gastrointestinal issues (diarrhea, constipation, pain)
 ☐ None of the above
 ☐ Don't remember
 
@@ -145,7 +144,7 @@ Check all observed within 7 days prior to SORA onset:
 
 ### Tylenol (Acetaminophen) Exposure
 
-11. **Was your child given Tylenol (acetaminophen) in the period after vaccination and before onset?**
+11. **Was your child given Tylenol (acetaminophen) in the period AFTER vaccination and BEFORE onset?**
 
    ☐ Yes  ☐ No  ☐ Don't remember
 
@@ -162,7 +161,7 @@ Check all observed within 7 days prior to SORA onset:
     ☐ No — stopped all vaccinations after onset
     ☐ Don't remember
 
-13. **If your child continued vaccinations after onset, approximately how many days elapsed before the next vaccination?**
+13. **If your child continued vaccinations after onset, approximately how many days elapsed from onset until the next vaccination?**
 
     ____ days
 
