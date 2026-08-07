@@ -82,14 +82,14 @@ Let's define "Onset" to be when you FIRST noticed the emergence of the EARLIEST 
 _________
 
 ### Cause of onset
-7 **What is your best guess as to what might have been the root trigger of YOUR child's SORA? (select up to 3 triggers)"
-- genetics/heredity 
+7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
+- genetics/heredity (born with susceptibile genetics and it randomly just appears like cancer)
 - I honestly have no idea
 - gastrointestinal issue
 - infection
 - new prescription drug
 - new over the counter medication
-- vaccination(s)
+- vaccination(s) of multiple vaccine types given at the same visit
 - vaccination(s) given while the child still had an active infection
 - fever
 - Tylenol
