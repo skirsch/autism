@@ -1,5 +1,12 @@
 # Autism Diagnosis Clinic — Supplementary Intake Form
 
+## About this survey
+This survey is designed to explore 11 different hypotheses as to what might be driving the rise in autism in America.
+
+The best way to help us achieve our goal is to answer each question as carefully and as accurately as you can based on what you observed and what you recall.
+
+Thank you.
+
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
 Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed  significant lasting changes in ONE or more behaviors listed below. Often, this happens between 6 months and 3 years of age.
@@ -36,7 +43,7 @@ Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study 
 ☐ None of the above
 
 
-10. **Over how many days did most of the SORA symptoms in Q1 appear?**
+10. **Over how many days in the 10 day window did over half of the SORA symptoms observed in Question #1 appear?**
 ☐ Most symptoms first appeared over a 24 hour period 
 ☐ Most symptoms first appeared over a 48 hour period 
 ☐ Most symptoms first appeared over a 72 hour period
@@ -71,7 +78,7 @@ Let's define "Onset" to be when you FIRST noticed the emergence of the EARLIEST 
 ---
 
 ### Narrative Timeline
-6a. **Tell us the sequence of events leading to Onset including what you suspect might have been the triggering event for SORA.**
+6a. **Tell us the sequence of events leading to Onset including what you suspect might have been the root triggering event for SORA.**
 
    ____________________________________________________________
    ____________________________________________________________
@@ -83,19 +90,22 @@ _________
 
 ### Cause of onset
 7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
-- genetics/heredity (born with susceptibile genetics and it randomly just appears like cancer)
+- genetic susceptibility and it then randomly appears later like cancer
 - I honestly have no idea
-- gastrointestinal issue
-- infection
+- gastrointestinal trigger
+- infection (bacteria, virus, or parasite)
+- specific toxic chemical exposure (e.g., glyphosate, etc.)
+- chronic mold exposure
+- a toxic chemical at child's daycare facility
 - new prescription drug
-- new over the counter medication
-- vaccination(s) of multiple vaccine types given at the same visit
-- vaccination(s) given while the child still had an active infection
-- fever
-- Tylenol
-- surgery
-- anesthesia
-- food allergy
+- new over the counter medication 
+- vaccination(s) where multiple vaccine types are given at the same visit
+- vaccination(s) given while my child still had an active infection
+- fever caused by an infection
+- fever resulting from a recent vaccination
+- Tylenol when given to reduce a fever after vaccination
+- anesthesia was administered during a surgery
+- food allergy to a new food
 - Other 
 
 Please specify details on your answer, e.g., the type of infection or the suspect drug, food, etc.
