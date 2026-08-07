@@ -92,11 +92,13 @@ _________
 7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
 - genetic susceptibility and it then randomly appears later like cancer
 - I honestly have no idea
-- gastrointestinal trigger
+- gastrointestinal trigger/ gut dysbiosis
+- accidental ingestion of microplastics
 - infection (bacteria, virus, or parasite)
 - specific toxic chemical exposure (e.g., glyphosate, etc.)
-- chronic mold exposure
-- a toxic chemical at child's daycare facility
+- chronic mold exposure at home and/or daycare facility
+- other toxic chemical at child's daycare facility
+- lead paint contamination
 - new prescription drug
 - new over the counter medication 
 - vaccination(s) where multiple vaccine types are given at the same visit
@@ -106,9 +108,12 @@ _________
 - Tylenol when given to reduce a fever after vaccination
 - anesthesia was administered during a surgery
 - food allergy to a new food
+- radon poisoning
 - Other 
 
 Please specify details on your answer, e.g., the type of infection or the suspect drug, food, etc.
+_________________
+
 
 
 ### Vaccination History Relative to Onset
@@ -127,15 +132,16 @@ Please specify details on your answer, e.g., the type of infection or the suspec
    Unsure, that was my best recollection
    
 
-
-
 ### Pre- onset observations
 
 
 **Pre-onset observations**
 Check all observed within 7 days prior to SORA onset:
-☐ Fever
+☐ Fever from an infection
+☐ Fever after a vaccination
+☐ Fever but don't remember if infection or vaccine caused
 ☐ Tylenol (acetaminophen/paracetamol) administered
+☐ Antibiotics prescribed
 ☐ Vaccine(s) given
 ☐ Vaccine(s) given while child was recovering from an illness
 ☐ Illness
