@@ -151,7 +151,7 @@ Check all observed within 7 days prior to SORA onset:
 ☐ Anaphylactic reaction to an oral or injected medicine
 ☐ Surgery
 ☐ Anesthesia
-☐ New prescription drug(s)
+☐ Started a new prescription drug(s)
 ☐ None of the above
 ☐ Don't remember
 
