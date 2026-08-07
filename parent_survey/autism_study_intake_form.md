@@ -9,9 +9,9 @@ Thank you.
 
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
-Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed  significant lasting changes in ONE or more behaviors listed below. Often, this happens between 6 months and 3 years of age.
+Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed significant lasting changes in TWO or more behaviors listed below. Often, this happens between 6 months and 3 years of age.
 
-1. Please check all that apply to your child (this will be referred to as the "List")
+1. Please check all that apply to your child (this will be referred to as the "SORA List")
 ☐ High-pitched screaming / inconsolable crying
 ☐ Cried all night
 ☐ Excessive daytime crying or irritability
@@ -24,7 +24,6 @@ Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study 
 ☐ Loss of fine motor skills (drawing, using utensils, etc.)
 ☐ Loss of play skills
 ☐ Loss of previously established toileting skills
-☐ Onset of extreme picky eating / food refusal
 ☐ Refusal of foods formerly eaten, or a reduction of the diet to a small number of foods
 ☐ Head banging
 ☐ Hand flapping
@@ -38,44 +37,32 @@ Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study 
 ☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
 ☐ Use of peripheral vision to look at things rather than looking directly at something
 ☐ Sleep disturbance (new onset or worsening)
-☐ Gastrointestinal issues (diarrhea, constipation, pain)
+☐ Gastrointestinal symptoms (diarrhea, constipation, pain)
 ☐ Other significant change in behavior: ____________________
 ☐ None of the above
-
-
-10. **Over how many days in the 10 day window did over half of the SORA symptoms observed in Question #1 appear?**
-☐ Most symptoms first appeared over a 24 hour period 
-☐ Most symptoms first appeared over a 48 hour period 
-☐ Most symptoms first appeared over a 72 hour period
-☐ Most symptoms took 3 to 7 days to appear
-☐ Most symptoms developed over more than 7 days
-☐ Don't remember
-
 
 If you checked None of the above, we are done.
 
 
-Let's define "Onset" to be when you FIRST noticed the emergence of the EARLIEST item on the checklist above.
+(compute column with number of behaviors noted)
+
+
+
+Let's define "Onset" to be the earliest date/time you noticed an item on the checklist above.
 
 
 ### Demographics
 
-1. **Age at Onset (months)**
+1. Child's name:
 
-2. **Sex:** ☐ Male  ☐ Female
+2. **Age at Onset (months)**
 
-3. **Race:**  white black asian other 
+3. **Sex:** ☐ Male  ☐ Female
 
----
-
-### Onset Characterization
-
-
-5. **How many days did it take your child to acquire 2 or more symptoms from the SORA List:**
-
-     ____ days
+4. **Race:**  white black asian other 
 
 ---
+
 
 ### Narrative Timeline
 6a. **Tell us the sequence of events leading to Onset including what you suspect might have been the root triggering event for SORA.**
@@ -85,8 +72,7 @@ Let's define "Onset" to be when you FIRST noticed the emergence of the EARLIEST 
    ____________________________________________________________
 
 
-6c. **How many hours between that triggering event and onset?**
-_________
+
 
 ### Cause of onset
 7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
@@ -111,10 +97,12 @@ _________
 - radon poisoning
 - Other 
 
-Please specify details on your answer, e.g., the type of infection or the suspect drug, food, etc.
+If appropriate, and if you recall, please specify details on your answer, e.g., the type of infection or the suspect drug, food, etc.
 _________________
 
 
+6c. **How many hours between the triggering event you identified and onset?**
+_________
 
 ### Vaccination History Relative to Onset
 
@@ -160,7 +148,7 @@ Check all observed within 7 days prior to SORA onset:
 
 ### Tylenol (Acetaminophen) Exposure
 
-11. **Was your child given Tylenol (acetaminophen) in the period AFTER vaccination and BEFORE onset?**
+11. **If you child was vaccinated, was your child given Tylenol (acetaminophen) in the period AFTER vaccination and BEFORE onset?**
 
    ☐ Yes  ☐ No  ☐ Don't remember
 
