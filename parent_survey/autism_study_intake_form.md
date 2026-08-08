@@ -19,7 +19,7 @@ Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study 
 The changes typically occur in children between 6 months and 3 years of age. Most of the changes may unfold over a few days or over the span of a month, and the changes may last for months, years, and even decades.
 
 ## Loss of existing skills
-1. Which of your child's existing behaviors/skills were lost or significantly diminished:
+1. Which of your child's existing behaviors/skills were lost or significantly diminished? Check all that apply.
 
 Speech / language (loss of words, speaking less)
 Eye contact
@@ -76,7 +76,7 @@ Let's define "Onset" to be the date you noticed the first dramatic change (behav
 
 
 ### Narrative Timeline
-6a. **Tell us the sequence of events leading to Onset including what you suspect might have been the root triggering event for SORA.**
+6a. **Tell us the sequence of events leading to Onset including what you suspect might have been the triggering event that started the cascade of changes**
 
    ____________________________________________________________
    ____________________________________________________________
@@ -163,26 +163,26 @@ Check all observed within 7 days prior to SORA onset:
 
    ☐ Yes  ☐ No  ☐ Don't remember
 
-   **If yes,** how many days before onset was Tylenol given?
+   **If yes,** how many days before the onset of behavioral changes was Tylenol given?
 
    ____ days
 
 ---
 
-12. **Did your child receive any further vaccinations after onset?**
+12. **Did your child receive any further vaccinations after onset of behavioral changes?**
 
     ☐ Yes — continued on schedule
     ☐ Yes — but delayed or selective
     ☐ No — stopped all vaccinations after onset
     ☐ Don't remember
 
-13. **If your child continued vaccinations after onset, approximately how many days elapsed from onset until the next vaccination?**
+13. **If your child continued vaccinations after onset, approximately how many days elapsed from first onset until the next vaccination?**
 
     ____ days
 
 ---
 
-14. For families with children of different vaccination statuses: In general, how does the overall health of your unvaccinated children compare to your vaccinated children?"
+14. For families with children having different vaccination levels, in general, how does the overall health of your unvaccinated children compare to your vaccinated children?"
 
  Unvaccinated children are significantly healthier
  Unvaccinated children are somewhat healthier
