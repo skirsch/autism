@@ -1,31 +1,33 @@
 # Autism Diagnosis Clinic — Supplementary Intake Form
 
 ## About this survey
-This survey is designed to explore 8 different hypotheses as to what might be driving the rise in autism in America.
+This survey is designed to collect information to enable researchers worldwide to test different hypotheses as to what might be driving the exponential rise in autism worldwide.
 
-The best way to help us achieve our goal is to answer each question as carefully and as accurately as you can based on what you observed and what you recall.
+The data collected will be made public (except for your email address) so that researchers will have as much data as possible.
 
-Thank you.
+Please answer each question as carefully and as accurately as you can based on what you observed and what you recall.
+
+Thank you!
 
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
 Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a previously normally developing child who, over a span of 14 days or fewer, experienced:
 
-- A significant loss of one or more previously acquired skills or behaviors, AND
-- The emergence of one or more new pathological behaviors.
+- A significant and persistent loss of one or more previously acquired skills or behaviors, AND
+- The emergence of one or more new persistent pathological behaviors.
 
-The changes typically occur in children between 6 months and 3 years of age.
+The changes typically occur in children between 6 months and 3 years of age. Most of the changes may unfold over a few days or over the span of a month, and the changes may last for months, years, and even decades.
 
 ## Loss of existing skills
-1. Which existing behaviors/skills were lost or significantly diminished:
+1. Which of your child's existing behaviors/skills were lost or significantly diminished:
 
-Speech / language (appears in nearly every entry)
+Speech / language (loss of words, speaking less)
 Eye contact
 Social engagement / interest in others
 Ability to sleep / stay asleep
 Interest in previously enjoyed activities, foods, people
-Bowel/bladder control
-Motor skills
+Bowel/bladder control, e.g., bedwetting
+Motor skills (crawling, walking, coordination, balance, sitting up, holding head up)
 Facial expression / emotional responsiveness
 Cooperative or imaginative play
 Focus / attention span
@@ -33,13 +35,14 @@ Focus / attention span
 ## Acquisition of new pathological behaviors
 2. Which new behaviors we added? Check all that apply.
 
-Repetitive motor behaviors (hand flapping, spinning, rocking, head banging, self-biting, peripheral vision)
+Repetitive motor behaviors (hand flapping, spinning, rocking, head banging, self-biting, peripheral vision, crossing eyes)
 Inconsolable screaming / high-pitched crying as if in pain
 Unexplained rage, aggression, tantrums, meltdowns
 Heightened sensory sensitivity (sound, touch, light, food textures, unusual cravings)
 Fixation on specific objects or topics (fans, vacuums, trivia, numbers)
 Severe sleep disturbance (night terrors, inability to stay asleep)
-Digestive issues / gut problems / new food allergies
+Balance / coordination (unsteady gait, frequent falling, clumsiness)
+Digestive issues / gut problems / new food allergies (projectile vomiting, chronic diarrhea, constipation, severe gut pain)
 Social obliviousness (no personal space, inability to read cues)
 Glassy, unfocused eyes / "light gone" / disconnected appearance
 Obsessive lining up or ordering of objects
