@@ -1,7 +1,7 @@
 # Autism Diagnosis Clinic — Supplementary Intake Form
 
 ## About this survey
-This survey is designed to explore 11 different hypotheses as to what might be driving the rise in autism in America.
+This survey is designed to explore 8 different hypotheses as to what might be driving the rise in autism in America.
 
 The best way to help us achieve our goal is to answer each question as carefully and as accurately as you can based on what you observed and what you recall.
 
@@ -9,46 +9,54 @@ Thank you.
 
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
-Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a child who was developing normally and meeting developmental milestones and then, suddenly, over a span of fewer than 10 days, developed significant lasting changes in TWO or more behaviors listed below. Often, this happens between 6 months and 3 years of age.
+Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a previously normally developing child who, over a span of 14 days or fewer, experienced:
 
-1. Please check all that apply to your child (this will be referred to as the "SORA List")
-☐ High-pitched screaming / inconsolable crying
-☐ Cried all night
-☐ Excessive daytime crying or irritability
-☐ Loss of eye contact
-☐ Loss of social interaction / responsiveness to name
-☐ Loss of spoken words or vocabulary
-☐ Child blurts out things that are irrelevant/inappropriate 
-☐ Exhibits social skills of a much younger child
-☐ Loss of motor skills (crawling, walking, coordination)
-☐ Loss of fine motor skills (drawing, using utensils, etc.)
-☐ Loss of play skills
-☐ Loss of previously established toileting skills
-☐ Refusal of foods formerly eaten, or a reduction of the diet to a small number of foods
-☐ Head banging
-☐ Hand flapping
-☐ Toe walking
-☐ Heightened sensitivity to sound, light, or touch
-☐ Arching back
-☐ Inappropriate play with toys
-☐ Loss of hearing or appearance of deafness 
-☐ Loss of sense of pain
-☐ Focus on a repetitive action such as flipping a toy or object back and forth
-☐ Prolonged or intense concentration on things in motion (e.g., rotating ceiling fan, swaying tree branches)
-☐ Use of peripheral vision to look at things rather than looking directly at something
-☐ Sleep disturbance (new onset or worsening)
-☐ Gastrointestinal symptoms (diarrhea, constipation, pain)
-☐ Other significant change in behavior: ____________________
-☐ None of the above
+- A significant loss of one or more previously acquired skills or behaviors, AND
+- The emergence of one or more new pathological behaviors.
 
-If you checked None of the above, we are done.
+The changes typically occur in children between 6 months and 3 years of age.
+
+## Loss of existing skills
+1. Which existing behaviors/skills were lost or significantly diminished:
+
+Speech / language (appears in nearly every entry)
+Eye contact
+Social engagement / interest in others
+Ability to sleep / stay asleep
+Interest in previously enjoyed activities, foods, people
+Bowel/bladder control
+Motor skills
+Facial expression / emotional responsiveness
+Cooperative or imaginative play
+Focus / attention span
+
+## Acquisition of new pathological behaviors
+2. Which new behaviors we added? Check all that apply.
+
+Repetitive motor behaviors (hand flapping, spinning, rocking, head banging, self-biting, peripheral vision)
+Inconsolable screaming / high-pitched crying as if in pain
+Unexplained rage, aggression, tantrums, meltdowns
+Heightened sensory sensitivity (sound, touch, light, food textures, unusual cravings)
+Fixation on specific objects or topics (fans, vacuums, trivia, numbers)
+Severe sleep disturbance (night terrors, inability to stay asleep)
+Digestive issues / gut problems / new food allergies
+Social obliviousness (no personal space, inability to read cues)
+Glassy, unfocused eyes / "light gone" / disconnected appearance
+Obsessive lining up or ordering of objects
+Body rigidity / stiffness / arched back
+Extreme distractibility / inability to stay on task
+Eloping / wandering / running off
+Pronounced tics (motor or vocal)
+
+
+If you did not check at least one item from each list, thank you for your time.
 
 
 (compute column with number of behaviors noted)
 
 
 
-Let's define "Onset" to be the earliest date/time you noticed an item on the checklist above.
+Let's define "Onset" to be the date you noticed the first dramatic change (behavior acquisition or loss).
 
 
 ### Demographics
