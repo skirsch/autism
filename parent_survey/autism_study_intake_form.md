@@ -94,10 +94,10 @@ Other
 7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
 - Genetic susceptibility (condition emerged spontaneously without an identifiable external trigger)
 - I honestly have no idea
+- specific toxic chemical exposure (e.g., glyphosate, microplastics, etc.)
+- mini stroke during pregnancy
 - gastrointestinal trigger/ gut dysbiosis
-- accidental ingestion of microplastics
 - infection (bacteria, virus, or parasite)
-- specific toxic chemical exposure (e.g., glyphosate, etc.)
 - chronic mold exposure at home and/or daycare facility
 - other toxic chemical at child's daycare facility
 - lead paint contamination
@@ -105,12 +105,12 @@ Other
 - new over the counter medication 
 - vaccination(s) where multiple vaccine types are given at the same visit
 - vaccination(s) given while my child still had an active infection
+- vaccination, fever, tylenol sequence of events
 - fever caused by an infection
 - fever resulting from a recent vaccination
-- Tylenol when given to reduce a fever after vaccination
 - anesthesia was administered during a surgery
 - food allergy to a new food
-- radon poisoning
+- home radon exposure
 - Other 
 
 If appropriate, and if you recall, please specify details on your answer, e.g., the type of infection or the suspect drug, food, etc.
