@@ -11,12 +11,12 @@ Thank you!
 
 ## Sudden-Onset Regressive Autism (SORA) data collection study
 
-Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a previously normally developing child who, over a span of 14 days or fewer, experienced:
+Sudden-Onset Regressive Autism (SORA) is defined for the purposes of this study as a previously normally developing child who, over a span of 14 days or fewer, experienced both:
 
 - A significant and persistent loss of one or more previously acquired skills or behaviors, AND
 - The emergence of one or more new persistent pathological behaviors.
 
-The changes typically occur in children between 6 months and 3 years of age. Most of the changes may unfold over a few days or over the span of a month, and the changes may last for months, years, and even decades.
+The changes typically occur in children between 6 months and 3 years of age. The initial changes unfold rapidly and may last for months, years, and even decades.
 
 ## Loss of existing skills
 1. Which of your child's existing behaviors/skills were lost or significantly diminished? Check all that apply.
@@ -28,12 +28,13 @@ Ability to sleep / stay asleep
 Interest in previously enjoyed activities, foods, people
 Bowel/bladder control, e.g., bedwetting
 Motor skills (crawling, walking, coordination, balance, sitting up, holding head up)
+Balance / coordination (unsteady gait, frequent falling, clumsiness)
 Facial expression / emotional responsiveness
 Cooperative or imaginative play
 Focus / attention span
 
 ## Acquisition of new pathological behaviors
-2. Which new behaviors we added? Check all that apply.
+2. Which new behaviors were acquired? Check all that apply.
 
 Repetitive motor behaviors (hand flapping, spinning, rocking, head banging, self-biting, peripheral vision, crossing eyes)
 Inconsolable screaming / high-pitched crying as if in pain
@@ -41,7 +42,6 @@ Unexplained rage, aggression, tantrums, meltdowns
 Heightened sensory sensitivity (sound, touch, light, food textures, unusual cravings)
 Fixation on specific objects or topics (fans, vacuums, trivia, numbers)
 Severe sleep disturbance (night terrors, inability to stay asleep)
-Balance / coordination (unsteady gait, frequent falling, clumsiness)
 Digestive issues / gut problems / new food allergies (projectile vomiting, chronic diarrhea, constipation, severe gut pain)
 Social obliviousness (no personal space, inability to read cues)
 Glassy, unfocused eyes / "light gone" / disconnected appearance
@@ -52,8 +52,7 @@ Eloping / wandering / running off
 Pronounced tics (motor or vocal)
 
 
-If you did not check at least one item from each list, thank you for your time.
-
+If you did not check at least one item from each list, STOP here. Thank you for your time.
 
 (compute column with number of behaviors noted)
 
@@ -70,8 +69,12 @@ Let's define "Onset" to be the date you noticed the first dramatic change (behav
 
 3. **Sex:** ☐ Male  ☐ Female
 
-4. **Race:**  white black asian other 
+4. **Race:**  
 
+Hispanic/Latino (any race)
+Mixed race
+Native American / Indigenous
+Other
 ---
 
 
@@ -87,7 +90,7 @@ Let's define "Onset" to be the date you noticed the first dramatic change (behav
 
 ### Cause of onset
 7 **What is your single best guess as to what might have been the root trigger of YOUR child's SORA? 
-- genetic susceptibility and it then randomly appears later like cancer
+- Genetic susceptibility (condition emerged spontaneously without an identifiable external trigger)
 - I honestly have no idea
 - gastrointestinal trigger/ gut dysbiosis
 - accidental ingestion of microplastics
@@ -115,15 +118,11 @@ _________________
 6c. **How many hours between the triggering event you identified and onset?**
 _________
 
-### Vaccination History Relative to Onset
+### Vaccination intervals before and after Onset
 
-8. **Was your child vaccinated in the 2 weeks BEFORE the onset date?**
+8. Approximately how many days  BEFORE  onset was the **most recent**  vaccination prior to onset? 
 
-   ☐ Yes  ☐ No  ☐ Unsure
-
-   **If yes,** approximately how many days (or hours) before onset was the **most recent**  vaccination prior to onset?
-
-   ____ days or if hours, ____ hours
+   ____ days 
 
    How confident are you in that number:
    Very confident, vividly remember
@@ -131,15 +130,28 @@ _________
    Unsure, that was my best recollection
    
 
+8. Approximately how many days  AFTER  onset was the **most recent**  vaccination AFTER onset? 
+   ____ days () stopped vaccination after onset  () don't remember
+
+   How confident are you in that number:
+   Very confident, vividly remember
+   Reasonably confident it was that number or close to that number
+   Unsure, that was my best recollection
+   
+
+
+
 ### Pre- onset observations
 
 
 **Pre-onset observations**
-Check all observed within 7 days prior to SORA onset:
+Check all observed within 10 days prior to SORA onset:
 ☐ Fever from an infection
 ☐ Fever after a vaccination
 ☐ Fever but don't remember if infection or vaccine caused
-☐ Tylenol (acetaminophen/paracetamol) administered
+☐ Tylenol (acetaminophen/paracetamol) administered BEFORE vaccine
+☐ Tylenol (acetaminophen/paracetamol) administered AFTER vaccine
+☐ Tylenol (acetaminophen/paracetamol) administered and no vaccine
 ☐ Antibiotics prescribed
 ☐ Vaccine(s) given
 ☐ Vaccine(s) given while child was recovering from an illness
@@ -157,30 +169,7 @@ Check all observed within 7 days prior to SORA onset:
 
 ---
 
-### Tylenol (Acetaminophen) Exposure
 
-11. **If you child was vaccinated, was your child given Tylenol (acetaminophen) in the period AFTER vaccination and BEFORE onset?**
-
-   ☐ Yes  ☐ No  ☐ Don't remember
-
-   **If yes,** how many days before the onset of behavioral changes was Tylenol given?
-
-   ____ days
-
----
-
-12. **Did your child receive any further vaccinations after onset of behavioral changes?**
-
-    ☐ Yes — continued on schedule
-    ☐ Yes — but delayed or selective
-    ☐ No — stopped all vaccinations after onset
-    ☐ Don't remember
-
-13. **If your child continued vaccinations after onset, approximately how many days elapsed from first onset until the next vaccination?**
-
-    ____ days
-
----
 
 14. For families with children having different vaccination levels, in general, how does the overall health of your unvaccinated children compare to your vaccinated children?"
 
@@ -189,3 +178,5 @@ Check all observed within 7 days prior to SORA onset:
  About the same
  Vaccinated children are somewhat healthier
  Vaccinated children are significantly healthier
+ Not sure
+ Does not apply
