@@ -27,7 +27,7 @@ Social engagement / interest in others
 Ability to sleep / stay asleep
 Interest in previously enjoyed activities, foods, people
 Bowel/bladder control, e.g., bedwetting
-Motor skills (crawling, walking, coordination, balance, sitting up, holding head up)
+Motor skills (crawling, walking, coordination, sitting up, holding head up)
 Balance / coordination (unsteady gait, frequent falling, clumsiness)
 Facial expression / emotional responsiveness
 Cooperative or imaginative play
@@ -70,7 +70,9 @@ Let's define "Onset" to be the date you noticed the first dramatic change (behav
 3. **Sex:** ☐ Male  ☐ Female
 
 4. **Race:**  
-
+White
+Black
+Asian
 Hispanic/Latino (any race)
 Mixed race
 Native American / Indigenous
@@ -117,21 +119,23 @@ _________________
 
 6c. **How many hours between the triggering event you identified and onset?**
 _________
-
-### Vaccination intervals before and after Onset
+### Vaccination timing relative to onset
 
 8. Approximately how many days  BEFORE  onset was the **most recent**  vaccination prior to onset? 
 
-   ____ days 
-
+   ____ days, or if same day, ____ hours
+   
    How confident are you in that number:
    Very confident, vividly remember
    Reasonably confident it was that number or close to that number
    Unsure, that was my best recollection
+   No vaccination before onset
    
 
 8. Approximately how many days  AFTER  onset was the **most recent**  vaccination AFTER onset? 
-   ____ days () stopped vaccination after onset  () don't remember
+   ____ days 
+   () stopped vaccination after onset  
+   () don't remember
 
    How confident are you in that number:
    Very confident, vividly remember
