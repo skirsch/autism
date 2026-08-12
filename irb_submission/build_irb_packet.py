@@ -1,0 +1,283 @@
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from pathlib import Path
+
+OUT = Path(__file__).resolve().parent
+
+def setup(doc, title, subtitle=None):
+    sec = doc.sections[0]
+    sec.top_margin = sec.bottom_margin = Inches(0.8)
+    sec.left_margin = sec.right_margin = Inches(0.85)
+    styles = doc.styles
+    styles['Normal'].font.name = 'Arial'; styles['Normal'].font.size = Pt(10.5)
+    for s, size, color in [('Title', 22, '17365D'), ('Heading 1', 15, '17365D'), ('Heading 2', 12, '2F5597'), ('Heading 3', 10.5, '2F5597')]:
+        styles[s].font.name = 'Arial'; styles[s].font.size = Pt(size); styles[s].font.color.rgb = RGBColor.from_string(color)
+    p = doc.add_paragraph(); p.style = styles['Title']; p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.add_run(title).bold = True
+    if subtitle:
+        p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r = p.add_run(subtitle); r.italic = True; r.font.size = Pt(11)
+    return doc
+
+def footer(doc):
+    p = doc.sections[0].footer.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.add_run('IRB submission draft — institution-specific review required').font.size = Pt(8)
+
+def h(doc, text, level=1): doc.add_heading(text, level=level)
+def para(doc, text, boldlead=None):
+    p=doc.add_paragraph()
+    if boldlead and text.startswith(boldlead):
+        p.add_run(boldlead).bold=True; p.add_run(text[len(boldlead):])
+    else: p.add_run(text)
+    return p
+def bullets(doc, items):
+    for x in items: doc.add_paragraph(x, style='List Bullet')
+def numbered(doc, items):
+    for x in items: doc.add_paragraph(x, style='List Number')
+def shade(cell, fill):
+    tcPr=cell._tc.get_or_add_tcPr(); shd=OxmlElement('w:shd'); shd.set(qn('w:fill'),fill); tcPr.append(shd)
+def table(doc, headers, rows, widths=None):
+    t=doc.add_table(rows=1, cols=len(headers)); t.alignment=WD_TABLE_ALIGNMENT.CENTER; t.style='Table Grid'; t.autofit=False
+    for i,x in enumerate(headers):
+        c=t.rows[0].cells[i]; c.text=x; shade(c,'D9EAF7'); c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
+        for r in c.paragraphs[0].runs: r.bold=True
+        if widths: c.width=Inches(widths[i])
+    for row in rows:
+        cs=t.add_row().cells
+        for i,x in enumerate(row):
+            cs[i].text=str(x); cs[i].vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
+            if widths: cs[i].width=Inches(widths[i])
+    return t
+
+doc=setup(Document(),'IRB Submission Packet','Temporal Relationship Between Vaccination and Sudden-Onset Regressive Autism (SORA)')
+footer(doc)
+table(doc,['Submission field','Draft value'],[
+    ['Principal Investigator','Elizabeth “Liz” Mumper, M.D. [confirm degree/title and institutional affiliation]'],
+    ['Sponsor / coordinating organization','Medical Academy of Pediatric Special Needs (MAPS) [confirm legal entity]'],
+    ['Protocol number / version / date','[IRB assigned] / Version 1.0 / 11 August 2026'],
+    ['Study design','Retrospective, multisite medical-record review; minimal-risk secondary research'],
+    ['Requested determination','Exempt under 45 CFR 46.104(d)(4), if applicable; otherwise expedited review with waiver of consent and HIPAA authorization'],
+    ['Study population','Children with documented ASD and narrowly defined abrupt, parent-observed developmental regression'],
+], [2.2,4.6])
+para(doc,'DRAFTING NOTE. Bracketed text requires completion by the PI, relying institution, privacy officer, or reviewing IRB. The reviewing IRB—not the investigators—determines whether the activity is non-human-subjects research, exempt, or requires expedited review. Public release is not permitted until disclosure-risk review is completed.')
+
+h(doc,'Part 1. Full Research Protocol')
+h(doc,'1. Protocol synopsis',2)
+para(doc,'This exploratory study will test whether the parent-observed onset of narrowly defined sudden-onset regressive autism (SORA) clusters temporally after vaccination. Participating clinics will identify eligible records and derive a minimal analytic dataset locally. Investigators receive only a clinic-assigned row ID, sex, age at onset in completed months, days from the preceding vaccination to onset (Dpre), and days from onset to the subsequent vaccination (Dpost). Investigators will not receive clinical phenotypes, names, contact information, dates of birth, medical-record numbers, calendar dates, free text, geography, or the clinic’s re-identification key. The study is designed to describe timing; it cannot establish that vaccination caused regression.')
+
+h(doc,'2. Background and rationale',2)
+para(doc,'Developmental regression is reported in a substantial minority of children with autism spectrum disorder (ASD), but definitions, ascertainment methods, and estimated onset ages vary. A 2021 systematic review of 97 studies estimated a pooled regression prevalence of 30% and a weighted mean onset age of 19.8 months, with substantial heterogeneity. Reviews comparing retrospective parent report with prospective observation caution that precise onset dating is vulnerable to recall error and that developmental change may be gradual even when recognized abruptly.')
+para(doc,'Large cohort and meta-analytic studies have not found an association between vaccination and autism overall, and several studies specifically examining regression or onset pattern have not supported an MMR-related regressive phenotype. The present study therefore does not treat a causal association as established. Its narrower question is whether a highly selected subgroup with a documented, abrupt, readily dated parent-observed onset shows nonrandom temporal positioning between adjacent vaccination encounters. This question is scientifically testable, but selection, recall, documentation, diagnostic, and time-varying confounding must be addressed explicitly.')
+para(doc,'The scientific value is methodological: to determine whether clinic-derived timing data are sufficiently reliable and whether any temporal clustering persists under prespecified, exposure-opportunity-adjusted analyses. A positive result would be hypothesis-generating and would require independent confirmation in population-based records with prospectively recorded developmental measures. A null result would constrain the magnitude of short-window clustering in this selected phenotype.')
+
+h(doc,'3. Specific aims and hypotheses',2)
+numbered(doc,[
+    'Aim 1: Estimate the distribution of days from the most recent vaccination before onset to the first persistent, parent-observed regressive behavior (Dpre). Primary hypothesis: the proportion with Dpre = 0–2 days exceeds the proportion expected under the prespecified within-interval null model.',
+    'Aim 2: Test whether onset positions cluster near the preceding vaccination after accounting for the length of each child’s interval between adjacent vaccinations. Primary normalized measure: U = Dpre / (Dpre + Dpost). Under the primary null model, onset is uniformly distributed within each observed interval and U follows Uniform(0,1).',
+    'Aim 3: Describe the phenotype by age at onset and sex, and assess robustness to onset certainty, source of documentation, same-day coding, interval length, clinic, vaccine type/antigen count when available, and alternative risk windows.',
+])
+para(doc,'No confirmatory causal hypothesis is proposed. All language in reports will distinguish temporal association from causation.')
+
+h(doc,'4. Study design and setting',2)
+para(doc,'Retrospective, multisite clinical case series using existing medical records. Clinic personnel will screen records, verify eligibility, abstract source dates, calculate intervals locally, remove identifiers, and transmit only the approved dataset. The coordinating team will not contact patients and will not access clinic electronic medical records or linkage keys. Target enrollment is at least 100 eligible records across at least [3] clinics; all eligible records within each clinic’s prespecified ascertainment period will be included to reduce discretionary selection.')
+
+h(doc,'5. Operational definition of SORA',2)
+para(doc,'A record qualifies only when all criteria below are documented. “Sudden onset” means a parent or primary caregiver identified a specific calendar date, or an interval no longer than 48 hours, when persistent new ASD-relevant behaviors or a marked loss of previously acquired developmental skills first became obvious. Examples may include new persistent head banging or other repetitive behavior, loss of eye contact or reciprocal social engagement, or marked loss of language or another acquired skill. Transient post-vaccination symptoms alone (fever, irritability, sleep change, reduced appetite) do not constitute regression.')
+
+h(doc,'6. Eligibility criteria',2)
+h(doc,'Inclusion',3)
+bullets(doc,[
+    'Age 0–60 months at the documented onset.',
+    'Subsequent ASD diagnosis documented by a qualified clinician using the clinic’s standard diagnostic process; diagnostic method recorded when available.',
+    'Documentation that development before onset was described as typical or meeting expected milestones, with no persistent ASD-specific concern recorded before the index onset.',
+    'A parent/caregiver-reported onset date or ≤48-hour onset interval for a persistent change meeting the SORA definition.',
+    'A verifiable vaccination date before onset and a verifiable vaccination date after onset in the source record. If no later vaccination exists, retain for descriptive analysis but exclude from normalized-position analysis.',
+    'Record falls within the clinic’s prespecified ascertainment period: [start year] through [end year].'
+])
+h(doc,'Exclusion',3)
+bullets(doc,[
+    'Documented genetic, neurologic, metabolic, infectious, traumatic, or other condition judged to explain regression (examples: Rett syndrome, Fragile X syndrome, epileptic encephalopathy), unless retained in a prespecified sensitivity stratum.',
+    'Developmental or ASD-specific concern documented before the proposed onset date.',
+    'Gradual, uncertain, or retrospectively approximated onset exceeding 48 hours; these may be logged as screen failures or analyzed separately, not included in the primary cohort.',
+    'Onset defined only by nonspecific acute symptoms without persistent developmental/behavioral change.',
+    'Conflicting dates that cannot be resolved by the site adjudicator, or missing required timing data.'
+])
+
+h(doc,'7. Identification, screening, and adjudication',2)
+numbered(doc,[
+    'Each site defines the full source population and ascertainment dates before screening. Searches may use ASD diagnosis codes and terms indicating regression or skill loss.',
+    'Site staff create a screening log containing aggregate counts only: records screened, excluded by each criterion, eligible, and missing timing data.',
+    'Two trained site reviewers independently assess eligibility where feasible. Disagreements are resolved by a third clinician without considering calculated Dpre or Dpost. Eligibility details are not transmitted.',
+    'Onset is taken from the earliest parent/caregiver report documented in the record that supports an unambiguous onset date under the protocol. The source date and narrative remain at the clinic.',
+    'Vaccination dates must reflect administration, not ordering, billing, recommendation, or a generic well-child visit. Combination products and simultaneous vaccines count as one vaccination date; product/antigen fields are optional secondary variables.',
+    'The site calculates Dpre and Dpost only after eligibility is locked. Negative values are invalid. Same-day administration and onset are coded Dpre=0, with time ordering recorded only if contemporaneously documented.'
+])
+
+h(doc,'8. Variables and data collection',2)
+table(doc,['Variable','Definition / coding','Status'],[
+    ['Clinic row ID','Arbitrary sequential or random code; not derived from identifiers; mapping retained only by clinic','Required; replaced before public release'],
+    ['Age at onset','Completed months at onset; public release may bin to protect privacy','Required'],
+    ['Sex','Clinic-recorded value using prespecified categories; suppress small cells publicly','Required'],
+    ['Dpre','Calendar days: onset minus most recent administered vaccination before/on onset','Required'],
+    ['Dpost','Calendar days: first administered vaccination after onset minus onset','Required for primary normalized analysis'],
+], [1.35,4.2,1.0])
+para(doc,'The three temporal data points supplied for each qualifying child are age at onset, Dpre, and Dpost. Sex is the sole demographic variable. No calendar dates, phenotype variables, clinical narratives, vaccine products, clinic identifiers, or eligibility details leave the clinic.')
+
+h(doc,'9. Statistical analysis plan',2)
+h(doc,'9.1 Analysis populations',3)
+bullets(doc,[
+    'Primary analysis set: all eligible records with exact or ≤48-hour onset and valid vaccination dates on both sides of onset.',
+    'Descriptive set: all eligible records, including those lacking a subsequent vaccination.',
+    'Sensitivity sets available from the received variables: intervals ≤[365] days and exclusion of same-day cases when ordering is unknown.'
+])
+h(doc,'9.2 Primary estimands and tests',3)
+para(doc,'For child i, let aᵢ=Dpre, bᵢ=Dpost, Lᵢ=aᵢ+bᵢ, and Uᵢ=aᵢ/Lᵢ. The primary window estimand is p₂=Pr(aᵢ≤2 days). The null expected probability for child i is min(3/Lᵢ,1) when discrete eligible onset days are 0,…,Lᵢ−1; conventions will be fixed before database lock. The observed count in the 0–2-day window will be compared with the Poisson-binomial null distribution having child-specific probabilities. Report the observed proportion, null-expected proportion, risk ratio, risk difference, exact two-sided p value, and 95% confidence intervals.')
+para(doc,'The co-primary distributional test evaluates whether U is Uniform(0,1) using a prespecified one-sample Cramér–von Mises statistic with a Monte Carlo conditional randomization distribution generated within each observed interval Lᵢ. A one-sided prespecified statistic emphasizing proximity after the preceding vaccination (for example, mean −log[max(U,ε)]) will be reported alongside the omnibus test. Multiplicity: the 0–2-day test is primary; the omnibus test is key secondary. If both are labeled confirmatory, Holm correction will control family-wise α=0.05.')
+h(doc,'9.3 Secondary and exploratory analyses',3)
+bullets(doc,[
+    'Risk windows 0–1, 0–2, 0–7, 8–14, and 15–30 days, with exact exposure-opportunity denominators. Only 0–2 is primary; all others are exploratory.',
+    'Empirical cumulative distribution, histogram, kernel density (descriptive only), and scan statistic over prespecified window widths with permutation-adjusted significance.',
+    'Stratification by age band and sex when cell sizes permit. No subgroup causal claims.',
+    'Sensitivity to heaping at 0, 1, 7, 14, and 30 days; interval-censored onset; alternative handling of simultaneous onset/vaccination; and exclusion of long inter-vaccination intervals.',
+    'Negative-control assessment, if available, using timing from onset to non-vaccine routine visits or vaccination dates after onset. Such analyses require an amended instrument and analysis plan before database lock.'
+])
+h(doc,'9.4 Missing data, exclusions, and multiplicity',3)
+para(doc,'Missing required dates will not be imputed for the primary analysis. Counts and reasons for missingness will be reported by clinic. No record will be excluded based on the magnitude or direction of Dpre/Dpost after eligibility is determined. All deviations, exclusions, and analytic decisions will be logged before unblinding aggregate results. Exploratory p values will be labeled unadjusted or adjusted as applicable.')
+h(doc,'9.5 Sample size',3)
+para(doc,'The final sample-size calculation must be completed by the study statistician using the anticipated Lᵢ distribution and a prespecified minimally important risk ratio. As an illustrative—not approval-ready—calculation, if the average null probability for a 3-day window were 0.05, 100 independent records would yield about 90% power at two-sided α=0.05 to detect a true proportion near 0.15. Because clustering by clinic, interval heterogeneity, and ascertainment error reduce effective information, the submission should replace this illustration with a simulation based on pilot interval lengths before enrollment begins.')
+h(doc,'9.6 Interpretation limits',3)
+para(doc,'This case-only design cannot estimate ASD incidence or vaccine-attributable risk, compare vaccinated with unvaccinated children, or by itself distinguish a causal trigger from recall anchoring, healthcare-contact patterns, concurrent illness, age-related developmental change, or selective documentation. Conclusions will be limited to the observed temporal distribution in the defined cohort.')
+
+h(doc,'10. Risks, benefits, and safeguards',2)
+para(doc,'There is no intervention and no direct participant benefit. Principal risk is informational: re-identification or unwanted disclosure of a child’s developmental and vaccination history. Risk is minimized by site-level abstraction; no central access to PHI; no direct identifiers, exact dates, free text, or MRN-derived codes; encrypted transfer and storage; least-privilege access; audit logging; suppression/generalization for public release; and incident-response procedures. Clinics will not make participation or care decisions based on study inclusion.')
+
+h(doc,'11. Quality assurance and reproducibility',2)
+bullets(doc,[
+    'Training manual and worked examples for onset and vaccination-date abstraction.',
+    'Pilot abstraction of at least 10 records per site and inter-rater agreement reporting.',
+    'Frozen protocol, data dictionary, and statistical code before database lock.',
+    'Aggregate screening flow by site and a reproducible analysis repository.',
+    'Independent statistical review before public claims or manuscript submission.'
+])
+
+h(doc,'12. Dissemination',2)
+para(doc,'Results will be reported regardless of direction. Public release is limited to a disclosure-reviewed public-use dataset and analysis code. The internal analytic dataset will not automatically be public. Cell suppression, age binning, top/bottom coding of intervals, clinic masking or pooling, and removal of rare combinations will be applied as needed. If Safe Harbor cannot be established because a retained variable is a unique characteristic or code, a qualified expert determination will be obtained before release. Neither MAPS nor investigators will attempt re-identification.')
+
+h(doc,'Part 2. Data Privacy and Security Plan')
+h(doc,'1. Data flow',2)
+numbered(doc,[
+    'Authorized clinic workforce members access PHI inside the clinic under local policy and the IRB/privacy determination.',
+    'Clinic staff determine eligibility, record source dates in a local worksheet, calculate age in months, Dpre, and Dpost, and run validation checks.',
+    'Before transmission, clinic staff delete direct identifiers, exact dates, free text, granular geography, contact data, device/IP data, and any MRN-derived identifier. A random study ID is assigned. The linkage key remains at the clinic and is never shared.',
+    'The HIPAA-compliant file is transmitted through [approved transfer method]. It contains only clinic row ID, sex, age at onset in months, Dpre, and Dpost.',
+    'The coordinating center stores the internal analytic file in [named institution-managed encrypted platform], encrypted in transit and at rest, with multifactor authentication, role-based access, audit logging, endpoint encryption, and institutional backups.',
+    'Before public release, the received clinic row IDs are replaced with new public row numbers. The clinic-issued codes and mapping keys are not published.'
+])
+h(doc,'2. Data classification and HIPAA pathway',2)
+para(doc,'The clinic’s source records and local mapping file contain PHI. The transferred file contains no calendar dates or clinical phenotype information and is intended to satisfy HIPAA de-identification. The clinic-generated row ID must not be derived from a name, medical-record number, date, or other identifying information, and the re-identification mechanism must not be disclosed. Each clinic’s covered entity/privacy officer will document the applicable de-identification determination before transfer. If a clinic instead classifies the file as coded PHI or a limited data set, the appropriate HIPAA authorization/waiver and data use agreement must be in place before disclosure.')
+h(doc,'3. Access matrix',2)
+table(doc,['Role','Source PHI','Mapping key','Received analytic data','Public-use data'],[
+    ['Clinic abstractor','Yes, locally','If authorized','Local/transmit','Yes'],
+    ['Clinic PI/privacy officer','As authorized','Yes','Yes','Yes'],
+    ['Coordinating PI / statistician','No','No','Yes','Yes'],
+    ['Other MAPS personnel','No','No','Only if named/authorized','Yes'],
+    ['Public','No','No','No','Yes after review'],
+], [1.6,1.0,1.0,1.55,1.3])
+h(doc,'4. Retention and destruction',2)
+para(doc,'The clinic retains its mapping key under clinic policy and never shares it with investigators. The received analytic dataset, audit logs, code, and regulatory records will be retained for [institutional requirement, commonly at least 3–7 years after study closure/publication]. Before public release, clinic row IDs are replaced with new public row numbers. Public-use data cannot be recalled after publication, making pre-release review mandatory.')
+h(doc,'5. Incident response',2)
+para(doc,'Suspected loss, unauthorized access, or disclosure will be reported immediately to the PI and [privacy/security office]. Access will be suspended, logs preserved, scope assessed, and required institutional, IRB, HIPAA, contractual, and participant notifications completed within applicable timelines. Corrective actions will be documented.')
+
+h(doc,'Part 3. Request for Waiver of Consent and HIPAA Authorization')
+h(doc,'A. Requested regulatory determination',2)
+para(doc,'Primary request: the IRB determine whether receipt and analysis of information that investigators cannot readily link to individuals is not human-subjects research or is exempt secondary research under 45 CFR 46.104(d)(4), as applicable. In the alternative, the investigators request expedited review and waiver of parental permission/informed consent under 45 CFR 46.116(f), plus waiver of HIPAA authorization under 45 CFR 164.512(i), if the transferred information is deemed PHI. These are alternative pathways; the IRB/privacy office will select the applicable pathway.')
+h(doc,'B. Waiver of informed consent / parental permission justification',2)
+table(doc,['Criterion','Justification'],[
+    ['No more than minimal risk','No intervention or contact occurs. The only foreseeable research risk is informational and is reduced by clinic-side abstraction, minimal variables, removal of identifiers/dates/free text, restricted access, encryption, and disclosure review.'],
+    ['Rights and welfare not adversely affected','Clinical care, benefits, and legal rights are unchanged. Findings are aggregate; investigators cannot identify or contact families.'],
+    ['Impracticable without waiver','Eligible cases span historical records and multiple clinics; contact information may be stale, and requiring contact would produce substantial nonresponse and selection bias that defeats a valid complete-record review. “Impracticable” is based on scientific feasibility, not convenience or cost alone.'],
+    ['Additional information after participation','Individual debriefing is not appropriate because investigators cannot identify participants. Aggregate results and the public-use dataset/code will be posted at [URL] when available.'],
+    ['Identifiable format necessity (if applicable)','Clinic staff must temporarily inspect identifiable records to determine eligibility and derive intervals. Central investigators do not require or receive identifiers.'],
+], [2.05,4.75])
+h(doc,'C. HIPAA waiver justification (if needed)',2)
+bullets(doc,[
+    'Privacy risk is minimal because identifiers stay at the clinic; access is limited; transfer/storage are encrypted; and written assurances prohibit reuse, disclosure, and re-identification except as required by law or oversight.',
+    'Identifiers used locally for screening will be destroyed or retained only under documented clinical/legal requirements at the earliest practicable time.',
+    'The research cannot practicably be conducted without local access to PHI because eligibility and exact temporal intervals must be derived from source records.',
+    'The research cannot practicably be conducted without the waiver because obtaining authorization from a historical multisite cohort would materially bias ascertainment and make complete-case screening infeasible.',
+    'Only the minimum necessary PHI is accessed locally; no PHI is disclosed centrally unless separately approved.'
+])
+
+h(doc,'Part 4. Data Collection Instrument')
+para(doc,'Complete one row per eligible patient. Do not transmit exact dates or free text. Keep the source-date worksheet and re-identification key at the clinic.')
+table(doc,['Clinic row ID','Sex','Age at onset (months)','Dpre: days vaccination→onset','Dpost: days onset→next vaccination'],[
+    ['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','',''],
+], [1.05,0.65,1.25,1.65,1.65])
+para(doc,'Definitions: Dpre = onset date minus the most recent administered vaccination date before/on onset. Dpost = first administered vaccination date after onset minus onset date. Use 0 for same-day onset; mark ordering unknown unless the note documents order. Do not substitute a routine visit date for a vaccination date. Enter NA only when no subsequent vaccination exists; explain only in the clinic-retained query log.')
+table(doc,['Site-level screening summary','Count'],[
+    ['Unique records screened',''],['Eligible SORA records',''],['Excluded: onset not abrupt/dateable',''],['Excluded: prior developmental concern',''],['Excluded: alternative explanatory condition',''],['Excluded: missing/invalid vaccination timing',''],['Other exclusions (per protocol)','']
+], [5.6,1.2])
+para(doc,'Site certification: I certify that the transmitted file contains only the five columns shown above. The clinic row ID is not derived from an identifier. No names, calendar dates, phenotype information, free text, MRNs or MRN-derived codes, contact information, clinic identifier, or mapping key are included. Name/title: __________ Signature: __________ Date: __________')
+
+h(doc,'Part 5. Conflict of Interest and Funding Disclosure')
+h(doc,'Investigator disclosure statement',2)
+para(doc,'Each investigator and key study staff member must disclose financial and nonfinancial interests under the reviewing institution’s policy. Complete the statements below; do not represent “none” until each person has submitted the institution’s required disclosure.')
+table(doc,['Disclosure item','Response / management'],[
+    ['Study funding and in-kind support','MAPS: [amount/source/terms]. Clinic compensation: up to $5,000 per clinic based on documented staff effort and record volume [confirm structure]. Other support: [list/none].'],
+    ['PI and investigator financial interests','[Consulting, equity, honoraria, patents, paid advocacy, litigation roles, or none after formal disclosure].'],
+    ['Nonfinancial interests','[Public positions, organizational leadership, advocacy, prior public claims, or other interests reasonably perceived to affect objectivity].'],
+    ['Site interests','[Recruitment/data-abstraction payments; confirm payment is for reasonable costs and is not contingent on eligible-case count or study outcome].'],
+    ['Management plan','Independent eligibility adjudication where feasible; blinded timing calculation until eligibility lock; prespecified analysis; independent statistician; full reporting; funding and interests disclosed in publications. [Add institutional COI committee requirements].'],
+], [2.0,4.8])
+h(doc,'Suggested publication disclosure',2)
+para(doc,'“This study was supported by [full legal funder name and grant/contract number]. Participating sites received reimbursement for reasonable data-abstraction costs under agreements not contingent on the number or timing distribution of eligible cases. The funder’s roles in study design, data collection, analysis, interpretation, manuscript preparation, and publication decision were: [state each role]. Author disclosures: [insert].”')
+
+h(doc,'Part 6. Required Site and Submission Attachments')
+bullets(doc,[
+    'Completed institution-specific IRB application and protocol signature page.',
+    'PI CV/biosketch, human-subjects and HIPAA training certificates, and investigator roster.',
+    'Statistical simulation/power appendix approved by a named statistician.',
+    'Data dictionary, abstraction manual, and validation rules.',
+    'Site agreement/data use agreement or reliance agreement, as applicable.',
+    'Clinic payment schedule and budget justification showing reimbursement is not outcome-contingent.',
+    'Recruitment/site outreach email and phone script labeled “do not use until IRB determination.”',
+    'HIPAA de-identification attestation or Expert Determination documentation for each data flow.',
+    'Public data disclosure-risk review plan and repository terms.',
+    'Conflict-of-interest forms and management plan, if required.',
+])
+
+h(doc,'References')
+refs=[
+    'Tan C, Frewer V, Cox G, Williams K, Ure A. Prevalence and Age of Onset of Regression in Children with Autism Spectrum Disorder: A Systematic Review and Meta-analytical Update. Autism Research. 2021;14(3):582–598. doi:10.1002/aur.2463.',
+    'Ozonoff S, et al. Changing conceptualizations of regression: What prospective studies reveal about the onset of autism spectrum disorder. Neuroscience & Biobehavioral Reviews. 2019. PMID: 30885812.',
+    'Taylor LE, Swerdfeger AL, Eslick GD. Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies. Vaccine. 2014;32(29):3623–3629. doi:10.1016/j.vaccine.2014.04.085.',
+    'Hviid A, Hansen JV, Frisch M, Melbye M. Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study. Ann Intern Med. 2019;170(8):513–520. doi:10.7326/M18-2101.',
+    'Taylor B, et al. Measles, mumps, and rubella vaccination and bowel problems or developmental regression in children with autism: population study. BMJ. 2002;324:393–396. PMID: 11850369.',
+    'U.S. Department of Health and Human Services, Office for Civil Rights. Guidance Regarding Methods for De-identification of Protected Health Information under the HIPAA Privacy Rule.',
+    'U.S. Department of Health and Human Services, Office for Human Research Protections. 45 CFR part 46; guidance on coded private information and waiver/alteration of informed consent.',
+]
+for r in refs: doc.add_paragraph(r, style='List Number')
+
+master=OUT/'SORA_IRB_Submission_Packet_v1.0.docx'; doc.save(master)
+
+inst=setup(Document(),'SORA Clinic Data Collection Form','Protocol Version 1.0 — one row per eligible patient; no exact dates or free text')
+footer(inst)
+para(inst,'Site: __________  Site code: ______  Ascertainment period: __________  Abstractor: __________')
+para(inst,'Eligibility must be locked before Dpre/Dpost are calculated. Use administered vaccination dates only. The clinic retains source dates and the linkage key.')
+table(inst,['Clinic row ID','Sex','Age onset (mo)','Dpre (days)','Dpost (days)'],[['','','','',''] for _ in range(14)],[1.15,0.7,1.45,1.35,1.35])
+h(inst,'Definitions and validation',2)
+bullets(inst,[
+    'SORA onset: first obvious, persistent ASD-relevant behavior or marked loss of an acquired skill, dateable to a calendar date or ≤48-hour interval after previously typical development.',
+    'Dpre = onset date − most recent vaccination date before/on onset. Dpost = first vaccination date after onset − onset date.',
+    'Same-day = 0. Do not infer ordering. Do not use a routine visit without documented vaccine administration.',
+    'Transmit only the five columns shown. Do not transmit names, calendar dates, phenotype information, MRNs/MRN-derived IDs, contact data, free text, geography, clinic identity, or the mapping key.'
+])
+para(inst,'Certification: I verified eligibility locally. The row ID is not derived from an identifier, and the clinic retains the mapping. This form contains only the approved fields and no calendar dates or phenotype information. Signature: __________________ Date: __________')
+instrument=OUT/'SORA_Data_Collection_Instrument_v1.0.docx'; inst.save(instrument)
+print(master)
+print(instrument)

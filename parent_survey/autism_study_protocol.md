@@ -12,19 +12,15 @@ Prospective clinical case series utilizing structured intake and blinded chart a
 *   **Exclusion Criteria:** Children with a documented genetic syndrome (e.g., Fragile X, Rett) or clear evidence of regression beginning prior to the first vaccination.
 
 ## 4. Data Collection Instrument
-Data will be collected at participating autism diagnostic centers via the *Supplementary Intake Form: Temporal Association and Clinical Sequelae in Sudden-Onset Regressive Autism* which is filled out online so the parent cannot skip ahead to see what is coming. This form captures:
-1.  **Onset Provenance:** Categorization of the evidence used to establish the onset date (contemporaneous record vs. recall).
-2.  **Symptom Phenotype:** Checklist of regressive behaviors (e.g., loss of speech, loss of eye contact, head banging).
-3.  **Temporal Exposure:** Days elapsed between most recent vaccination and onset (0–30 day window).
-4.  **Inflammatory Sequelae:** Checklist of clinical events occurring between vaccination and onset (fever, inconsolable crying, seizures, encephalitis, Tylenol administration).
+Data will be collected at participating medical providers. Depending on the provider, the data may already be available in the medical records. In other cases, the provider will need to reach out to the parents or the child's pediatrician.
 
 Data provided to researchers by the clinics will all be deidentified and HIPAA compliant (all dates will be converted to time intervals to prevent reidentification).
 
 ## 5. Statistical Analysis Plan
 *   **Primary Outcome:** The distribution of the interval (in days) between the most recent vaccination and the onset of behavioral regression.
-*   **Hypothesis:** If regression is random with respect to vaccination, onsets will be uniformly distributed across the 30-day window. If vaccination is a trigger, onsets will show significant clustering within the 0–2 day and 0–7 day intervals.
-*   **Comparison:** Observed frequency of onsets in the 0–2 day window compared against the expected frequency (assuming random distribution, 2/365 ≈ 0.5%).
-*   **Sensitivity Analysis:** Assessment of the "inflammatory signature" (Tylenol, fever, screaming) to determine if these co-factors correlate with shorter onset latencies.
+*   **Hypothesis:** If regression is random with respect to vaccination, onsets will be uniformly distributed between vaccination visits.
+*   **Comparison:** Observed frequency of onsets in the 0–2 day and 0-7 windows compared against other windows of the same size within the interval
+
 
 ## 6. Ethical Considerations
 *   All data collection is part of standard clinical intake.
