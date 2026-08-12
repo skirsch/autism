@@ -2,14 +2,17 @@
 
 ## Data received by the coordinating investigators
 
-The electronic dataset contains exactly six columns:
+The electronic patient-level dataset contains exactly seven columns:
 
 1. `site_code`
 2. `clinic_row_id`
 3. `sex`
-4. `age_at_onset_months`
-5. `dpre_days`
-6. `dpost_days`
+4. `age_at_onset_days`
+5. `vaccination_before_onset`
+6. `dpre_days`
+7. `dpost_days`
+
+Four aggregate 24-month counts and aggregate screening-flow counts are transmitted separately and contain no patient-level rows or free text.
 
 No calendar dates, phenotype variables, clinical narratives, patient names, medical-record numbers, contact information, geography, clinic names, or patient mapping keys are transmitted. The site code is a nonidentifying study code used for site-aware analyses.
 
@@ -21,7 +24,7 @@ The clinic completes `03_SORA_Electronic_Data_Submission_Template.xlsx` or an eq
 
 The coordinating team stores the received file in [institution-managed storage system] using [encryption/access controls]. Authorized roles are [PI, statistician, data manager]. Retention is [period].
 
-Before public release, clinic-issued row IDs are discarded and replaced with new public row numbers. Site codes will be recoded, pooled, or removed following disclosure review. The public file contains no mapping mechanism.
+Before any approved public release, clinic-issued row IDs are discarded and replaced with new public row numbers. Site codes will be recoded, pooled, or removed following disclosure review. If acceptable disclosure risk cannot be achieved, only aggregate results and code will be released.
 
 ## Clinic attestation
 
@@ -35,7 +38,7 @@ By electronically certifying the upload, the clinic confirms that:
 
 - eligibility was determined locally according to the approved protocol;
 - each row corresponds to one eligible record;
-- the submitted file contains only the six approved columns;
+- the patient-level file contains only the seven approved columns and separately labeled aggregate counts contain no patient rows;
 - no calendar dates, phenotype information, narratives, direct identifiers, clinic name, or patient mapping key are present;
 - the site code is the approved nonidentifying study code;
 - the clinic row ID is not derived from identifying information;

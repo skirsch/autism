@@ -28,8 +28,8 @@ Complete this document so names and responsibilities remain consistent across th
 | Name | Credentials/affiliation | Study role | Data access | Training status |
 |---|---|---|---|---|
 | [Name] | [TBD] | Study coordinator | [TBD] | [TBD] |
-| [Name] | [TBD] | Statistician | Received six-field dataset | [TBD] |
-| [Name] | [TBD] | Data manager | Received six-field dataset | [TBD] |
+| [Name] | [TBD] | Statistician | Received seven-field dataset and aggregate counts | [TBD] |
+| [Name] | [TBD] | Data manager | Received seven-field dataset and aggregate counts | [TBD] |
 
 ## Participating clinics
 

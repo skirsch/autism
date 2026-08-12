@@ -2,7 +2,7 @@
 
 ## Requested determination
 
-The investigators request that [IRB name] determine the applicable regulatory pathway for this retrospective, minimal-data study. The coordinating investigators receive no direct identifiers, calendar dates, clinical narratives, phenotype information, clinic name, or patient mapping key. They receive only nonidentifying site code, clinic row ID, sex, age at onset in completed months, Dpre, and Dpost.
+The investigators request exemption under 45 CFR 46.104(d)(4)(ii) for the coordinating analysis. Investigators receive no direct identifiers, calendar dates, clinical narratives, phenotype information, clinic name, or patient mapping key. They receive only site code, clinic row ID, sex, age at parent-recognized onset in whole days, vaccination-before-onset status, Dpre, and Dpost, plus four clinic-level aggregate counts concerning vaccination status through 24 months.
 
 The investigators first request a determination of whether the coordinating analysis is not human-subjects research or qualifies as exempt secondary research under 45 CFR 46.104(d)(4), as applicable. If the IRB determines that nonexempt human-subjects research is involved, the investigators request expedited review and waiver of informed consent/parental permission under 45 CFR 46.116(f). If the information is treated as PHI, they additionally request waiver of HIPAA authorization under 45 CFR 164.512(i).
 
@@ -12,7 +12,7 @@ These are alternative requests. The IRB and applicable privacy officers will det
 
 ### Minimal risk
 
-There is no intervention, participant contact, or change to clinical care. The principal foreseeable risk is informational. Clinics perform eligibility review and interval derivation locally. The central dataset is restricted to six fields, contains no calendar dates or clinical narratives, is transferred electronically through [secure portal], and is stored in [approved storage platform] with restricted access.
+There is no intervention, participant contact, or change to clinical care. The principal foreseeable risk is informational. Clinics perform eligibility review and interval derivation locally. The patient-level dataset is restricted to seven fields, contains no calendar dates or clinical narratives, is transferred electronically through [secure portal], and is stored in [approved storage platform] with restricted access.
 
 ### Rights and welfare
 
@@ -24,7 +24,7 @@ The study requires review of historical records across multiple clinics. Contact
 
 ### Additional information
 
-Individual debriefing is not practicable because the coordinating investigators cannot identify or contact subjects. Aggregate results, analytic code, and the approved public-use dataset will be posted at [URL/repository] when available.
+Individual debriefing is not practicable because the coordinating investigators cannot identify or contact subjects. Aggregate results and analytic code will be posted at [URL/repository] when available. Row-level data may be posted only after documented disclosure-risk approval; otherwise they will not be released.
 
 ## HIPAA waiver, if required
 
