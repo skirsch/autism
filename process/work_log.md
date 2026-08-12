@@ -23,3 +23,11 @@
 - **Outputs:** `irb_submission/IRB_SUBMISSION_BUNDLE/` containing ten numbered submission files.
 - **Results:** All locally preparable IRB materials are in one directory; externally issued CVs, training records, institutional forms, agreements, and final IRB determinations are itemized separately.
 - **Next steps:** Resolve bracketed placeholders and add institution-issued documents before submission.
+
+## 2026-08-11 — Pandoc Word conversion of main IRB packet
+
+- **What we did:** Converted the current submission-bundle Markdown source directly to DOCX with Pandoc.
+- **Command / executable:** `wsl pandoc irb_submission/IRB_SUBMISSION_BUNDLE/01_SORA_IRB_Submission_Packet.md --from=gfm --to=docx`.
+- **Outputs:** `irb_submission/IRB_SUBMISSION_BUNDLE/01_SORA_IRB_Submission_Packet.docx`.
+- **Results:** Structural validation found 125 paragraphs, 7 tables, and 39 headings; the exemption language, moving-window analysis, and references 1–7 are present. Microsoft Word PDF export timed out, so visual PDF QA was not completed.
+- **Next steps:** Open in Word for a final pagination check before formal submission.
