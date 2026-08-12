@@ -11,7 +11,7 @@ These items cannot be completed accurately without the PI, reviewing institution
 - Current HIPAA/privacy training certificates where required.
 - Official institutional conflict-of-interest disclosures and any management determination.
 - Final funding letter, grant/contract, budget, and clinic-compensation schedule.
-- Written statistical power/simulation appendix approved by the named statistician.
+- Signed acknowledgement by the PI and named analyst/statistician that Protocol Section 9 is the frozen analysis plan before database lock.
 - Data use, data transfer, business associate, site participation, or reliance agreements required by the institutions.
 - Each participating clinic’s privacy/HIPAA determination or attestation.
 - Authorization for the named secure upload portal and storage environment.
@@ -21,4 +21,3 @@ These items cannot be completed accurately without the PI, reviewing institution
 ## Submission control
 
 Do not substitute draft language for an official institutional form. If an IRB portal asks the same question differently from these drafts, answer the portal directly and use this bundle as supporting documentation. Do not recruit clinics or collect research data until the applicable written determinations and agreements are complete.
-

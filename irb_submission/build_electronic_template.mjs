@@ -45,7 +45,7 @@ instructions.getRange("A1:D1").format = { fill: "#17365D", font: { bold: true, c
 instructions.getRange("A3:B13").values = [
   ["Submission", "Complete the Data Entry sheet electronically and upload the workbook through the approved secure portal. Do not print, handwrite, scan, photograph, fax, or paste data into an email."],
   ["One row", "Enter one eligible patient per row. Do not add columns."],
-  ["site_code", "Use the nonidentifying site code assigned for this study (for example, SITE01). Do not enter the clinic name."],
+  ["site_code", "Use the study site code assigned for analysis (for example, SITE01). Do not enter the clinic name; the clinic-code mapping is stored separately with restricted access."],
   ["clinic_row_id", "Clinic-assigned arbitrary row code. It must not be derived from a name, MRN, date, or other identifier. The clinic retains the mapping."],
   ["sex", "Select the clinic-recorded category from the dropdown."],
   ["age_at_onset_days", "Age in whole days on the locally determined parent-recognized onset date, calculated locally without transmitting birth or onset dates."],

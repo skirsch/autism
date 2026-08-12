@@ -12,7 +12,7 @@ My name is [name and role]. I am assisting with a MAPS-affiliated study led by D
 
 We are inviting clinics to identify qualifying records locally and submit a minimal HIPAA-compliant electronic dataset. For each eligible record, the clinic would provide only:
 
-1. a nonidentifying site code assigned for the study;
+1. a study site code whose clinic mapping is restricted;
 2. a clinic-assigned row ID whose mapping remains at the clinic;
 3. sex;
 4. age at parent-recognized onset in whole days, calculated locally without transmitting dates;
@@ -22,7 +22,7 @@ We are inviting clinics to identify qualifying records locally and submit a mini
 
 The clinic will also provide four aggregate counts: patients with known vaccination status through 24 months; those with no vaccination through 24 months; qualifying SORA cases with known status through 24 months; and those SORA cases with no vaccination through 24 months.
 
-No clinic names, patient names, medical-record numbers, calendar dates, clinical narratives, phenotype variables, contact information, or mapping keys are submitted. Data are entered in the study-provided Excel workbook or an equivalent CSV file and uploaded electronically through [approved secure upload portal]. Paper, scanned, photographed, faxed, handwritten, and email-body submissions are not accepted.
+No clinic names, patient names, medical-record numbers, calendar dates, clinical narratives, phenotype variables, contact information, or mapping keys are submitted. Data are entered in the study-provided Excel workbook or an equivalent CSV file and uploaded electronically through the institution-managed encrypted portal named during site activation. Paper, scanned, photographed, faxed, handwritten, and email submissions are not accepted.
 
 The study is being reviewed by [IRB name]. Its status is [approved/exempt/not-human-subjects determination], protocol [number], dated [date]. Participating clinics may receive up to [$ amount] as reimbursement for reasonable staff abstraction time under terms that are not contingent on the number, timing, or outcome of eligible cases.
 

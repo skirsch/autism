@@ -2,10 +2,12 @@
 
 ## Funding
 
-- Legal name of sponsor/funder: [complete]
-- Funding mechanism and amount: [grant, contract, donation, internal support, or none]
+- Legal name of every sponsor/funder: [complete]
+- Funding mechanism and amount from each source: [grant, contract, donation, internal support, or none]
 - MAPS role: [design / operations / funding / analysis / publication / other]
 - Other financial or in-kind support: [complete]
+
+One or multiple funding sources are permitted. Funds should be pooled as unrestricted study support when practicable. No funder may select records, determine eligibility, access clinic linkage keys or internal row-level data, direct the analysis, suppress results, edit conclusions, or veto or delay publication. Each source and amount must be disclosed separately; multiple funders do not reduce disclosure or conflict-management requirements.
 
 ## Clinic compensation
 
@@ -37,11 +39,10 @@ Each investigator and key study-team member must complete the reviewing institut
 - eligibility is determined before timing values are examined;
 - the statistical analysis plan is prespecified;
 - clinic payments are effort-based and outcome-independent;
-- a qualified independent statistician reviews the analysis;
+- a qualified epidemiologist or statistician acknowledges the frozen analysis plan before database lock, and an independent methods reviewer evaluates the analysis before public causal claims or manuscript submission;
 - funding and interests are disclosed in presentations, datasets, and manuscripts; and
 - additional measures required by [institutional COI committee] will be followed.
 
 ## Suggested disclosure statement
 
 “This study was supported by [full legal funder and award number]. Participating clinics received reimbursement for reasonable data-abstraction costs under agreements not contingent on the number or timing distribution of eligible cases. The funder’s roles were [state each role]. Author disclosures are [complete].”
-

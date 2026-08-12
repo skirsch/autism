@@ -5,7 +5,7 @@
 |----|----|
 | Principal Investigator | Elizabeth “Liz” Mumper, M.D. \[confirm degree/title and institutional affiliation\] |
 | Sponsor / coordinating organization | Medical Academy of Pediatric Special Needs (MAPS) \[confirm legal entity\] |
-| Protocol number / version / date | \[IRB assigned\] / Version 1.1 / 11 August 2026 |
+| Protocol number / version / date | \[IRB assigned\] / Version 1.2 / 11 August 2026 |
 | Study design | Retrospective, multisite medical-record review; minimal-risk secondary research |
 | Requested determination | Exempt under 45 CFR 46.104(d)(4)(ii) |
 | Study population | Children with documented ASD and narrowly defined abrupt, parent-observed developmental regression |
@@ -106,7 +106,7 @@ will distinguish temporal association from causation.
 ## 4. Study design and setting
 
 Retrospective, multisite clinical case series using only records and
-clinical data created before the study cutoff date of \[date\] for
+clinical data created on or before 11 August 2026 for
 purposes of clinical care, not for this research. Clinic personnel will
 screen records, verify eligibility,
 abstract source dates, calculate intervals locally, remove identifiers,
@@ -117,9 +117,8 @@ total from at least five participating clinics. Each clinic will
 contribute all eligible records identified during its prespecified
 ascertainment period. No fixed number is required from an individual
 clinic, and enrollment will not be stopped or extended based on observed
-timing results. The final minimum sample-size requirement will be
-confirmed through simulation by the study statistician before data
-collection begins.
+timing results. The precision basis and fixed sensitivity analyses are
+specified in Section 9.6 and will not be altered using study outcomes.
 
 ## 5. Operational definition of SORA
 
@@ -157,7 +156,10 @@ regression.
   vaccination does not exclude a case.
 
 - Record falls within the clinic’s prespecified ascertainment period:
-  \[start year\] through \[end year\].
+  The start date will be documented in the site activation log before
+  screening based on record-system availability; the end date will be
+  no later than 11 August 2026. The period will not be selected or
+  changed in response to observed timing results.
 
 ### Exclusion
 
@@ -219,7 +221,7 @@ regression.
 
 | **Variable** | **Definition / coding** | **Status** |
 |----|----|----|
-| Site code | Nonidentifying code assigned for analysis; clinic-name mapping is restricted | Required internally; recoded or removed before public release |
+| Site code | Study code assigned for analysis; clinic-name mapping is stored separately and restricted | Required internally; removed or pooled before any approved public release |
 | Clinic row ID | Arbitrary sequential or random code; not derived from identifiers; mapping retained only by clinic | Required; replaced before public release |
 | Age at onset | Age in whole days on the parent-recognized onset date, calculated locally from dates that are not transmitted; public release may bin age | Required |
 | Sex | Clinic-recorded value using prespecified categories; suppress small cells publicly | Required |
@@ -232,7 +234,7 @@ is recorded as Female, Male, Intersex, or Unknown/not recorded; clinic
 staff will not infer a value. No
 calendar dates, phenotype variables, clinical narratives, vaccine
 products, clinic names, or eligibility details leave the clinic. The
-nonidentifying site code is retained internally only to support
+site code is retained internally only to support
 site-aware analyses.
 
 ## 9. Statistical analysis plan
@@ -255,19 +257,28 @@ site-aware analyses.
 ### 9.2 Age-at-onset reference analysis
 
 The broad age-dependent SORA-onset curve will be estimated from all
-qualifying cases using age in whole days. Before database lock, the
-statistician will prespecify a smoothing scale substantially wider than
-the 1–7-day windows being examined, so short localized peaks are not
-absorbed into the developmental-age trend. Estimation will be
-cross-fitted by site: each site's expected age curve will be estimated
-without that site's cases, or by another prespecified cross-fitting
-scheme appropriate to site sizes. Raw age histograms, the smooth curve,
+qualifying cases using age in whole days from 0 through 1,826 days. The
+prespecified estimator is a Gaussian kernel density estimate with a
+60-day bandwidth and reflection at the 0- and 1,826-day boundaries.
+This bandwidth is deliberately much
+wider than the 1–7-day timing windows and therefore estimates the broad
+developmental-age pattern rather than short peaks. Sensitivity analyses
+will use 30-, 90-, and 120-day bandwidths. No bandwidth will be selected
+by optimizing the apparent post-vaccination signal.
+
+Estimation will be leave-one-site-out: for every record from site s, the
+reference density at each age will be estimated using all qualifying
+records from sites other than s. If exclusion of a site leaves fewer
+than 100 reference records, that site's curve will be labeled unstable
+and its records will not contribute to the Monte Carlo p value; they
+remain in all descriptive analyses. Raw
+7-day and 30-day age histograms, the prespecified smooth curve,
 site-specific displays, and leave-one-site-out results will be shown.
 
 For secondary age-adjusted analyses among cases with both adjacent
 vaccination dates, the expected probability of onset on each eligible
 day in the interval will be proportional to the cross-fitted smooth
-onset frequency at that developmental age rather than assumed uniform.
+onset density at that developmental age rather than assumed uniform.
 The clinic-transmitted variables permit reconstruction of age at the
 preceding vaccination as age-at-onset-days minus Dpre and age at the
 subsequent vaccination as age-at-onset-days plus Dpost, without
@@ -289,11 +300,22 @@ cumulative distribution, and site-stratified results. Prespecified
 descriptive windows are 0–2 and 0–7 days. A moving-window scan will
 evaluate every contiguous window of width 1–7 days with endpoints within
 days 0–30, including a possible days 2–4 peak. The maximum standardized
-excess statistic and its randomization-adjusted p value may be reported
-only under a statistician-approved null model finalized before database
-lock; otherwise the scan is descriptive. The selected peak will always
-be labeled data-adaptive. The protocol does not assume onset is uniform
-between vaccinations.
+excess statistic will be reported descriptively. For the secondary
+adjacent-interval analysis, the expected probability for each onset day
+is the cross-fitted age-density value for that day divided by the sum of
+those values over the child's adjacent-vaccination interval. One hundred
+thousand Monte Carlo datasets will draw one onset day per child from
+these probabilities while preserving each child's observed interval and
+site. For each scanned Dpre window W, O(W) is the observed number of
+records in W; E(W) and SD(W) are the Monte Carlo mean and standard
+deviation of that count; and Z(W)=[O(W)-E(W)]/SD(W). The scan statistic
+is the largest Z(W), with windows having SD(W)=0 omitted. The familywise
+p value is (1 plus the number of simulated maximum statistics at least
+as large as observed)/(100,001). The Monte Carlo seed will be fixed at
+20260811 and published. This p value is exploratory because later
+vaccination is required and the reference curve comes from a selected
+case series. The selected peak will always be labeled data-adaptive. The
+protocol does not assume onset is uniform between vaccinations.
 
 The normalized position U=Dpre/(Dpre+Dpost) will be reported only as a
 secondary sensitivity analysis among cases with a later vaccination. No
@@ -308,9 +330,14 @@ through 24 months; (3) qualifying SORA cases with sufficient records to
 establish vaccination status through 24 months; and (4) those SORA cases
 with no documented vaccination through 24 months. The proportion
 unvaccinated through 24 months among SORA cases will be compared with the
-corresponding proportion in the clinic source population using
-site-stratified estimates and a pooled method prespecified by the
-statistician. These aggregate counts contain no patient-level data.
+corresponding proportion in the clinic source population. Each site's
+risk ratio and risk difference will be shown with exact binomial
+confidence intervals. The pooled analysis will use a Mantel-Haenszel
+risk ratio stratified by clinic; a continuity-corrected estimate and
+exact or Monte Carlo confidence interval will be used when any cell is
+zero. A pooled estimate will not be reported if fewer than three sites
+provide valid denominators. These aggregate counts contain no
+patient-level data.
 
 This exploratory comparison does not estimate population-level vaccine
 effects unless the clinic source population and follow-up are complete
@@ -321,27 +348,37 @@ as unvaccinated.
 
 Missing Dpost does not exclude a case from the age-reference or Dpre
 analyses. Missingness and exclusions will be reported by site and, when
-observable, by age, sex, vaccination-before-onset status, and Dpre. Site
-heterogeneity is an estimand; analyses will include site-stratified and
-leave-one-site-out results. With only five or a small number of sites,
-the statistician will use a small-sample-valid fixed-effect,
-randomization, or hierarchical method rather than uncorrected
-cluster-robust standard errors. Confirmatory and exploratory analyses,
-if any, and their multiplicity family will be frozen before database
-lock. No record will be excluded because its timing value is unfavorable
-to a hypothesis.
+observable, by age, sex, vaccination-before-onset status, and Dpre. No
+patient-level value will be imputed. Invalid values will be queried once
+through the clinic row ID; unresolved values will be set to missing with
+the reason retained in an internal query log. Site heterogeneity is an
+estimand: all principal displays will be site-stratified, and pooled
+results will be repeated after omitting each site in turn. Sex-stratified
+results are exploratory and will be suppressed when a stratum contains
+fewer than 11 records. No uncorrected cluster-robust standard errors will
+be used with the small number of sites. There are no confirmatory
+hypothesis tests. The Monte Carlo moving-window scan is one familywise-
+adjusted exploratory test; all other p values, if shown, are labeled
+exploratory. No record will be excluded because its timing value is
+unfavorable to a hypothesis.
 
 ### 9.6 Sample size
 
 The study will target at least 300 eligible records from at least five
-clinics. The final sample-size calculation must be completed by the
-study statistician using conservative age-curve shapes, alternative
-smoothing scales, short-window concentrations including a days 2–4
-peak, unequal site contributions,
-within-site dependence, missing Dpost, and any multiplicity adjustment.
-The simulation and its assumptions will be finalized before IRB approval
-and data collection and will not use observed study outcomes to stop or
-extend enrollment.
+clinics. This is a precision-based target for an exploratory case series,
+not a claim of power for a causal effect. At n=300, a proportion near
+40% has a conventional binomial 95% confidence-interval half-width of
+approximately 5.5 percentage points; a proportion near 10% has a
+half-width of approximately 3.4 points. Site stratification and
+dependence may widen uncertainty, so confidence intervals and
+site-specific counts will be reported rather than relying on these
+nominal values. All eligible records in each locked ascertainment period
+will be included even if the total exceeds 300. Enrollment will not stop,
+continue, or expand in response to the observed Dpre distribution. The
+30-, 60-, 90-, and 120-day smoothing analyses and the 100,000-replicate
+Monte Carlo procedure specified above constitute the operating-
+characteristic sensitivity analysis; no outcome-informed tuning is
+permitted.
 
 ### 9.7 Interpretation limits
 
@@ -383,16 +420,16 @@ procedures. Record inclusion will not affect a child's care or services.
 
 ## 12. Dissemination
 
-Results will be reported regardless of direction. Row-level public
-release may occur only after documented disclosure-risk review by
-\[named qualified reviewer/privacy office\]. If acceptable risk cannot
-be achieved, only aggregate results and analysis code will be released.
-The internal analytic dataset will not automatically be public. Cell
-suppression, age binning, top/bottom coding of intervals, clinic masking
-or pooling, and removal of rare combinations will be applied as needed.
-If Safe Harbor cannot be established because a retained variable is a
-unique characteristic or code, a qualified expert determination will be
-obtained before release. Neither MAPS nor investigators will attempt
+Results will be reported regardless of direction. Aggregate results,
+the frozen analysis code, and a synthetic demonstration dataset will be
+released. Row-level study data will not be released by default. Such a
+release may occur only after a qualified HIPAA statistical expert who is
+independent of the analysis documents that the risk of identification is
+very small and approves the exact public file. The public file will omit
+clinic row IDs, replace row numbers, remove or pool site codes, suppress
+cells smaller than 11, and bin or top-code age and extreme intervals as
+the expert directs. If that determination is not obtained, no row-level
+data will be released. Neither MAPS nor investigators will attempt
 re-identification.
 
 # Part 2. Data Privacy and Security Plan
@@ -403,7 +440,7 @@ re-identification.
     under local policy and the IRB/privacy determination.
 
 2. Clinic staff determine eligibility, record source dates in a local
-    worksheet, calculate age in months, Dpre, and Dpost, and run
+    worksheet, calculate age in whole days, Dpre, and Dpost, and run
     validation checks.
 
 3. Before transmission, clinic staff delete direct identifiers, exact
@@ -412,16 +449,18 @@ re-identification.
     linkage key remains at the clinic and is never shared.
 
 4. The clinic submits the patient-level data electronically as the study-provided
-    Excel workbook or an equivalent CSV file through \[approved secure
-    upload portal\]. Paper forms, scanned forms, photographs, fax, and
+    Excel workbook or an equivalent CSV file through an institution-
+    managed encrypted file-transfer portal named in the site activation
+    record. Paper forms, scanned forms, photographs, fax, email, and
     submission in an email body are not accepted. The electronic table
     contains only site code, clinic row ID, sex, age at onset in days,
     vaccination-before-onset status, Dpre, and Dpost. The four aggregate
     24-month counts and screening-flow counts are transmitted separately
     and contain no patient rows or free text.
 
-5. The coordinating center stores the internal analytic file in \[named
-    institution-managed encrypted platform\], encrypted in transit and
+5. The coordinating center stores the internal analytic file only in the
+    institution-managed encrypted platform named in the site activation
+    record, encrypted in transit and
     at rest, with multifactor authentication, role-based access, audit
     logging, endpoint encryption, and institutional backups.
 
@@ -462,20 +501,35 @@ patient-level analytic data and restricted to operations personnel.
 | Other MAPS personnel | No | No | Only if named/authorized | Yes |
 | Public | No | No | No | Yes after review |
 
+The PI is the access owner. Access requires documented PI approval,
+current human-subjects/privacy training, and a role requiring the data.
+The data manager will review the authorized-user list and audit log every
+three months and remove access within one business day after a role ends.
+Personal email, consumer cloud storage, portable media, and unencrypted
+or personally owned devices are prohibited. After upload, the data
+manager will validate receipt and row counts; authorized temporary local
+downloads will then be deleted from transfer workstations and recycle
+bins and the deletion recorded.
+
 ## 4. Retention and destruction
 
 The clinic retains its mapping key under clinic policy and never shares
-it with investigators. The received analytic dataset, audit logs, code,
-and regulatory records will be retained for \[institutional requirement,
-commonly at least 3–7 years after study closure/publication\]. Before
-public release, clinic row IDs are replaced with new public row numbers.
-Public-use data cannot be recalled after publication, making pre-release
-review mandatory.
+it with investigators; destruction of clinical source records is not
+required by this protocol. The coordinating center will retain the
+received analytic dataset, audit logs, code, and regulatory records for
+seven years after study closure or final publication, whichever is
+later, unless the reviewing institution requires longer retention. At
+the end of retention, internal row-level files and working downloads will
+be securely destroyed under institutional policy and destruction will
+be documented. Before public release, clinic row IDs are replaced with
+new public row numbers. Public-use data cannot be recalled after
+publication, making pre-release review mandatory.
 
 ## 5. Incident response
 
 Suspected loss, unauthorized access, or disclosure will be reported
-immediately to the PI and \[privacy/security office\]. Access will be
+within 24 hours of discovery to the PI and the coordinating
+institution's privacy/security official. Access will be
 suspended, logs preserved, scope assessed, and required institutional,
 IRB, HIPAA, contractual, and participant notifications completed within
 applicable timelines. Corrective actions will be documented.
@@ -594,11 +648,20 @@ has submitted the institution’s required disclosure.
 
 | **Disclosure item** | **Response / management** |
 |----|----|
-| Study funding and in-kind support | MAPS: \[amount/source/terms\]. Clinic compensation: up to $5,000 per clinic for reasonable, documented actual screening and abstraction effort, independent of whether records qualify and independent of timing or results \[confirm structure\]. Other support: \[list/none\]. |
+| Study funding and in-kind support | List every cash and in-kind funder, amount, payment recipient, and agreement. Clinic reimbursement may be up to $5,000 per clinic solely for reasonable, documented actual screening and abstraction effort and must be independent of whether records qualify, vaccination timing, or study results. |
 | PI and investigator financial interests | \[Consulting, equity, honoraria, patents, paid advocacy, litigation roles, or none after formal disclosure\]. |
 | Nonfinancial interests | \[Public positions, organizational leadership, advocacy, prior public claims, or other interests reasonably perceived to affect objectivity\]. |
-| Site interests | \[Recruitment/data-abstraction payments; confirm payment is for reasonable costs and is not contingent on eligible-case count or study outcome\]. |
-| Management plan | Independent eligibility adjudication where feasible; blinded timing calculation until eligibility lock; prespecified analysis; independent statistician; full reporting; funding and interests disclosed in publications. \[Add institutional COI committee requirements\]. |
+| Site interests | Disclose all data-abstraction reimbursement. No payment may be per eligible SORA record or contingent on eligible-case count, timing distribution, or study outcome. |
+| Management plan | Eligibility is adjudicated before Dpre/Dpost calculation; the protocol, data dictionary, and code are frozen before database lock; all sites and results are reported; and all funding and interests are disclosed. Any reviewing-institution COI requirements control. |
+
+Funding may come from one or multiple sources. Funds will be pooled as
+unrestricted study support whenever practicable. No funder may select
+records, determine eligibility, access clinic linkage keys or the
+internal row-level dataset, direct the analysis, suppress results, edit
+conclusions, or veto or delay publication. Multiple funders do not alter
+the analysis or reduce disclosure duties; each source and amount will be
+reported separately. Investigators retain final authority over protocol,
+analysis, interpretation, and publication.
 
 ## Suggested publication disclosure
 
@@ -618,8 +681,8 @@ disclosures: \[insert\].”
 - PI CV/biosketch, human-subjects and HIPAA training certificates, and
   investigator roster.
 
-- Statistical simulation/power appendix approved by a named
-  statistician.
+- Statistical analysis plan in Protocol Section 9, acknowledged by the
+  PI and analyst before database lock.
 
 - Data dictionary, abstraction manual, and validation rules.
 

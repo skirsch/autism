@@ -16,7 +16,7 @@ There is no intervention, participant contact, or change to clinical care. The p
 
 ### Rights and welfare
 
-The waiver does not affect clinical care, benefits, legal rights, or access to services. Investigators cannot use the received data to contact subjects. Reporting will be aggregate, and public release will replace clinic-issued row IDs with new public row numbers.
+The waiver does not affect clinical care, benefits, legal rights, or access to services. Investigators cannot use the received data to contact subjects. Reporting will be aggregate. Row-level data will not be released unless an independent qualified HIPAA statistical expert documents a very small identification risk and approves the exact public file; clinic-issued row IDs will never be released.
 
 ### Impracticability
 
@@ -24,7 +24,7 @@ The study requires review of historical records across multiple clinics. Contact
 
 ### Additional information
 
-Individual debriefing is not practicable because the coordinating investigators cannot identify or contact subjects. Aggregate results and analytic code will be posted at [URL/repository] when available. Row-level data may be posted only after documented disclosure-risk approval; otherwise they will not be released.
+Individual debriefing is not practicable because the coordinating investigators cannot identify or contact subjects. Aggregate results, analytic code, and a synthetic demonstration dataset will be posted in a public repository selected before publication. Row-level study data will not be posted without the independent expert determination described above.
 
 ## HIPAA waiver, if required
 

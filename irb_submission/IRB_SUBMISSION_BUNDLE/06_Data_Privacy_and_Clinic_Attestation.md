@@ -20,11 +20,11 @@ No calendar dates, phenotype variables, clinical narratives, patient names, medi
 
 Clinic staff identify eligible records, review source information, calculate the three numeric timing variables, and assign an arbitrary row ID locally. The row ID must not be derived from a name, MRN, date, or other identifier. The clinic keeps the mapping.
 
-The clinic completes `03_SORA_Electronic_Data_Submission_Template.xlsx` or an equivalent CSV file and uploads it through [approved secure upload portal]. Paper, handwritten, scanned, photographed, faxed, or email-body submissions are prohibited.
+The clinic completes `03_SORA_Electronic_Data_Submission_Template.xlsx` or an equivalent CSV file and uploads it through the institution-managed encrypted portal named during site activation. Paper, handwritten, scanned, photographed, faxed, or email submissions are prohibited.
 
-The coordinating team stores the received file in [institution-managed storage system] using [encryption/access controls]. Authorized roles are [PI, statistician, data manager]. Retention is [period].
+The coordinating team stores the received file only in the institution-managed system named during site activation, with encryption in transit and at rest, multifactor authentication, role-based access, audit logging, endpoint encryption, and institutional backup. Access is limited to the PI, analyst/statistician, and data manager when their roles require it. The access list is reviewed every three months. Records are retained for seven years after study closure or final publication, whichever is later, unless institutional policy requires longer.
 
-Before any approved public release, clinic-issued row IDs are discarded and replaced with new public row numbers. Site codes will be recoded, pooled, or removed following disclosure review. If acceptable disclosure risk cannot be achieved, only aggregate results and code will be released.
+Aggregate results, code, and a synthetic dataset may be released. Row-level study data are not public by default and may be released only after an independent qualified HIPAA statistical expert documents a very small identification risk and approves the exact file. Clinic row IDs will never be released; site codes will be removed or pooled, small cells under 11 suppressed, and age or extreme intervals generalized as directed. Without that determination, no row-level study data will be released.
 
 ## Clinic attestation
 
