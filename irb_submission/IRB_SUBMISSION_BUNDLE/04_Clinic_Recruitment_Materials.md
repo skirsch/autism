@@ -12,13 +12,14 @@ My name is [name and role]. I am assisting with a MAPS-affiliated study led by D
 
 We are inviting clinics to identify qualifying records locally and submit a minimal HIPAA-compliant electronic dataset. For each eligible record, the clinic would provide only:
 
-1. a clinic-assigned row ID whose mapping remains at the clinic;
-2. sex;
-3. age at onset in completed months;
-4. days from the most recent administered vaccination before onset to onset (Dpre); and
-5. days from onset to the next administered vaccination (Dpost).
+1. a nonidentifying site code assigned for the study;
+2. a clinic-assigned row ID whose mapping remains at the clinic;
+3. sex;
+4. age at onset in completed months;
+5. days from the most recent administered vaccination before onset to onset (Dpre); and
+6. days from onset to the next administered vaccination (Dpost).
 
-No names, medical-record numbers, calendar dates, clinical narratives, phenotype variables, contact information, clinic identifiers, or mapping keys are submitted. Data are entered in the study-provided Excel workbook or an equivalent CSV file and uploaded electronically through [approved secure upload portal]. Paper, scanned, photographed, faxed, handwritten, and email-body submissions are not accepted.
+No clinic names, patient names, medical-record numbers, calendar dates, clinical narratives, phenotype variables, contact information, or mapping keys are submitted. Data are entered in the study-provided Excel workbook or an equivalent CSV file and uploaded electronically through [approved secure upload portal]. Paper, scanned, photographed, faxed, handwritten, and email-body submissions are not accepted.
 
 The study is being reviewed by [IRB name]. Its status is [approved/exempt/not-human-subjects determination], protocol [number], dated [date]. Participating clinics may receive up to [$ amount] as reimbursement for reasonable staff abstraction time under terms that are not contingent on the number, timing, or outcome of eligible cases.
 
@@ -33,7 +34,7 @@ Sincerely,
 1. Introduce yourself, the PI, MAPS affiliation, and study purpose.
 2. State that participation is voluntary and will not affect clinical relationships or services.
 3. Explain that clinic staff determine eligibility locally from existing records.
-4. Explain the five electronic fields and that no calendar dates, clinical narratives, phenotype variables, or direct identifiers leave the clinic.
+4. Explain the six electronic fields and that no clinic names, calendar dates, clinical narratives, phenotype variables, or direct identifiers leave the clinic.
 5. Explain that the clinic keeps the row-ID mapping and submits the spreadsheet through the approved secure portal—not on paper or by ordinary email.
 6. State the IRB status and protocol number exactly as shown in the written determination.
 7. Describe reimbursement as payment for reasonable staff effort, never payment for particular cases or results.
@@ -43,4 +44,3 @@ Sincerely,
 ## Required consistency check
 
 Before use, replace every placeholder and ensure the IRB status, payment language, data fields, and submission method match the approved protocol.
-

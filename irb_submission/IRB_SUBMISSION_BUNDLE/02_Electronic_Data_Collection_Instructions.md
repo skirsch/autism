@@ -13,8 +13,8 @@ Eligibility must be locked before Dpre/Dpost are calculated. Use
 administered vaccination dates only. The clinic retains source dates and
 the linkage key.
 
-| **Clinic row ID** | **Sex** | **Age onset (mo)** | **Dpre (days)** | **Dpost (days)** |
-|----|----|----|----|----|
+| **Site code** | **Clinic row ID** | **Sex** | **Age onset (mo)** | **Dpre (days)** | **Dpost (days)** |
+|----|----|----|----|----|----|
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -42,11 +42,14 @@ the linkage key.
 - Same-day = 0. Do not infer ordering. Do not use a routine visit
   without documented vaccine administration.
 
-- Transmit only the five columns shown. Do not transmit names, calendar
-  dates, phenotype information, MRNs/MRN-derived IDs, contact data, free
-  text, geography, clinic identity, or the mapping key.
+- Site code: use the nonidentifying code assigned to the clinic for this
+  study. Do not enter the clinic name.
 
-Electronic certification accompanying upload: I verified eligibility locally. The row ID is not derived
+- Transmit only the six columns shown. Do not transmit names, calendar
+  dates, phenotype information, MRNs/MRN-derived IDs, contact data, free
+  text, geography, clinic name, or the patient mapping key.
+
+Electronic certification accompanying upload: I verified eligibility locally. The site code is the approved nonidentifying study code, and the row ID is not derived
 from an identifier, and the clinic retains the mapping. This form
 contains only the approved fields and no calendar dates or phenotype
 information. Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ Date:

@@ -2,7 +2,7 @@
 
 ## Requested determination
 
-The investigators request that [IRB name] determine the applicable regulatory pathway for this retrospective, minimal-data study. The coordinating investigators receive no direct identifiers, calendar dates, clinical narratives, phenotype information, clinic identifier, or mapping key. They receive only clinic row ID, sex, age at onset in completed months, Dpre, and Dpost.
+The investigators request that [IRB name] determine the applicable regulatory pathway for this retrospective, minimal-data study. The coordinating investigators receive no direct identifiers, calendar dates, clinical narratives, phenotype information, clinic name, or patient mapping key. They receive only nonidentifying site code, clinic row ID, sex, age at onset in completed months, Dpre, and Dpost.
 
 The investigators first request a determination of whether the coordinating analysis is not human-subjects research or qualifies as exempt secondary research under 45 CFR 46.104(d)(4), as applicable. If the IRB determines that nonexempt human-subjects research is involved, the investigators request expedited review and waiver of informed consent/parental permission under 45 CFR 46.116(f). If the information is treated as PHI, they additionally request waiver of HIPAA authorization under 45 CFR 164.512(i).
 
@@ -12,7 +12,7 @@ These are alternative requests. The IRB and applicable privacy officers will det
 
 ### Minimal risk
 
-There is no intervention, participant contact, or change to clinical care. The principal foreseeable risk is informational. Clinics perform eligibility review and interval derivation locally. The central dataset is restricted to five fields, contains no calendar dates or clinical narratives, is transferred electronically through [secure portal], and is stored in [approved storage platform] with restricted access.
+There is no intervention, participant contact, or change to clinical care. The principal foreseeable risk is informational. Clinics perform eligibility review and interval derivation locally. The central dataset is restricted to six fields, contains no calendar dates or clinical narratives, is transferred electronically through [secure portal], and is stored in [approved storage platform] with restricted access.
 
 ### Rights and welfare
 
@@ -39,4 +39,3 @@ Individual debriefing is not practicable because the coordinating investigators 
 Principal Investigator: [Liz Mumper’s full legal name, credentials, affiliation]
 
 Signature/date: [complete in the IRB system or approved signature process]
-

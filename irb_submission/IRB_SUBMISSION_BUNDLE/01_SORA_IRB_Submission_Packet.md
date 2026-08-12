@@ -24,12 +24,13 @@ This exploratory study will test whether the parent-observed onset of
 narrowly defined sudden-onset regressive autism (SORA) clusters
 temporally after vaccination. Participating clinics will identify
 eligible records and derive a minimal analytic dataset locally.
-Investigators receive only a clinic-assigned row ID, sex, age at onset
-in completed months, days from the preceding vaccination to onset
-(Dpre), and days from onset to the subsequent vaccination (Dpost).
+Investigators receive only a nonidentifying site code, a clinic-assigned
+row ID, sex, age at onset in completed months, days from the preceding
+vaccination to onset (Dpre), and days from onset to the subsequent
+vaccination (Dpost).
 Investigators will not receive clinical phenotypes, names, contact
 information, dates of birth, medical-record numbers, calendar dates,
-free text, geography, or the clinic’s re-identification key. The study
+free text, geography, clinic names, or the clinic’s re-identification key. The study
 is designed to describe timing; it cannot establish that vaccination
 caused regression.
 
@@ -82,7 +83,7 @@ clustering in this selected phenotype.
 
 3.  Aim 3: Describe timing patterns by age at onset and sex, and assess
     robustness to same-day coding, interval length, alternative risk
-    windows, and other sensitivity analyses supported by the five
+    windows, and other sensitivity analyses supported by the six
     received variables.
 
 No confirmatory causal hypothesis is proposed. All language in reports
@@ -95,10 +96,14 @@ records. Clinic personnel will screen records, verify eligibility,
 abstract source dates, calculate intervals locally, remove identifiers,
 and transmit only the approved dataset. The coordinating team will not
 contact patients and will not access clinic electronic medical records
-or linkage keys. Target enrollment is at least 100 eligible records
-across at least \[3\] clinics; all eligible records within each clinic’s
-prespecified ascertainment period will be included to reduce
-discretionary selection.
+or linkage keys. The study will enroll at least 300 eligible records in
+total from at least five participating clinics. Each clinic will
+contribute all eligible records identified during its prespecified
+ascertainment period. No fixed number is required from an individual
+clinic, and enrollment will not be stopped or extended based on observed
+timing results. The final minimum sample-size requirement will be
+confirmed through simulation by the study statistician before data
+collection begins.
 
 ## 5. Operational definition of SORA
 
@@ -191,6 +196,7 @@ regression.
 
 | **Variable** | **Definition / coding** | **Status** |
 |----|----|----|
+| Site code | Nonidentifying code assigned for analysis; clinic-name mapping is restricted | Required internally; recoded or removed before public release |
 | Clinic row ID | Arbitrary sequential or random code; not derived from identifiers; mapping retained only by clinic | Required; replaced before public release |
 | Age at onset | Completed months at onset; public release may bin to protect privacy | Required |
 | Sex | Clinic-recorded value using prespecified categories; suppress small cells publicly | Required |
@@ -200,7 +206,9 @@ regression.
 The three temporal data points supplied for each qualifying child are
 age at onset, Dpre, and Dpost. Sex is the sole demographic variable. No
 calendar dates, phenotype variables, clinical narratives, vaccine
-products, clinic identifiers, or eligibility details leave the clinic.
+products, clinic names, or eligibility details leave the clinic. The
+nonidentifying site code is retained internally only to support
+site-aware analyses.
 
 ## 9. Statistical analysis plan
 
@@ -213,8 +221,8 @@ products, clinic identifiers, or eligibility details leave the clinic.
   subsequent vaccination.
 
 - Sensitivity sets available from the received variables: intervals
-  ≤\[365\] days and exclusion of same-day cases when ordering is
-  unknown.
+  ≤\[365\] days, exclusion of same-day cases when ordering is unknown,
+  site-stratified results, and leave-one-site-out analyses.
 
 ### 9.2 Primary estimands and tests
 
@@ -258,6 +266,12 @@ database lock.
 - Stratification by age band and sex when cell sizes permit. No subgroup
   causal claims.
 
+- Site-stratified estimates, leave-one-site-out analyses, and a
+  site-level random effect or other cluster-robust method selected by the
+  statistician. No single clinic will be described as an independent
+  replication unless its sample size and prespecified analysis support
+  that characterization.
+
 - Sensitivity to heaping at 0, 1, 7, 14, and 30 days; interval-censored
   onset; alternative handling of simultaneous onset/vaccination; and
   exclusion of long inter-vaccination intervals.
@@ -279,16 +293,14 @@ applicable.
 
 ### 9.5 Sample size
 
-The final sample-size calculation must be completed by the study
-statistician using the anticipated Lᵢ distribution and a prespecified
-minimally important risk ratio. As an illustrative—not
-approval-ready—calculation, if the average null probability for a 3-day
-window were 0.05, 100 independent records would yield about 90% power at
-two-sided α=0.05 to detect a true proportion near 0.15. Because
-clustering by clinic, interval heterogeneity, and ascertainment error
-reduce effective information, the submission should replace this
-illustration with a simulation based on pilot interval lengths before
-enrollment begins.
+The study will target at least 300 eligible records from at least five
+clinics. The final sample-size calculation must be completed by the
+study statistician using the anticipated Lᵢ distribution, conservative
+effect sizes, unequal site contributions, within-site dependence, the
+primary distributional test, and multiplicity from the moving-window
+scan. The simulation and its assumptions will be finalized before data
+collection and will not use observed study outcomes to stop or extend
+enrollment.
 
 ### 9.6 Interpretation limits
 
@@ -360,8 +372,8 @@ re-identification.
     Excel workbook or an equivalent CSV file through \[approved secure
     upload portal\]. Paper forms, scanned forms, photographs, fax, and
     submission in an email body are not accepted. The electronic table
-    contains only clinic row ID, sex, age at onset in months, Dpre, and
-    Dpost.
+    contains only site code, clinic row ID, sex, age at onset in months,
+    Dpre, and Dpost.
 
 14. The coordinating center stores the internal analytic file in \[named
     institution-managed encrypted platform\], encrypted in transit and
@@ -471,13 +483,13 @@ photograph, fax, or paste the data into an email. Do not transmit exact
 dates or free text. Keep the source-date worksheet and re-identification
 key at the clinic.
 
-| **Clinic row ID** | **Sex** | **Age at onset (months)** | **Dpre: days vaccination→onset** | **Dpost: days onset→next vaccination** |
-|----|----|----|----|----|
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| **Site code** | **Clinic row ID** | **Sex** | **Age at onset (months)** | **Dpre: days vaccination→onset** | **Dpost: days onset→next vaccination** |
+|----|----|----|----|----|----|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
 
 Definitions: Dpre = onset date minus the most recent administered
 vaccination date before/on onset. Dpost = first administered vaccination
@@ -498,10 +510,11 @@ log.
 | Other exclusions (per protocol)              |           |
 
 Site certification: I certify that the transmitted file contains only
-the five columns shown above. The clinic row ID is not derived from an
-identifier. No names, calendar dates, phenotype information, free text,
-MRNs or MRN-derived codes, contact information, clinic identifier, or
-mapping key are included. Name/title: \_\_\_\_\_\_\_\_\_\_ Signature:
+the six columns shown above. The site code is the approved
+nonidentifying study code, and the clinic row ID is not derived from an
+identifier. No clinic name, names, calendar dates, phenotype
+information, free text, MRNs or MRN-derived codes, contact information,
+or mapping key are included. Name/title: \_\_\_\_\_\_\_\_\_\_ Signature:
 \_\_\_\_\_\_\_\_\_\_ Date: \_\_\_\_\_\_\_\_\_\_
 
 # Part 5. Conflict of Interest and Funding Disclosure
@@ -515,7 +528,7 @@ has submitted the institution’s required disclosure.
 
 | **Disclosure item** | **Response / management** |
 |----|----|
-| Study funding and in-kind support | MAPS: \[amount/source/terms\]. Clinic compensation: up to \$5,000 per clinic based on documented staff effort and record volume \[confirm structure\]. Other support: \[list/none\]. |
+| Study funding and in-kind support | MAPS: \[amount/source/terms\]. Clinic compensation: up to $5,000 per clinic based on documented staff effort and record volume \[confirm structure\]. Other support: \[list/none\]. |
 | PI and investigator financial interests | \[Consulting, equity, honoraria, patents, paid advocacy, litigation roles, or none after formal disclosure\]. |
 | Nonfinancial interests | \[Public positions, organizational leadership, advocacy, prior public claims, or other interests reasonably perceived to affect objectivity\]. |
 | Site interests | \[Recruitment/data-abstraction payments; confirm payment is for reasonable costs and is not contingent on eligible-case count or study outcome\]. |

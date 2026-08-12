@@ -28,8 +28,8 @@ Complete this document so names and responsibilities remain consistent across th
 | Name | Credentials/affiliation | Study role | Data access | Training status |
 |---|---|---|---|---|
 | [Name] | [TBD] | Study coordinator | [TBD] | [TBD] |
-| [Name] | [TBD] | Statistician | Received five-field dataset | [TBD] |
-| [Name] | [TBD] | Data manager | Received five-field dataset | [TBD] |
+| [Name] | [TBD] | Statistician | Received six-field dataset | [TBD] |
+| [Name] | [TBD] | Data manager | Received six-field dataset | [TBD] |
 
 ## Participating clinics
 
@@ -44,4 +44,3 @@ Complete this document so names and responsibilities remain consistent across th
 - Coordinating PI: scientific and regulatory oversight, authorization of access, deviations, reporting, and dissemination.
 - Statistician: finalize power simulation before database lock, execute prespecified analysis, document deviations, and support reproducibility.
 - Data manager: access administration, receipt validation, version control, retention, incident response, and creation of the public-use file.
-
