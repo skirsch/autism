@@ -174,7 +174,7 @@ numbered(doc,[
     'Authorized clinic workforce members access PHI inside the clinic under local policy and the IRB/privacy determination.',
     'Clinic staff determine eligibility, record source dates in a local worksheet, calculate age in months, Dpre, and Dpost, and run validation checks.',
     'Before transmission, clinic staff delete direct identifiers, exact dates, free text, granular geography, contact data, device/IP data, and any MRN-derived identifier. A random study ID is assigned. The linkage key remains at the clinic and is never shared.',
-    'The HIPAA-compliant file is transmitted through [approved transfer method]. It contains only clinic row ID, sex, age at onset in months, Dpre, and Dpost.',
+    'The clinic submits the data electronically as the study-provided Excel workbook or an equivalent CSV file through [approved secure upload portal]. Paper forms, scanned forms, photographs, fax, and submission in an email body are not accepted. The electronic table contains only clinic row ID, sex, age at onset in months, Dpre, and Dpost.',
     'The coordinating center stores the internal analytic file in [named institution-managed encrypted platform], encrypted in transit and at rest, with multifactor authentication, role-based access, audit logging, endpoint encryption, and institutional backups.',
     'Before public release, the received clinic row IDs are replaced with new public row numbers. The clinic-issued codes and mapping keys are not published.'
 ])
@@ -214,7 +214,7 @@ bullets(doc,[
 ])
 
 h(doc,'Part 4. Data Collection Instrument')
-para(doc,'Complete one row per eligible patient. Do not transmit exact dates or free text. Keep the source-date worksheet and re-identification key at the clinic.')
+para(doc,'This is an electronic data table, not a paper case-report form. The clinic must enter one eligible patient per row in the study-provided Excel workbook or an equivalent CSV file and upload the completed file through the approved secure portal. Do not print, handwrite, scan, photograph, fax, or paste the data into an email. Do not transmit exact dates or free text. Keep the source-date worksheet and re-identification key at the clinic.')
 table(doc,['Clinic row ID','Sex','Age at onset (months)','Dpre: days vaccination→onset','Dpost: days onset→next vaccination'],[
     ['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','',''],
 ], [1.05,0.65,1.25,1.65,1.65])
@@ -261,12 +261,13 @@ refs=[
     'U.S. Department of Health and Human Services, Office for Civil Rights. Guidance Regarding Methods for De-identification of Protected Health Information under the HIPAA Privacy Rule.',
     'U.S. Department of Health and Human Services, Office for Human Research Protections. 45 CFR part 46; guidance on coded private information and waiver/alteration of informed consent.',
 ]
-for r in refs: doc.add_paragraph(r, style='List Number')
+for i, r in enumerate(refs, 1): para(doc, f'{i}. {r}')
 
 master=OUT/'SORA_IRB_Submission_Packet_v1.0.docx'; doc.save(master)
 
-inst=setup(Document(),'SORA Clinic Data Collection Form','Protocol Version 1.0 — one row per eligible patient; no exact dates or free text')
+inst=setup(Document(),'SORA Electronic Data Collection Template','Protocol Version 1.0 — electronic spreadsheet submission; one row per eligible patient')
 footer(inst)
+para(inst,'Submission method: Enter data in the study-provided Excel workbook or equivalent CSV file and upload through the approved secure portal. Do not use paper, scanned, photographed, faxed, email-body, or handwritten submissions.')
 para(inst,'Site: __________  Site code: ______  Ascertainment period: __________  Abstractor: __________')
 para(inst,'Eligibility must be locked before Dpre/Dpost are calculated. Use administered vaccination dates only. The clinic retains source dates and the linkage key.')
 table(inst,['Clinic row ID','Sex','Age onset (mo)','Dpre (days)','Dpost (days)'],[['','','','',''] for _ in range(14)],[1.15,0.7,1.45,1.35,1.35])

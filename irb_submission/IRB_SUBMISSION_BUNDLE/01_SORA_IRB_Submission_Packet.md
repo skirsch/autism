@@ -1,13 +1,13 @@
-*Temporal Relationship Between Vaccination and Sudden-Onset Regressive
-Autism (SORA)*
+# Temporal Relationship Between Vaccination and Sudden-Onset Regressive Autism (SORA)
 
-| **Submission field** | **Draft value** |
+## Executive summary
+| **Item** | **Description** |
 |----|----|
 | Principal Investigator | Elizabeth “Liz” Mumper, M.D. \[confirm degree/title and institutional affiliation\] |
 | Sponsor / coordinating organization | Medical Academy of Pediatric Special Needs (MAPS) \[confirm legal entity\] |
 | Protocol number / version / date | \[IRB assigned\] / Version 1.0 / 11 August 2026 |
 | Study design | Retrospective, multisite medical-record review; minimal-risk secondary research |
-| Requested determination | Exempt under 45 CFR 46.104(d)(4), if applicable; otherwise expedited review with waiver of consent and HIPAA authorization |
+| Requested determination | Exempt under 45 CFR 46.104(d)(4)(ii) |
 | Study population | Children with documented ASD and narrowly defined abrupt, parent-observed developmental regression |
 
 DRAFTING NOTE. Bracketed text requires completion by the PI, relying
