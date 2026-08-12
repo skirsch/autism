@@ -67,23 +67,23 @@ clustering in this selected phenotype.
 
 ## 3. Specific aims and hypotheses
 
-1.  Aim 1: Estimate the distribution of days from the most recent
-    vaccination before onset to the first persistent, parent-observed
-    regressive behavior (Dpre). Primary hypothesis: the proportion with
-    Dpre = 0–2 days exceeds the proportion expected under the
-    prespecified within-interval null model.
+1.  Aim 1: Test whether onset timing is distributed uniformly within the
+    interval between adjacent vaccinations or is disproportionately
+    concentrated near the preceding vaccination. Primary normalized
+    measure: U = Dpre / (Dpre + Dpost). Under the primary null model,
+    onset is uniformly distributed within each observed interval and U
+    follows Uniform(0,1).
 
-2.  Aim 2: Test whether onset positions cluster near the preceding
-    vaccination after accounting for the length of each child’s interval
-    between adjacent vaccinations. Primary normalized measure: U = Dpre
-    / (Dpre + Dpost). Under the primary null model, onset is uniformly
-    distributed within each observed interval and U follows
-    Uniform(0,1).
+2.  Aim 2: Estimate and compare prespecified short-window
+    concentrations, especially Dpre = 0–2 days and Dpre = 0–7 days,
+    against their child-specific null expectations. These windows
+    provide interpretable effect estimates without defining the study’s
+    success by one arbitrary cutoff.
 
-3.  Aim 3: Describe the phenotype by age at onset and sex, and assess
-    robustness to onset certainty, source of documentation, same-day
-    coding, interval length, clinic, vaccine type/antigen count when
-    available, and alternative risk windows.
+3.  Aim 3: Describe timing patterns by age at onset and sex, and assess
+    robustness to same-day coding, interval length, alternative risk
+    windows, and other sensitivity analyses supported by the five
+    received variables.
 
 No confirmatory causal hypothesis is proposed. All language in reports
 will distinguish temporal association from causation.
@@ -219,33 +219,41 @@ products, clinic identifiers, or eligibility details leave the clinic.
 ### 9.2 Primary estimands and tests
 
 For child i, let aᵢ=Dpre, bᵢ=Dpost, Lᵢ=aᵢ+bᵢ, and Uᵢ=aᵢ/Lᵢ. The primary
-window estimand is p₂=Pr(aᵢ≤2 days). The null expected probability for
-child i is min(3/Lᵢ,1) when discrete eligible onset days are 0,…,Lᵢ−1;
-conventions will be fixed before database lock. The observed count in
-the 0–2-day window will be compared with the Poisson-binomial null
-distribution having child-specific probabilities. Report the observed
-proportion, null-expected proportion, risk ratio, risk difference, exact
-two-sided p value, and 95% confidence intervals.
+analysis evaluates whether U is Uniform(0,1) using a prespecified
+one-sample Cramér–von Mises statistic with a Monte Carlo conditional
+randomization distribution generated within each observed interval Lᵢ.
+The primary directional contrast will test excess concentration near the
+preceding vaccination using a prespecified statistic such as mean
+−log\[max(U,ε)\]. The empirical cumulative distribution and histogram of
+Dpre and U will be reported regardless of statistical significance.
 
-The co-primary distributional test evaluates whether U is Uniform(0,1)
-using a prespecified one-sample Cramér–von Mises statistic with a Monte
-Carlo conditional randomization distribution generated within each
-observed interval Lᵢ. A one-sided prespecified statistic emphasizing
-proximity after the preceding vaccination (for example, mean
-−log\[max(U,ε)\]) will be reported alongside the omnibus test.
-Multiplicity: the 0–2-day test is primary; the omnibus test is key
-secondary. If both are labeled confirmatory, Holm correction will
-control family-wise α=0.05.
+The 0–2-day and 0–7-day windows are prespecified key secondary
+estimands. For a window 0–w, the null probability for child i is
+min((w+1)/Lᵢ,1) when eligible discrete onset days are 0,…,Lᵢ−1;
+conventions will be fixed before database lock. Each observed count will
+be compared with its Poisson-binomial null distribution. Report observed
+and expected proportions, risk ratios, risk differences, 95% confidence
+intervals, and multiplicity-adjusted p values. Holm correction will
+control family-wise α=0.05 across the primary omnibus/directional test
+family and the two key windows, as finalized by the statistician before
+database lock.
 
 ### 9.3 Secondary and exploratory analyses
 
 - Risk windows 0–1, 0–2, 0–7, 8–14, and 15–30 days, with exact
-  exposure-opportunity denominators. Only 0–2 is primary; all others are
-  exploratory.
+  exposure-opportunity denominators. The 0–2 and 0–7 windows are key
+  secondary; the remaining windows are exploratory.
 
-- Empirical cumulative distribution, histogram, kernel density
-  (descriptive only), and scan statistic over prespecified window widths
-  with permutation-adjusted significance.
+- Empirical cumulative distribution, histogram, and kernel density
+  (descriptive only). A prespecified moving-window scan will evaluate
+  every contiguous window of width 1–7 days whose endpoints fall within
+  days 0–30 (for example, days 2–4). The test statistic will be the
+  largest standardized observed-minus-expected excess across all scanned
+  windows. Its p value and simultaneous uncertainty will be obtained
+  from the conditional randomization distribution of that maximum
+  statistic, thereby accounting for searching across window locations
+  and widths. The window with the largest excess will be reported as
+  data-adaptive and not as an independently prespecified effect.
 
 - Stratification by age band and sex when cell sizes permit. No subgroup
   causal claims.
@@ -555,32 +563,31 @@ disclosures: \[insert\].”
 # References
 
 1. Tan C, Frewer V, Cox G, Williams K, Ure A. Prevalence and Age of
-    Onset of Regression in Children with Autism Spectrum Disorder: A
-    Systematic Review and Meta-analytical Update. Autism Research.
-    2021;14(3):582–598. doi:10.1002/aur.2463.
+Onset of Regression in Children with Autism Spectrum Disorder: A
+Systematic Review and Meta-analytical Update. Autism Research.
+2021;14(3):582–598. doi:10.1002/aur.2463.
 
 2. Ozonoff S, et al. Changing conceptualizations of regression: What
-    prospective studies reveal about the onset of autism spectrum
-    disorder. Neuroscience & Biobehavioral Reviews. 2019. PMID:
-    30885812.
+prospective studies reveal about the onset of autism spectrum disorder.
+Neuroscience & Biobehavioral Reviews. 2019. PMID: 30885812.
 
 3. Taylor LE, Swerdfeger AL, Eslick GD. Vaccines are not associated
-    with autism: an evidence-based meta-analysis of case-control and
-    cohort studies. Vaccine. 2014;32(29):3623–3629.
-    doi:10.1016/j.vaccine.2014.04.085.
+with autism: an evidence-based meta-analysis of case-control and cohort
+studies. Vaccine. 2014;32(29):3623–3629.
+doi:10.1016/j.vaccine.2014.04.085.
 
 4. Hviid A, Hansen JV, Frisch M, Melbye M. Measles, Mumps, Rubella
-    Vaccination and Autism: A Nationwide Cohort Study. Ann Intern Med.
-    2019;170(8):513–520. doi:10.7326/M18-2101.
+Vaccination and Autism: A Nationwide Cohort Study. Ann Intern Med.
+2019;170(8):513–520. doi:10.7326/M18-2101.
 
 5. Taylor B, et al. Measles, mumps, and rubella vaccination and bowel
-    problems or developmental regression in children with autism:
-    population study. BMJ. 2002;324:393–396. PMID: 11850369.
+problems or developmental regression in children with autism: population
+study. BMJ. 2002;324:393–396. PMID: 11850369.
 
 6. U.S. Department of Health and Human Services, Office for Civil
-    Rights. Guidance Regarding Methods for De-identification of
-    Protected Health Information under the HIPAA Privacy Rule.
+Rights. Guidance Regarding Methods for De-identification of Protected
+Health Information under the HIPAA Privacy Rule.
 
 7. U.S. Department of Health and Human Services, Office for Human
-    Research Protections. 45 CFR part 46; guidance on coded private
-    information and waiver/alteration of informed consent.
+Research Protections. 45 CFR part 46; guidance on coded private
+information and waiver/alteration of informed consent.
