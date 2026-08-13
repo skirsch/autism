@@ -184,3 +184,17 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.18.
 - **Results:** Clinic-enrollment duration is governed by a prospective count rule rather than outcomes, and early data collection cannot inform selection of later clinics. The study no longer depends on incomplete purpose disclosure or routine PI access to contact identifiers.
 - **Next steps:** Convert the fixed principles into the clinic campaign SOP, consent, restricted-dashboard specification, access matrix, data-lock SOP, and formal SAP.
+## 2026-08-12 — Fixed campaign schedule, Day 0 screen, and study lock
+
+- **What we did:** Corrected the survey's Day 0 item to distinguish a discrete onset day from gradual change. Fixed each clinic campaign at invitation Day 0, reminders Days 7 and 21, and survey closure Day 35. Added a 14-day post-closure clarification period and an outcome-independent study lock 30 days after the last activated clinic closes its survey.
+- **Command / executable:** Manual `apply_patch` edits followed by targeted consistency searches and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.19.
+- **Results:** Only respondents answering Yes to the discrete-onset screen enter the SORA timing pathway. Campaign and lock timing cannot change based on response volume, SORA yield, missingness, or timing results.
+- **Next steps:** Implement the fixed schedule in the clinic campaign SOP, survey logic, clarification workflow, and formal data-lock procedure.
+## 2026-08-12 — Removed parent email and recontact linkage
+
+- **What we did:** Redesigned Version 0.20 as an anonymous-response survey: removed parent email, contact permission, identity mapping, recontact role, clarification messaging, and mapping retention. Added in-survey validation, a final review page, respondent corrections before submission, a withdraw/delete control, disclosed retention of post-consent partial responses, and no retention of pre-consent health answers. Expanded clinic recruitment legal-basis and anonymous-platform metadata requirements.
+- **Command / executable:** Manual `apply_patch` revisions; full contact-language and consistency scans; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.20.
+- **Results:** Removal of linkable contact data substantially simplifies privacy and strengthens the potential adult-survey exemption argument, while preserving breakoff measurement. The design now prospectively limits early data to a labeled pilot-feasibility report if fewer than four clinics activate by Day 90.
+- **Next steps:** Obtain IPAK-EDU's child-subject/exemption determination; finalize clinic HIPAA/legal recruitment pathways, denominator and duplicate rules, executable SORA algorithm, survey/SAP, vendor configuration, and retention schedule.
