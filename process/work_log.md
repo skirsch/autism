@@ -226,3 +226,10 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.25.
 - **Results:** The initial study remains an unlinked descriptive feasibility/data-resource survey while capturing contextual acute events and measurement quality without adding record uploads or a causal hypothesis test.
 - **Next steps:** Finalize the competing-event window, executable duplicate tree, feasibility simulation inputs, survey wording through cognitive testing, and the named interval-censored software/package in the SAP.
+## 2026-08-12 — Corrected sub-24-hour Dpre and Dpost coding
+
+- **What we did:** Removed the erroneous prohibition on same-day Dpost and replaced calendar-day counting with elapsed 24-hour intervals. Defined `Dpre = 0` as onset after vaccination by less than 24 hours and `Dpost = 0` as vaccination after onset by less than 24 hours. Unknown within-day order remains unknown.
+- **Command / executable:** Manual `apply_patch` edit; targeted Dpre/Dpost terminology scan and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.26.
+- **Results:** Sub-day temporal proximity is preserved rather than discarded, including onset two hours after vaccination.
+- **Next steps:** Use identical elapsed-time definitions and worked examples in the survey, codebook, validation tests, and SAP.

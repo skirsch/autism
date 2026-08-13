@@ -3,7 +3,7 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.25
+**Version:** 0.26
 **Date:** 12 August 2026
 
 1. Sponsor is CHD. PI is Brian Hooker.
@@ -422,19 +422,20 @@ these respondents and avoid collecting unnecessary vaccination timing.
 
 - whether any vaccination was administered before or on SORA Day 0:
   Yes, No, or Unknown;
-- the number of complete calendar days from the most recent vaccination
-  before/on onset to Day 0 when an exact interval is known (`0` means the
-  same calendar day);
-- when an exact Dpre interval is not known, one structured range: same
-  day, 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more than 90 days, or Unknown;
+- the number of complete 24-hour periods from the most recent vaccination
+  before onset to Day 0 when an exact interval is known (`0` means onset
+  occurred after the vaccination but less than 24 hours later);
+- when an exact Dpre interval is not known, one structured range: less
+  than 1 day, 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more than 90 days, or
+  Unknown;
 - whether a vaccination was administered after Day 0: Yes; No, with
   adequate follow-up; No follow-up sufficient to know; or Parent does not
   know;
-- the exact number of complete calendar days to the first vaccination
-  after Day 0, or one structured Dpost range when an exact interval is
-  not known: 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more than 90 days, or
-  Unknown. Same-day Dpost is not allowed because within-day ordering is
-  not collected; and
+- the exact number of complete 24-hour periods to the first vaccination
+  after onset, or one structured Dpost range when an exact interval is
+  not known: less than 1 day, 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more
+  than 90 days, or Unknown (`Dpost = 0` means the vaccination occurred
+  after onset but less than 24 hours later); and
 - for each timing answer, whether the respondent consulted a vaccination
   card, patient portal, pediatric record, immunization registry, or
   relied on memory/another source, plus parent confidence.
@@ -447,10 +448,13 @@ encourage parents to consult a record when feasible but will preserve
 record-based, remembered, estimated, ranged, and unknown answers as
 distinct categories.
 
-`Dpre = 0` means only that the vaccination and the first obvious
-persistent change occurred on the same calendar day. The study will not
-infer or claim which occurred first within that day. The same principle
-applies to any other same-day event comparison.
+`Dpre = 0` means the parent reports that vaccination occurred first and
+the first obvious persistent change began less than 24 hours later.
+`Dpost = 0` means the parent reports that onset occurred first and the
+next vaccination occurred less than 24 hours later. These values preserve
+within-day proximity; the study will not discard them merely because the
+events occurred on the same date. If the parent cannot establish order,
+the response is coded as unknown rather than assigned to Dpre or Dpost.
 
 ### Other acute events around Day 0
 
@@ -891,7 +895,7 @@ adapted but is not yet valid for this redesigned parent-survey study.
 | B8 | Electronic information/consent language explicitly disclosing developmental changes, vaccination history, and their timing, plus CHD role, data holder, unlinked-response limits, partial-response retention, inability to withdraw after submission, data release, funding, and COI | Controlling disclosure principles fixed; new parent-facing consent required |
 | B9 | Progressive question-display specification and any IPAK-required revised disclosure or end-of-survey explanation | Study does not depend on altered consent; final language pending IPAK review |
 | B10 | Complete electronic survey, including the all-respondent developmental-pattern item, elapsed-time-since-onset/change categories, Day 0 confidence, persistence screen, competing acute-event module, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | Core new domains fixed; new survey instrument and cognitive testing required |
-| B11 | Exact/ranged vaccination-interval and source-of-information questions, same-day rules, separate later-vaccination/follow-up/unknown states, parent confidence, and Dpre/Dpost bound derivation | Core interval/status rules fixed; parent-facing implementation and test cases required |
+| B11 | Exact/ranged vaccination-interval and source-of-information questions, sub-24-hour (`0`) rules, separate later-vaccination/follow-up/unknown states, parent confidence, and Dpre/Dpost bound derivation | Core interval/status rules fixed; parent-facing implementation and test cases required |
 | B12 | Unlinked-response final-review workflow, on-screen validation prompts, pre-submission corrections, disclosed retention of post-consent partial responses, active withdraw/delete control, abandonment timeout, and audit trail without direct identifiers | Core rules fixed; new workflow required |
 | B13 | Duplicate-prevention and adjudication plan for repeat submissions, siblings, multiple guardians, forwarded links, and multiple-clinic invitations | Privacy-minimizing questions and no-silent-merge principle fixed; outcome-blinded adjudication tree and sensitivity rules required |
 | B14 | Paradata and breakoff specification, consent for incomplete-response retention, timing granularity, and tracking-technology prohibition | New rule and instrument specification required |
