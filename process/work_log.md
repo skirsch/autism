@@ -63,3 +63,59 @@
 - **Outputs:** Updated protocol Markdown/DOCX and synchronized recruitment, waiver, privacy, funding/COI, and external-items documents in `irb_submission/IRB_SUBMISSION_BUNDLE`.
 - **Results:** Methodological choices no longer depend on later statistician selection or observed outcomes; only institution-, personnel-, funding-, and site-specific facts remain for completion.
 - **Next steps:** Obtain institutional/site determinations, identify the actual secure systems and responsible officials in activation records, complete personnel/COI/funding fields, and have the PI and analyst sign the frozen plan before database lock.
+
+## 2026-08-12 — Google Docs IRB protocol output
+
+- **What we did:** Transferred the canonical Version 1.2 main IRB submission document into the user-specified blank Google Doc and applied native title, heading, bulleted-list, numbered-list, and shaded table-row formatting.
+- **Command / executable:** Google Drive `get_document`, `batch_update_document`, document-text readback, and PDF/HTML export checks.
+- **Outputs:** `https://docs.google.com/document/d/18cDu3U1KKrFIALAnOxeDpXjO32OK43QHsfSmX5kiOvk`
+- **Results:** Connector readback confirmed the correct document ID/title/tab, 38,284 document characters, the complete section sequence through References, and native heading/list structure. PDF and HTML exports completed successfully; local raster inspection of the exported PDF was unavailable.
+- **Next steps:** Complete the bracketed PI, institution, IRB, funding, and conflict-of-interest fields before submission.
+
+## 2026-08-12 — CHD SORA data-resource study definition
+
+- **What we did:** Created a separate executive summary defining the proposed CHD-sponsored, Brian Hooker-led multisite SORA data-resource study. Specified first-10-site activation, complete site ascertainment, three SORA change categories, optional documented ASD support level, minimal row-level fields, site screening counts, descriptive outputs, versioned releases, and public/controlled-access data pathways.
+- **Command / executable:** Targeted repository search and `apply_patch` authoring.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md`.
+- **Results:** The CHD study is now defined independently from the existing MAPS analytic protocol; no existing protocol was overwritten.
+- **Next steps:** Confirm the three-category wording, Brian Hooker's exact credentials, CHD legal entity and infrastructure, reviewing IRB, recruitment/data-cutoff dates, and disclosure-access model before producing the detailed IRB packet.
+
+## 2026-08-12 — Corrected CHD SORA categories
+
+- **What we did:** Corrected the CHD executive summary after an erroneous interpretation of the three SORA categories as ASD diagnostic domains.
+- **Command / executable:** Targeted `apply_patch` edit.
+- **Outputs:** Updated Version 0.2 of `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md`.
+- **Results:** The three authoritative categories are now acquisition of a new pathological behavior, loss of an existing behavior or skill, and change in sensory sensitivity; corresponding dataset indicators and descriptive outputs were corrected.
+- **Next steps:** Use only these three category definitions when creating the CHD IRB packet and electronic instrument.
+
+## 2026-08-12 — ASD support-level rule
+
+- **What we did:** Removed the mixed/by-domain ASD-level category and specified collection of the highest documented ASD support level.
+- **Command / executable:** Targeted `apply_patch` edit.
+- **Outputs:** Updated Version 0.3 of the CHD study executive summary.
+- **Results:** Allowed values are 1, 2, 3, or not documented; clinic staff never infer a level.
+- **Next steps:** Carry this exact rule into the data dictionary and electronic instrument.
+
+## 2026-08-12 — Seven-day SORA category fields
+
+- **What we did:** Replaced the three general category indicators with three parent-observed Day 0–6 fields and specified Yes/No/Not documented coding.
+- **Command / executable:** Targeted `apply_patch` edit.
+- **Outputs:** Updated Version 0.4 of the CHD study executive summary.
+- **Results:** At least one category must be Yes; No requires adequate negative documentation; missing or ambiguous documentation is Not documented; the exact Day 0 onset requirement remains unchanged.
+- **Next steps:** Carry the field names, window, and validation rules into the CHD data dictionary and electronic collection instrument.
+
+## 2026-08-12 — Closed CHD executive-summary ambiguities
+
+- **What we did:** Added the 0–60-month onset range, clarified retrospective ascertainment locking, added a Day 0/Day 4 example, specified recruitment shortfall and withdrawal rules, defined sex values, retained vaccination-unknown cases under a three-state rule, added `dpost_status`, clarified 24-month-of-age counts, and removed selected cumulative Dpre windows from the initial data-resource publication.
+- **Command / executable:** Targeted `apply_patch` edit and consistency checks.
+- **Outputs:** Updated Version 0.5 of the CHD study executive summary.
+- **Results:** Vaccination missingness and post-onset follow-up now have explicit machine-readable treatment; the initial publication remains descriptive and does not embed a timing-window hypothesis.
+- **Next steps:** Carry Version 0.5 into the CHD data dictionary, workbook, and IRB packet after the remaining organization-specific facts are confirmed.
+
+## 2026-08-12 — CHD summary consistency nits
+
+- **What we did:** Removed the assumption that exactly 10 sites activate from the record-enrollment section and clarified that vaccination-history-unknown records are an eligible/transmitted subset rather than exclusions.
+- **Command / executable:** Targeted `apply_patch` edit.
+- **Outputs:** Updated Version 0.6 of the CHD study executive summary.
+- **Results:** The enrollment language now matches the permitted two-to-ten-site outcome, and screening-flow reporting cannot be misread as excluding vaccination-unknown cases.
+- **Next steps:** Use Version 0.6 as the planning definition for the CHD IRB packet.
