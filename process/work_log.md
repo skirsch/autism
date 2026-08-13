@@ -212,3 +212,17 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.23.
 - **Results:** Distribution is no longer conditioned on ASD diagnosis or suspected regression, improving recruitment-composition assessment and preventing clinics from excluding evaluated children without ASD.
 - **Next steps:** Define the clinic's complete patient-population boundaries and the limited survey branch for respondents reporting no or unknown ASD diagnosis.
+## 2026-08-12 — Corrected synopsis inference language
+
+- **What we did:** Replaced the causal “pile up within 2 days” statement with a neutral statement that third parties may evaluate the observed temporal pattern against a prespecified null hypothesis while accounting for the survey's limitations.
+- **Command / executable:** Manual `apply_patch` edit; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.24.
+- **Results:** The synopsis now matches the descriptive initial-study scope and leaves later hypothesis testing to separately specified third-party analyses.
+- **Next steps:** Any later analysis must define and justify its null model prospectively rather than treating a uniform timing distribution as automatic.
+## 2026-08-12 — Added measurement-quality and competing-event safeguards
+
+- **What we did:** Added a mechanical 30-day/later-evaluation persistence rule, Day 0 confidence, a short structured competing acute-event module, feasibility-yield simulations, recall-horizon and record-source stratification, detailed clinic contact-coverage metrics, privacy-minimizing duplicate questions, separated Dpost follow-up states, prespecified interval-censoring requirements, and early disclosure-risk review.
+- **Command / executable:** Manual `apply_patch` edits; targeted content and contradiction review; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.25.
+- **Results:** The initial study remains an unlinked descriptive feasibility/data-resource survey while capturing contextual acute events and measurement quality without adding record uploads or a causal hypothesis test.
+- **Next steps:** Finalize the competing-event window, executable duplicate tree, feasibility simulation inputs, survey wording through cognitive testing, and the named interval-censored software/package in the SAP.

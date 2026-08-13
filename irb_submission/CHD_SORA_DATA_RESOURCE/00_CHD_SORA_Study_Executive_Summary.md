@@ -3,7 +3,7 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.23
+**Version:** 0.25
 **Date:** 12 August 2026
 
 1. Sponsor is CHD. PI is Brian Hooker.
@@ -11,7 +11,7 @@
 3. Each clinic emails every contactable parent or guardian in its defined patient population a link to the survey. We never receive the clinic's mailing list.
 4. The parent fills out the survey.
 5. We publish privacy-protected, de-identified data for the public to analyze.
-6. If vaccines cause autism, there will be a statistically significant pile up of autism onset within 2 days post vaccination.
+6. The data produced by this study can be analyzed by third parties to evaluate whether the observed temporal pattern is consistent with a prespecified null hypothesis, while accounting for the study's voluntary-response, parent-report, missingness, and measurement limitations.
 
 ## 1. Study identity
 
@@ -80,6 +80,14 @@ will permit later investigators to assess feasibility, plan sample size,
 and improve—not silently alter—the method in prospectively versioned
 replications.
 
+Before outcome access, the study team will run feasibility-yield
+simulations across prespecified ranges of clinic distribution size,
+delivery rate, survey-start rate, consent and completion rates,
+parent-reported ASD frequency, SORA-screen yield, and exact-versus-ranged
+timing availability. These simulations will estimate the likely size and
+precision of the descriptive resource; they will not be presented as
+power calculations for a causal or confirmatory 0–2-day hypothesis test.
+
 ## 4. Parent and child eligibility
 
 A response is eligible for the SORA analytic resource when all of the
@@ -97,11 +105,14 @@ following are satisfied:
   remembered; and
 - at least one of the three SORA categories below is reported during Day
   0 through Day 6, with at least one qualifying category beginning on
-  Day 0.
+  Day 0; and
+- the qualifying change either remained present for at least 30 days or
+  was documented or remembered as an enduring change still present at a
+  later clinical evaluation.
 
-The final protocol must define how respondents confirm the ASD diagnosis,
-how competing explanations and pre-existing developmental concerns are
-handled, and the operational minimum for “persistent.” No child assent is
+The final protocol must define how respondents confirm the ASD diagnosis
+and how competing explanations and pre-existing developmental concerns
+are handled. No child assent is
 sought because children are not contacted or asked to complete research
 procedures. IPAK-EDU IRB will determine whether and how information about
 the child affects the applicable regulatory pathway.
@@ -139,6 +150,15 @@ The qualifying change must be obvious rather than a gradual or
 retrospectively approximated developmental difference. Transient fever,
 irritability, appetite change, sleep disturbance, or another short-lived
 symptom alone does not qualify.
+
+For eligibility, `persistent` means that the qualifying developmental,
+behavioral, skill, or sensory change either continued for at least 30
+days or was still present and recognized as an enduring change at a later
+clinical evaluation. A symptom that resolved within 30 days does not
+qualify by itself. `Not sure` does not satisfy the persistence criterion.
+A transient illness may precede an enduring qualifying change; in that
+case Day 0 is the day the first enduring qualifying change became
+obvious, not automatically the first day of fever or illness.
 
 Example: if loss of language becomes obvious and persistent on Day 0 and
 a new pathological behavior first appears on Day 4, both corresponding
@@ -214,9 +234,11 @@ Each clinic will conduct a standardized campaign consisting of:
    the same population, subject to the same rules;
 4. closure of that clinic's parent survey on Campaign Day 35;
 5. management of undeliverable messages and opt-outs under clinic policy;
-6. provision of aggregate counts for intended recipients, messages sent,
-   messages delivered where available, undeliverable messages, and
-   reminders; and
+6. provision of frozen aggregate counts for unique patients/children in
+   the defined population, unique intended parent/guardian recipients,
+   contactable coverage percentage, messages attempted, messages
+   delivered where available, undeliverable messages, opt-outs, and each
+   reminder; and
 7. signed certification of complete, nonselective distribution.
 
 CHD will not receive recipient identities or learn which individual
@@ -362,6 +384,8 @@ tested on desktop and mobile devices. Proposed domains are:
 - onset-age source and precision: contemporaneous record or message,
   developmental/medical record, memory, or other; exact, best estimate,
   range only, or unknown;
+- confidence in identifying the discrete Day 0: Very sure, Somewhat
+  sure, Not very sure, or Not sure;
 - elapsed time from the parent-recognized onset or developmental change
   to survey completion, reported in broad prespecified categories rather
   than an event date (for example, less than 1 year, 1–2, 3–5, 6–10,
@@ -369,8 +393,9 @@ tested on desktop and mobile devices. Proposed domains are:
 - `new_pathological_behavior_within_7d`: Yes, No, or Not sure;
 - `loss_existing_behavior_or_skill_within_7d`: Yes, No, or Not sure;
 - `change_in_sensory_sensitivity_within_7d`: Yes, No, or Not sure; and
-- structured questions needed to distinguish persistent change from a
-  transient symptom.
+- whether the qualifying change continued for at least 30 days, was
+  present at a later clinical evaluation, resolved within 30 days, or is
+  not known.
 
 At least one SORA category must begin on Day 0. Additional categories may
 first appear during Day 1 through Day 6. The survey will explain this
@@ -402,11 +427,14 @@ these respondents and avoid collecting unnecessary vaccination timing.
   same calendar day);
 - when an exact Dpre interval is not known, one structured range: same
   day, 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more than 90 days, or Unknown;
-- whether a vaccination was administered after Day 0: Yes, No, or
-  Unknown/insufficient follow-up;
+- whether a vaccination was administered after Day 0: Yes; No, with
+  adequate follow-up; No follow-up sufficient to know; or Parent does not
+  know;
 - the exact number of complete calendar days to the first vaccination
-  after Day 0, or the same structured range when an exact Dpost interval
-  is not known; and
+  after Day 0, or one structured Dpost range when an exact interval is
+  not known: 1–2, 3–4, 5–7, 8–14, 15–30, 31–90, more than 90 days, or
+  Unknown. Same-day Dpost is not allowed because within-day ordering is
+  not collected; and
 - for each timing answer, whether the respondent consulted a vaccination
   card, patient portal, pediatric record, immunization registry, or
   relied on memory/another source, plus parent confidence.
@@ -423,6 +451,26 @@ distinct categories.
 persistent change occurred on the same calendar day. The study will not
 infer or claim which occurred first within that day. The same principle
 applies to any other same-day event comparison.
+
+### Other acute events around Day 0
+
+After vaccination timing, the survey will ask whether any of the
+following occurred close to Day 0:
+
+- febrile illness or infection;
+- initiation of a medication or a major medication change;
+- injury, surgery, anesthesia, or another medical procedure;
+- another major acute health event;
+- none known; or
+- not sure.
+
+For each selected event, the parent will report whether it occurred
+before Day 0, on the same calendar day, or after Day 0; an exact elapsed
+interval or the applicable structured range; information source; and
+confidence. These are contextual competing-event measures, not a control
+group or proof of an alternative cause. No narrative free text will be
+requested. The SAP will define the maximum look-back/look-forward window
+and mechanically distinguish no event from unknown history.
 
 ### Derived analytic fields
 
@@ -508,6 +556,22 @@ identifiers, or silent merging. Suspected duplicates that cannot be
 resolved without identity will remain flagged and will be handled under
 prespecified analytic rules.
 
+The survey will ask, without requesting identity:
+
+- whether this respondent has previously submitted this survey for this
+  child;
+- whether another parent or guardian may already have submitted for this
+  child;
+- whether the respondent is reporting more than one child, using a
+  separate response for each child; and
+- whether the invitation was received through more than one clinic.
+
+Affirmative or uncertain answers will create duplicate-risk flags, not
+automatic exclusions. The frozen adjudication tree will specify when to
+retain all reports as separate parent-child responses, select one under
+an outcome-blinded rule, or exclude unresolved probable duplicates from
+child-level counts while preserving them in sensitivity summaries.
+
 ## 12. Validation and data quality
 
 Automated checks will cover required fields, allowed values, plausible
@@ -520,7 +584,7 @@ inconsistent with a study hypothesis.
 Before clinic enrollment closes and the prespecified data lock occurs,
 quality-control personnel may monitor completeness, missingness, allowed
 values, impossible ranges, cross-field errors, duplicate indicators,
-query status, and system performance. Routine pre-lock dashboards and
+on-screen validation flags, and system performance. Routine pre-lock dashboards and
 reports will not display Dpre/Dpost histograms, peaks, cumulative timing
 windows, site comparisons, or other substantive outcome distributions.
 Outcome-aware exclusions, cleaning rules, eligibility changes, and
@@ -539,7 +603,7 @@ with IRB notification or approval as required.
 
 After lock, the prespecified descriptive outputs may be generated and
 reviewed by the PI and approved study team. An independent statistician
-or data-governance reviewer should confirm the lock and reproduce or
+or data-governance reviewer will confirm the lock and reproduce or
 verify the first substantive timing report. The original response,
 on-screen validation flags, respondent correction before submission, and
 applicable audit history will be preserved without retaining direct
@@ -584,6 +648,8 @@ Prespecified outputs will include:
   stated explicitly for any external benchmark;
 - elapsed-time-since-onset/change categories and timing completeness by
   elapsed-time category;
+- exact and ranged Dpre/Dpost summaries stratified by prespecified
+  elapsed-time-since-onset categories and record-versus-memory source;
 - age-at-onset distribution;
 - counts meeting each SORA category and observed category combinations;
 - reported ASD support-level distribution;
@@ -598,6 +664,21 @@ Selected cumulative Dpre windows, confirmatory hypothesis tests, causal
 claims, vaccine-attributable risk, and population-incidence estimates are
 outside the initial data-resource publication. Site-specific results will
 be displayed only when permitted by disclosure-risk review.
+
+The initial report will not preferentially weight or highlight a recent-
+onset subgroup because its pattern appears stronger after lock. Recall-
+horizon strata and record-source sensitivity summaries will be specified
+in the SAP before outcome access. The report will characterize the
+voluntary respondent cohort and will not treat these strata as estimates
+for all clinic patients or all children with SORA.
+
+Exact-day observations and ranged observations will first be tabulated
+separately. If an interval-censored distribution is included, the SAP
+will prespecify a nonparametric interval-censored estimator, treatment of
+open-ended responses such as more than 90 days as right-censored, and
+the software, package, and version. The analysis code and synthetic test
+cases will be frozen before outcome access. No range will be converted
+to an artificial midpoint.
 
 ## 14. Privacy, security, and regulatory characterization
 
@@ -645,6 +726,15 @@ analytics, and model training, and apply documented access, retention,
 deletion, backup, subprocessor, referrer, and incident controls.
 
 ## 15. Data release and access
+
+An independent disclosure-risk expert will be engaged during protocol
+and instrument finalization, before outcome data are available. The
+expert will define provisional rules for site removal or pooling, age and
+timing binning or top-coding, rare-combination treatment, small-cell
+suppression, and release review. Final approval must still be applied to
+the exact proposed release file, but protective transformations may not
+be loosened or selectively changed because of the observed timing
+pattern.
 
 Every release will have a version number, cutoff date, clinic count,
 record count, instrument/data-dictionary version, validation report, and
@@ -791,22 +881,22 @@ adapted but is not yet valid for this redesigned parent-survey study.
 
 | # | Item | Status |
 |---|---|---|
-| B1 | Final adult-parent and child eligibility/exclusion rules, including ASD confirmation, prior development, competing explanations, diagnosis timing, deceased children, and “persistent” | Substantial SORA source language exists; parent-survey rules require completion |
+| B1 | Final adult-parent and child eligibility/exclusion rules, including ASD confirmation, prior development, competing explanations, diagnosis timing, and deceased children | **Persistence rule fixed:** at least 30 days or still present at a later clinical evaluation; remaining parent-survey rules require completion |
 | B2 | Exact age-at-onset boundary and validation rule | Decision required: reconcile “through 60 completed months” with the exact maximum derived day |
 | B3 | Clinic source-population definition: date, active/former patient status, age range, complete inclusion of patients with and without an ASD diagnosis, contactability, multiple guardians, undeliverables, affiliated-network treatment, and separate evidence for at least 500 ASD-diagnosed patients | Threshold and universal clinic-population distribution rule fixed; detailed verification rules required |
 | B4 | First-10 activation procedure, initial 30-day period, automatic minimum-four extension through no later than Day 90, early clinic campaign start, sub-four pilot-data rule, withdrawal/replacement rule, activation-order log, and outcome-blinding controls | Core rules fixed in Section 6; operational SOP and dates required |
-| B5 | Clinic recruitment campaign specification: clinic-branded invitation on Day 0, reminders on Days 7 and 21, closure on Day 35, approved channels, opt-outs, and aggregate metrics | Schedule fixed in Section 6; detailed campaign SOP required |
+| B5 | Clinic recruitment campaign specification: clinic-branded invitation on Day 0, reminders on Days 7 and 21, closure on Day 35, approved channels, opt-outs, and frozen unique-patient, unique-recipient, contactable-coverage, attempted, delivered, undeliverable, and reminder metrics | Schedule and metric classes fixed in Section 6; detailed campaign SOP required |
 | B6 | Clinic agreement, $5,000 completion checklist, payment timing, rejection/cure procedure, and final campaign attestation | Earlier agreement concepts reusable; recruitment-campaign terms are new |
 | B7 | Clinic-branded neutral invitation, reminders, FAQ, call script, and prohibition on selective distribution or outcome-oriented claims | Branding and neutrality fixed; earlier outreach drafts require substantial redesign |
 | B8 | Electronic information/consent language explicitly disclosing developmental changes, vaccination history, and their timing, plus CHD role, data holder, unlinked-response limits, partial-response retention, inability to withdraw after submission, data release, funding, and COI | Controlling disclosure principles fixed; new parent-facing consent required |
 | B9 | Progressive question-display specification and any IPAK-required revised disclosure or end-of-survey explanation | Study does not depend on altered consent; final language pending IPAK review |
-| B10 | Complete electronic survey, including the all-respondent developmental-pattern item, elapsed-time-since-onset/change categories, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | Core new domains fixed; new survey instrument and cognitive testing required |
-| B11 | Exact/ranged vaccination-interval and source-of-information questions, same-day rules, unknown status, parent confidence, and Dpre/Dpost bound derivation | Prior interval rules reusable; parent-facing exact/range collection rules are new |
+| B10 | Complete electronic survey, including the all-respondent developmental-pattern item, elapsed-time-since-onset/change categories, Day 0 confidence, persistence screen, competing acute-event module, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | Core new domains fixed; new survey instrument and cognitive testing required |
+| B11 | Exact/ranged vaccination-interval and source-of-information questions, same-day rules, separate later-vaccination/follow-up/unknown states, parent confidence, and Dpre/Dpost bound derivation | Core interval/status rules fixed; parent-facing implementation and test cases required |
 | B12 | Unlinked-response final-review workflow, on-screen validation prompts, pre-submission corrections, disclosed retention of post-consent partial responses, active withdraw/delete control, abandonment timeout, and audit trail without direct identifiers | Core rules fixed; new workflow required |
-| B13 | Duplicate-prevention and adjudication plan for repeat submissions, siblings, multiple guardians, and multiple-clinic invitations | New rule required |
+| B13 | Duplicate-prevention and adjudication plan for repeat submissions, siblings, multiple guardians, forwarded links, and multiple-clinic invitations | Privacy-minimizing questions and no-silent-merge principle fixed; outcome-blinded adjudication tree and sensitivity rules required |
 | B14 | Paradata and breakoff specification, consent for incomplete-response retention, timing granularity, and tracking-technology prohibition | New rule and instrument specification required |
 | B15 | Automated validation, missingness, query resolution, exclusion, analytic-inclusion, pre-lock outcome-blinding, restricted-dashboard, and audit-trail SOP | Core blinding principles fixed; earlier validation concepts reusable but must be rebuilt for survey data |
-| B16 | Statistical/descriptive analysis plan for recruitment flow, response rates, developmental-pattern composition, any external benchmark, elapsed-time/recall-quality assessment, breakoff, SORA variables, timing distributions, source-quality flags, interval-censored responses, and independent first-report verification | Draft from Sections 12–13; formal SAP required |
+| B16 | Feasibility-yield simulations and statistical/descriptive analysis plan for recruitment flow, response rates, developmental-pattern composition, any external benchmark, elapsed-time and record-source strata, breakoff, SORA variables, competing acute events, exact/ranged timing distributions, prespecified interval-censored estimator/software, and independent first-report verification | Core principles fixed in Sections 3 and 12–13; formal simulations and SAP required |
 | B17 | Data lock 30 days after the last activated clinic's Day 35 closure; outcome-independent lock, version control, correction before submission, unlinked-response withdrawal limits, incident-pause, and retraction SOP | Lock timing and outcome-independence fixed; formal SOP required |
 | B18 | Privacy/security plan for directly unlinked survey responses, consent records, operational metadata, access roles, encryption, MFA, logs, backups, exports, incidents, retention, and destruction | Earlier security draft reusable; unlinked survey architecture and named infrastructure required |
 | B19 | Public-release and controlled-access governance, disclosure-risk expert, DUA, license, correction policy, and enforcement | Earlier release safeguards reusable; complete process required |
@@ -863,7 +953,7 @@ status.
 
 | # | Item | Status |
 |---|---|---|
-| F1 | Independent qualified disclosure-risk expert or qualifying engagement | Pending before any exact row-level public release |
+| F1 | Independent qualified disclosure-risk expert or qualifying engagement | Required during protocol/instrument finalization, before outcome data are available |
 | F2 | Expert determination on the exact proposed release file and required transformations | Pending final file |
 | F3 | Controlled-access operator, access committee, application, DUA, security requirements, and enforcement | Draft/process required; operator pending |
 | F4 | Public repository for protocol, closed survey instrument, codebook, aggregate results, code, synthetic data, metadata, and change log | Pending selection |
@@ -874,7 +964,9 @@ status.
 - **Before IRB submission:** close material B decisions; identify the
   proposed platform and security architecture; complete required CHD
   personnel, funding, compensation, and COI disclosures; and obtain
-  IPAK-EDU submission/service information.
+  IPAK-EDU submission/service information. Engage the disclosure-risk
+  expert early enough for provisional release rules to inform the final
+  instrument, data dictionary, and consent.
 - **Before clinic recruitment beyond IRB-permitted feasibility contact:**
   obtain the applicable IPAK-EDU determination and use only approved
   clinic materials.
@@ -882,8 +974,8 @@ status.
   500-patient threshold, lawful distribution authority, local regulatory
   pathway, and technical capability.
 - **Before parent recruitment:** approve and test the exact invitation,
-  reminders, consent, survey, unlinked final-review workflow, privacy notices, and
-  platform configuration.
+  reminders, consent, survey, unlinked final-review workflow, privacy
+  notices, and platform configuration.
 - **Before data collection:** verify role access, security controls,
   retention settings, paradata settings, tracking prohibition, and
   incident procedures.
