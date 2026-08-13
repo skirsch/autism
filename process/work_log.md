@@ -177,3 +177,10 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.17.
 - **Results:** The design reduces identification risk and parent date-recall burden while preserving exact intervals where available and honest interval censoring elsewhere.
 - **Next steps:** Finalize the precise onset-age ranges, interval response UI, validation rules, and interval-censored descriptive/statistical methods in the survey and SAP.
+## 2026-08-12 — Implemented design-review safeguards and minimum-four enrollment
+
+- **What we did:** Implemented the approved external-review recommendations: clinic-branded recruitment; explicit vaccination-purpose consent; discrete Day 0 and same-day non-ordering rules; justified 500-contactable-ASD-patient threshold; contact-table access limited to recontact/custodian roles; generic university replication; future separate record validation; and pre-lock outcome blinding with independent first-report verification. Added an initial 30-day clinic-enrollment period that automatically extends only when fewer than four clinics activate, ending at the fourth activation or Day 90, with a maximum of 10 clinics. Fully activated clinics may begin campaigns early while substantive results remain sequestered.
+- **Command / executable:** Manual `apply_patch` revisions; targeted legacy/consistency searches and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.18.
+- **Results:** Clinic-enrollment duration is governed by a prospective count rule rather than outcomes, and early data collection cannot inform selection of later clinics. The study no longer depends on incomplete purpose disclosure or routine PI access to contact identifiers.
+- **Next steps:** Convert the fixed principles into the clinic campaign SOP, consent, restricted-dashboard specification, access matrix, data-lock SOP, and formal SAP.

@@ -3,7 +3,7 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.17
+**Version:** 0.18
 **Date:** 12 August 2026
 
 ## 1. Study identity
@@ -13,8 +13,8 @@
 | Working title | Multisite Parent-Reported Data Resource of Sudden-Onset Regressive Autism (SORA) |
 | Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation]; has accepted this role |
 | Sponsor/coordinating organization | Children's Health Defense (CHD) [confirm legal entity]; has accepted this role |
-| Participating clinics | Up to the first 10 qualifying clinics to complete all activation requirements during a 30-calendar-day clinic-enrollment period |
-| Clinic capacity requirement | At least 500 unique patients with a documented ASD diagnosis in the clinic's defined source population |
+| Participating clinics | Target of 4–10 activated clinics; initial 30-calendar-day enrollment period with a prospectively defined automatic extension, if needed, until the fourth clinic activates or Day 90, whichever occurs first |
+| Clinic capacity requirement | At least 500 unique patients with a documented ASD diagnosis and at least one contactable adult parent or guardian in the clinic's defined distribution population |
 | Study type | Minimal-risk, multisite, clinic-distributed, parent-completed electronic survey and data-resource study |
 | Primary purpose | Create, validate, document, and release a privacy-protected parent-reported dataset for subsequent independent analysis |
 | Initial publication | Recruitment, cohort, missingness, data-quality, and descriptive report—not a causal analysis |
@@ -37,15 +37,19 @@ confirmed before IRB submission.
 
 | Role | Person | Responsibility | Permitted access |
 |---|---|---|---|
-| Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation] | Protocol compliance, clinic activation, IRB reporting, survey oversight, and release authorization | Clinic identities, coded survey data, aggregate recruitment metrics, and audit records; access to the email mapping only when required for oversight and approved by the IRB |
+| Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation] | Protocol compliance, clinic activation, IRB reporting, survey oversight, and release authorization | Clinic identities, coded survey data after the applicable lock, aggregate recruitment metrics, and audit records; no routine access to the email mapping |
 | Clinic outreach and activation | Ben Jackson; Mila Radetich | Clinic recruitment, activation queue, agreements, and campaign completion tracking | Clinic contacts, agreements, and aggregate campaign metrics; no parent email addresses or survey responses |
-| Data management and quality monitoring | Karl Jablonowski; Steve Kirsch | Survey validation, standardized clarification queries, missingness monitoring, version control, and data-quality reporting | Coded survey responses; no parent email addresses unless separately designated and authorized for recontact |
+| Data management and quality monitoring | Karl Jablonowski; Steve Kirsch | Prespecified mechanical validation, missingness monitoring, version control, and data-quality reporting | Before lock, only the minimum coded fields or blinded technical reports required for mechanical quality control; no parent email addresses and no substantive timing distributions |
 | Recontact coordinator | TBD | Send standardized clarification requests through the secure system | Separate contact table and minimum survey context needed to issue a query; no general analytic role |
 | CHD data custodian | TBD | Approved survey/storage environment, access control, retention, mapping destruction, and incident response | System-administration access under documented controls |
 
 Access will follow least-privilege rules. The contact table will not be
 available to analysts, clinic outreach personnel, funders, or public- or
-controlled-access data users.
+controlled-access data users. Routine mapping access will be limited to
+the recontact coordinator and data custodian. PI access may occur only
+for a documented security incident, participant-protection need, or
+regulatory necessity; the reason, scope, and access will be logged and
+reviewed.
 
 ## 3. Study objective and scope
 
@@ -83,9 +87,10 @@ following are satisfied:
 - the child subsequently received a clinical ASD diagnosis;
 - parent-recognized SORA onset occurred from birth through 60 completed
   months of age;
-- the parent identifies a specific recognizable day (Day 0) on which the
-  first obvious, dramatic, and persistent change began, even if the
-  parent no longer remembers its calendar date; and
+- the parent can distinguish a discrete onset day (Day 0), on which the
+  first obvious, dramatic, and persistent change began, from a gradual
+  period of change, even if the historical calendar date is no longer
+  remembered; and
 - at least one of the three SORA categories below is reported during Day
   0 through Day 6, with at least one qualifying category beginning on
   Day 0.
@@ -102,9 +107,10 @@ the child affects the applicable regulatory pathway.
 For this study, SORA is an abrupt, dramatic, and persistent change first
 recognized by a parent or primary caregiver in a child whose prior
 development had been described as typical or meeting expected
-milestones. The parent must identify a specific recognizable day (Day 0)
-on which the first obvious persistent change began. Remembering the
-calendar date is not required, and the survey will not collect it.
+milestones. The parent must be able to distinguish a discrete onset day
+(Day 0), on which the first obvious persistent change began, from a
+gradual period of change. Remembering the historical calendar date is
+not required, and the survey will not collect it.
 
 The child must exhibit a dramatic rapid change in at least one of these
 three categories:
@@ -138,12 +144,13 @@ qualify.
 
 ## 6. Clinic eligibility, activation, and recruitment campaign
 
-CHD will use IRB-approved materials during a 30-calendar-day clinic-
-enrollment period. The study will activate up to the first 10 clinics
-that:
+CHD will use IRB-approved materials during an initial 30-calendar-day
+clinic-enrollment period. The study targets 4–10 activated clinics and
+will activate up to the first 10 clinics that:
 
-- document a defined population containing at least 500 unique patients
-  with an ASD diagnosis;
+- document a defined distribution population containing at least 500
+  unique patients with an ASD diagnosis and at least one contactable
+  adult parent or guardian;
 - can distribute the approved electronic invitation to the complete
   contactable parent or guardian population without disclosing the list
   to CHD;
@@ -160,11 +167,34 @@ activated clinic withdraws before beginning its campaign, the next fully
 qualified clinic in activation order may replace it. Clinic selection or
 replacement may not depend on survey responses or preliminary results.
 
+Clinic enrollment will close when 10 clinics activate. If at least four
+but fewer than 10 clinics activate by Day 30, clinic enrollment will
+close on Day 30. If fewer than four activate by Day 30, enrollment will
+continue automatically until the fourth clinic activates or Day 90,
+whichever occurs first. This extension is triggered solely by the
+prespecified clinic-count rule. If fewer than four clinics activate by
+Day 90, further recruitment will stop and the PI will seek IRB direction
+regarding closure and the permitted retention or descriptive use of data
+already collected. The shortfall and disposition will be reported.
+
+A fully activated clinic may begin its approved parent campaign while
+clinic enrollment remains open. During that period, survey responses
+will be collected in the approved system but substantive outcome data
+will be sequestered from personnel involved in clinic recruitment,
+ordering, and activation. Those personnel will not receive SORA yield,
+vaccination answers, Dpre or Dpost values or distributions, site-level
+outcomes, or other preliminary results. They may receive only the
+technical and safety information required to operate the study, such as
+system availability, aggregate messages sent, survey starts, consent
+status, support requests, and incident reports. Clinic-enrollment or
+extension decisions may not depend on observed survey data.
+
 Each clinic will conduct a standardized campaign consisting of:
 
-1. one initial IRB-approved invitation sent to its complete eligible
+1. one clinic-branded, IRB-approved invitation sent through the clinic's
+   ordinary patient-communication system to its complete eligible
    distribution population;
-2. two IRB-approved reminders at prespecified intervals;
+2. two clinic-branded, IRB-approved reminders at prespecified intervals;
 3. management of undeliverable messages and opt-outs under clinic policy;
 4. provision of aggregate counts for intended recipients, messages sent,
    messages delivered where available, undeliverable messages, and
@@ -176,6 +206,15 @@ clinic patients did or did not respond. The final protocol will define
 the clinic source-population date, whether former patients are included,
 contactability rules, handling of multiple guardians, and the campaign
 and survey-open periods.
+
+The 500-patient threshold is intended to provide a meaningful and stable
+invitation denominator and a reasonable opportunity to obtain usable
+responses despite voluntary response and SORA screening. It is not a
+minimum SORA-case requirement. The threshold will exclude some smaller
+practices and may affect representativeness; that limitation will be
+reported. A unified practice group or clinic network may qualify as one
+site only if it uses one defined, nonoverlapping distribution population,
+one agreement, and one accountable campaign operator.
 
 ## 7. Clinic compensation
 
@@ -205,11 +244,14 @@ justification, and funding disclosure.
 
 ## 8. Neutral invitation, consent, and progressive survey presentation
 
-The clinic invitation will use neutral framing and will not advertise a
-desired result. It will invite participation from the clinic's complete
-ASD parent population and emphasize that responses are valuable
-regardless of what preceded a sudden change or what the parent believes
-caused it.
+The invitation and reminders will appear to come from the participating
+clinic, use clinic branding, and be sent through the clinic's ordinary
+patient-communication system. They will use neutral framing, will not
+advertise a desired result, and will invite participation from the
+clinic's complete ASD parent population. CHD will not be concealed:
+before consent, the information page will plainly identify CHD as the
+sponsor and coordinating organization, identify who holds the data, and
+disclose funding and relevant investigator or organizational interests.
 
 Proposed neutral invitation principle:
 
@@ -217,9 +259,10 @@ Proposed neutral invitation principle:
 > regardless of when the change occurred, what preceded it, or what you
 > believe caused it.
 
-The electronic information/consent page will accurately describe a study
-of developmental history, sudden behavioral or developmental changes,
-health history, and timing of relevant events. It will disclose data
+The electronic information/consent page will state in plain language
+that the study asks about autism diagnosis, developmental history,
+sudden behavioral or developmental changes, vaccination history, and
+the timing between those events. It will disclose data
 collection, recontact, partial-response retention, privacy limits,
 voluntariness, risks, benefits, funding, investigator interests, data
 release, withdrawal limits, and contacts as required by the IRB.
@@ -228,9 +271,19 @@ Questions will be displayed progressively. Respondents will not be shown
 the entire questionnaire or later vaccination questions in advance.
 Progressive presentation is intended to reduce priming and permit
 measurement of item- and section-level breakoff. It will not be used to
-make a false statement about the study. IPAK-EDU IRB will review whether
-the neutral description constitutes complete disclosure or whether an
-alteration of consent and an end-of-survey explanation are required.
+make a false or materially incomplete statement about the study. The
+study is designed to operate with the plain vaccination disclosure
+above; it does not depend on an alteration of consent. IPAK-EDU IRB may
+nonetheless require revised language or an end-of-survey explanation.
+
+Proposed purpose language:
+
+> This study asks about autism diagnosis, developmental history, sudden
+> behavioral or developmental changes, vaccination history, and the
+> timing between those events. The study is intended to create a dataset
+> for descriptive and subsequent independent analysis. It cannot by
+> itself determine whether vaccination caused or did not cause a
+> developmental change.
 
 Accuracy language will remain neutral:
 
@@ -303,6 +356,11 @@ antigen will not be collected in this initial study. The instrument will
 encourage parents to consult a record when feasible but will preserve
 record-based, remembered, estimated, ranged, and unknown answers as
 distinct categories.
+
+`Dpre = 0` means only that the vaccination and the first obvious
+persistent change occurred on the same calendar day. The study will not
+infer or claim which occurred first within that day. The same principle
+applies to any other same-day event comparison.
 
 ### Derived analytic fields
 
@@ -392,6 +450,24 @@ standardized clarification query when recontact permission and a valid
 email are available. No answer will be changed merely because it is
 unexpected or inconsistent with a study hypothesis.
 
+Before clinic enrollment closes and the prespecified data lock occurs,
+quality-control personnel may monitor completeness, missingness, allowed
+values, impossible ranges, cross-field errors, duplicate indicators,
+query status, and system performance. Routine pre-lock dashboards and
+reports will not display Dpre/Dpost histograms, peaks, cumulative timing
+windows, site comparisons, or other substantive outcome distributions.
+Outcome-aware exclusions, cleaning rules, eligibility changes, and
+survey revisions are prohibited. Any necessary correction to an
+approved rule will be documented, versioned, and submitted for IRB review
+when required before implementation.
+
+After lock, the prespecified descriptive outputs may be generated and
+reviewed by the PI and approved study team. An independent statistician
+or data-governance reviewer should confirm the lock and reproduce or
+verify the first substantive timing report. The original response,
+clarification query, correction or confirmation, and audit history will
+be preserved.
+
 The data-quality report will distinguish:
 
 - parent-reported values supported by a cited record source;
@@ -405,6 +481,13 @@ The data-quality report will distinguish:
 The protocol will prespecify whether incomplete or unresolved responses
 remain in descriptive releases with flags or are excluded from particular
 derived analyses.
+
+The present study will not request medical records or require parents to
+upload vaccination cards. A separately consented record-validation
+substudy or later chart protocol may compare a subset of reported
+intervals with vaccination or contemporaneous onset records. Any such
+work would require its own protocol or approved amendment, consent and
+authorization pathway, privacy controls, analysis plan, and funding.
 
 ## 13. Initial descriptive outputs
 
@@ -511,10 +594,9 @@ The preferred sequence is:
 1. **Initial CHD implementation:** establish operational feasibility,
    characterize the responding cohort, identify data-quality problems,
    and produce planning estimates.
-2. **Independent academic replication:** a university-led team, ideally
-   including Johns Hopkins investigators if they independently elect to
-   participate, repeats a prospectively locked version of the method in
-   a different clinic network under independent governance.
+2. **Independent academic replication:** an independent university-led
+   team repeats a prospectively locked version of the method in a
+   different clinic network under independent governance.
 3. **Federally supported confirmation:** an academic investigator or
    consortium may seek NIH funding for a larger preregistered replication
    or multisite confirmatory study.
@@ -528,7 +610,7 @@ by this IRB submission. Each sponsor would require its own protocol,
 funding, prospective registration or preregistration where appropriate,
 IRB or research-ethics approval, privacy and cross-border data review,
 clinic agreements, consent materials, security controls, and release
-plan. No commitment by Johns Hopkins, NIH, a foreign institution, or any
+plan. No commitment by NIH, a university, a foreign institution, or any
 other future sponsor is represented unless documented separately.
 
 For an independent replication, the new sponsor should control clinic
@@ -567,6 +649,13 @@ responding cohort and generate hypotheses, but cannot by itself establish
 causation, estimate SORA incidence, or estimate vaccinated-versus-
 unvaccinated ASD risk.
 
+Because the initial Dpre and Dpost measures are parent-reported rather
+than record-verified, they are measurements of reported timing and must
+not be presented as verified clinical intervals. A future independent
+record-validation study can estimate agreement and characterize recall
+error; replication of the survey alone does not substitute for that
+validation.
+
 ## 19. Punchlist for IRB-packet development
 
 `Pending` means an item genuinely depends on CHD, IPAK-EDU IRB, a clinic,
@@ -579,7 +668,7 @@ adapted but is not yet valid for this redesigned parent-survey study.
 |---|---|---|
 | A1 | Brian Hooker's exact degrees, title, CHD affiliation, contact information, CV/biosketch, training, and COI disclosure | Pending CHD/PI |
 | A2 | Exact roles, affiliations, contacts, training, and COI disclosures for Ben Jackson, Mila Radetich, Karl Jablonowski, and Steve Kirsch | Pending CHD/personnel |
-| A3 | Name and authorize the recontact coordinator, data custodian, privacy/security official, and incident-response contact | Pending CHD |
+| A3 | Name and authorize the recontact coordinator, data custodian, privacy/security official, incident-response contact, and independent statistician/data-governance reviewer | Pending CHD |
 | A4 | CHD legal entity name, status, address, authorized institutional official, and signed institutional authorization | Pending CHD |
 | A5 | Funding sources, amounts, terms, in-kind support, recipients, and funder roles | Pending CHD; disclose committed funding to the IRB |
 | A6 | Clinic-payment budget and fair-value justification | Basic model fixed at flat $5,000 per clinic; budget and justification pending CHD |
@@ -591,25 +680,26 @@ adapted but is not yet valid for this redesigned parent-survey study.
 |---|---|---|
 | B1 | Final adult-parent and child eligibility/exclusion rules, including ASD confirmation, prior development, competing explanations, diagnosis timing, deceased children, and “persistent” | Substantial SORA source language exists; parent-survey rules require completion |
 | B2 | Exact age-at-onset boundary and validation rule | Decision required: reconcile “through 60 completed months” with the exact maximum derived day |
-| B3 | Clinic source-population definition: date, active/former patient status, age range, contactability, multiple guardians, undeliverables, and evidence for at least 500 ASD patients | New survey-design rules required |
-| B4 | First-10 activation procedure, clinic-enrollment dates, withdrawal/replacement rule, and activation-order log | Partially drafted; revise for outreach-only clinics |
+| B3 | Clinic source-population definition: date, active/former patient status, age range, at least one contactable adult guardian, multiple guardians, undeliverables, affiliated-network treatment, and evidence for at least 500 ASD patients | Threshold and rationale fixed; detailed verification rules required |
+| B4 | First-10 activation procedure, initial 30-day period, automatic minimum-four extension through no later than Day 90, early clinic campaign start, withdrawal/replacement rule, activation-order log, and outcome-blinding controls | Core rules fixed in Section 6; operational SOP and dates required |
 | B5 | Clinic recruitment campaign specification: initial invitation, two reminders, intervals, campaign duration, approved channels, opt-outs, and aggregate metrics | New detailed campaign SOP required |
 | B6 | Clinic agreement, $5,000 completion checklist, payment timing, rejection/cure procedure, and final campaign attestation | Earlier agreement concepts reusable; recruitment-campaign terms are new |
-| B7 | Neutral clinic invitation, reminders, FAQ, call script, and prohibition on selective distribution or outcome-oriented claims | Earlier outreach drafts reusable but require substantial redesign |
-| B8 | Electronic information/consent language, including neutral purpose description, email/recontact, partial-response retention, data release, withdrawal limits, and funding/COI | New parent-facing consent required |
-| B9 | Determine whether progressive disclosure requires alteration of consent and an end-of-survey explanation; draft both contingency versions | Pending IPAK determination; study team can draft |
+| B7 | Clinic-branded neutral invitation, reminders, FAQ, call script, and prohibition on selective distribution or outcome-oriented claims | Branding and neutrality fixed; earlier outreach drafts require substantial redesign |
+| B8 | Electronic information/consent language explicitly disclosing developmental changes, vaccination history, and their timing, plus CHD role, data holder, email/recontact, partial-response retention, data release, withdrawal limits, funding, and COI | Controlling disclosure principles fixed; new parent-facing consent required |
+| B9 | Progressive question-display specification and any IPAK-required revised disclosure or end-of-survey explanation | Study does not depend on altered consent; final language pending IPAK review |
 | B10 | Complete electronic survey, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | New survey instrument required; prior abstraction fields are only source material |
 | B11 | Exact/ranged vaccination-interval and source-of-information questions, same-day rules, unknown status, parent confidence, and Dpre/Dpost bound derivation | Prior interval rules reusable; parent-facing exact/range collection rules are new |
 | B12 | Email/recontact language and standardized clarification SOP, including original-value preservation and audit trail | New coded-contact workflow required |
 | B13 | Duplicate-prevention and adjudication plan for repeat submissions, siblings, multiple guardians, and multiple-clinic invitations | New rule required |
 | B14 | Paradata and breakoff specification, consent for incomplete-response retention, timing granularity, and tracking-technology prohibition | New rule and instrument specification required |
-| B15 | Automated validation, missingness, query resolution, exclusion, and analytic-inclusion SOP | Earlier validation concepts reusable; rebuild for survey data |
-| B16 | Statistical/descriptive analysis plan for recruitment flow, response rates, breakoff, SORA variables, timing distributions, and source-quality flags | Draft from Section 13; formal SAP required |
+| B15 | Automated validation, missingness, query resolution, exclusion, analytic-inclusion, pre-lock outcome-blinding, restricted-dashboard, and audit-trail SOP | Core blinding principles fixed; earlier validation concepts reusable but must be rebuilt for survey data |
+| B16 | Statistical/descriptive analysis plan for recruitment flow, response rates, breakoff, SORA variables, timing distributions, source-quality flags, interval-censored responses, and independent first-report verification | Draft from Sections 12–13; formal SAP required |
 | B17 | Data-lock, version-control, correction, withdrawal, and retraction SOP | Version concepts exist; formal SOP required |
 | B18 | Privacy/security plan for survey platform, contact table, research table, access roles, encryption, MFA, logs, backups, exports, incidents, retention, and destruction | Earlier security draft reusable; identifiable survey architecture and named infrastructure required |
 | B19 | Public-release and controlled-access governance, disclosure-risk expert, DUA, license, correction policy, and enforcement | Earlier release safeguards reusable; complete process required |
 | B20 | Replication package: frozen protocol/instrument version, machine-readable codebook, derivation rules, synthetic test cases, reproducible code, adaptation/versioning policy, and prespecification template | New formal package required before claiming the method is replication-ready |
-| B21 | Full revised protocol, application/cover form, consent/exemption contingency, privacy plan, funding/COI attachment, personnel roster, and attachment index | Earlier packet is source material; full restructuring required after B1–B20 |
+| B21 | Separate future record-validation substudy concept, including consent/authorization, source verification, privacy, and agreement analysis | Explicitly outside the present protocol; develop only as a later study or amendment |
+| B22 | Full revised protocol, application/cover form, consent/exemption contingency, privacy plan, funding/COI attachment, personnel roster, and attachment index | Earlier packet is source material; full restructuring required after B1–B21 |
 
 ### C. IPAK-EDU IRB information and determinations
 
@@ -620,7 +710,7 @@ adapted but is not yet valid for this redesigned parent-survey study.
 | C3 | Written confirmation that IPAK-EDU will review the CHD-sponsored multisite parent-survey study and accept Brian Hooker as PI | Pending IPAK-EDU |
 | C4 | Regulatory determination under 45 CFR 46.104(d)(2), including whether limited IRB review applies, or identification of the appropriate minimal-risk alternative | Pending IPAK-EDU; do not presume exemption |
 | C5 | Determination of whether the child as well as the adult parent is a human subject and applicability of Subpart D | Pending IPAK-EDU |
-| C6 | Whether neutral progressive disclosure requires consent alteration under 45 CFR 46.116(f) and an end-of-survey explanation | Pending IPAK-EDU |
+| C6 | IPAK-EDU approval of the plain vaccination-purpose disclosure, progressive question display, and whether any additional end-of-survey explanation is required | Pending IPAK-EDU; protocol does not rely on incomplete disclosure or altered consent |
 | C7 | Required consent documentation or waiver of signed consent, and rules for retaining partial responses | Pending IPAK-EDU |
 | C8 | Clinic engagement/reliance model and limits on feasibility outreach before determination | Pending IPAK-EDU and clinics |
 | C9 | Training, COI, amendments, deviations, unanticipated-problem reporting, continuing/status review, and closure requirements | Pending IPAK-EDU policies |
@@ -648,7 +738,7 @@ status.
 | # | Item | Status |
 |---|---|---|
 | E1 | Legal name, address, authorized representative, privacy/legal contact, and campaign operator | Pending clinic |
-| E2 | Documentation of at least 500 unique ASD patients under the approved source-population definition | Pending clinic activation |
+| E2 | Documentation of at least 500 unique ASD patients with at least one contactable adult parent or guardian under the approved distribution-population definition | Pending clinic activation |
 | E3 | Local authorization to use clinic contact information to distribute the study invitation and reminders | Pending clinic privacy/legal authority |
 | E4 | Local IRB/exemption/reliance or non-engagement determination required by the reviewing model | Pending clinic/IPAK-EDU |
 | E5 | Executed participation/payment agreement and letter of cooperation | Pending parties |
