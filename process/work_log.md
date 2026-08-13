@@ -135,3 +135,45 @@
 - **Outputs:** Updated Version 0.11 CHD executive-summary punchlist.
 - **Results:** Items with existing substantial or partial source drafts are now labeled accordingly; only genuinely new rules/SOPs or CHD/IPAK/site-specific facts remain described as new or pending.
 - **Next steps:** Adapt the existing source materials into a clean CHD packet rather than recreating them.
+## 2026-08-12 — Added clinic activation incentive model
+
+- **What we did:** Revised the CHD SORA executive summary to use a 30-calendar-day recruitment period, activation of up to the first 10 fully qualified clinics, and payment of up to $5,000 per activated clinic for approved work and deliverables. Made payment independent of eligible-case count, vaccination timing, findings, and publication; preserved payment eligibility for a valid zero-case submission; and prohibited automatic redistribution of unused site-payment funds.
+- **Command / executable:** Manual `apply_patch` edit; `git diff --check` validation.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.12.
+- **Results:** The recruitment incentive is tied to timely completion of activation and study work rather than producing qualifying cases.
+- **Next steps:** CHD must confirm the clinic-payment budget, fair-value justification, agreement milestones, and final payment schedule for the IRB packet.
+## 2026-08-12 — Fixed flat clinic payment
+
+- **What we did:** Changed clinic compensation from “up to $5,000” to a flat $5,000 institutional payment after satisfactory completion of the required work and deliverables, including full payment for a compliant zero-case submission.
+- **Command / executable:** Manual `apply_patch` edit; `git diff --check` validation.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.13.
+- **Results:** Payment amount no longer varies by effort estimate, eligible-case count, vaccination timing, findings, or number of clinics activated.
+- **Next steps:** Define contractual completion criteria and treatment of a clinic that withdraws or submits incomplete work.
+## 2026-08-12 — Added minimum ASD source population and payment completion controls
+
+- **What we did:** Required each clinic to document at least 500 unique patients with an ASD diagnosis in its locked retrospective source population. Clarified that activation, an email, or an unsupported zero-case claim does not earn the flat site payment; payment requires complete ascertainment, required datasets/counts and attestation, query resolution, and acceptance.
+- **Command / executable:** Manual `apply_patch` edit; `git diff --check` validation.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.14.
+- **Results:** The site threshold is based on the predeclared ASD source population, while compensation remains independent of how many SORA cases a clinic classifies.
+- **Next steps:** Define the exact documentary evidence for the 500-patient threshold and objective submission-acceptance checklist in the clinic agreement.
+## 2026-08-12 — Redesigned SORA study as a clinic-distributed parent survey
+
+- **What we did:** Rebuilt the executive summary from the former clinic chart-abstraction model into a clinic-distributed, parent-completed electronic survey. Added neutral invitation framing, progressive question display and breakoff measurement, coded email/recontact architecture, parent-reported SORA and vaccination timing, clinic campaign requirements, and flat $5,000 compensation for verified campaign completion.
+- **Command / executable:** Full `apply_patch` document replacement followed by targeted `rg` consistency searches and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.15.
+- **Results:** The design now scales without clinic chart abstraction or patient-list transfer. Clinics must have at least 500 ASD patients and distribute one approved invitation plus two reminders to the complete eligible population. Payment is independent of responses and findings. The proposed regulatory request is now survey exemption 45 CFR 46.104(d)(2), subject to IPAK-EDU's determination, with a minimal-risk alternative.
+- **Next steps:** Select the survey platform and privacy architecture; close eligibility, consent/disclosure, duplicate, campaign, and retention rules; then rebuild the full IRB packet and instruments from the revised punchlist.
+## 2026-08-12 — Added independent-replication roadmap
+
+- **What we did:** Added the scientific rationale and global replication sequence to the parent-survey executive summary: initial CHD feasibility implementation, independent academic replication, potential NIH-funded confirmation, and separately approved international replications.
+- **Command / executable:** Manual `apply_patch` edit; targeted consistency review and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.16.
+- **Results:** The document explains how the initial minimal-risk collection generates feasibility evidence and a reusable method while expressly stating that future institutions are not committed and each replication requires separate governance, ethics, privacy, and funding review.
+- **Next steps:** Build the formal replication package and prespecification template after the survey and analysis plan are finalized.
+## 2026-08-12 — Replaced absolute dates with direct interval reporting
+
+- **What we did:** Revised the parent-survey design so it collects no birth, onset, or vaccination calendar dates. Parents report exact Dpre/Dpost intervals when known or structured ranges otherwise, together with information source, precision, and confidence. Onset remains a recognizable Day 0, while age at onset is reported with units and precision rather than derived from dates.
+- **Command / executable:** Manual `apply_patch` edit; targeted date-language review and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.17.
+- **Results:** The design reduces identification risk and parent date-recall burden while preserving exact intervals where available and honest interval censoring elsewhere.
+- **Next steps:** Finalize the precise onset-age ranges, interval response UI, validation rules, and interval-censored descriptive/statistical methods in the survey and SAP.
