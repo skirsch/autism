@@ -3,12 +3,12 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.21
+**Version:** 0.23
 **Date:** 12 August 2026
 
 1. Sponsor is CHD. PI is Brian Hooker.
 2. We enroll between 4 and 10 large autism diagnosis/treatment clinics.
-3. Each clinic emails its own ASD parents a link to the survey. We never receive the clinic's mailing list.
+3. Each clinic emails every contactable parent or guardian in its defined patient population a link to the survey. We never receive the clinic's mailing list.
 4. The parent fills out the survey.
 5. We publish privacy-protected, de-identified data for the public to analyze.
 6. If vaccines cause autism, there will be a statistically significant pile up of autism onset within 2 days post vaccination.
@@ -21,11 +21,11 @@
 | Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation]; has accepted this role |
 | Sponsor/coordinating organization | Children's Health Defense (CHD) [confirm legal entity]; has accepted this role |
 | Participating clinics | Target of 4–10 activated clinics; initial 30-calendar-day enrollment period with a prospectively defined automatic extension, if needed, until the fourth clinic activates or Day 90, whichever occurs first |
-| Clinic capacity requirement | At least 500 unique patients with a documented ASD diagnosis and at least one contactable adult parent or guardian in the clinic's defined distribution population |
+| Clinic capacity requirement | The clinic must have at least 500 unique patients with a documented ASD diagnosis, but invitations go to every contactable parent or guardian in the clinic's broader defined patient population, including families whose children were evaluated but not diagnosed with ASD |
 | Study type | Minimal-risk, multisite, clinic-distributed, parent-completed electronic survey and data-resource study |
 | Primary purpose | Create, quality-check, document, and release a coded and disclosure-reviewed parent-reported dataset for subsequent independent analysis |
 | Initial publication | Recruitment, cohort, missingness, data-quality, and descriptive report—not a causal analysis |
-| Proposed subject characterization | Adults age 18 or older reporting as a parent or legal guardian of a child with a parent-reported clinical ASD diagnosis; IPAK-EDU IRB will determine whether the child is also a human subject |
+| Proposed subject characterization | Adults age 18 or older reporting as a parent or legal guardian of a child seen by a participating autism diagnosis/treatment clinic; a parent-reported clinical ASD diagnosis is required only for inclusion in the SORA analytic resource. IPAK-EDU IRB will determine whether the child is also a human subject |
 | Child contact | None |
 | Intervention | None |
 | Proposed regulatory pathway | Request an IPAK-EDU IRB determination under 45 CFR 46.104(d)(2), including limited IRB review if applicable; if that exemption does not apply, request the appropriate minimal-risk review |
@@ -152,12 +152,13 @@ CHD will use IRB-approved materials during an initial 30-calendar-day
 clinic-enrollment period. The study targets 4–10 activated clinics and
 will activate up to the first 10 clinics that:
 
-- document a defined distribution population containing at least 500
-  unique patients with an ASD diagnosis and at least one contactable
-  adult parent or guardian;
+- document at least 500 unique patients with a documented ASD diagnosis
+  and separately define the clinic's complete patient distribution
+  population, including patients evaluated or treated by the clinic who
+  did not ultimately receive an ASD diagnosis;
 - can distribute the approved electronic invitation to the complete
-  contactable parent or guardian population without disclosing the list
-  to CHD;
+  defined population of contactable parents or guardians without
+  disclosing the list to CHD;
 - designate an authorized clinic representative;
 - agree not to select recipients based on suspected SORA, vaccination
   history, beliefs, timing, or expected response;
@@ -204,7 +205,9 @@ Each clinic will conduct a standardized campaign consisting of:
 
 1. on Campaign Day 0, one clinic-branded, IRB-approved invitation sent
    through the clinic's ordinary patient-communication system to its
-   complete eligible distribution population;
+   complete defined patient distribution population, including patients
+   without an ASD diagnosis, rather than a subset selected for diagnosis,
+   suspected regression, SORA, vaccination history, or likely response;
 2. on Campaign Day 7, one clinic-branded, IRB-approved reminder to the
    same population, subject to clinic opt-out and delivery rules;
 3. on Campaign Day 21, a second clinic-branded, IRB-approved reminder to
@@ -223,14 +226,16 @@ contactability rules, and handling of multiple guardians. The campaign
 and survey-open periods are fixed above and will not be changed in
 response to participation or substantive results.
 
-The 500-patient threshold is intended to provide a meaningful and stable
-invitation denominator and a reasonable opportunity to obtain usable
-responses despite voluntary response and SORA screening. It is not a
-minimum SORA-case requirement. The threshold will exclude some smaller
-practices and may affect representativeness; that limitation will be
-reported. A unified practice group or clinic network may qualify as one
-site only if it uses one defined, nonoverlapping distribution population,
-one agreement, and one accountable campaign operator.
+The 500-ASD-patient threshold is an administrative clinic-capacity rule
+intended to provide a reasonable opportunity to obtain usable ASD and
+SORA responses despite voluntary response and screening. It is not the
+invitation denominator and is not a minimum SORA-case requirement. The
+invitation denominator is the clinic's broader complete contactable
+patient population. The threshold will exclude some smaller practices
+and may affect representativeness; that limitation will be reported. A
+unified practice group or clinic network may qualify as one site only if
+it uses one defined, nonoverlapping distribution population, one
+agreement, and one accountable campaign operator.
 
 ## 7. Clinic compensation
 
@@ -264,7 +269,8 @@ The invitation and reminders will appear to come from the participating
 clinic, use clinic branding, and be sent through the clinic's ordinary
 patient-communication system. They will use neutral framing, will not
 advertise a desired result, and will invite participation from the
-clinic's complete ASD parent population. CHD will not be concealed:
+clinic's complete defined parent/guardian population, regardless of
+whether the child ultimately received an ASD diagnosis. CHD will not be concealed:
 before consent, the information page will plainly identify CHD as the
 sponsor and coordinating organization, identify who holds the data, and
 disclose funding and relevant investigator or organizational interests.
@@ -335,6 +341,18 @@ tested on desktop and mobile devices. Proposed domains are:
 
 ### SORA onset
 
+- the parent-reported overall developmental pattern, asked of all
+  respondents before SORA-specific branching:
+  - development was atypical or delayed from the earliest period the
+    parent can recall, without a later regression;
+  - development progressed and then reached a plateau without an obvious
+    loss of existing behavior or skill;
+  - development was described as typical or meeting expected milestones
+    and then an abrupt, obvious drop occurred;
+  - development was described as typical or meeting expected milestones
+    and then a gradual decline occurred;
+  - another pattern; or
+  - not sure;
 - whether an abrupt, obvious, and persistent change occurred;
 - whether the parent can distinguish a discrete day on which the first
   obvious and persistent change began from a gradual period of
@@ -344,6 +362,10 @@ tested on desktop and mobile devices. Proposed domains are:
 - onset-age source and precision: contemporaneous record or message,
   developmental/medical record, memory, or other; exact, best estimate,
   range only, or unknown;
+- elapsed time from the parent-recognized onset or developmental change
+  to survey completion, reported in broad prespecified categories rather
+  than an event date (for example, less than 1 year, 1–2, 3–5, 6–10,
+  11–20, or more than 20 years ago, plus Not sure);
 - `new_pathological_behavior_within_7d`: Yes, No, or Not sure;
 - `loss_existing_behavior_or_skill_within_7d`: Yes, No, or Not sure;
 - `change_in_sensory_sensitivity_within_7d`: Yes, No, or Not sure; and
@@ -355,6 +377,21 @@ first appear during Day 1 through Day 6. The survey will explain this
 with a worked example. Only `Yes` to the discrete-onset question proceeds
 into the SORA timing pathway. `No` and `Not sure` remain in screening and
 recruitment-flow counts but do not enter the SORA analytic cohort.
+
+The overall developmental-pattern question is a recruitment-composition
+and measurement-quality variable, not an independent validation that all
+eligible parents responded. Its distribution may be compared with
+prespecified external estimates only when the populations, definitions,
+and ascertainment methods are sufficiently comparable. Differences may
+reflect nonresponse, clinic case mix, question wording, recall, or other
+selection and measurement factors.
+
+Respondents reporting that the child did not receive an ASD diagnosis,
+or that diagnosis status is unknown, contribute only to prespecified
+recruitment, screening, developmental-pattern, and missingness summaries.
+They do not enter the SORA analytic resource or vaccination-proximity
+analysis. The survey and SAP will define the limited questions shown to
+these respondents and avoid collecting unnecessary vaccination timing.
 
 ### Vaccination history and timing
 
@@ -537,10 +574,16 @@ Prespecified outputs will include:
 - clinics approached, interested, activated, withdrawn, and completing;
 - each clinic's eligible distribution-population size and aggregate
   campaign delivery metrics;
+- parent-reported ASD diagnosis status among consented respondents;
 - survey starts, consent decisions, eligibility flow, completions, and
   partial responses by site;
 - response, completion, item-missingness, and section-breakoff rates;
 - breakoff before, at, and after the vaccination section;
+- parent-reported overall developmental-pattern distribution among all
+  eligible respondents, with the comparison population and definitions
+  stated explicitly for any external benchmark;
+- elapsed-time-since-onset/change categories and timing completeness by
+  elapsed-time category;
 - age-at-onset distribution;
 - counts meeting each SORA category and observed category combinations;
 - reported ASD support-level distribution;
@@ -572,7 +615,7 @@ the lawful basis for every regulated use or disclosure. A clinic's use of
 its own contact information to distribute an approved invitation does not
 authorize disclosure of its patient list to CHD. The clinic must obtain
 and document the applicable authorization, waiver/alteration, or other
-lawful basis for selecting its ASD distribution population and sending
+lawful basis for selecting its complete clinic distribution population and sending
 research invitations, as determined by its privacy authority and IRB or
 Privacy Board. Each site also requires the applicable engagement,
 reliance, or local-review determination.
@@ -703,6 +746,13 @@ particular event, or who hold strong views may respond at different rates.
 Nonresponse and breakoff measurements describe but do not eliminate that
 self-selection bias.
 
+The distribution of parent-reported developmental patterns can reveal
+whether the respondent sample differs from a prespecified external
+benchmark, but it cannot establish that every clinic family was invited
+or that all invited families responded. Aggregate clinic campaign
+metrics and signed complete-distribution attestations address invitation
+coverage; differential nonresponse remains possible.
+
 Responses depend on parent recall, understanding, record availability,
 and accurate reporting. CHD will not independently verify the ASD
 diagnosis, onset age, or vaccination intervals against medical records in this
@@ -743,20 +793,20 @@ adapted but is not yet valid for this redesigned parent-survey study.
 |---|---|---|
 | B1 | Final adult-parent and child eligibility/exclusion rules, including ASD confirmation, prior development, competing explanations, diagnosis timing, deceased children, and “persistent” | Substantial SORA source language exists; parent-survey rules require completion |
 | B2 | Exact age-at-onset boundary and validation rule | Decision required: reconcile “through 60 completed months” with the exact maximum derived day |
-| B3 | Clinic source-population definition: date, active/former patient status, age range, at least one contactable adult guardian, multiple guardians, undeliverables, affiliated-network treatment, and evidence for at least 500 ASD patients | Threshold and rationale fixed; detailed verification rules required |
+| B3 | Clinic source-population definition: date, active/former patient status, age range, complete inclusion of patients with and without an ASD diagnosis, contactability, multiple guardians, undeliverables, affiliated-network treatment, and separate evidence for at least 500 ASD-diagnosed patients | Threshold and universal clinic-population distribution rule fixed; detailed verification rules required |
 | B4 | First-10 activation procedure, initial 30-day period, automatic minimum-four extension through no later than Day 90, early clinic campaign start, sub-four pilot-data rule, withdrawal/replacement rule, activation-order log, and outcome-blinding controls | Core rules fixed in Section 6; operational SOP and dates required |
 | B5 | Clinic recruitment campaign specification: clinic-branded invitation on Day 0, reminders on Days 7 and 21, closure on Day 35, approved channels, opt-outs, and aggregate metrics | Schedule fixed in Section 6; detailed campaign SOP required |
 | B6 | Clinic agreement, $5,000 completion checklist, payment timing, rejection/cure procedure, and final campaign attestation | Earlier agreement concepts reusable; recruitment-campaign terms are new |
 | B7 | Clinic-branded neutral invitation, reminders, FAQ, call script, and prohibition on selective distribution or outcome-oriented claims | Branding and neutrality fixed; earlier outreach drafts require substantial redesign |
 | B8 | Electronic information/consent language explicitly disclosing developmental changes, vaccination history, and their timing, plus CHD role, data holder, unlinked-response limits, partial-response retention, inability to withdraw after submission, data release, funding, and COI | Controlling disclosure principles fixed; new parent-facing consent required |
 | B9 | Progressive question-display specification and any IPAK-required revised disclosure or end-of-survey explanation | Study does not depend on altered consent; final language pending IPAK review |
-| B10 | Complete electronic survey, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | New survey instrument required; prior abstraction fields are only source material |
+| B10 | Complete electronic survey, including the all-respondent developmental-pattern item, elapsed-time-since-onset/change categories, branching logic, definitions, worked examples, response options, accessibility, and mobile/desktop testing | Core new domains fixed; new survey instrument and cognitive testing required |
 | B11 | Exact/ranged vaccination-interval and source-of-information questions, same-day rules, unknown status, parent confidence, and Dpre/Dpost bound derivation | Prior interval rules reusable; parent-facing exact/range collection rules are new |
 | B12 | Unlinked-response final-review workflow, on-screen validation prompts, pre-submission corrections, disclosed retention of post-consent partial responses, active withdraw/delete control, abandonment timeout, and audit trail without direct identifiers | Core rules fixed; new workflow required |
 | B13 | Duplicate-prevention and adjudication plan for repeat submissions, siblings, multiple guardians, and multiple-clinic invitations | New rule required |
 | B14 | Paradata and breakoff specification, consent for incomplete-response retention, timing granularity, and tracking-technology prohibition | New rule and instrument specification required |
 | B15 | Automated validation, missingness, query resolution, exclusion, analytic-inclusion, pre-lock outcome-blinding, restricted-dashboard, and audit-trail SOP | Core blinding principles fixed; earlier validation concepts reusable but must be rebuilt for survey data |
-| B16 | Statistical/descriptive analysis plan for recruitment flow, response rates, breakoff, SORA variables, timing distributions, source-quality flags, interval-censored responses, and independent first-report verification | Draft from Sections 12–13; formal SAP required |
+| B16 | Statistical/descriptive analysis plan for recruitment flow, response rates, developmental-pattern composition, any external benchmark, elapsed-time/recall-quality assessment, breakoff, SORA variables, timing distributions, source-quality flags, interval-censored responses, and independent first-report verification | Draft from Sections 12–13; formal SAP required |
 | B17 | Data lock 30 days after the last activated clinic's Day 35 closure; outcome-independent lock, version control, correction before submission, unlinked-response withdrawal limits, incident-pause, and retraction SOP | Lock timing and outcome-independence fixed; formal SOP required |
 | B18 | Privacy/security plan for directly unlinked survey responses, consent records, operational metadata, access roles, encryption, MFA, logs, backups, exports, incidents, retention, and destruction | Earlier security draft reusable; unlinked survey architecture and named infrastructure required |
 | B19 | Public-release and controlled-access governance, disclosure-risk expert, DUA, license, correction policy, and enforcement | Earlier release safeguards reusable; complete process required |
@@ -801,7 +851,7 @@ status.
 | # | Item | Status |
 |---|---|---|
 | E1 | Legal name, address, authorized representative, privacy/legal contact, and campaign operator | Pending clinic |
-| E2 | Documentation of at least 500 unique ASD patients with at least one contactable adult parent or guardian under the approved distribution-population definition | Pending clinic activation |
+| E2 | Documentation of at least 500 unique ASD-diagnosed patients plus a frozen count of the broader complete contactable clinic patient/guardian distribution population, including patients without an ASD diagnosis | Pending clinic activation |
 | E3 | Local authorization to use clinic contact information to distribute the study invitation and reminders | Pending clinic privacy/legal authority |
 | E4 | Local IRB/exemption/reliance or non-engagement determination required by the reviewing model | Pending clinic/IPAK-EDU |
 | E5 | Executed participation/payment agreement and letter of cooperation | Pending parties |

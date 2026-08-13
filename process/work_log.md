@@ -198,3 +198,17 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.20.
 - **Results:** Removal of linkable contact data substantially simplifies privacy and strengthens the potential adult-survey exemption argument, while preserving breakoff measurement. The design now prospectively limits early data to a labeled pilot-feasibility report if fewer than four clinics activate by Day 90.
 - **Next steps:** Obtain IPAK-EDU's child-subject/exemption determination; finalize clinic HIPAA/legal recruitment pathways, denominator and duplicate rules, executable SORA algorithm, survey/SAP, vendor configuration, and retention schedule.
+## 2026-08-12 — Added developmental-pattern and time-since-onset measures
+
+- **What we did:** Added an all-respondent developmental-pattern question distinguishing early atypical/delayed development, plateau, sudden drop, gradual decline, other, and uncertainty. Added broad time-since-onset/change categories to characterize recall conditions. Clarified that clinics invite their complete defined ASD distribution population and that the pattern distribution is a composition/measurement check, not proof of complete response.
+- **Command / executable:** Manual `apply_patch` edit; targeted consistency review and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.22.
+- **Results:** The survey can describe non-SORA developmental patterns and assess timing completeness by recall horizon without collecting calendar dates. Any external comparison must use prospectively specified, sufficiently comparable definitions and populations.
+- **Next steps:** Cognitively test the parent-facing pattern labels and finalize the broad elapsed-time categories and any defensible external benchmark in the survey/SAP.
+## 2026-08-12 — Expanded clinic invitations beyond ASD-diagnosed patients
+
+- **What we did:** Corrected the recruitment population so participating autism diagnosis/treatment clinics invite every contactable parent or guardian in their complete defined patient population, including children evaluated but not diagnosed with ASD. Retained 500 ASD-diagnosed patients as a separate clinic-capacity threshold. Limited non-ASD respondents to recruitment, screening, developmental-pattern, and missingness summaries rather than the SORA timing resource.
+- **Command / executable:** Manual `apply_patch` edit; targeted population-language review and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.23.
+- **Results:** Distribution is no longer conditioned on ASD diagnosis or suspected regression, improving recruitment-composition assessment and preventing clinics from excluding evaluated children without ASD.
+- **Next steps:** Define the clinic's complete patient-population boundaries and the limited survey branch for respondents reporting no or unknown ASD diagnosis.
