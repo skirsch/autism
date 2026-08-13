@@ -6,14 +6,12 @@
 **Version:** 0.21
 **Date:** 12 August 2026
 
-## TL;DR
-
-1. We enroll clinics.
-2. Each clinic emails its own ASD parents a link to the survey. CHD never
-   receives the clinic's mailing list.
-3. The parent fills out the survey.
-4. We publish privacy-protected, de-identified data for the public to
-   analyze.
+1. Sponsor is CHD. PI is Brian Hooker.
+2. We enroll between 4 and 10 large autism diagnosis/treatment clinics.
+3. Each clinic emails its own ASD parents a link to the survey. We never receive the clinic's mailing list.
+4. The parent fills out the survey.
+5. We publish privacy-protected, de-identified data for the public to analyze.
+6. If vaccines cause autism, there will be a statistically significant pile up of autism onset within 2 days post vaccination.
 
 ## 1. Study identity
 
