@@ -3,7 +3,7 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.8  
+**Version:** 0.11
 **Date:** 12 August 2026
 
 ## 1. Study identity
@@ -11,15 +11,16 @@
 | Item | Proposed specification |
 |---|---|
 | Working title | Multisite Data Resource of Sudden-Onset Regressive Autism (SORA) |
-| Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation] |
-| Sponsor/coordinating organization | Children's Health Defense (CHD) [confirm legal entity] |
+| Coordinating principal investigator | Brian Hooker, Ph.D. [confirm exact degrees, title, and CHD affiliation]; has accepted this role |
+| Sponsor/coordinating organization | Children's Health Defense (CHD) [confirm legal entity]; has accepted this role |
 | Participating sites | The first 10 qualifying clinics to complete all activation requirements |
 | Study type | Retrospective, multisite medical-record data-resource study |
 | Primary purpose | Create, validate, document, and release a privacy-protected dataset for subsequent independent analysis |
 | Initial publication | Dataset/cohort descriptor, data-quality report, and basic descriptive summaries—not a causal analysis |
 | Participant contact | None |
 | Intervention | None |
-| Proposed regulatory pathway | Exempt secondary research under 45 CFR 46.104(d)(4), subject to the reviewing IRB's determination and site-specific requirements |
+| Proposed regulatory pathway | Exempt secondary research under 45 CFR 46.104(d)(4), subject to IPAK-EDU IRB's determination and site-specific requirements |
+| Reviewing IRB | IPAK-EDU IRB |
 | Key coordinating personnel | See Section 2 |
 
 ## 2. Key personnel
@@ -336,15 +337,16 @@ redistribution, and end-of-use destruction requirements.
 
 ## 12. Governance and independence
 
-Brian Hooker will have coordinating PI responsibility for protocol
+Brian Hooker has accepted coordinating PI responsibility for protocol
 compliance, site-activation authority, reporting, and communication
-with the reviewing IRB. Ben Jackson and Mila Radetich will conduct
-site outreach and activation. Karl Jablonowski and Steve Kirsch will
-monitor submitted files and apply the mechanical data-quality checks.
-The CHD data custodian is TBD. Each clinic will designate a site
-investigator responsible for local record access, eligibility, privacy
-compliance, and source verification. Role-specific access limits are
-stated in Section 2.
+with IPAK-EDU IRB. Children's Health Defense has accepted the
+sponsor and coordinating-organization roles. Ben Jackson and Mila
+Radetich will conduct site outreach and activation. Karl Jablonowski
+and Steve Kirsch will monitor submitted files and apply the mechanical
+data-quality checks. The CHD data custodian is TBD. Each clinic will
+designate a site investigator responsible for local record access,
+eligibility, privacy compliance, and source verification. Role-specific
+access limits are stated in Section 2.
 
 CHD's mission, public positions, funding, and relevant investigator
 financial and nonfinancial interests will be disclosed. Clinic
@@ -365,56 +367,121 @@ describe the collected SORA cohort and generate hypotheses, but it
 cannot by itself establish that vaccination caused regression or
 estimate the incidence of SORA in vaccinated or unvaccinated children.
 
-## 14. Punchlist — items still to supply
+## 14. Punchlist for IRB-packet development
 
-Use a prior CHD IRB submission as the first source for legal entity,
-IRB of record, data environment, training, COI forms, contracting, and
-privacy language. Check each item when the value is written into this
-summary or the draft packet.
+This punchlist separates facts CHD must supply, documents and protocol
+decisions the study team can complete, and determinations or records
+that must be issued by IPAK-EDU IRB or participating clinics. `Pending`
+means the item genuinely depends on a named person or outside entity;
+`Draft` means the study team can prepare it now; and `Fixed` means the
+planning summary already establishes the controlling rule.
 
-### A. People and organization
+### A. Information and authorization CHD must provide
 
-| # | Item | Status |
+| # | Item | Status / completion evidence |
 |---|---|---|
-| A1 | Brian Hooker: exact degrees, title, CHD affiliation, and study contact information | TBD |
-| A2 | Ben Jackson, Mila Radetich, Karl Jablonowski, and Steve Kirsch: credentials/titles, human-subjects training, and COI disclosures | TBD |
-| A3 | CHD data custodian: name, title, and responsibilities | TBD |
-| A4 | Security/privacy official(s), if different from the data custodian | TBD |
-| A5 | CHD legal entity name | TBD |
-| A6 | Written acceptance that this entity is sponsor, data custodian, and coordinating organization | TBD |
+| A1 | Brian Hooker: exact degrees, title, CHD affiliation, email, telephone, mailing address, CV/biosketch, human-subjects/privacy training, and COI disclosure | Pending CHD/PI |
+| A2 | Ben Jackson and Mila Radetich: exact titles/affiliations, contact information, applicable human-subjects/privacy training, and COI disclosures | Pending CHD/personnel |
+| A3 | Karl Jablonowski and Steve Kirsch: exact titles/affiliations, contact information, applicable human-subjects/privacy training, and COI disclosures | Pending CHD/personnel |
+| A4 | CHD data custodian: name, title, contact information, authority, and detailed responsibilities | Pending CHD |
+| A5 | CHD privacy/security official and incident-response contact, if different from A4 | Pending CHD |
+| A6 | Full legal name, legal status, address, and authorized institutional official for the CHD entity undertaking the research | Pending CHD |
+| A7 | Signed institutional authorization naming CHD as sponsor/coordinating organization, Brian Hooker as PI, and the approved data custodian | Pending authorized CHD official; sponsor and PI acceptance reported but formal authorization still required |
+| A8 | Complete funding and in-kind-support disclosure: each source, amount, mechanism, recipient, terms, and funder role | Pending CHD |
+| A9 | Clinic reimbursement decision and, if applicable, effort-based schedule, budget justification, and payment terms unrelated to eligible-case count or results | Pending CHD |
+| A10 | Official CHD financial and nonfinancial COI forms and any management plan, including organizational advocacy interests and relevant public positions | Pending CHD/IRB requirements |
 
-### B. IRB and site pathway
+### B. Protocol decisions and packet materials the study team must complete
 
-| # | Item | Status |
+These are work items, not facts to leave indefinitely TBD.
+
+| # | Item | Status / controlling rule |
 |---|---|---|
-| B1 | Reviewing IRB (name and whether it will accept CHD and Hooker as coordinating PI) | TBD |
-| B2 | Requested determination: confirm 45 CFR 46.104(d)(4) and which subclause, if any | TBD |
-| B3 | Reliance or local-review pathway for participating clinics | TBD |
-| B4 | Whether feasibility contact with clinics is permitted before IRB approval | TBD |
-| B5 | Site eligibility checklist | TBD |
-| B6 | Clinic participation agreement / data-use terms | TBD |
-| B7 | IRB-ready clinic-outreach email, phone script, and related materials | TBD |
+| B1 | Resolve the age boundary so the prose and validation rule are identical (`through 60 completed months` versus `0–1,826 days`) | Decision required before data dictionary |
+| B2 | Final inclusion/exclusion criteria, including prior developmental concern, alternative explanatory diagnoses, conflicting reports, acceptable ASD diagnosis/clinician, diagnosis timing, and treatment of records of deceased children | **Substantial source draft exists;** revise to the current three-category data-resource design and close the listed decisions |
+| B3 | Operational rule for “persistent,” including the minimum documentation or follow-up required to distinguish a persistent change from a transient symptom | **Partial source language exists;** a measurable final rule is still required |
+| B4 | Vaccination abstraction rules: administered dates only, same-day administration/onset, multiple products on one date, outside records, adequate pre-onset history, and adequate post-onset follow-up | **Substantial source draft exists;** add the new three-state pre-onset and `dpost_status` rules |
+| B5 | Duplicate-person rule for a child appearing at more than one clinic, without transferring identity or linkage keys | **New rule required** |
+| B6 | Recruitment opening/closing dates, initial data cutoff, data-cleaning interval, and prospective rules for later versioned releases | CHD/PI decision required before submission |
+| B7 | Secure submission method: approved workbook/CSV upload, electronic data-capture system, or both; ordinary email remains prohibited | **Workbook/CSV and secure-upload language already drafted;** CHD must name and approve the actual system |
+| B8 | Retention, destruction, and access-review schedule | **Seven-year retention and quarterly review source draft exists;** confirm against CHD/IPAK policy |
+| B9 | Site eligibility and activation checklist, activation-order log, zero-case-site rule, withdrawal/replacement record, and site-specific locked ascertainment form | **Partially drafted across existing protocol/recruitment/attestation materials;** consolidate and add activation-order and withdrawal forms |
+| B10 | IRB-ready clinic outreach email, telephone script, feasibility-contact script, and “do not use before authorization” controls | **Substantial outreach and telephone source draft exists;** revise personnel, purpose, fields, first-10-site rule, and IPAK status |
+| B11 | Clinic participation/data-transfer agreement and prohibition on releasing the patient mapping key or attempting re-identification | **Required terms already drafted;** convert them into a CHD agreement and obtain legal/IRB approval |
+| B12 | Electronic patient-level collection instrument containing the approved fields and validation rules | **Working electronic workbook already exists;** rebuild its schema for the current category fields, ASD level, three-state vaccination status, and `dpost_status` |
+| B13 | Data dictionary, SORA abstraction manual, worked examples, eligibility checklist, and reviewer-disagreement procedure | **Substantial instructions and definitions already drafted;** consolidate and revise for Version 0.11 decisions |
+| B14 | Aggregate screening/exclusion log and four vaccination-status-through-24-months-of-age site counts | **Already drafted in the instrument and protocol;** revise eligibility reasons and terminology only |
+| B15 | Clinic electronic attestation covering complete ascertainment, nonselective submission, row-ID construction, prohibited fields, and retention of source records/key | **Substantial attestation already drafted;** add the first-10-site/current-field and complete-ascertainment terms |
+| B16 | Validation/query-resolution SOP: required-field, range, allowed-value, duplicate, and cross-field checks; clinic correction/confirmation; audit trail; no central chart access | **Validation rules and query principles partially drafted;** update the workbook builder and create the standalone SOP |
+| B17 | Data-lock, version-control, correction, withdrawal, and retraction procedure, including treatment of data already included in an immutable public release | **Version-control concepts exist;** formal correction/withdrawal/retraction SOP is new |
+| B18 | CHD security plan: named access owner, authorized roles, MFA, encryption, audit logs, backups, managed-device/download rules, quarterly access review, role-termination removal, incident reporting, and secure destruction | **Substantial privacy/security source draft exists;** replace generic infrastructure with the CHD system, custodian, and officials |
+| B19 | Initial descriptive-output plan and reproducible code; selected Dpre windows remain outside the initial data-resource publication | Fixed in Sections 10–11; implementation required |
+| B20 | Public-release and controlled-access governance: approval authority, access committee, application criteria, DUA, access duration, no linkage/re-identification/redistribution, destruction, dataset license, citation, corrections, and enforcement | **Public-release safeguards and DUA principles partially drafted;** controlled-access committee/process, license, and enforcement terms remain new; repository vendor may remain pending |
+| B21 | Complete IRB protocol, application/cover form, waiver contingency, privacy/security plan, funding/COI disclosure, investigator roster, and attachment index | **A substantial complete packet and separate waiver/privacy/funding/personnel attachments already exist as source material;** restructure and revise them to the current CHD data-resource design after B1–B20 |
 
-### C. Dates, money, and infrastructure
+### C. IPAK-EDU IRB information and determinations
 
-| # | Item | Status |
+| # | Item | Status / completion evidence |
 |---|---|---|
-| C1 | Clinic-recruitment opening and closing dates | TBD |
-| C2 | Initial data cutoff date and rules for later versioned releases | TBD |
-| C3 | Approved secure transfer and storage environment (system name, encryption, access control) | TBD |
-| C4 | Submission system: workbook/CSV portal, electronic data capture, or both | TBD |
-| C5 | Record-retention period and access-list review interval | TBD |
-| C6 | Study funding source, amount, and terms | TBD |
-| C7 | Clinic reimbursement: none, or amount and documentation rules | TBD |
+| C1 | Reviewing board identity | **Confirmed from OHRP database screenshot:** IPAK-EDU LLC IRB #1, IRB00014237, St. Clair Shores, OHRP/FDA type, Active as viewed 12 August 2026 |
+| C2 | Exact IPAK-EDU legal/operator name, mailing address, IRB administrator/contact, submission instructions, fees, meeting/review schedule, and service agreement | Pending IPAK-EDU |
+| C3 | IPAK-EDU confirmation that it will review this CHD-sponsored multisite data-resource study and accept Brian Hooker as coordinating PI | Pending written confirmation/service agreement |
+| C4 | Primary requested pathway | Fixed request: exempt secondary research under 45 CFR 46.104(d)(4); packet must explain the proposed applicable subparagraph(s) without presuming the IRB's determination |
+| C5 | Final determination of exempt/not-human-subjects/nonexempt status and applicable 45 CFR 46.104(d)(4) subparagraph | Pending IPAK-EDU determination |
+| C6 | Whether and under what limits clinic feasibility outreach may occur before determination; no research-specific screening or transfer before authorization | Pending IPAK-EDU; script can be drafted under B10 |
+| C7 | Whether IPAK-EDU will serve as reviewing/single IRB for engaged clinics, accept reliance, or review only CHD's coordinating activities | Pending IPAK-EDU and each clinic |
+| C8 | Required investigator training, COI forms, continuing review/status reporting, amendments, deviations, unanticipated-problem reporting, and closure requirements | Pending IPAK-EDU policies |
+| C9 | Contingency determinations if any activity is nonexempt: expedited category, waiver of informed consent under 45 CFR 46.116(f), waiver of parental permission under 45 CFR 46.408(c), assent not practicable, and HIPAA authorization waiver if applicable | **Substantial waiver justification already drafted;** revise to the current study. Final determinations remain pending IPAK-EDU/site decisions |
+| C10 | Written determination/approval letter and approved/stamped study documents | Pending review; required before applicable research activity begins |
 
-### D. Disclosure, access, and packet attachments
+The OHRP registration establishes the board identity and active
+registration shown in the supplied screenshot. It does not replace the
+service agreement, confirm that IPAK-EDU accepts this protocol, or decide
+the regulatory status of CHD or any clinic.
 
-| # | Item | Status |
+### D. Documents and determinations required for every participating clinic
+
+Individual investigators and abstractors will be named during site
+activation, but the templates and requirements must be included in the
+central packet.
+
+| # | Item | Status / completion evidence |
 |---|---|---|
-| D1 | Independent disclosure-risk reviewer (name or qualifying arrangement) | TBD |
-| D2 | Controlled-access repository and data-use agreement process | TBD |
-| D3 | Public posting location for protocol, codebook, aggregates, and code, if any | TBD |
-| D4 | CVs/biosketches and training certificates for named coordinating personnel | TBD |
+| D1 | Clinic legal name, address, site investigator, abstractors, privacy contact, and authorized signatory | Pending each site |
+| D2 | Site investigator CV/biosketch and required human-subjects/HIPAA/privacy training; abstractor training and protocol competency | Pending each site |
+| D3 | Site determination of whether it is a HIPAA covered entity and the lawful basis for research-specific local PHI access | Pending clinic privacy/legal authority |
+| D4 | Site engagement determination and local IRB approval/exemption, IPAK-EDU reliance, or other documented pathway | Pending each site/IPAK-EDU |
+| D5 | HIPAA authorization or waiver, if required for local PHI use, and waiver documentation if applicable | Pending each site/IRB/privacy authority |
+| D6 | Pre-transfer HIPAA determination for the exact outbound file: Safe Harbor or Expert Determination, including actual-knowledge assessment | Pending each site privacy authority |
+| D7 | Certification that `clinic_row_id` is not derived from patient information, is not otherwise translatable, and the re-identification mechanism/key will never be disclosed to CHD | Pending signed site attestation |
+| D8 | Executed participation, data-transfer/data-use, reliance, business-associate, or other agreements required for that site's pathway | Pending parties |
+| D9 | Locked source population, search method, record-system dates, ascertainment dates, and complete-case commitment established before timing review | Pending site activation |
+| D10 | Letter of cooperation and confirmation of secure electronic submission capability | Pending each site |
+| D11 | State-law or institutional privacy requirements beyond HIPAA | Pending each site |
+| D12 | Signed final site certification and screening flow, including zero eligible records where applicable | Pending data submission |
 
-Site investigators and clinic abstractors are named at activation, not
-on this punchlist.
+### E. Data release and post-collection approvals
+
+| # | Item | Status / completion evidence |
+|---|---|---|
+| E1 | Independent qualified disclosure-risk expert or qualifying engagement arrangement | Pending before any proposed exact row-level public release; qualification standard fixed in Section 11 |
+| E2 | Expert determination on the exact proposed public file and required suppression, binning, pooling, or removal rules | Pending final release file; unrestricted row-level release prohibited without it |
+| E3 | Controlled-access repository/operator and executed access-governance documents | Process drafted under B20; vendor/administrator pending |
+| E4 | Public repository for protocol, codebook, aggregate results, code, synthetic data, release metadata, and change log | Pending repository selection before publication |
+| E5 | Final data-quality report, disclosure review, PI release authorization, dataset version/DOI, license, and public correction contact | Pending each release |
+
+### F. Submission and activation gates
+
+- **Before IRB submission:** complete Sections A where required by the
+  application; close B1–B8; draft B9–B21; obtain C2–C3; and attach the
+  available personnel, funding, security, and COI documents.
+- **Before clinic outreach beyond IRB-permitted feasibility contact:**
+  obtain C6 and use only the approved B10 materials.
+- **Before activating a clinic:** complete D1–D11 and all required
+  agreements and determinations.
+- **Before screening or transferring research data:** obtain the written
+  determinations applicable to that site and verify the approved secure
+  system.
+- **Before any exact row-level public release:** complete E1–E2. If the
+  expert does not approve the proposed file, release only approved
+  aggregates, code, synthetic data, and controlled-access materials.

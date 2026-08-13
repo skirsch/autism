@@ -119,3 +119,19 @@
 - **Outputs:** Updated Version 0.6 of the CHD study executive summary.
 - **Results:** The enrollment language now matches the permitted two-to-ten-site outcome, and screening-flow reporting cannot be misread as excluding vaccination-unknown cases.
 - **Next steps:** Use Version 0.6 as the planning definition for the CHD IRB packet.
+
+## 2026-08-12 — Rebuilt CHD IRB punchlist
+
+- **What we did:** Replaced the abbreviated TBD list with a gated punchlist separating CHD-supplied facts, study-team protocol/attachment work, IPAK-EDU information and determinations, per-clinic activation records, and post-collection disclosure/access approvals.
+- **Command / executable:** Visual inspection of the supplied OHRP database screenshot and targeted `apply_patch` edit.
+- **Outputs:** Updated Version 0.11 of `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md`.
+- **Results:** Recorded IPAK-EDU LLC IRB #1, IRB00014237, St. Clair Shores, OHRP/FDA, Active as shown on 12 August 2026; distinguished genuine external pending items from packet materials and study decisions that can be completed now.
+- **Next steps:** Obtain CHD/IPAK organizational facts, close protocol decisions B1–B8, and draft the instruments/SOPs and IRB packet listed in B9–B21.
+
+## 2026-08-12 — Credited existing IRB drafting in punchlist
+
+- **What we did:** Inventoried the existing protocol, electronic workbook, collection instructions, recruitment materials, waiver, privacy/attestation, funding/COI, and personnel documents against punchlist items B2–B21 and C9.
+- **Command / executable:** Recursive file inventory and targeted content search; `apply_patch` status update.
+- **Outputs:** Updated Version 0.11 CHD executive-summary punchlist.
+- **Results:** Items with existing substantial or partial source drafts are now labeled accordingly; only genuinely new rules/SOPs or CHD/IPAK/site-specific facts remain described as new or pending.
+- **Next steps:** Adapt the existing source materials into a clean CHD packet rather than recreating them.
