@@ -3,8 +3,8 @@
 ## Executive Summary and Study Definition
 
 **Document status:** Planning summary for development of the IRB submission packet  
-**Version:** 0.26
-**Date:** 12 August 2026
+**Version:** 0.27
+**Date:** 13 August 2026
 
 1. Sponsor is CHD. PI is Brian Hooker.
 2. We enroll between 4 and 10 large autism diagnosis/treatment clinics.
@@ -97,8 +97,8 @@ following are satisfied:
 - the respondent is the child's parent or legal guardian and reports
   sufficient direct knowledge of the child's development and onset;
 - the child subsequently received a clinical ASD diagnosis;
-- parent-recognized SORA onset occurred from birth through 60 completed
-  months of age;
+- parent-recognized SORA onset occurred before the child's fifth
+  birthday;
 - the parent can distinguish a discrete onset day (Day 0), on which the
   first obvious, dramatic, and persistent change began, from a gradual
   period of change, even if the historical calendar date is no longer
@@ -403,6 +403,10 @@ with a worked example. Only `Yes` to the discrete-onset question proceeds
 into the SORA timing pathway. `No` and `Not sure` remain in screening and
 recruitment-flow counts but do not enter the SORA analytic cohort.
 
+For each field ending in `_within_7d`, the seven-day window is Day 0
+through Day 6 inclusive. Day 0 counts as the first day; Day 7 is outside
+the window.
+
 The overall developmental-pattern question is a recruitment-composition
 and measurement-quality variable, not an independent validation that all
 eligible parents responded. Its distribution may be compared with
@@ -517,8 +521,7 @@ agreement or alter an unexpected answer.
 
 The final-submit page will explain that submission creates a directly
 unlinked research response that the research team ordinarily cannot
-identify, correct, or
-withdrawn afterward. The survey will distinguish a saved page or partial
+identify, correct, or withdraw afterward. The survey will distinguish a saved page or partial
 response from final submission. The consent and platform will disclose
 that post-consent partial responses are retained to measure breakoff and
 missingness. Before final submission or abandonment, a respondent may
@@ -886,7 +889,7 @@ adapted but is not yet valid for this redesigned parent-survey study.
 | # | Item | Status |
 |---|---|---|
 | B1 | Final adult-parent and child eligibility/exclusion rules, including ASD confirmation, prior development, competing explanations, diagnosis timing, and deceased children | **Persistence rule fixed:** at least 30 days or still present at a later clinical evaluation; remaining parent-survey rules require completion |
-| B2 | Exact age-at-onset boundary and validation rule | Decision required: reconcile “through 60 completed months” with the exact maximum derived day |
+| B2 | Exact age-at-onset boundary and validation rule | **Fixed:** onset must occur before the child's fifth birthday; the survey will ask for direct confirmation rather than infer eligibility from an artificial universal day cutoff |
 | B3 | Clinic source-population definition: date, active/former patient status, age range, complete inclusion of patients with and without an ASD diagnosis, contactability, multiple guardians, undeliverables, affiliated-network treatment, and separate evidence for at least 500 ASD-diagnosed patients | Threshold and universal clinic-population distribution rule fixed; detailed verification rules required |
 | B4 | First-10 activation procedure, initial 30-day period, automatic minimum-four extension through no later than Day 90, early clinic campaign start, sub-four pilot-data rule, withdrawal/replacement rule, activation-order log, and outcome-blinding controls | Core rules fixed in Section 6; operational SOP and dates required |
 | B5 | Clinic recruitment campaign specification: clinic-branded invitation on Day 0, reminders on Days 7 and 21, closure on Day 35, approved channels, opt-outs, and frozen unique-patient, unique-recipient, contactable-coverage, attempted, delivered, undeliverable, and reminder metrics | Schedule and metric classes fixed in Section 6; detailed campaign SOP required |

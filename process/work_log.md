@@ -233,3 +233,10 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.26.
 - **Results:** Sub-day temporal proximity is preserved rather than discarded, including onset two hours after vaccination.
 - **Next steps:** Use identical elapsed-time definitions and worked examples in the survey, codebook, validation tests, and SAP.
+## 2026-08-13 — Resolved age boundary and seven-day window wording
+
+- **What we did:** Corrected “withdrawn” to “withdraw,” defined every `_within_7d` field as Day 0 through Day 6 inclusive, and replaced the ambiguous 60-month/day cutoff with onset before the child's fifth birthday.
+- **Command / executable:** Manual `apply_patch` edit; targeted terminology review and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.27.
+- **Results:** The survey implementation no longer has an off-by-one ambiguity, and age eligibility no longer depends on a leap-year-sensitive universal day maximum.
+- **Next steps:** Put the same definitions into the survey, codebook, validation tests, and analytic derivation specification.
