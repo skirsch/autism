@@ -240,3 +240,83 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.27.
 - **Results:** The survey implementation no longer has an off-by-one ambiguity, and age eligibility no longer depends on a leap-year-sensitive universal day maximum.
 - **Next steps:** Put the same definitions into the survey, codebook, validation tests, and analytic derivation specification.
+
+## 2026-08-13 — Added required contact linkage and embedded record validation
+
+- **What we did:** Redesigned the study from a directly unlinked exempt-survey concept to a coded minimal-risk parent survey requiring email, with a separately authorized, randomly selected record-validation substudy. Added segregated contact/research/validation stores, outcome-blinded random sampling, dual record abstraction and adjudication, a target of at least 100 completed vaccination-record comparisons if achievable, explicit validation-selection and missing-record reporting, separate survey and validation locks, withdrawal rules, expanded security controls, and corresponding IRB-packet punchlist items.
+- **Command / executable:** Manual `apply_patch` edits; targeted obsolete-language and contradiction scans with `rg`; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.28.
+- **Results:** The design can directly estimate agreement between parent-reported vaccination timing and obtainable documentary evidence instead of relying only on an unverifiable recall assumption. Because responses remain linkable and validation may involve identifiable child records, exemption is no longer the primary requested pathway; the packet will request the appropriate minimal-risk review with adult consent, parental permission, and record authorization as applicable.
+- **Next steps:** Obtain IPAK-EDU feedback on the minimal-risk/Subpart D pathway; finalize the validation sampling and stopping plan, authorization form, abstraction manual, retention schedule, vendor architecture, and named validation personnel.
+
+## 2026-08-13 — Adopted staged validation sample
+
+- **What we did:** Replaced the aspirational 100-record validation target with a staged design: 20 usable vaccination-record comparisons as the minimum feasibility threshold and 60 as the operational target if obtainable. Required invitations to continue under outcome-independent stopping rules and prohibited a cohort-wide quantitative disagreement estimate if fewer than 20 usable comparisons are obtained.
+- **Command / executable:** Manual `apply_patch` edit; targeted terminology scan; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.29.
+- **Results:** The validation burden is reduced while preserving a credible precision target; stopping cannot depend on whether early comparisons agree with parent reports.
+- **Next steps:** Prespecify invitation batches, expected authorization/retrieval rates, exact confidence intervals, and the final outcome-independent exhaustion rule in the validation manual and SAP.
+
+## 2026-08-13 — Added onset-anchor controls and follow-up research roadmap
+
+- **What we did:** Added a consent-safe clinic-branded Start page, an optional categorical decline-reason path subject to IRB approval, structured onset reconstruction and timing-anchor questions before vaccination items, vaccination-anchor measurement, onset-evidence tiers, primary blinded and secondary unblinded validation review, and prespecified measurement-quality sensitivity strata. Expanded the roadmap to include a separately approved random-sample nonresponder callback study, independent replication, a population-based record study, and prospective pediatric sentinel surveillance.
+- **Command / executable:** Manual `apply_patch` edits; targeted terminology and consistency review; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.30.
+- **Results:** The present study more directly measures recall quality and anchoring without adding unrestricted main-survey narratives or clinic callbacks to the current protocol. Later designs are clearly separated so they do not expand the present IRB submission or imply that validation eliminates selection bias.
+- **Next steps:** Convert the new fields into exact parent-facing items; obtain IPAK approval for decline-reason retention; freeze evidence-tier, redaction, subgroup, and blinded/unblinded adjudication rules before outcome access.
+
+## 2026-08-13 — Made the day-level measurement gap the scientific rationale
+
+- **What we did:** Added a dedicated scientific-rationale section distinguishing broad vaccine/ASD research from the narrower SORA timing question. Documented the proposed combination of discrete Day 0, directional sub-24-hour/day-level intervals, exact-versus-ranged reporting, recall anchors, evidence tiers, blinded assessment, and random record validation. Explained why positive, null, or diffuse findings would add knowledge and reserved the absolute novelty claim pending a reproducible literature review.
+- **Command / executable:** Targeted primary-literature search; manual `apply_patch` edit; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.31.
+- **Results:** The summary now states a clear knowledge gap and proportional scientific justification for collecting the data without claiming that temporal proximity establishes causation.
+- **Next steps:** Build the protocol literature table and reproducible search appendix and confirm the novelty language before formal IRB submission.
+
+## 2026-08-13 — Added selection-bias framework and drafted complete parent survey
+
+- **What we did:** Added a dedicated executive-summary section describing whole-population clinic distribution, funnel measurement, neutral ordering, causal-belief and vaccination-plan stratification, validation, and residual selection limitations. Added pre-survey causal-attribution and post-onset vaccination-decision domains. Created a complete electronic parent-survey draft with landing and consent gates, eligibility, broad developmental pattern, SORA Day 0/category rules, onset anchors, Dpre/Dpost, acute events, causal beliefs, subsequent vaccination decisions, review, limited branches, validation follow-up requirements, automated checks, paradata, and implementation punchlist.
+- **Command / executable:** Manual `apply_patch` authoring; targeted cross-document terminology review; Markdown structure scan; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.32 and new `irb_submission/CHD_SORA_DATA_RESOURCE/02_Parent_Survey_Instrument.md` Version 0.1.
+- **Results:** The study now measures prior causal attribution, vaccination anchoring, and continued/changed vaccination without treating those post-event variables as unbiased controls. The IRB has a concrete instrument to review rather than only a list of intended domains.
+- **Next steps:** Conduct cognitive and timed usability testing; resolve the listed IRB/vendor/legal decisions; create the separate validation authorization and abstraction manual; freeze the machine-readable codebook and branching tests.
+
+## 2026-08-13 — Added prespecified selection-bias interpretation
+
+- **What we did:** Added the precise inferential statement governing comparisons across prior-attribution, onset-anchor, subsequent-vaccination, recall-source, and evidence-quality groups, including the limited inference from recipients who never select Start.
+- **Command / executable:** Manual `apply_patch` edit; targeted wording check; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.33.
+- **Results:** The summary now states that consistent subgroup timing would weaken explanations based solely on pre-existing vaccine attribution or differential reporting, while preserving the residual that unobserved nonresponder outcomes remain unknown.
+- **Next steps:** Carry the same prespecified language into the protocol and SAP without strengthening it after outcome access.
+
+## 2026-08-13 — Synchronized Google Docs executive summary
+
+- **What we did:** Replaced the full body of the existing `CHD Executive Summary` Google Doc with local Executive Summary Version 0.33, reapplied title/heading and bullet structure, removed Markdown emphasis markers, corrected transferred punctuation encoding, and verified the version plus the new selection-bias, prespecified-interpretation, causal-attribution, and punchlist sections by connector readback.
+- **Command / executable:** Google Drive/Docs authenticated metadata, full-text, and `batchUpdate` operations; local Markdown chunked read; post-write targeted readback.
+- **Outputs:** Google Doc `1qhRWQAOWZXvrLvq_IXWlsUD9pdAdoYorDyulSGoH1I0` updated in place.
+- **Results:** The Google Doc now contains the current Version 0.33 content instead of Version 0.20; the single-tab topology and document identity were preserved.
+- **Next steps:** Treat the local Markdown as the authoritative working source and resynchronize the Google Doc after future approved version changes.
+
+## 2026-08-13 — Locked the requested IRB review pathway
+
+- **What we did:** Replaced generic minimal-risk language with a specific request for expedited IRB review under 45 CFR 46.110, proposed Category 7 for the survey and Category 5 for validation records, a 45 CFR 46.404 minimal-risk child finding, adult consent and parental permission, possible waiver of signed documentation under 45 CFR 46.117(c), and an assent determination under 45 CFR 46.408(a). Clarified that exemption is not the primary request and that record authorization is the default rather than a HIPAA waiver.
+- **Command / executable:** Manual `apply_patch` edit; targeted regulatory-language scan; `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.34. The Google Doc remains at Version 0.33 and was intentionally not synchronized.
+- **Results:** The review pathway is now a fixed design decision rather than a generic or ambiguous TBD, while preserving IPAK-EDU's authority to make the final category and Subpart D determinations.
+- **Next steps:** Use the same requested-pathway language in the formal protocol, cover application, consent/permission materials, and validation authorization.
+
+## 2026-08-13 — Added IPAK IRB website to executive summary
+
+- **What we did:** Added the supplied IPAK Institutional Review Board website to the Reviewing IRB entry and incremented the Markdown executive summary from Version 0.34 to Version 0.35.
+- **Command / executable:** Website verification followed by manual `apply_patch` edit and `git diff --check`.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/00_CHD_SORA_Study_Executive_Summary.md` Version 0.35.
+- **Results:** The executive summary now provides a direct link to the identified reviewing IRB. The Google Doc was intentionally not changed.
+- **Next steps:** Confirm the IRB's exact legal/operator name and submission details for punchlist item C2 before formal submission.
+
+## 2026-08-13 — Completed IPAK Form 1 intake draft
+
+- **What we did:** Filled the IPAK Form 1 content controls from Executive Summary Version 0.35 while preserving the source Word template. Populated the title, PI, provisional CHD affiliation, human-study type, study description, specific aims, proposed duration, participant population, funding/budget status, and repeated header fields. Marked unavailable contact, address, timing, legal-entity, and funding details as TBD or confirm.
+- **Command / executable:** Task-local OOXML content-control patch; Microsoft Word PDF export; four-page raster inspection; package/control and section verification.
+- **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/ipakirb-form-1_filled.docx`.
+- **Results:** All 15 intended controls were populated; the original form remains unchanged. The four rendered pages were reviewed with no clipping or overlap in the completed intake form. The source template's contents page already contains broken bookmarks for absent Parts B and C; this pre-existing condition was preserved.
+- **Next steps:** User/PI should replace every TBD or bracketed confirmation, confirm the proposed 12-month duration, and verify the funding/budget language before submission.

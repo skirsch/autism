@@ -1,0 +1,83 @@
+{
+  "input": "C:\\Users\\stk\\Documents\\GitHub\\autism\\irb_submission\\CHD_SORA_DATA_RESOURCE\\ipakirb-form-1.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 9,
+  "direct_paragraph_formatting_paragraphs": 8,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 7,
+      "text": "IPAK-EDU INSTITUTIONAL \nREVIEW BOARD (IRB) ",
+      "style": "Title"
+    },
+    {
+      "para_index": 19,
+      "text": "CONTENTS",
+      "style": "Normal"
+    },
+    {
+      "para_index": 36,
+      "text": "Contact Information",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_run_formatting": [
+      {
+        "para_index": 7,
+        "run_text": "IPAK-EDU INSTITUTIONAL ",
+        "style": "Title"
+      },
+      {
+        "para_index": 7,
+        "run_text": "\n",
+        "style": "Title"
+      },
+      {
+        "para_index": 7,
+        "run_text": "REVIEW BOARD (IRB) ",
+        "style": "Title"
+      },
+      {
+        "para_index": 19,
+        "run_text": "CONTENTS",
+        "style": "Normal"
+      },
+      {
+        "para_index": 36,
+        "run_text": "Contact Information",
+        "style": "Normal"
+      }
+    ],
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 8,
+        "text": "Proposal Templates",
+        "style": "Title"
+      },
+      {
+        "para_index": 31,
+        "text": "Principal Investigator (PI) Name: ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 32,
+        "text": "Affiliation: ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 36,
+        "text": "Contact Information",
+        "style": "Normal"
+      },
+      {
+        "para_index": 39,
+        "text": "Description of the Study:",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}
