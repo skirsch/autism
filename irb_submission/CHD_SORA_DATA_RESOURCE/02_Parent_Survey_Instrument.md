@@ -615,14 +615,19 @@ assigning Dpre or Dpost.
 
 `acute_events_near_onset` — select all:
 
-> Did any of these occur close to Day 0?
+> Which of these occurred within 5 days before onset?
 
-- Febrile illness or infection
-- Medication started or substantially changed
-- Injury, surgery, anesthesia, or another medical procedure
-- Another major acute health event
-- None known
-- Not sure
+- Febrile seizure
+- Illness
+- Vaccination
+- Pediatrician wellness appointment
+- Dentist visit
+- Tylenol
+- Fever
+- New medication started
+- Anesthesia
+- None of the above
+- Not sure/don't remember
 
 For each selected event, ask:
 
