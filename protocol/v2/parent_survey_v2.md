@@ -1,4 +1,4 @@
-# CHD SORA Parent Survey — Final Instrument v1.0
+# CHD SORA Parent Survey — Final Instrument v1.1
 
 ## Section 0 — Consent & Screening (All Parents)
 
@@ -20,7 +20,7 @@
 > 4. They met milestones, then **stopped making progress** (plateaued) without a clear loss.
 > 5. I'm not sure.
 
-*Routing: Option 2 → SORA path (Section 1). Options 1, 3, 4 → Non-SORA path (Section 6).*
+*Routing: Option 2 → SORA path (Section 1). Options 1, 3, 4 → Non-SORA path (Section 5).*
 
 ---
 
@@ -72,23 +72,52 @@
 **Q4.1 — Schedule before onset**
 > Before the change began, which describes your child's vaccination status? (Full schedule / Partial or delayed / Not vaccinated / Not sure). *If partial/delayed, which were skipped?*
 
-**Q4.2 — Nearest vaccination**
-> Which shot was closest in time to the change? [Name of shot]
-> Did it happen BEFORE or AFTER the change? [Before/After/Same day]
-> How many days before/after? [Exact # if known, or range: 1-2d, 3-7d, 1-2w, 2-4w, 1-2m, >2m]
+**Q4.2 — Most recent vaccination visit before onset**
+> Did your child receive any vaccines before the change began? (Yes / No / Not sure)
+>
+> *If Yes:* What was the date of the most recent vaccination visit before the change? [Month/Year] [Day (if known)]
+>
+> What helped you determine this vaccination date? (Vaccine card or immunization record / Medical portal or clinic record / Calendar, email, photograph, or other dated record / Memory / Other)
+>
+> How confident are you in this vaccination date? (Very confident / Somewhat confident / Not confident)
+>
+> Which vaccines were given at that visit? (Check all that apply)
+> - MMR
+> - Varicella
+> - MMRV combination
+> - DTaP
+> - Hib
+> - Pneumococcal conjugate (PCV)
+> - Polio (IPV)
+> - Hepatitis A
+> - Hepatitis B
+> - Rotavirus
+> - Influenza
+> - COVID-19
+> - Other: [Specify]
+> - A vaccine was given, but the type is unknown
+> - Not sure
+>
+> How many vaccine injections or oral vaccines were given at that visit? (1 / 2 / 3 / 4 or more / Not sure)
+>
+> Based on the onset date and vaccination date you reported, the study team will calculate the number of days from this vaccination visit to onset. If one or both exact dates are unavailable, approximately how long before onset was this visit? (Same day / 1–2 days / 3–7 days / 1–2 weeks / 2–4 weeks / 1–2 months / More than 2 months / Not sure)
 
-**Q4.3 — Last shot before / First shot after**
-> Last shot before change: [Name, days before]
-> First shot after change: [Name, days after]
-> *No vaccinations before/after options included.*
+**Q4.3 — Preceding vaccination visit**
+> Before the vaccination visit reported above, was there an earlier vaccination visit? (Yes / No / Not sure)
+>
+> *If Yes:* Approximately when was that preceding visit? [Month/Year] [Day (if known)]
+>
+> Which vaccines were given at that visit? [Same vaccine checklist as Q4.2]
 
-**Q4.4 — Antigen load & reactions**
-> Shots at visit closest to onset: [1, 2, 3, 4+]. 
-> Prior adverse reaction to any vaccine: [Yes/No/Not sure]. Describe: [Free text].
+**Q4.4 — Reactions before onset**
+> Before this child's developmental change, had your child ever experienced a suspected reaction to a vaccine? (Yes / No / Not sure)
+>
+> *If Yes:* Please describe what happened, which vaccine or visit it followed, and when it began. [Free text]
 
 **Q4.5 — Post-onset schedule**
-> Did the schedule continue, change, or stop after onset? Why? [Free text]
-> Did subsequent shots make symptoms better/worse? [Scale]
+> After the change, did your child's vaccination schedule continue unchanged, become delayed, or stop? (Continued unchanged / Became delayed / Stopped / Not sure)
+>
+> Why did the schedule change or stop, if known? [Free text]
 
 ---
 
