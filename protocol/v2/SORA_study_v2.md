@@ -82,7 +82,7 @@ The survey order is intentional:
 6. Parents choose the regression pattern that fits their child.
 7. If not a SORA pattern, we capture the age autism was first noticed and vaccination status *before that date* (full / partial or delayed / none).
 8. The remaining questions are only for SORA-classified children.
-9. All SORA parents receive a \$10 Amazon gift card upon completion.
+9. All SORA parents receive a $10 Amazon gift card upon completion.
 10. **Onset anchor:** Parents report the child's age at onset and identify the onset date.
 11. **Unaided recall:** Before seeing any checklist, parents describe in their own words what happened before and after onset.
 12. **Parent assessment:** Parents report their own causal beliefs *before* detailed prompts.
@@ -157,6 +157,14 @@ However, these results were aggregate and did not provide granular data (individ
 - **[Professor Norman Fenton](https://www.eecs.qmul.ac.uk/~norman/)**
 - **[Beth Clarkson](https://bethclarkson.com)** ([autism paper](https://publichealthpolicyjournal.com/the-obfuscation-of-the-confounded-relationship-between-vaccines-and-autism/))
 - **Invited:** Wendy Goldberg
+
+## Budget
+
+The proposed budget is $70,000:
+
+* $20,000 for clinic participation: $2,000 per clinic × 10 clinics.
+* $50,000 for study staff and operations, including outreach workers paid $25 per hour and $125/month for the REDCap system.
+
 
 ## Funding
 
