@@ -336,3 +336,11 @@
 - **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.3 and `protocol/v2/parent_survey_v2.md` Version 1.3.
 - **Results:** The planning documents now distinguish the two descriptive plots from the confirmatory permutation test, require parent-observed onset rather than diagnosis timing, and collect the fields needed for visit-, clinic-, schedule-, and geographic stratification without collecting post-onset vaccination timing.
 - **Next steps:** Before REDCap implementation, freeze the permutation strata and sparse-stratum rules, exact-date eligibility, number of permutations, visit-category derivation, multiplicity plan, and public-versus-controlled geography fields.
+
+## 2026-08-18 — Replaced Priority 1 with executable null-validation tasks
+
+- **What we did:** Replaced the obsolete interval-uniformity punchlist item with sequential Items 1A--1E covering the synchronization estimand, candidate permutation procedures, simulation validation, frozen analysis specification, and survey-variable sufficiency.
+- **Command / executable:** Manual `apply_patch` edit and `git diff --check`.
+- **Outputs:** Updated `protocol/v2/study_punchlist.md`.
+- **Results:** Priority 1 now has explicit completion criteria and must be closed before work begins on Priority 2.
+- **Next steps:** Complete Item 1A by locking the primary estimand, Day 0--2 statistic, eligibility rules, exclusions, and interpretation boundary.

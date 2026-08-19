@@ -24,22 +24,51 @@ The documents successfully implement or acknowledge several major recommendation
 Punchlist
 ---------
 
-### Priority 1 --- Resolve the primary null/reference problem
+### Priority 1 --- Complete and validate the primary null/reference construction
 
-This is the largest unresolved methodological issue.
+The three-prong analysis has replaced the former interval-uniformity proposal. The descriptive vaccination-relative lag histograms and chronological-age onset plot do not require a formal reference distribution. The primary Day 0--2 stratified permutation lag-concentration test does require a fully specified and validated null construction.
 
-The overview says onset should be "roughly uniform" within each inter-vaccination interval and that spikes aligned with scheduled vaccination ages would be difficult to reconcile with a smooth susceptibility curve. That is consistent with your response to Morris, but it does not actually resolve Morris's objection.
+Complete Items 1A--1E in order before proceeding to Priority 2.
 
-Scheduled ages do not establish each child's actual exposure dates. Vaccinations occur in dose windows, are bundled differently, and are delayed, skipped, or given during catch-up. The survey's categories---full schedule, partial/delayed, unvaccinated, or unsure---do not provide enough longitudinal information to construct a reliable inter-vaccination interval for every child.
+#### Item 1A --- Define the primary estimand and statistic
 
-Consider:
+-   Define the estimand as excess child-specific synchronization of parent-observed onset with the actual most recent pre-onset vaccination, relative to a prespecified conditional permutation distribution.
+-   Lock the primary window as Day 0 through Day 2, inclusive.
+-   Define the primary statistic as the number and proportion of eligible cases whose onset falls in that window.
+-   Specify exact eligibility and exclusion rules, including required onset-date and vaccination-date precision and treatment of chronological inconsistencies.
+-   State prospectively that the result measures temporal synchronization, not population autism risk or causation.
 
--   Collecting the actual vaccination immediately before onset for every analyzable vaccination case, preferably from a card or record rather than schedule inference.
--   Collecting sufficient prior vaccination history to define the actual interval containing onset, at least for the confirmatory cohort.
--   Making the record-verified analysis primary or co-primary rather than merely showing that a signal "holds" in a subset.
--   Specifying exactly how age-dependent onset risk will be modeled; "after accounting for slow age-dependent variation" is not operational.
--   Having an independent statistician formally evaluate the proposed conditional-uniformity null before preregistration.
--   Describing the scheduled-age histogram as secondary or exploratory unless its reference distribution is specified rigorously.
+#### Item 1B --- Specify candidate permutation procedures
+
+-   Define exactly what is permuted: raw vaccination dates, vaccination-age deviations, onset dates, or another prespecified unit.
+-   Define the mandatory strata and any optional refinements.
+-   Apply the same most-recent-pre-onset vaccination-selection rule to the observed and permuted data, or justify a different conditional test precisely.
+-   Specify how candidate pairings that place vaccination after onset are handled without introducing outcome-dependent filtering.
+-   Specify treatment of tied dates, same-day events, multiple vaccines at one visit, sparse strata, and singleton strata.
+-   Retain singleton or otherwise non-randomizable strata as deterministic contributions where appropriate rather than silently dropping them.
+
+#### Item 1C --- Validate candidate procedures through simulation
+
+-   Simulate realistic age-dependent onset and vaccination timing under a true null, including scheduled visits, early or delayed appointments, catch-up vaccination, multiple visits, clinic and geographic variation, date error, date heaping, and selection of the most recent vaccination before onset.
+-   Verify that each candidate procedure maintains the prespecified false-positive rate under realistic null scenarios.
+-   Estimate power when 10%, 20%, 40%, and 90% of cases occur during Days 0--2 after vaccination.
+-   Test sensitivity to sparse strata, incomplete dates, onset-date anchoring, delayed vaccination, and incomplete vaccination histories.
+-   Use the simulation to select a valid procedure, not merely the procedure with the greatest power under the alternative.
+
+#### Item 1D --- Freeze the permutation-analysis specification
+
+-   Lock the permutation unit, strata, sparse-stratum rules, eligibility rules, number of permutations, random seed, and p-value calculation before examining main-study responses.
+-   Define the full lag histogram and chronological-age plot as required descriptive outputs regardless of the primary result.
+-   Prespecify secondary lag bins, subgroup analyses, sensitivity analyses, and multiplicity handling.
+-   Repeat the frozen primary analysis in the record-verified vaccination-date subset as a key replication, while reporting validation consent and record-availability selection.
+
+#### Item 1E --- Confirm that the survey collects sufficient information
+
+-   Map every variable required by the validated permutation procedure to a survey field or record-verification field.
+-   Confirm whether the current most-recent-pre-onset vaccination module is sufficient.
+-   Add prior vaccination-history fields only if the validated procedure requires them.
+-   Confirm that exact-day cases, month-only cases, missing dates, unvaccinated cases, and vaccinations more than 60 days before onset have explicit analysis and routing rules.
+-   Close Priority 1 only after the procedure passes simulation validation and the final survey-to-analysis variable map is complete.
 
 ### Priority 2 --- Add the promised vaccination-interval confidence question
 
