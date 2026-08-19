@@ -344,3 +344,11 @@
 - **Outputs:** Updated `protocol/v2/study_punchlist.md`.
 - **Results:** Priority 1 now has explicit completion criteria and must be closed before work begins on Priority 2.
 - **Next steps:** Complete Item 1A by locking the primary estimand, Day 0--2 statistic, eligibility rules, exclusions, and interpretation boundary.
+
+## 2026-08-18 — Added optional controlled secondary-research sharing
+
+- **What we did:** Added an end-of-survey Yes/No permission for controlled sharing of coded records, including collected calendar dates, with separately approved IRB-reviewed or equivalent research projects. Added the controlled-reuse feature and governance conditions to the study overview.
+- **Command / executable:** HHS/OHRP and HIPAA research guidance review; manual `apply_patch` edits; `git diff --check`.
+- **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.4 and `protocol/v2/parent_survey_v2.md` Version 1.4.
+- **Results:** Exact-date research reuse is limited to affirmatively consented records under project-specific access review and a data-use agreement; the public file continues to use protected relative timing, and declining does not affect primary-study participation or compensation.
+- **Next steps:** Have the reviewing IRB/privacy counsel approve the final permission language, withdrawal model, retention period, data-access committee authority, minimum-necessary rules, and data-use agreement before deployment.

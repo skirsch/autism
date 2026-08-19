@@ -1,4 +1,4 @@
-# CHD SORA Parent Survey — Final Instrument v1.3
+# CHD SORA Parent Survey — Final Instrument v1.4
 
 ## Section 0 — Consent & Screening (All Parents)
 
@@ -151,4 +151,17 @@
 > Email for gift card and study results: [Optional]
 > May we contact you for follow-up/record verification? (Yes/No)
 > If contacted, would you sign a release for vaccination records? (Yes/No/Not sure)
+
+**Q6.2 — Optional permission for controlled sharing with other researchers**
+> Researchers may be able to learn more by reanalyzing or combining information from this study. We would like your permission to share your child's coded survey record, including the calendar dates you provided for birth, developmental onset, and vaccination, with other researchers for future research.
+>
+> This information would **not** be placed in the public dataset. It would be available only for a specific research project that has IRB approval or equivalent ethics review, has been approved through this study's data-access process, and is covered by a data-use agreement. The agreement would limit who may use the data and for what purpose, require privacy and security safeguards, and prohibit attempts to identify or contact you or your child or to share the data with unauthorized people.
+>
+> Your name and email address would not be included in the shared research dataset. Because exact dates and other details can increase the chance that someone could recognize a record, the study will review each request and share only information necessary for the approved project. IRB approval alone does not guarantee that a request will be granted.
+>
+> Do you give permission for your child's coded survey record, including the collected calendar dates, to be shared under these controlled conditions for other approved research projects? (Yes / No)
+>
+> Your choice will not affect your participation in this study, your gift card, or whether your responses are included in this study's own analyses.
+
+*Implementation: Store this permission separately as an explicit Yes/No field. No or missing permission excludes the record from controlled secondary-research datasets containing calendar dates. It does not exclude the record from the primary study or from the public dataset after application of the approved public-release protections.*
 

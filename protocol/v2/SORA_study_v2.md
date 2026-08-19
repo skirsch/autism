@@ -1,4 +1,4 @@
-# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.3
+# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.4
 
 ## A focused study designed to identify events that may trigger sudden-onset regressive autism (SORA)
 
@@ -18,7 +18,8 @@ The key features of this study include:
 8. Random record-selection follow-up to assess answer quality against medical records
 9. Tracking reasons for drop-out
 10. Mixed-view study team
-11. Public record-level dataset created from survey results
+11. Public record-level dataset using relative rather than calendar dates
+12. Optional controlled research reuse of consented records, including collected dates, for separately approved IRB-reviewed projects
 
 ## Why this study is needed
 
@@ -132,7 +133,11 @@ We include carefully chosen negative-control events: vaccine-free well-child vis
 ## Data handling and privacy
 
 - We release **relative timing** (e.g., day −3, day −1) rather than calendar dates in the public file.
-- A controlled-access version with more granular data will be available under a data-use agreement for qualified researchers.
+- At the end of the survey, parents are separately asked whether their child's coded survey record, including the calendar dates collected by the study, may be shared for future research. Declining does not affect participation, compensation, or inclusion in the primary study.
+- Only records with affirmative permission will be eligible for controlled research reuse with calendar dates. These records will not be placed in the public dataset.
+- Controlled access will be limited to a specific research project with documented IRB approval or equivalent ethics review, approval through the study's data-access process, and an executed data-use agreement. The agreement will limit access to approved personnel and purposes, require appropriate safeguards, prohibit re-identification, participant contact, and unauthorized redisclosure, and require reporting of any unauthorized use or disclosure.
+- Direct identifiers such as email addresses will not be included in the shared research dataset and will remain stored separately from analytic data.
+- Dates, geography, rare characteristics, and other combinations that may permit re-identification will receive a project-specific privacy and minimum-necessary review before release. IRB approval alone does not guarantee access.
 - Email addresses and recontact linkage are stored separately from analytic data.
 - IRB, HIPAA, and legal review will be resolved before recruitment.
 
