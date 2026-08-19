@@ -1,4 +1,4 @@
-# CHD SORA Parent Survey — Final Instrument v1.2
+# CHD SORA Parent Survey — Final Instrument v1.3
 
 ## Section 0 — Consent & Screening (All Parents)
 
@@ -36,8 +36,12 @@
 > What is your child's date of birth? [Month/Year] [Day (if known)]
 >
 > What was your child's sex recorded at birth? (Female / Male / Intersex or another designation / Prefer not to answer)
+>
+> In which country was your child living when the developmental change began? [Country dropdown]
+>
+> *If United States:* In which state or U.S. territory was your child living when the change began? [State/territory dropdown]
 
-*The study team will use the birth date and onset date to calculate the child's chronological age at onset. Public data will not include the child's calendar birth date.*
+*The study team will use the birth date and onset date to calculate the child's chronological age at onset. Public data will not include the child's calendar birth date. Rare geographic groups may be combined or limited to controlled-access data to reduce re-identification risk.*
 
 **Q1.3 — Onset timing**
 > Please provide the approximate date this change began: [Month/Year] [Day (if known)]. 
@@ -90,6 +94,10 @@
 >
 > Was this visit part of the child's routine schedule, or was it early, delayed, or part of a catch-up schedule? (Routine/on time / Earlier than planned / Delayed / Catch-up schedule / Not sure)
 >
+> In which country did this vaccination visit occur? [Country dropdown]
+>
+> *If United States:* In which state or U.S. territory did this vaccination visit occur? [State/territory dropdown]
+>
 > Which vaccines were given at that visit? (Check all that apply)
 > - MMR
 > - Varicella
@@ -110,26 +118,17 @@
 > How many vaccine injections or oral vaccines were given at that visit? (1 / 2 / 3 / 4 or more / Not sure)
 >
 > Based on the onset date and vaccination date you reported, the study team will calculate the number of days from this vaccination visit to onset. If one or both exact dates are unavailable, approximately how long before onset was this visit? (Same day / 1–2 days / 3–7 days / 1–2 weeks / 2–4 weeks / 1–2 months / More than 2 months / Not sure)
+>
+> If the vaccination date is uncertain or unavailable, how old was your child at this visit? [Years/Months/Days, if known]
 
-*The study team will use the child's birth date to calculate chronological age at the vaccination visit. Comparing chronological age at onset with time since this actual vaccination visit is the study's primary temporal analysis.*
+*The study team will use the child's birth date to calculate chronological age at the vaccination visit. The actual pre-onset vaccination and parent-onset dates support the prespecified three-day lag histograms and stratified permutation test.*
 
-**Q4.3 — Preceding vaccination visit**
-> Before the vaccination visit reported above, was there an earlier vaccination visit? (Yes / No / Not sure)
->
-> *If Yes:* Approximately when was that preceding visit? [Month/Year] [Day (if known)]
->
-> Which vaccines were given at that visit? [Same vaccine checklist as Q4.2]
->
-> What helped you determine the date of this preceding visit? (Vaccine card or immunization record / Medical portal or clinic record / Calendar, email, photograph, or other dated record / Memory / Other)
->
-> How confident are you in this date? (Very confident / Somewhat confident / Not confident)
-
-**Q4.4 — Reactions before onset**
+**Q4.3 — Reactions before onset**
 > Before this child's developmental change, had your child ever experienced a suspected reaction to a vaccine? (Yes / No / Not sure)
 >
 > *If Yes:* Please describe what happened, which vaccine or visit it followed, and when it began. [Free text]
 
-**Q4.5 — Post-onset schedule**
+**Q4.4 — Post-onset schedule**
 > After the change, did your child's vaccination schedule continue unchanged, become delayed, or stop? (Continued unchanged / Became delayed / Stopped / Not sure)
 >
 > Why did the schedule change or stop, if known? [Free text]

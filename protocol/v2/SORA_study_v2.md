@@ -1,4 +1,4 @@
-# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.2
+# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.3
 
 ## A focused study designed to identify events that may trigger sudden-onset regressive autism (SORA)
 
@@ -12,7 +12,7 @@ The key features of this study include:
 2. Identifying how long ago onset happened (enabling subgroup analysis to compare recent with more distant memories)
 3. Identification of child age and sex at onset
 4. Identification of significant events before onset (fever, illness, immunization, surgery, medications, etc.)
-5. Comparison of two timing models: chronological age at onset versus time since the child's actual most recent vaccination before onset
+5. A prespecified three-prong temporal analysis comparing chronological age at onset with time since the child's actual most recent vaccination before onset
 6. Unaided recall before prompting (describe the sequence of events; what do you think caused the change)
 7. Multisite, large N (10 sites with over 5,000 total participants), with 3 types of clinics (pediatric, diagnostic, treatment)
 8. Random record-selection follow-up to assess answer quality against medical records
@@ -87,24 +87,37 @@ The survey order is intentional:
 11. **Unaided recall:** Before seeing any checklist, parents describe in their own words what happened before and after onset.
 12. **Parent assessment:** Parents report their own causal beliefs *before* detailed prompts.
 13. **Five-day event window:** Checklist of events (plausible causes + negative controls like dental visits).
-14. **Pre-onset vaccination timing:** Date of the most recent vaccination visit before onset, vaccines given at that visit, the child's age at vaccination, days from that visit to onset, source of the vaccination date, and confidence in the interval. The preceding vaccination visit is also collected to help characterize the child's actual inter-vaccination interval and vaccination pattern.
+14. **Pre-onset vaccination timing:** Date of the most recent vaccination visit before onset, vaccines given at that visit, the child's age at vaccination, days from that visit to onset, source of the vaccination date, confidence in the interval, routine versus early/delayed/catch-up timing, and vaccination location.
 15. **Vaccination schedule:** Schedule status before onset and whether the schedule continued unchanged, became delayed, or stopped after onset, with the reason collected when known. Post-onset vaccination identity and timing are not used as a null comparison.
 16. Email and contact consent for follow-up/record verification.
 
-## Primary temporal hypothesis: chronological age versus time since vaccination
+## Prespecified three-prong temporal analysis
 
-The primary analysis distinguishes two possible clocks for SORA onset:
+The study will use three complementary analyses. The first two display the temporal patterns directly; the third supplies the primary inferential test.
 
-1. **Chronological-age clock:** Onset follows an age-dependent developmental or biological susceptibility pattern. If this explains the timing, onset should remain anchored to the child's age even when children receive the same vaccine at different ages.
-2. **Vaccination-event clock:** Onset risk changes with elapsed time since the child's actual vaccination. If this contributes to the timing, onset should align more closely with each child's vaccination date than with chronological age alone, including among children vaccinated early, late, or on a catch-up schedule.
+### 1. Vaccination-relative lag histograms
 
-**The null hypothesis:** SORA onset timing is explained by the child's chronological age and other prespecified background time effects. After flexibly accounting for age, time since the child's actual most recent vaccination before onset provides no additional information about onset timing.
+For each SORA case with usable dates, the study will calculate the number of days from the child's actual most recent vaccination before onset to the parent-observed onset date. Counts will be displayed in prespecified, non-overlapping three-day bins (Days 0–2, 3–5, 6–8, and so forth through Day 59, with later intervals reported separately). Histograms will be shown overall and by nominal vaccination-visit category (2, 4, 6, 12, 15, and 18 months, plus other or catch-up visits). Visit category will be derived from the child's actual age, vaccine products, and schedule information rather than inferred from age alone.
 
-**The prediction:** If vaccination is temporally associated with SORA onset, adding time since the child's actual vaccination will reveal a prespecified short-latency excess that is not explained by the age-at-onset distribution alone. Children vaccinated at different ages would show onset concentrated within a similar period after their actual vaccination visits rather than at the same chronological age.
+**Prediction:** If a short-latency vaccination-relative pattern is present, the lag distribution will be concentrated in the earliest bins and a similar left-concentrated shape will recur across vaccination-visit categories and clinics.
 
-The primary analysis will compare an age-anchored model with a model that additionally includes time since actual vaccination. It will use actual reported or verified vaccination dates rather than infer exposure from the recommended schedule. The validation pilot will determine what onset-date resolution the data can support; the primary risk window, age model, inclusion rules, and sensitivity analyses will then be prespecified before the main study responses are examined. Analyses will separately report record-verified vaccination dates and will examine whether results differ by vaccination-date source, timing confidence, routine versus delayed or catch-up vaccination, causal belief, and recall recency.
+### 2. Parent-onset counts by chronological age
 
-This comparison requires meaningful variation in actual vaccination age. If most vaccinations occur at nearly the same age, chronological age and time since vaccination may be too highly correlated to distinguish reliably. A vaccination-relative pattern would demonstrate a temporal association, not by itself establish that vaccination caused the developmental change.
+The study will plot parent-observed onset counts against the child's chronological age. Exact-day onset reports will be displayed at day or week resolution; month-only reports will be shown separately and will not be assigned an artificial calendar day.
+
+**Prediction:** If onset is related to vaccination timing, the chronological-age distribution may show multiple peaks near ages when vaccination visits commonly occur rather than a single broad developmental-age curve. This plot is descriptive because age heaping, clinic ascertainment, and the age distribution of respondents can also create peaks.
+
+### 3. Primary stratified permutation lag-concentration test
+
+The primary confirmatory statistic will be the proportion of eligible exact-date cases with parent-observed onset from Day 0 through Day 2 after the actual most recent pre-onset vaccination. The null distribution will preserve the observed onset-age and vaccination-age distributions while breaking the child-specific pairing between onset and vaccination timing. Vaccination dates or appointment-timing deviations will be reassigned among comparable children within prespecified strata such as vaccination-visit or dose category, vaccine-product combination, clinic, birth cohort, routine versus delayed or catch-up timing, and geography where sample size permits. The same Day 0–2 statistic will be calculated for every permutation.
+
+**Null hypothesis:** After accounting for the common age and vaccination-schedule structure through stratification, a child's onset date is not more closely synchronized with that child's own vaccination date than with the vaccination timing of a comparable child.
+
+**Alternative hypothesis:** Parent-observed onset is concentrated on Days 0–2 after the child's own actual vaccination more often than expected under the stratified permutation null.
+
+The permutation algorithm, eligibility rules, strata, number of permutations, treatment of same-day events and tied dates, and handling of sparse strata will be locked before the main-study responses are examined. The complete lag histogram will be reported regardless of the primary result. Secondary bins, vaccine-specific analyses, clinics, geographic groups, date-source and confidence groups, causal-belief groups, and the record-verified subset will be labeled secondary or exploratory and handled under a prespecified multiplicity plan.
+
+These analyses use actual reported or verified vaccination dates rather than infer exposure from the recommended schedule. A vaccination-relative concentration would demonstrate a temporal association, not by itself establish that vaccination caused the developmental change. Recall anchoring, selection for dateable cases, and co-occurring illness, fever, medication, or medical encounters remain alternative explanations to be assessed with the validation pilot, negative controls, and stratified analyses.
 
 ## Validation pilot and record verification
 
@@ -127,7 +140,7 @@ We include carefully chosen negative-control events: vaccine-free well-child vis
 
 **What it can do:**
 - Describe what parents of SORA children remember and believe;
-- Test whether time since the child's actual most recent vaccination provides information about onset timing beyond a flexible chronological-age model, with record verification in a subset;
+- Display vaccination-relative lag patterns and chronological-age onset patterns and test child-specific Day 0–2 synchronization using a prespecified stratified permutation null, with record verification in a subset;
 - Assess how reports vary with causal belief and recall recency.
 
 **What it cannot do:**

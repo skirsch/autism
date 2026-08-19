@@ -328,3 +328,11 @@
 - **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.2 and `protocol/v2/parent_survey_v2.md` Version 1.2.
 - **Results:** The former interval-uniformity null was replaced by an age-anchored null versus vaccination-event-time alternative using actual vaccination dates. No post-onset vaccination identity or timing is collected for the primary comparison.
 - **Next steps:** Specify the flexible age model, primary post-vaccination risk window, identifiability threshold for vaccination-age variation, missing-date rules, and record-verified sensitivity analysis in the statistical analysis plan before main-study enrollment.
+
+## 2026-08-18 — Adopted three-prong SORA temporal analysis plan
+
+- **What we did:** Replaced the model-based two-clock primary analysis with three prespecified components: non-overlapping three-day vaccination-relative lag histograms, parent-onset counts by chronological age, and a primary stratified permutation test of Day 0–2 synchronization. Updated the survey planning instrument to collect geography at onset and vaccination, retain the actual most recent pre-onset vaccination details, and remove the preceding-visit module.
+- **Command / executable:** Manual `apply_patch` edits; targeted repository and consistency searches; `git diff --check`.
+- **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.3 and `protocol/v2/parent_survey_v2.md` Version 1.3.
+- **Results:** The planning documents now distinguish the two descriptive plots from the confirmatory permutation test, require parent-observed onset rather than diagnosis timing, and collect the fields needed for visit-, clinic-, schedule-, and geographic stratification without collecting post-onset vaccination timing.
+- **Next steps:** Before REDCap implementation, freeze the permutation strata and sparse-stratum rules, exact-date eligibility, number of permutations, visit-category derivation, multiplicity plan, and public-versus-controlled geography fields.
