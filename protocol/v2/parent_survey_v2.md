@@ -1,4 +1,4 @@
-# CHD SORA Parent Survey — Final Instrument v1.1
+# CHD SORA Parent Survey — Final Instrument v1.2
 
 ## Section 0 — Consent & Screening (All Parents)
 
@@ -32,14 +32,21 @@
 > - Persist for at least four weeks? (Yes/No)
 > - *If No to either, you may be redirected to the non-SORA section.*
 
-**Q1.2 — Onset timing**
+**Q1.2 — Child characteristics**
+> What is your child's date of birth? [Month/Year] [Day (if known)]
+>
+> What was your child's sex recorded at birth? (Female / Male / Intersex or another designation / Prefer not to answer)
+
+*The study team will use the birth date and onset date to calculate the child's chronological age at onset. Public data will not include the child's calendar birth date.*
+
+**Q1.3 — Onset timing**
 > Please provide the approximate date this change began: [Month/Year] [Day (if known)]. 
 > How confident are you in this date? (Very/Somewhat/Not confident)
 
-**Q1.3 — Anchor source**
+**Q1.4 — Anchor source**
 > What helped you determine this date? (Vaccine card, medical note, photo/video, calendar, memory, family event)
 
-**Q1.4 — Change domains (Check all that apply)**
+**Q1.5 — Change domains (Check all that apply)**
 > **Loss of behaviors:** Eye contact, response to name, affection, social interest, joint attention, imitation, interactive play.
 > **Loss of skills:** Words, gestures, self-help, play skills, motor abilities.
 > **New behaviors:** Repetitive movements, self-injury, toe walking, head banging, unusual posturing, arching, repetitive vocalizations, marked withdrawal.
@@ -81,6 +88,8 @@
 >
 > How confident are you in this vaccination date? (Very confident / Somewhat confident / Not confident)
 >
+> Was this visit part of the child's routine schedule, or was it early, delayed, or part of a catch-up schedule? (Routine/on time / Earlier than planned / Delayed / Catch-up schedule / Not sure)
+>
 > Which vaccines were given at that visit? (Check all that apply)
 > - MMR
 > - Varicella
@@ -102,12 +111,18 @@
 >
 > Based on the onset date and vaccination date you reported, the study team will calculate the number of days from this vaccination visit to onset. If one or both exact dates are unavailable, approximately how long before onset was this visit? (Same day / 1–2 days / 3–7 days / 1–2 weeks / 2–4 weeks / 1–2 months / More than 2 months / Not sure)
 
+*The study team will use the child's birth date to calculate chronological age at the vaccination visit. Comparing chronological age at onset with time since this actual vaccination visit is the study's primary temporal analysis.*
+
 **Q4.3 — Preceding vaccination visit**
 > Before the vaccination visit reported above, was there an earlier vaccination visit? (Yes / No / Not sure)
 >
 > *If Yes:* Approximately when was that preceding visit? [Month/Year] [Day (if known)]
 >
 > Which vaccines were given at that visit? [Same vaccine checklist as Q4.2]
+>
+> What helped you determine the date of this preceding visit? (Vaccine card or immunization record / Medical portal or clinic record / Calendar, email, photograph, or other dated record / Memory / Other)
+>
+> How confident are you in this date? (Very confident / Somewhat confident / Not confident)
 
 **Q4.4 — Reactions before onset**
 > Before this child's developmental change, had your child ever experienced a suspected reaction to a vaccine? (Yes / No / Not sure)

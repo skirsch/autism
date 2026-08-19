@@ -320,3 +320,11 @@
 - **Outputs:** `irb_submission/CHD_SORA_DATA_RESOURCE/ipakirb-form-1_filled.docx`.
 - **Results:** All 15 intended controls were populated; the original form remains unchanged. The four rendered pages were reviewed with no clipping or overlap in the completed intake form. The source template's contents page already contains broken bookmarks for absent Parts B and C; this pre-existing condition was preserved.
 - **Next steps:** User/PI should replace every TBD or bracketed confirmation, confirm the proposed 12-month duration, and verify the funding/budget language before submission.
+
+## 2026-08-18 — Reframed SORA timing hypothesis around two clocks
+
+- **What we did:** Revised the v2 study overview and parent survey to compare chronological age at onset with time since the child's actual most recent pre-onset vaccination. Added birth date, sex recorded at birth, routine/early/delayed/catch-up visit timing, and source/confidence for the preceding vaccination date; retained post-onset schedule change only as a descriptive diagnostic.
+- **Command / executable:** Manual `apply_patch` edits; targeted `rg` consistency scan; `git diff --check`.
+- **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.2 and `protocol/v2/parent_survey_v2.md` Version 1.2.
+- **Results:** The former interval-uniformity null was replaced by an age-anchored null versus vaccination-event-time alternative using actual vaccination dates. No post-onset vaccination identity or timing is collected for the primary comparison.
+- **Next steps:** Specify the flexible age model, primary post-vaccination risk window, identifiability threshold for vaccination-age variation, missing-date rules, and record-verified sensitivity analysis in the statistical analysis plan before main-study enrollment.

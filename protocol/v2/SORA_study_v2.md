@@ -1,4 +1,4 @@
-# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2
+# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.2
 
 ## A focused study designed to identify events that may trigger sudden-onset regressive autism (SORA)
 
@@ -12,7 +12,7 @@ The key features of this study include:
 2. Identifying how long ago onset happened (enabling subgroup analysis to compare recent with more distant memories)
 3. Identification of child age and sex at onset
 4. Identification of significant events before onset (fever, illness, immunization, surgery, medications, etc.)
-5. Nearest vaccination with direction (before or after), interval, and interval certainty
+5. Comparison of two timing models: chronological age at onset versus time since the child's actual most recent vaccination before onset
 6. Unaided recall before prompting (describe the sequence of events; what do you think caused the change)
 7. Multisite, large N (10 sites with over 5,000 total participants), with 3 types of clinics (pediatric, diagnostic, treatment)
 8. Random record-selection follow-up to assess answer quality against medical records
@@ -87,17 +87,24 @@ The survey order is intentional:
 11. **Unaided recall:** Before seeing any checklist, parents describe in their own words what happened before and after onset.
 12. **Parent assessment:** Parents report their own causal beliefs *before* detailed prompts.
 13. **Five-day event window:** Checklist of events (plausible causes + negative controls like dental visits).
-14. **Vaccination timing:** Days to nearest vaccination, direction (before/after), and interval certainty.
-15. **Vaccination schedule:** Schedule before/after onset, subsequent vaccinations, and response to later doses.
+14. **Pre-onset vaccination timing:** Date of the most recent vaccination visit before onset, vaccines given at that visit, the child's age at vaccination, days from that visit to onset, source of the vaccination date, and confidence in the interval. The preceding vaccination visit is also collected to help characterize the child's actual inter-vaccination interval and vaccination pattern.
+15. **Vaccination schedule:** Schedule status before onset and whether the schedule continued unchanged, became delayed, or stopped after onset, with the reason collected when known. Post-onset vaccination identity and timing are not used as a null comparison.
 16. Email and contact consent for follow-up/record verification.
 
-## Null hypothesis and prediction
+## Primary temporal hypothesis: chronological age versus time since vaccination
 
-**The null hypothesis:** Within each inter-vaccination interval, the position of onset should be roughly uniform, after accounting for slow age-dependent variation in onset risk.
+The primary analysis distinguishes two possible clocks for SORA onset:
 
-**The prediction:** If vaccination contributes to SORA, onset should cluster in the days immediately following vaccination. We will plot the age-at-onset distribution at day resolution overlaid with the vaccination schedule, and the within-child interval in days since the child's own most recent vaccination, centered on the vaccination date. If onset is driven by a smooth biological susceptibility curve, that curve should be smooth and should not know where the vaccination schedule is; discrete spikes at the scheduled ages would be difficult to reconcile with a smooth biological process. 
+1. **Chronological-age clock:** Onset follows an age-dependent developmental or biological susceptibility pattern. If this explains the timing, onset should remain anchored to the child's age even when children receive the same vaccine at different ages.
+2. **Vaccination-event clock:** Onset risk changes with elapsed time since the child's actual vaccination. If this contributes to the timing, onset should align more closely with each child's vaccination date than with chronological age alone, including among children vaccinated early, late, or on a catch-up schedule.
 
-The irregularity of the schedule is itself a control: a smooth biological process cannot produce discrete spikes aligned to an irregular, human-made pattern.
+**The null hypothesis:** SORA onset timing is explained by the child's chronological age and other prespecified background time effects. After flexibly accounting for age, time since the child's actual most recent vaccination before onset provides no additional information about onset timing.
+
+**The prediction:** If vaccination is temporally associated with SORA onset, adding time since the child's actual vaccination will reveal a prespecified short-latency excess that is not explained by the age-at-onset distribution alone. Children vaccinated at different ages would show onset concentrated within a similar period after their actual vaccination visits rather than at the same chronological age.
+
+The primary analysis will compare an age-anchored model with a model that additionally includes time since actual vaccination. It will use actual reported or verified vaccination dates rather than infer exposure from the recommended schedule. The validation pilot will determine what onset-date resolution the data can support; the primary risk window, age model, inclusion rules, and sensitivity analyses will then be prespecified before the main study responses are examined. Analyses will separately report record-verified vaccination dates and will examine whether results differ by vaccination-date source, timing confidence, routine versus delayed or catch-up vaccination, causal belief, and recall recency.
+
+This comparison requires meaningful variation in actual vaccination age. If most vaccinations occur at nearly the same age, chronological age and time since vaccination may be too highly correlated to distinguish reliably. A vaccination-relative pattern would demonstrate a temporal association, not by itself establish that vaccination caused the developmental change.
 
 ## Validation pilot and record verification
 
@@ -120,7 +127,7 @@ We include carefully chosen negative-control events: vaccine-free well-child vis
 
 **What it can do:**
 - Describe what parents of SORA children remember and believe;
-- Test whether onset clusters within inter-vaccination intervals and against the smooth-age-curve null, with record verification in a subset;
+- Test whether time since the child's actual most recent vaccination provides information about onset timing beyond a flexible chronological-age model, with record verification in a subset;
 - Assess how reports vary with causal belief and recall recency.
 
 **What it cannot do:**
