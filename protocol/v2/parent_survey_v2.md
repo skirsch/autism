@@ -1,4 +1,4 @@
-# CHD SORA Parent Survey — Final Instrument v1.4
+# CHD SORA Parent Survey — Final Instrument v1.5
 
 ## Section 0 — Consent & Screening (All Parents)
 
@@ -45,7 +45,8 @@
 
 **Q1.3 — Onset timing**
 > Please provide the approximate date this change began: [Month/Year] [Day (if known)]. 
-> How confident are you in this date? (Very/Somewhat/Not confident)
+>
+> What is the largest error you think this onset date could reasonably have? (0 days — exact / Plus or minus 1 day / Plus or minus 2 days / Plus or minus 3 days / Plus or minus 4–7 days / Plus or minus 8–14 days / Plus or minus 15–30 days / More than 30 days / Unable to estimate)
 
 **Q1.4 — Anchor source**
 > What helped you determine this date? (Vaccine card, medical note, photo/video, calendar, memory, family event)
@@ -86,11 +87,17 @@
 **Q4.2 — Most recent vaccination visit before onset**
 > Did your child receive any vaccines before the change began? (Yes / No / Not sure)
 >
-> *If Yes:* What was the date of the most recent vaccination visit before the change? [Month/Year] [Day (if known)]
+> *If Yes:* Thinking about the most recent vaccination before the change, what is your best estimate of how long after vaccination the developmental change began? Enter an exact number of days if you can. [Number of days, where 0 means the same day / Exact number unknown]
 >
-> What helped you determine this vaccination date? (Vaccine card or immunization record / Medical portal or clinic record / Calendar, email, photograph, or other dated record / Memory / Other)
+> *If the exact number is unknown:* Select the narrowest interval you can support. (Same day / 1–2 days / 3–5 days / 6–8 days / 9–11 days / 12–14 days / 15–29 days / 30–59 days / 60 days or more / Unable to estimate)
 >
-> How confident are you in this vaccination date? (Very confident / Somewhat confident / Not confident)
+> What is the largest error you think this vaccination-to-onset interval could reasonably have? (0 days — exact / Plus or minus 1 day / Plus or minus 2 days / Plus or minus 3 days / Plus or minus 4–7 days / Plus or minus 8–14 days / Plus or minus 15–30 days / More than 30 days / Unable to estimate)
+>
+> What helped you determine this interval? (Check all that apply: Vaccination card or immunization record / Medical portal or clinic record / Contemporaneous medical or early-intervention note about the developmental change / Dated photo or video / Calendar, email, message, or other dated record / Memorable family event / Memory without a dated record / Other)
+>
+> If known, what was the calendar date of this vaccination visit? [Month/Year] [Day (if known)]
+>
+> What is the largest error you think this vaccination date could reasonably have? (0 days — exact / Plus or minus 1 day / Plus or minus 2 days / Plus or minus 3 days / Plus or minus 4–7 days / Plus or minus 8–14 days / Plus or minus 15–30 days / More than 30 days / Unable to estimate)
 >
 > Was this visit part of the child's routine schedule, or was it early, delayed, or part of a catch-up schedule? (Routine/on time / Earlier than planned / Delayed / Catch-up schedule / Not sure)
 >
@@ -117,11 +124,9 @@
 >
 > How many vaccine injections or oral vaccines were given at that visit? (1 / 2 / 3 / 4 or more / Not sure)
 >
-> Based on the onset date and vaccination date you reported, the study team will calculate the number of days from this vaccination visit to onset. If one or both exact dates are unavailable, approximately how long before onset was this visit? (Same day / 1–2 days / 3–7 days / 1–2 weeks / 2–4 weeks / 1–2 months / More than 2 months / Not sure)
->
 > If the vaccination date is uncertain or unavailable, how old was your child at this visit? [Years/Months/Days, if known]
 
-*The study team will use the child's birth date to calculate chronological age at the vaccination visit. The actual pre-onset vaccination and parent-onset dates support the prespecified three-day lag histograms and stratified permutation test.*
+*The direct parent-reported interval determines the primary lag classification. When separate timing information is available, the study team will also derive the interval from the vaccination and onset timing, compare it with the direct report, calculate chronological age at vaccination, and determine eligibility for the permutation component.*
 
 **Q4.3 — Reactions before onset**
 > Before this child's developmental change, had your child ever experienced a suspected reaction to a vaccine? (Yes / No / Not sure)

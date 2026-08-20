@@ -352,3 +352,11 @@
 - **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.4 and `protocol/v2/parent_survey_v2.md` Version 1.4.
 - **Results:** Exact-date research reuse is limited to affirmatively consented records under project-specific access review and a data-use agreement; the public file continues to use protected relative timing, and declining does not affect primary-study participation or compensation.
 - **Next steps:** Have the reviewing IRB/privacy counsel approve the final permission language, withdrawal model, retention period, data-access committee authority, minimum-necessary rules, and data-use agreement before deployment.
+
+## 2026-08-19 — Made direct parent-reported interval primary
+
+- **What we did:** Revised Method 3 so the parent's direct vaccination-to-onset interval supplies the primary Day 0--2 classification, while a separate-timing subset supports the candidate permutation analysis. Replaced vague confidence labels with maximum plausible error in days and separate evidence-source questions for onset, the reported interval, and vaccination date.
+- **Command / executable:** Manual `apply_patch` edits; cross-document terminology scan; `git diff --check`.
+- **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.5, `protocol/v2/parent_survey_v2.md` Version 1.5, and updated Priority Items 1A, 1E, and 2 in `protocol/v2/study_punchlist.md`.
+- **Results:** Calendar vaccination dates are optional for the full-sample lag analysis but remain available for reconstruction, validation, chronological-age calculations, and permutation-subset eligibility. Confidence is now expressed as analyzable error bounds rather than qualitative labels.
+- **Next steps:** Cognitively test whether parents understand maximum plausible error and plus-or-minus wording; complete Item 1A eligibility and contradiction rules, then validate candidate permutation procedures under Item 1C.

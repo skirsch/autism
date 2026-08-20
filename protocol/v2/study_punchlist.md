@@ -32,10 +32,12 @@ Complete Items 1A--1E in order before proceeding to Priority 2.
 
 #### Item 1A --- Define the primary estimand and statistic
 
--   Define the estimand as excess child-specific synchronization of parent-observed onset with the actual most recent pre-onset vaccination, relative to a prespecified conditional permutation distribution.
+-   Define the primary observed interval as the parent's direct report of elapsed days from the actual most recent pre-onset vaccination to parent-observed onset; calendar dates are not required for this report.
 -   Lock the primary window as Day 0 through Day 2, inclusive.
 -   Define the primary statistic as the number and proportion of eligible cases whose onset falls in that window.
--   Specify exact eligibility and exclusion rules, including required onset-date and vaccination-date precision and treatment of chronological inconsistencies.
+-   Specify eligibility and exclusion rules for the direct-interval statistic, including the precision needed to classify Day 0–2 membership and treatment of contradictory or irreconcilable responses.
+-   Define the key secondary high-evidence Day 0–2 statistic and ordered interval-error/evidence tiers without treating self-rated precision as independent validation.
+-   Restrict the child-specific permutation component to cases with sufficient separate onset and vaccination timing information.
 -   State prospectively that the result measures temporal synchronization, not population autism risk or causation.
 
 #### Item 1B --- Specify candidate permutation procedures
@@ -65,25 +67,15 @@ Complete Items 1A--1E in order before proceeding to Priority 2.
 #### Item 1E --- Confirm that the survey collects sufficient information
 
 -   Map every variable required by the validated permutation procedure to a survey field or record-verification field.
--   Confirm whether the current most-recent-pre-onset vaccination module is sufficient.
+-   Confirm that the direct interval, maximum plausible error in days, evidence source, and optional separate event timing are captured distinctly.
+-   Confirm whether the current most-recent-pre-onset vaccination module is sufficient for both the full-sample lag statistic and the exact-timing permutation subset.
 -   Add prior vaccination-history fields only if the validated procedure requires them.
 -   Confirm that exact-day cases, month-only cases, missing dates, unvaccinated cases, and vaccinations more than 60 days before onset have explicit analysis and routing rules.
 -   Close Priority 1 only after the procedure passes simulation validation and the final survey-to-analysis variable map is complete.
 
-### Priority 2 --- Add the promised vaccination-interval confidence question
+### Priority 2 --- Vaccination-interval precision and evidence source — addressed
 
-Your response promised the nearest vaccination's direction, interval, and the parent's confidence in that interval. Q4.2 captures direction and interval but not confidence.
-
-Add something such as:
-
-> How confident are you in this vaccination date or interval?
-> Very confident / Somewhat confident / Not confident
-
-Also ask what supports it:
-
-> Vaccine card / medical or pharmacy record / calendar or message / memory alone / other.
-
-This should be separate from confidence in the onset date.
+The survey now asks separately for the direct parent-reported vaccination-to-onset interval, the maximum number of days by which that interval could reasonably be wrong, and the records or memories used to determine it. Onset-date error and vaccination-date error are collected separately. The analysis treats self-rated precision as a measurement-quality variable rather than independent validation.
 
 ### Priority 3 --- Make the SORA classification algorithm operational
 
