@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autism Screening and Optional Research Survey</title>
+  <style>
+    :root {
+      --ink: #19324a;
+      --muted: #5c6f7f;
+      --paper: #ffffff;
+      --wash: #f3f8fa;
+      --line: #d7e2e8;
+      --accent: #176b70;
+      --accent-dark: #0d5155;
+      --warm: #f4b860;
+      --danger: #a23d3d;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 85% 8%, rgba(244,184,96,.22), transparent 24rem),
+        linear-gradient(180deg, #edf7f6 0, var(--wash) 32rem, #fff 100%);
+      font: 17px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 80px; }
+    header { margin-bottom: 28px; }
+    .eyebrow { color: var(--accent); font-weight: 750; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+    h1 { max-width: 720px; margin: 8px 0 12px; font: 700 clamp(2.1rem, 6vw, 4.25rem)/1.02 Georgia, serif; letter-spacing: -.035em; }
+    h2 { margin: 0 0 8px; font: 700 clamp(1.45rem, 3vw, 2rem)/1.15 Georgia, serif; }
+    p { margin: .45rem 0 1rem; }
+    .lede { max-width: 680px; color: var(--muted); font-size: 1.08rem; }
+    .privacy-strip { display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; padding: 14px 16px; border-left: 4px solid var(--accent); background: rgba(255,255,255,.7); }
+    .card { margin: 20px 0; padding: clamp(22px, 5vw, 38px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); box-shadow: 0 16px 45px rgba(25,50,74,.07); }
+    .step { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-right: 8px; border-radius: 50%; color: #fff; background: var(--accent); font-weight: 800; font-size: .9rem; }
+    fieldset { margin: 22px 0; padding: 0; border: 0; }
+    legend, label.question { display: block; margin-bottom: 10px; font-weight: 720; }
+    .options { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+    .choice { display: flex; gap: 9px; align-items: flex-start; padding: 11px 13px; border: 1px solid var(--line); border-radius: 12px; background: #fbfdfe; cursor: pointer; }
+    .choice:has(input:checked) { border-color: var(--accent); background: #edf8f6; box-shadow: 0 0 0 1px var(--accent); }
+    input[type="radio"], input[type="checkbox"] { margin-top: .3em; accent-color: var(--accent); }
+    input[type="number"], select {
+      width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #b8c8d1; border-radius: 10px; background: #fff; color: var(--ink); font: inherit;
+    }
+    input:focus, select:focus, button:focus-visible { outline: 3px solid rgba(23,107,112,.24); outline-offset: 2px; }
+    .hint { color: var(--muted); font-size: .9rem; }
+    .notice { margin: 20px 0; padding: 15px 17px; border-radius: 12px; background: #fff8e9; border: 1px solid #efd89f; }
+    button { width: 100%; min-height: 54px; padding: 13px 20px; border: 0; border-radius: 12px; background: var(--accent); color: #fff; font: 750 1rem/1.2 inherit; cursor: pointer; }
+    button:hover { background: var(--accent-dark); }
+    button[disabled] { opacity: .55; cursor: wait; }
+    .secondary-button { margin-top: 10px; border: 1px solid var(--accent); background: transparent; color: var(--accent-dark); }
+    .secondary-button:hover { background: #edf8f6; }
+    .result { margin-top: 22px; padding: 22px; border: 2px solid var(--accent); border-radius: 14px; background: #f1faf8; }
+    .result h3 { margin: 0 0 8px; font: 700 1.45rem/1.2 Georgia, serif; }
+    .error { color: var(--danger); font-weight: 650; }
+    .hidden { display: none !important; }
+    footer { margin-top: 26px; color: var(--muted); font-size: .84rem; }
+    @media (max-width: 620px) { main { padding-top: 28px; } .options { grid-template-columns: 1fr; } .card { padding: 21px 18px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Free developmental screening</div>
+    <h1>A short screening, with an optional research contribution</h1>
+    <p class="lede">Complete the 20-item M-CHAT-R screening tool and receive the result immediately. You may also contribute four timing answers to research on sudden developmental change.</p>
+    <div class="privacy-strip"><strong>Privacy:</strong><span>Your 20 screening answers are scored only in this browser and are not submitted. Only the four clearly marked research answers below are transmitted if you consent.</span></div>
+  </header>
+
+  <section class="card" aria-labelledby="screening-heading">
+    <h2 id="screening-heading"><span class="step">1</span>M-CHAT-R screening</h2>
+    <p class="hint"><strong>Prototype notice:</strong> Replace the placeholders below with the authorized, unmodified M-CHAT-R title, instructions, items, item order, and copyright notice only after written permission is received.</p>
+    <div id="mchat-items"></div>
+  </section>
+
+  <section class="card" aria-labelledby="research-heading">
+    <h2 id="research-heading"><span class="step">2</span>Optional four-question research survey</h2>
+    <p>These questions concern the first clear, substantial developmental departure from the child’s prior baseline. The change should have begun within five days or less and persisted for at least four weeks.</p>
+
+    <!-- Set data-endpoint to the approved collector URL. The JavaScript sends only the allow-listed payload. -->
+    <form id="research-form" data-endpoint="" novalidate>
+      <fieldset>
+        <label class="question" for="onset-age-days">1. How old was your child, in days, when the change began?</label>
+        <input id="onset-age-days" name="onset_age_days" type="number" min="0" max="6575" step="1" inputmode="numeric" required>
+        <div class="hint">If helpful: age in days = (years × 365.25) + (months × 30.44) + additional days. Enter your best estimate.</div>
+      </fieldset>
+
+      <fieldset>
+        <label class="question" for="onset-error-days">2. What is the largest number of days that this age-at-onset estimate could reasonably be wrong by?</label>
+        <input id="onset-error-days" name="onset_age_error_days" type="number" min="0" max="3650" step="1" inputmode="numeric" required>
+        <div class="hint">Enter 0 if exact. Enter your best estimate of the maximum error, not a confidence percentage.</div>
+      </fieldset>
+
+      <fieldset>
+        <label class="question" for="vaccine-interval-days">3. How many days after the child’s most recent vaccination before the change did the change begin?</label>
+        <input id="vaccine-interval-days" name="pre_onset_vaccine_interval_days" type="number" min="0" max="6575" step="1" inputmode="numeric" required>
+        <div class="hint">Enter 0 if the change began on the same calendar day. This asks for the interval you remember; an exact vaccination date is not required.</div>
+      </fieldset>
+
+      <fieldset>
+        <label class="question" for="interval-error-days">4. What is the largest number of days that this vaccination-to-onset interval could reasonably be wrong by?</label>
+        <input id="interval-error-days" name="interval_error_days" type="number" min="0" max="3650" step="1" inputmode="numeric" required>
+        <div class="hint">Enter 0 if exact. Enter your best estimate of the maximum error.</div>
+      </fieldset>
+
+      <div class="notice">
+        <label class="choice"><input id="research-consent" type="checkbox" required><span>I am the child’s parent or caregiver. I understand that the four research answers above will be stored for research, while the 20 individual screening answers will not be transmitted or retained.</span></label>
+      </div>
+
+      <p id="form-error" class="error hidden" role="alert"></p>
+      <button id="submit-button" type="submit">Get screening result and submit research answers</button>
+      <button id="result-only-button" class="secondary-button" type="button">Get screening result without submitting research answers</button>
+    </form>
+
+    <section id="result" class="result hidden" tabindex="-1" aria-live="polite">
+      <h3 id="result-heading"></h3>
+      <p id="result-copy"></p>
+      <p><strong>This is a screening result, not a diagnosis.</strong> Discuss developmental concerns and the appropriate follow-up with the child’s healthcare professional.</p>
+      <p id="submission-status" class="hint"></p>
+    </section>
+  </section>
+
+  <footer>
+    Prototype only—not yet authorized for public deployment. Add the required M-CHAT-R copyright and approved instructions after licensing, and replace the blank collection endpoint before accepting submissions.
+  </footer>
+</main>
+
+<script>
+(() => {
+  'use strict';
+
+  const itemContainer = document.getElementById('mchat-items');
+  const researchForm = document.getElementById('research-form');
+  const result = document.getElementById('result');
+  const errorBox = document.getElementById('form-error');
+  const submitButton = document.getElementById('submit-button');
+  const resultOnlyButton = document.getElementById('result-only-button');
+
+  // M-CHAT-R scoring: responses indicating risk are "No" except Items 2, 5, and 12, where "Yes" indicates risk.
+  // Authorized item wording must be inserted without altering item numbering or order.
+  const yesIsRisk = new Set([2, 5, 12]);
+
+  for (let item = 1; item <= 20; item += 1) {
+    const fieldset = document.createElement('fieldset');
+    fieldset.innerHTML = `
+      <legend>${item}. [Authorized M-CHAT-R Item ${item} wording]</legend>
+      <div class="options">
+        <label class="choice"><input type="radio" name="mchat_${item}" value="yes" required><span>Yes</span></label>
+        <label class="choice"><input type="radio" name="mchat_${item}" value="no" required><span>No</span></label>
+      </div>`;
+    itemContainer.appendChild(fieldset);
+  }
+
+  function scoreMchat() {
+    let score = 0;
+    for (let item = 1; item <= 20; item += 1) {
+      const answer = document.querySelector(`input[name="mchat_${item}"]:checked`);
+      if (!answer) throw new Error(`Please answer screening question ${item}.`);
+      const riskResponse = yesIsRisk.has(item) ? 'yes' : 'no';
+      if (answer.value === riskResponse) score += 1;
+    }
+    return score;
+  }
+
+  function screeningMessage(score) {
+    if (score <= 2) return {
+      heading: `M-CHAT-R score: ${score} — low likelihood`,
+      copy: 'Follow the authorized M-CHAT-R guidance, including rescreening recommendations when the child is younger than 24 months or whenever surveillance indicates concern.'
+    };
+    if (score <= 7) return {
+      heading: `M-CHAT-R score: ${score} — moderate likelihood`,
+      copy: 'The authorized M-CHAT-R Follow-Up Interview is the recommended next step. Refer for evaluation and early intervention if the follow-up result remains positive.'
+    };
+    return {
+      heading: `M-CHAT-R score: ${score} — high likelihood`,
+      copy: 'The authorized guidance recommends referral for diagnostic evaluation and eligibility evaluation for early intervention; the follow-up interview may be bypassed.'
+    };
+  }
+
+  function showResult(score, statusText) {
+    const message = screeningMessage(score);
+    document.getElementById('result-heading').textContent = message.heading;
+    document.getElementById('result-copy').textContent = message.copy;
+    document.getElementById('submission-status').textContent = statusText;
+    result.classList.remove('hidden');
+    result.focus();
+  }
+
+  function researchPayload() {
+    return {
+      onset_age_days: Number(document.getElementById('onset-age-days').value),
+      onset_age_error_days: Number(document.getElementById('onset-error-days').value),
+      pre_onset_vaccine_interval_days: Number(document.getElementById('vaccine-interval-days').value),
+      interval_error_days: Number(document.getElementById('interval-error-days').value),
+      consent: true,
+      consent_version: 'prototype-1',
+      submitted_at_utc: new Date().toISOString()
+    };
+  }
+
+  async function submitResearch(payload) {
+    const endpoint = researchForm.dataset.endpoint.trim();
+    if (!endpoint) return { demo: true };
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      credentials: 'omit',
+      referrerPolicy: 'no-referrer'
+    });
+    if (!response.ok) throw new Error('The screening was scored, but the research answers could not be submitted. Please try again.');
+    return { demo: false };
+  }
+
+  researchForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    errorBox.classList.add('hidden');
+
+    try {
+      const score = scoreMchat();
+      if (!researchForm.reportValidity()) return;
+
+      submitButton.disabled = true;
+      const submission = await submitResearch(researchPayload());
+      showResult(score, submission.demo
+        ? 'Prototype mode: no research endpoint is configured, so nothing was transmitted.'
+        : 'Your four research answers were submitted. Your individual screening answers were not included.');
+    } catch (error) {
+      errorBox.textContent = error.message || 'Please review the form and try again.';
+      errorBox.classList.remove('hidden');
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+
+  resultOnlyButton.addEventListener('click', () => {
+    errorBox.classList.add('hidden');
+    try {
+      showResult(scoreMchat(), 'No research answers were submitted.');
+    } catch (error) {
+      errorBox.textContent = error.message || 'Please answer all screening questions.';
+      errorBox.classList.remove('hidden');
+    }
+  });
+})();
+</script>
+</body>
+</html>

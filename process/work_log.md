@@ -368,3 +368,10 @@
 - **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.6 and updated Priority Items 1A and 1D in `protocol/v2/study_punchlist.md`.
 - **Results:** The protocol no longer hides longer schedule-spaced peaks or assumes Day 0 and Day 90 counts must be equal; their expected difference will be generated empirically by the validated permutation procedure.
 - **Next steps:** Include the Day 0--2 and Day 90--92 counts and contrast in the null simulations, then freeze their eligibility and multiplicity treatment under Items 1C and 1D.
+## 2026-08-20 — Squarespace screening/research prototype
+
+- **What we did:** Created a one-page HTML prototype that scores 20 M-CHAT-R responses locally and allow-lists only four consented research variables for transmission.
+- **Command / executable:** Open `protocol/v2/sora_mchat_squarespace_prototype.html` in a browser; configure its `data-endpoint` before deployment.
+- **Outputs:** `protocol/v2/sora_mchat_squarespace_prototype.html`.
+- **Results:** The prototype separates browser-only screening answers from the research payload, displays the screening result after submission, and retains placeholder item text pending M-CHAT-R permission.
+- **Next steps:** After written permission, insert the exact authorized instrument text and copyright notice; connect and test the approved collection endpoint and verify its CSV field output before public use.
