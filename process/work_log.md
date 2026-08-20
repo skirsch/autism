@@ -360,3 +360,11 @@
 - **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.5, `protocol/v2/parent_survey_v2.md` Version 1.5, and updated Priority Items 1A, 1E, and 2 in `protocol/v2/study_punchlist.md`.
 - **Results:** Calendar vaccination dates are optional for the full-sample lag analysis but remain available for reconstruction, validation, chronological-age calculations, and permutation-subset eligibility. Confidence is now expressed as analyzable error bounds rather than qualitative labels.
 - **Next steps:** Cognitively test whether parents understand maximum plausible error and plus-or-minus wording; complete Item 1A eligibility and contradiction rules, then validate candidate permutation procedures under Item 1C.
+
+## 2026-08-20 — Added schedule-spaced lag rationale and Day 90 contrast
+
+- **What we did:** Extended the required three-day vaccination-to-onset lag histogram through Day 179 and added a prespecified secondary Day 0--2 versus Day 90--92 count contrast calibrated by the same permutation null. Added the rationale that an age-driven 18-month onset peak can generate both near-zero and approximately 90-day lags depending on whether the last vaccination occurred near 18 or 15 months.
+- **Command / executable:** Manual `apply_patch` edits; targeted consistency scan; `git diff --check`.
+- **Outputs:** `protocol/v2/SORA_study_v2.md` Version 2.6 and updated Priority Items 1A and 1D in `protocol/v2/study_punchlist.md`.
+- **Results:** The protocol no longer hides longer schedule-spaced peaks or assumes Day 0 and Day 90 counts must be equal; their expected difference will be generated empirically by the validated permutation procedure.
+- **Next steps:** Include the Day 0--2 and Day 90--92 counts and contrast in the null simulations, then freeze their eligibility and multiplicity treatment under Items 1C and 1D.

@@ -1,4 +1,4 @@
-# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.5
+# CHD Multisite SORA Parent-Survey Data-Resource Study Overview v2.6
 
 ## A focused study designed to identify events that may trigger sudden-onset regressive autism (SORA)
 
@@ -98,9 +98,11 @@ The study will use three complementary analyses. The first two display the tempo
 
 ### 1. Vaccination-relative lag histograms
 
-For each SORA case with usable dates, the study will calculate the number of days from the child's actual most recent vaccination before onset to the parent-observed onset date. Counts will be displayed in prespecified, non-overlapping three-day bins (Days 0–2, 3–5, 6–8, and so forth through Day 59, with later intervals reported separately). Histograms will be shown overall and by nominal vaccination-visit category (2, 4, 6, 12, 15, and 18 months, plus other or catch-up visits). Visit category will be derived from the child's actual age, vaccine products, and schedule information rather than inferred from age alone.
+For each SORA case with a usable parent-reported interval, the study will display the number of days from the child's actual most recent vaccination before onset to the parent-observed onset date. Counts will be shown in prespecified, non-overlapping three-day bins (Days 0–2, 3–5, 6–8, and so forth through Days 177–179, with 180 days or more reported separately). This range preserves longer schedule-related separations such as the approximately 90 days between nominal 15- and 18-month visits. Histograms will be shown overall, by onset-age band, and by nominal vaccination-visit category (2, 4, 6, 12, 15, and 18 months, plus other, catch-up, or indeterminate visits). Visit category will be derived from the child's actual or reconstructed age at vaccination, vaccine products, country and historical schedule, and reported schedule status rather than inferred from age alone.
 
 **Prediction:** If a short-latency vaccination-relative pattern is present, the lag distribution will be concentrated in the earliest bins and a similar left-concentrated shape will recur across vaccination-visit categories and clinics.
+
+**Age-peak rationale:** Suppose a nature-driven developmental process produces a sharp onset peak near 18 months. A child whose last vaccination was the nominal 18-month visit could then have a lag near Day 0, while a child whose last vaccination was the nominal 15-month visit could have a lag near Day 90. Thus an age-driven process can produce schedule-spaced peaks in the lag histogram even without a vaccination effect. Their raw counts need not be equal because the numbers of children receiving each visit, the vaccines given, and early, delayed, missed, or catch-up timing may differ. The chronological-age plot and permutation reference are therefore needed to interpret the lag histogram.
 
 ### 2. Parent-onset counts by chronological age
 
@@ -114,6 +116,14 @@ The primary observed interval is the parent's direct report of how long after th
 
 The primary statistic will be the number and proportion of eligible SORA cases whose best reported interval falls from Day 0 through Day 2 after vaccination. The complete lag distribution will be reported in the prespecified three-day bins regardless of the primary result.
 
+A prespecified secondary statistic will contrast the number of reports in Days 0–2 with the number in Days 90–92:
+
+\[
+D=C_{0\text{–}2}-C_{90\text{–}92}.
+\]
+
+This contrast represents the motivating 18-month example: an age-anchored onset peak can coincide with both the nominal 18-month visit near Day 0 and the nominal 15-month visit near Day 90, whereas strong child-specific synchronization would preferentially increase the earliest bin. The analysis will not assume that the two expected counts are equal or that \(D=0\) under the null. The observed contrast will be compared with its distribution under the same validated stratified permutations, which preserve the empirical onset-age and vaccination-timing structure.
+
 Key secondary analyses will repeat the Day 0–2 statistic by prespecified interval-error and evidence tiers. A high-evidence subgroup will require a locked combination of interval precision and supporting records or dated anchors; self-rated precision alone will be reported separately. The analysis will also test whether Day 0–2 concentration changes across ordered error/evidence tiers.
 
 For cases with sufficient separate timing information for vaccination and onset, a stratified permutation component will test whether onset aligns with each child's own vaccination timing more closely than with comparable reassigned vaccination timing. The null distribution will preserve the observed onset-age and vaccination-age distributions while breaking the child-specific pairing. Candidate procedures may permute vaccination dates, vaccination-age deviations, or another prespecified unit within strata such as vaccination-visit or dose category, vaccine-product combination, clinic, birth cohort, routine versus delayed or catch-up timing, and geography where sample size permits.
@@ -122,7 +132,7 @@ For cases with sufficient separate timing information for vaccination and onset,
 
 **Alternative hypothesis:** Parent-observed onset is concentrated on Days 0–2 after the child's own actual vaccination more often than expected under the validated stratified permutation null.
 
-The permutation algorithm, exact-timing eligibility rules, strata, number of permutations, treatment of same-day events and tied dates, and handling of sparse strata will be locked after null simulations and before the main-study responses are examined. The permutation procedure will also generate the expected Day 0–2 count in the prespecified high-evidence subgroup while keeping each child's error and evidence classifications attached to that child. Secondary bins, vaccine-specific analyses, clinics, geographic groups, causal-belief groups, and the record-verified subset will be labeled secondary or exploratory and handled under a prespecified multiplicity plan.
+The permutation algorithm, exact-timing eligibility rules, strata, number of permutations, treatment of same-day events and tied dates, and handling of sparse strata will be locked after null simulations and before the main-study responses are examined. The permutation procedure will generate the expected Day 0–2 count, Day 90–92 count, and their contrast, as well as the expected Day 0–2 count in the prespecified high-evidence subgroup, while keeping each child's error and evidence classifications attached to that child. Other secondary bins, vaccine-specific analyses, clinics, geographic groups, causal-belief groups, and the record-verified subset will be labeled secondary or exploratory and handled under a prespecified multiplicity plan.
 
 A vaccination-relative concentration would demonstrate a temporal association, not by itself establish that vaccination caused the developmental change. Recall anchoring, selection for dateable cases, and co-occurring illness, fever, medication, or medical encounters remain alternative explanations to be assessed with the validation pilot, negative controls, evidence tiers, and stratified analyses.
 

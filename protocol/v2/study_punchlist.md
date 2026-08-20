@@ -35,6 +35,7 @@ Complete Items 1A--1E in order before proceeding to Priority 2.
 -   Define the primary observed interval as the parent's direct report of elapsed days from the actual most recent pre-onset vaccination to parent-observed onset; calendar dates are not required for this report.
 -   Lock the primary window as Day 0 through Day 2, inclusive.
 -   Define the primary statistic as the number and proportion of eligible cases whose onset falls in that window.
+-   Define the Day 0--2 versus Day 90--92 count difference as a prespecified secondary contrast whose null distribution comes from the validated permutations rather than an assumed equality of raw counts.
 -   Specify eligibility and exclusion rules for the direct-interval statistic, including the precision needed to classify Day 0–2 membership and treatment of contradictory or irreconcilable responses.
 -   Define the key secondary high-evidence Day 0–2 statistic and ordered interval-error/evidence tiers without treating self-rated precision as independent validation.
 -   Restrict the child-specific permutation component to cases with sufficient separate onset and vaccination timing information.
@@ -61,6 +62,7 @@ Complete Items 1A--1E in order before proceeding to Priority 2.
 
 -   Lock the permutation unit, strata, sparse-stratum rules, eligibility rules, number of permutations, random seed, and p-value calculation before examining main-study responses.
 -   Define the full lag histogram and chronological-age plot as required descriptive outputs regardless of the primary result.
+-   Extend the required three-day lag histogram through Days 177--179, with 180 days or more reported separately, so schedule-spaced peaks such as Day 90 remain visible.
 -   Prespecify secondary lag bins, subgroup analyses, sensitivity analyses, and multiplicity handling.
 -   Repeat the frozen primary analysis in the record-verified vaccination-date subset as a key replication, while reporting validation consent and record-availability selection.
 
