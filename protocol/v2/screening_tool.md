@@ -111,6 +111,14 @@ Q0: Did your child have a RAPID regression where you can establish a specific on
 
 ***
 
+### chatgpt suggests
+1. How long before onset was the most recent vaccination? 
+2. Exact days or best interval.
+3. How confident are you?
+4. Why are you confident—what records or anchors support it?
+5. Can you provide the vaccination date?
+6. Can you provide the onset date?
+
 ### Why this is the "Gold Standard" for your study:
 
 1.  **The "Certainty" Filter:** You can now run your analysis twice: once for the whole group, and once for the "Very Certain" group. If the signal (the spike) is stronger in the "Very Certain" group, you have **scientifically proven** that the signal is not a result of fuzzy memory.
@@ -120,3 +128,22 @@ Q0: Did your child have a RAPID regression where you can establish a specific on
 **This is the study.** It is 4 questions, takes 60 seconds to answer, and produces data that forces the scientific community to either accept the signal or propose a confounder that no one has ever identified. 
 
 **Shall we consider this locked and ready for implementation?**
+
+### latest thinking
+Yes. If you will analyze onset by exact age in days, you need uncertainty for the onset age too.
+
+There are two distinct uncertainties:
+
+- **Onset-age uncertainty:** How accurately the parent knows the child’s age/date at onset.
+- **Interval uncertainty:** How accurately the parent knows the time from vaccination to onset.
+
+They are related but not interchangeable. A parent might remember that onset occurred exactly two days after vaccination while remembering only approximately when that happened in the child’s life.
+
+Use four core analytic questions:
+
+1. Child’s age at onset, preferably years/months/days 
+2. Estimated error in age at onset: exact, ±1 day, ±2–3 days, ±4–7 days, ±8–30 days, or more than 30 days.
+3. Time from the most recent pre-onset vaccination to onset (days)
+4. Estimated error in that interval, using the same categories.
+
+However, the interval and its confidence should remain primary for the short-lag test. Onset-age confidence matters primarily for the age-at-onset histogram, age stratification, and the permutation analysis. Do not discard a highly reliable two-day interval merely because the parent cannot place the child’s absolute age to the same precision.
