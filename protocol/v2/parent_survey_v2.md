@@ -1,5 +1,9 @@
 # CHD SORA Parent Survey — Final Instrument v1.5
 
+This is the proposed parent survey that clinics would send to their patients asking them to fill out for research purposes.
+
+This works because the parents trust the clinic and will take time to fill out the survey because their trusted clinic asked them to.
+
 ## Section 0 — Consent & Screening (All Parents)
 
 **Q0.1 — Clinic identification**

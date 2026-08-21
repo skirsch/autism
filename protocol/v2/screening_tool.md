@@ -1,3 +1,8 @@
+# A publicly available screening survey to collect the info after offering a free screener?
+This is an idea to offer A free screening tool and advertise it so that the people do the survey to assess their child, and we entice them to fill out a research form, perhaps with an incentive that they win $100 or something like that.
+
+This is an alternative approach to the parent survey that a clinic would send out.
+
 It is surprisingly straightforward to build, provided you use an existing, validated instrument as your foundation. You should not "invent" a screening tool—that would be a red flag to any clinician. You should use a **gold-standard, public-domain screening tool** and then "bolt on" your research questions.
 
 Here is the breakdown of how to do this, the technical requirements, and the "parent-value" you provide.
@@ -129,7 +134,7 @@ Q0: Did your child have a RAPID regression where you can establish a specific on
 
 **Shall we consider this locked and ready for implementation?**
 
-### latest thinking
+### The final 4 questions
 Yes. If you will analyze onset by exact age in days, you need uncertainty for the onset age too.
 
 There are two distinct uncertainties:
