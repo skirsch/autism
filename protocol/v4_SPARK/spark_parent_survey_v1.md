@@ -1,4 +1,4 @@
-# SPARK Parent Survey on Sudden Developmental Change — v1.0
+# SPARK Parent Survey on Sudden Developmental Change — v1.2
 
 **Purpose.** A ~3-minute online survey, modeled on the public Airtable "Parent Survey on Sudden-Onset Autism (SOA)" form, adapted for delivery to SPARK probands via Research Match. Same core items and coding so results can be pooled with or contrasted against the Airtable dataset; adapted so that (a) the sample is not recruited on the vaccine hypothesis, (b) attribution is asked *after* timing, (c) parents whose child did **not** regress supply a comparison arm, and (d) the date's evidence quality is recorded.
 
@@ -67,16 +67,20 @@ Fever / Tylenol or acetaminophen / Illness / Pediatrician or well-child visit **
 **Q11** `after14` (required, checkbox) — In the **14 days AFTER** onset, which changes did you observe? Check all that apply.
 High-pitched screaming / Sleepless nights / LOST existing behavior(s) (eye contact, social interaction…) / LOST existing skill(s) (words, motor skills…) / DEVELOPED new repetitive behaviors (head banging, toe walking, arching…) / Change in sensitivities (light, sound, pain, touch, being held) / Extreme fussiness / New obsessions / Other (specify in Notes)
 
-**Q12** `vax_interval` (required, radio) — Was your child vaccinated within 120 days **before** onset? Choose the closest answer.
-Don't remember / Not vaccinated within 120 days before onset / <1 day (onset <24 h after) / 2 days (24–48 h) / 3 days (49–72 h) / 4 days / 5 days / 6 days / 7 days / 8–13 / 14–29 / 30–59 / 60–90 / more than 90 days
-*(identical coding to Airtable)*
+**Q12** `visit_interval` (required, radio) — How many days **before** onset was your child's most recent doctor visit (well-child or sick visit)? Choose the closest answer, even if unsure.
+Don't remember / No visit within 120 days before onset / <1 day (onset <24 h after) / 2 days (24–48 h) / 3 days (49–72 h) / 4 days / 5 days / 6 days / 7 days / 8–13 / 14–29 / 30–59 / 60–83 / 84–97 / 98–120
+*(Bins identical to Airtable's vaccination-interval item through 30–59; 60–90 / >90 replaced by 60–83 / 84–97 / 98–120 so the ~90-day mirror hump is visible.)*
 
-**Q13** `vax_confidence` (required if Q12 is an interval, radio) — How certain are you of that interval?
+**Q13** `visit_confidence` (required if Q12 is an interval, radio) — How certain are you of that interval?
 Absolutely certain / Within 1 day / Within 2 days / Within 3 days / Within 4 days to a week / Could be off by a week or more
 
-**Q13b** `visit_novax_interval` (required, radio) — How many days before onset was the most recent pediatrician or well-child visit at which **no** shots were given?
-Don't remember / No such visit within 120 days / <1 day / 2 / 3 / 4 / 5 / 6 / 7 / 8–13 / 14–29 / 30–59 / 60–90 / >90
-*(new: mirrors Q12 for the non-vaccinating-visit control)*
+**Q13b** `visit_shots` (required if Q12 is an interval, radio) — How many vaccine injections were given at that visit?
+0 (no shots) / 1 / 2 / 3 / 4 / 5 or more / Don't remember
+
+**Q13c** `vax_prior_interval` (shown only if Q13b = 0, radio) — Was there an earlier visit **with** shots within 120 days before onset? If so, how many days before onset?
+Don't remember / No visit with shots within 120 days / <1 day / 2 / 3 / 4 / 5 / 6 / 7 / 8–13 / 14–29 / 30–59 / 60–83 / 84–97 / 98–120
+
+> **Why this replaces the Airtable vaccination-interval question.** One interval for the nearest visit plus the number of injections at it gives, in the same histogram, (a) the vaccination interval (derived: `visit_interval` if `visit_shots` ≥ 1, else `vax_prior_interval`), (b) the no-shot-visit control (`visit_shots` = 0), and (c) a dose–response axis (Day 0–2 fraction by 0, 1, 2, 3, 4, 5+ injections). A visit anchors memory the same way regardless of how many shots were given, so a Day 0–2 fraction that rises with injection count cannot be produced by visit-anchoring. Two questions for most respondents; three only for those whose nearest visit had no shots.
 
 **Q14** `documentation` (required, radio) — If we asked you for contemporaneous documentation of the onset timing (email, text, video, photo, social-media post, diary note, calendar entry, doctor call), could you provide it?
 Yes, 100% certain / Yes, 80%+ certain / Maybe / Unlikely / Highly unlikely
@@ -107,7 +111,7 @@ Before my child was born / Before I noticed the change / Around the time I notic
 
 ## Comparison path (change_type = 3 or 4)
 
-Same items, reworded to "the time you first became concerned about your child's development": `age_concern_months` (=Q7), `concern_date` (=Q5), `concern_dow` (=Q6), `before3` (=Q10, relative to first concern), `vax_interval` (=Q12, relative to first concern), `vax_confidence`, `visit_novax_interval`, `attribution`, `hypothesis_exposure`, `notes`, `recontact_ok`, `share_public_ok`. Narrative Q8 becomes: "Briefly describe what you noticed and what was going on around that time." Skip Q11.
+Same items, reworded to "the time you first became concerned about your child's development": `age_concern_months` (=Q7), `concern_date` (=Q5), `concern_dow` (=Q6), `before3` (=Q10, relative to first concern), `visit_interval` (=Q12, relative to first concern), `visit_confidence`, `visit_shots`, `vax_prior_interval`, `attribution`, `hypothesis_exposure`, `notes`, `recontact_ok`, `share_public_ok`. Narrative Q8 becomes: "Briefly describe what you noticed and what was going on around that time." Skip Q11.
 
 ## Linked SPARK enrollment fields (request in application)
 Proband age at survey, sex, enrollment date, background-history regression items (loss of language / other skills, age at loss), age at diagnosis. Enrollment-era age at loss vs `age_onset_months` gives within-family drift for free.
@@ -120,7 +124,7 @@ Proband age at survey, sex, enrollment date, background-history regression items
 | `country` | `state` | US-only; registry follow-up |
 | — | `change_type` gate + comparison path | Non-regressed kids give base rates for the checklists and vaccination intervals |
 | `cause` before checklists | `cause` + `attribution` + `hypothesis_exposure` after all timing | Attribution can't prime timing |
-| Pediatrician visit (one option) | split into with/without shots; `visit_novax_interval` | Visit-prompted-noticing control |
+| `# days ago vaccinated` | `visit_interval` + `visit_shots` (+ `vax_prior_interval` if 0 shots) | Same vaccination interval, plus no-shot-visit control and dose–response, with no extra questions for most respondents |
 | — | `date_evidence`, `record_upload_ok` | Evidence-quality strata; path to record-verified interval |
 | email | `recontact_ok` via SPARK | SPARK holds identity |
 | unrestricted public release | `share_public_ok`, coarsened file | SPARK data terms |

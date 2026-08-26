@@ -11,9 +11,10 @@ import numpy as np, pandas as pd
 from scipy import stats
 
 # vax_interval code -> (lag_start_day, n_days)
-BINS = {3:(0,1),4:(1,1),5:(2,1),6:(3,1),7:(4,1),8:(5,1),9:(6,1),10:(7,6),11:(13,16),12:(29,30),13:(59,32)}
+BINS = {3:(0,1),4:(1,1),5:(2,1),6:(3,1),7:(4,1),8:(5,1),9:(6,1),10:(7,6),11:(13,16),12:(29,30),13:(59,24),14:(83,14),15:(97,23)}
+MIRROR = [14]                         # days 83-96: onset just before the next scheduled visit (~90 d after prior shots)
 EARLY = [3,4,5]                       # days 0-2
-REF   = [9,10,11,12,13]               # days 6-90 (per-day reference)  -- day 6 included to keep bins whole
+REF   = [9,10,11,12,13,14,15]         # days 6-120 (per-day reference)
 REF_DAYS = sum(BINS[c][1] for c in REF)
 
 def cb(df, field, k):
@@ -25,13 +26,16 @@ def day02_excess(codes):
     codes = pd.Series(codes).dropna().astype(int)
     obs = codes.isin(EARLY).sum()
     ref = codes.isin(REF).sum()
-    n_vac = codes.between(3, 14).sum()
+    n_vac = codes.between(3, 15).sum()
     exp = 3 * ref / REF_DAYS if ref else np.nan
     rr = obs / exp if exp else np.nan
     lo, hi = (stats.chi2.ppf(0.025, 2*obs)/2, stats.chi2.ppf(0.975, 2*(obs+1))/2) if exp else (np.nan, np.nan)
     p = stats.poisson.sf(obs-1, exp) if exp else np.nan
+    mir = codes.isin(MIRROR).sum(); mir_days = sum(BINS[c][1] for c in MIRROR)
+    mirror_rr = (obs/3) / (mir/mir_days) if mir else np.nan   # per-day Day 0-2 vs per-day Day 83-96
     return dict(n_vaccinated_120d=int(n_vac), obs_d02=int(obs), exp_d02=round(exp,2), RR=round(rr,2),
-                CI=(round(lo/exp,2) if exp else None, round(hi/exp,2) if exp else None), p_one_sided=round(p,4))
+                CI=(round(lo/exp,2) if exp else None, round(hi/exp,2) if exp else None), p_one_sided=round(p,4),
+                obs_mirror_d83_96=int(mir), spike_vs_mirror_perday=round(mirror_rr,2) if mir else None)
 
 def lag_hist(codes):
     codes = pd.Series(codes).dropna().astype(int)
@@ -45,7 +49,37 @@ def dow_test(dow):
     return dict(counts=dict(zip("Mon Tue Wed Thu Fri Sat Sun".split(), days.tolist())), chi2=round(chi,2), p=round(p,4),
                 weekday=int(wk), weekend=int(we), weekday_frac=round(wk/(wk+we),3) if wk+we else None)
 
+def derive(df):
+    """Derived vaccination interval from visit_interval + visit_shots (+ vax_prior_interval when 0 shots)."""
+    for suf in ["", "_c"]:
+        vi, sh, pr = f"visit_interval{suf}", f"visit_shots{suf}", f"vax_prior_interval{suf}"
+        if vi in df and sh in df:
+            shots = df[sh]
+            vax = np.where(shots.between(2, 6), df[vi], np.where(shots.eq(1), df.get(pr, np.nan), np.nan))
+            df[f"vax_interval{suf}"] = vax
+            df[f"novax_visit_interval{suf}"] = np.where(shots.eq(1), df[vi], np.nan)
+            df[f"vax_confidence{suf}"] = df.get(f"visit_confidence{suf}", np.nan)
+    return df
+
+def dose_response(df):
+    """Day 0-2 fraction of visit_interval by number of injections at that visit."""
+    out = {}
+    for code, lab in {1:"0 shots",2:"1",3:"2",4:"3",5:"4",6:"5+"}.items():
+        sub = df[df.visit_shots.eq(code) & df.visit_interval.between(3, 15)]
+        n = len(sub); k = int(sub.visit_interval.isin(EARLY).sum())
+        out[lab] = dict(n=n, day02=k, frac=round(k/n, 3) if n else None)
+    xs, ks, ns = [], [], []
+    for i, lab in enumerate(["0 shots","1","2","3","4","5+"]):
+        if out[lab]["n"]: xs.append(i); ks.append(out[lab]["day02"]); ns.append(out[lab]["n"])
+    if len(xs) >= 3:                                        # Cochran-Armitage trend
+        xs, ks, ns = map(np.array, (xs, ks, ns)); N, K = ns.sum(), ks.sum(); p = K/N
+        xbar = (xs*ns).sum()/N; T = (ks*(xs-xbar)).sum(); V = p*(1-p)*(ns*(xs-xbar)**2).sum()
+        z = T/np.sqrt(V) if V > 0 else np.nan
+        out["trend_z"] = round(float(z), 2); out["trend_p_one_sided"] = round(float(stats.norm.sf(z)), 4)
+    return out
+
 def run(df):
+    df = derive(df.copy())
     R = df[df.change_type.isin([1,2])].copy(); RS = R[R.change_type.eq(1)]
     C = df[df.change_type.isin([3,4])]
     conf = RS[~cb(RS,"attribution",5) & (sum(cb(RS,"date_evidence",k) for k in range(2,9)) > 0) & RS.vax_confidence.le(3)]
@@ -53,7 +87,8 @@ def run(df):
     out["primary_confirmatory_subgroup"] = day02_excess(conf.vax_interval)
     out["R_sudden_all"] = day02_excess(RS.vax_interval)
     out["R_all"] = day02_excess(R.vax_interval)
-    out["control_nonvax_visit_R_sudden"] = day02_excess(RS.visit_novax_interval)
+    out["control_noshot_visit_R_sudden"] = day02_excess(RS.novax_visit_interval)
+    out["dose_response_R_sudden"] = dose_response(RS)
     out["comparison_arm_first_concern"] = day02_excess(C.vax_interval_c)
     out["lag_hist_per_day_R_sudden"] = lag_hist(RS.vax_interval)
     out["dow_R_sudden"] = dow_test(RS.onset_dow)
@@ -89,22 +124,25 @@ def synthetic(n=1500, rr=3.0, seed=1):
     df["how_long_ago"] = rng.integers(1, 7, n)
     df["hypothesis_exposure"] = rng.integers(1, 7, n)
     df["documentation"] = rng.integers(1, 6, n)
-    df["vax_confidence"] = rng.integers(1, 7, n)
+    df["visit_confidence"] = rng.integers(1, 7, n)
     for k in range(1, 11): df[f"attribution___{k}"] = rng.random(n) < (0.25 if k == 5 else 0.2)
     for k in range(1, 9):  df[f"date_evidence___{k}"] = rng.random(n) < 0.3
     for k in range(1, 17): df[f"before3___{k}"] = rng.random(n) < 0.08; df[f"before3_c___{k}"] = rng.random(n) < 0.06
     def lags(m, boost):
-        p_early = 3 * boost / (3 * boost + 88)             # flat per-day null, days 0-2 boosted by `boost`
+        p_early = 3 * boost / (3 * boost + 118)             # flat per-day null, days 0-2 boosted by `boost`
         early = rng.random(m) < p_early
-        lag = np.where(early, rng.integers(0, 3, m), rng.integers(3, 91, m))
-        code = np.select([lag<=6, lag<=13, lag<=29, lag<=59, lag<=90], [lag+3, 10, 11, 12, 13], 14)
-        code = np.where(rng.random(m) < 0.35, rng.choice([1,2,14], m), code)
+        lag = np.where(early, rng.integers(0, 3, m), rng.integers(3, 121, m))
+        code = np.select([lag<=6, lag<=13, lag<=29, lag<=59, lag<=83, lag<=97], [lag+3, 10, 11, 12, 13, 14], 15)
+        code = np.where(rng.random(m) < 0.35, rng.choice([1,2], m), code)
         return code
-    df["vax_interval"] = lags(n, rr); df["vax_interval_c"] = lags(n, 1.0)
-    df["visit_novax_interval"] = lags(n, 1.0)
+    df["visit_shots"] = rng.choice([1,2,3,4,5,6,7], n, p=[.3,.15,.2,.15,.1,.05,.05])
+    boost = np.where(df.visit_shots.eq(1), 1.0, rr)           # no-shot visits get null; shot visits get rr
+    vi = np.array([lags(1, b)[0] for b in boost]); df["visit_interval"] = vi
+    df["vax_prior_interval"] = np.where(df.visit_shots.eq(1), lags(n, 1.0), np.nan)
+    df["visit_shots_c"] = rng.choice([1,2,3,4], n); df["visit_interval_c"] = lags(n, 1.0); df["vax_prior_interval_c"] = lags(n, 1.0)
     dow = rng.integers(2, 9, n); df["onset_dow"] = np.where(rng.random(n) < .4, 1, dow)
-    df.loc[df.change_type.ge(3), ["vax_interval","visit_novax_interval","onset_dow"]] = np.nan
-    df.loc[df.change_type.le(2), "vax_interval_c"] = np.nan
+    df.loc[df.change_type.ge(3), ["visit_interval","visit_shots","vax_prior_interval","onset_dow"]] = np.nan
+    df.loc[df.change_type.le(2), ["visit_interval_c","visit_shots_c","vax_prior_interval_c"]] = np.nan
     return df
 
 if __name__ == "__main__":

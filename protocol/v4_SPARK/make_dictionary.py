@@ -13,7 +13,8 @@ CMP = "[change_type] = '3' or [change_type] = '4'"
 def ch(*opts): return " | ".join(f"{i+1}, {o}" for i, o in enumerate(opts))
 
 INTERVAL = ch("Don't remember","Not within 120 days before","<1 day (<24 h)","2 days (24-48 h)","3 days (49-72 h)",
-              "4 days","5 days","6 days","7 days","8-13 days","14-29 days","30-59 days","60-90 days","More than 90 days")
+              "4 days","5 days","6 days","7 days","8-13 days","14-29 days","30-59 days","60-83 days","84-97 days","98-120 days")
+SHOTS = ch("0 (no shots)","1","2","3","4","5 or more","Don't remember")
 CONF = ch("Absolutely certain","Within 1 day","Within 2 days","Within 3 days","Within 4 days to a week","Could be off by a week or more")
 DOW = ch("Don't remember","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","It was a weekday","It was a weekend")
 EVID = ch("Memory alone","Calendar or diary","Photos or videos with dates","Texts, emails, or patient-portal messages",
@@ -60,10 +61,12 @@ add("sequence","notes","Briefly describe the chain of events in the 15 days befo
     note="Example: birthday party (0) -> illness (1) -> fever (2) -> high-pitched screaming for 12 hours (2) -> lost eye contact (4).", branch=REG, section="In your own words")
 add("before3","checkbox","What do you remember happening in the 3 days BEFORE onset? Check all that apply.", BEFORE3, branch=REG, section="Timing")
 add("after14","checkbox","In the 14 days AFTER onset, which changes did you observe? Check all that apply.", AFTER14, branch=REG)
-add("vax_interval","radio","Was your child vaccinated within 120 days BEFORE onset? Choose the closest answer, even if unsure of the exact interval.", INTERVAL, branch=REG)
-add("vax_confidence","radio","How certain are you of that interval?", CONF, branch=f"({REG}) and [vax_interval] > 2")
-add("visit_novax_interval","radio","How many days before onset was the most recent pediatrician or well-child visit at which NO shots were given?",
-    INTERVAL.replace("Not within 120 days before","No such visit within 120 days"), branch=REG)
+add("visit_interval","radio","How many days BEFORE onset was your child's most recent doctor visit (well-child or sick visit)? Choose the closest answer, even if unsure of the exact interval.",
+    INTERVAL.replace("Not within 120 days before","No visit within 120 days before"), branch=REG)
+add("visit_confidence","radio","How certain are you of that interval?", CONF, branch=f"({REG}) and [visit_interval] > 2")
+add("visit_shots","radio","How many vaccine injections were given at that visit?", SHOTS, branch=f"({REG}) and [visit_interval] > 2")
+add("vax_prior_interval","radio","Was there an earlier visit WITH shots within 120 days before onset? If so, how many days before onset?",
+    INTERVAL.replace("Not within 120 days before","No visit with shots within 120 days"), branch=f"({REG}) and [visit_shots] = '1'")
 add("documentation","radio","If we asked you for contemporaneous documentation of the onset timing (email, text, video, photo, social-media post, diary note, calendar entry, doctor call), could you provide it?",
     ch("Yes, 100% certain","Yes, 80%+ certain","Maybe","Unlikely","Highly unlikely"), branch=REG)
 add("record_upload_ok","radio","Would you be willing to share your child's official immunization record (state registry or pediatrician) with the research team in a follow-up?", ch("Yes","Maybe","No"), branch=REG)
@@ -73,10 +76,12 @@ add("concern_date","text","If you remember the approximate calendar date you fir
 add("concern_dow","radio","Do you remember the day of the week, or whether it was a weekday or weekend?", DOW, branch=CMP)
 add("sequence_c","notes","Briefly describe what you noticed and what was going on in your child's life around that time.", branch=CMP)
 add("before3_c","checkbox","What do you remember happening in the 3 days BEFORE you first became concerned? Check all that apply.", BEFORE3, branch=CMP)
-add("vax_interval_c","radio","Was your child vaccinated within 120 days BEFORE you first became concerned? Choose the closest answer.", INTERVAL, branch=CMP)
-add("vax_confidence_c","radio","How certain are you of that interval?", CONF, branch=f"({CMP}) and [vax_interval_c] > 2")
-add("visit_novax_interval_c","radio","How many days before you first became concerned was the most recent pediatrician or well-child visit at which NO shots were given?",
-    INTERVAL.replace("Not within 120 days before","No such visit within 120 days"), branch=CMP)
+add("visit_interval_c","radio","How many days BEFORE you first became concerned was your child's most recent doctor visit? Choose the closest answer.",
+    INTERVAL.replace("Not within 120 days before","No visit within 120 days before"), branch=CMP)
+add("visit_confidence_c","radio","How certain are you of that interval?", CONF, branch=f"({CMP}) and [visit_interval_c] > 2")
+add("visit_shots_c","radio","How many vaccine injections were given at that visit?", SHOTS, branch=f"({CMP}) and [visit_interval_c] > 2")
+add("vax_prior_interval_c","radio","Was there an earlier visit WITH shots within 120 days before you first became concerned? If so, how many days before?",
+    INTERVAL.replace("Not within 120 days before","No visit with shots within 120 days"), branch=f"({CMP}) and [visit_shots_c] = '1'")
 # Attribution (all)
 add("cause","notes","What do you think might have triggered the change, and why? Do you think it was a random event with no specific trigger?", req="", section="Your view")
 add("attribution","checkbox","Which of these do you think contributed? Check all that apply.", ATTR)
