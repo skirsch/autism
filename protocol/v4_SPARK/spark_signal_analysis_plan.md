@@ -46,3 +46,24 @@ If the true Day 0–2 per-day rate equals the days 6–120 rate, with N=300 vacc
 
 ## 9. Multiplicity
 One primary test (§2 confirmatory subgroup). Everything else descriptive with CIs; no p-value thresholding on subgroups.
+
+---
+
+## Addendum — mapping to the live Airtable form (v2, 2026-08-26)
+
+The live form implements the design with these differences from the field list above; the analysis maps as follows.
+
+| Concept | Airtable v2 field | Notes |
+|---|---|---|
+| Onset definition | in "How long ago did ONSET happen?" help text | persistent change; resolved reactions excluded |
+| `visit_interval` | "How many days BEFORE onset was your child's most recent well-child visit?" | bins: <1, 2, 3, 4, 5, 6, 7, 8–13, 14–29, 30–59, 60–89, 90–120, >120, never |
+| `visit_confidence` | "Confidence in pediatrician visit interval" | unchanged |
+| `visit_shots` (yes/no only) | "What happened at the last pediatrician visit" → Vaccination(s) checked | **no injection count**; dose–response deferred to the record-verified follow-up subset |
+| short-window vaccination exposure | "Within 3 days BEFORE onset" → Vaccination checked | primary Day 0–2 exposure indicator; catches non-well-visit shots |
+| pediatrician concern at last visit | "Did the pediatrician have any health concerns…" (free text) | code: none / developmental concern / illness / shots deferred |
+| attribution | "Cause?" (then vs now, with reasoning) | blind-coded: vaccine / illness / other / random-no idea |
+| mirror bin | 90–120 | replaces 84–97; per-day rate over 31 days |
+
+**Primary contrast (as collected):** Day 0–2 fraction of `visit_interval` among last-well-visits *with* vaccination vs *without*. Visit-anchoring predicts equal fractions; a vaccine effect predicts a higher fraction with shots.
+**Secondary:** per-day Day 0–2 rate vs per-day 90–120 rate (mirror); day-of-week overall and split by 3-day vaccination box; all of the above by attribution code and by confidence/documentation.
+**Not available from this form:** injection count; vaccination interval when the last well visit had no shots and the shot was >3 days before onset.

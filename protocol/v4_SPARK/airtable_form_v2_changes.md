@@ -1,6 +1,12 @@
 # Airtable SOA form — v2 changes (drop-in wording)
 
-Replace the single question **"Was your child vaccinated within 120 days PRIOR to onset?"** with the two-plus-one items below. Keep "Confidence in vaccination interval" but attach it to the visit interval. Everything else on the form is unchanged except items 4–5.
+### 0. Onset definition  *(edit the intro; replace the "Why do some children…" bullet list)*
+
+> The **onset date** is the first day you noticed a clear, unmistakable change in your child — a skill that was lost (words, eye contact, pointing, play) or a new behavior that appeared (screaming, repetitive movements, withdrawal, new sensitivities) — **that did not go away**. Use the day the change first appeared, not the day you first worried something might be wrong, and not the day of diagnosis. If the change unfolded over several days, use the first day. A bad night that was back to normal within a few days does not count.
+
+Why: "sudden" must not depend on the parent having a dated event to hang the memory on, and ordinary post-shot reactions that resolve (the 1–6-month-old cases in the current data) must not count as onset.
+
+Replace the single question **"Was your child vaccinated within 120 days PRIOR to onset?"** with the two-plus-one items below. Keep "Confidence in vaccination interval" but attach it to the visit interval. Everything else on the form is unchanged except item 4 (and item 5 if you choose to include it).
 
 ---
 
@@ -65,7 +71,7 @@ Current example is *birthday party (0) → illness (1) → fever (2) → tylenol
 
 > For example: *moved house (0) → started daycare (3) → stopped responding to name (10)*, or *ear infection (0) → antibiotic (1) → lost words (5)*.
 
-### 5. Hypothesis exposure  *(new, required, single select — place immediately after "Cause?")*
+### 5. Hypothesis exposure  *(OPTIONAL — recommended to omit: it is the only item that would explicitly pair "vaccines" and "autism" on the form. The Cause? free text already supplies the attribution split; the visit/shots items carry the structural controls.)*
 
 **Label:** When did you first hear the idea that vaccines might be connected to autism?
 
