@@ -1,6 +1,6 @@
-# Parent Survey on Sudden-Onset Autism (SOA) — v2 (live)
+# Parent Survey on Sudden-Onset Autism (SOA) — v2.3 (live)
 
-*Transcription of the live Airtable form as of 2026-08-26 (evening) — https://airtable.com/appxoW7SrCrtEvPqH/pagsPs5ANQlU28V4p/form. Asterisk (*) = required. Supersedes the v1 transcription.*
+*Transcription of the live Airtable form as of 2026-08-27 — https://airtable.com/appxoW7SrCrtEvPqH/pagsPs5ANQlU28V4p/form. Asterisk (*) = required. Supersedes earlier transcriptions.*
 
 ---
 
@@ -30,22 +30,22 @@ Note: A number of organization and individuals are collaborating on the effort c
 ### Source *
 Where did you see the link to this survey?
 
-- Autism Action Network/John Gilmore
-- Dr. Drew post
-- Nextdoor post
-- Sharyl Attkisson (X post)
-- Lara Logan post
+- TrialSite News (website or email)
 - Autism diagnosis / treatment clinic email
 - NY Times article
-- CHD (newsletter, email, posting)
-- Clinic W
-- TrialSite News (website or email)
-- Chris Martenson (X post)
-- Other post on X
-- Substack article
-- Facebook post
-- Newspaper article
 - Pediatrician
+- Other newspaper article
+- Nextdoor post
+- Facebook post
+- Substack article
+- Chris Martenson (X post)
+- Clinic W
+- AutismWarriorMom substack
+- MAHA action email or post
+- Autism Action Network
+- CHD (newsletter, email, posting)
+- Sharyl Attkisson (X post)
+- Lara Logan post
 - Direct invite via email
 - Online ad
 - Other
@@ -59,6 +59,13 @@ What country do you live in?
 What is the sex of your child?
 
 - Male · Female
+
+### Has your child been diagnosed with autism? *
+- Yes, by a specialist
+- Yes, by our pediatrician
+- Evaluation in process
+- No formal diagnosis
+- Not sure/don't remember
 
 ### How long ago did ONSET happen? (includes definition of ONSET DATE) *
 How long ago did you notice a sudden, dramatic behavior/skill change in your child (the "onset date")?
@@ -125,6 +132,7 @@ Please carefully review each option and check all that apply:
 - Your child's birthday
 - Your birthday
 - New Year's Day
+- Anesthesia
 - Other (please specify in Notes at the end)
 - None of the above
 - Too long ago don't remember
@@ -202,23 +210,66 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - An autism screening test flagged something
 - Don't remember
 
+### Which vaccines were given at that visit? Check all that apply: *
+- None - I'm certain no vaccines were given at that visit
+- MMR (measles-mumps-rubella)
+- DTaP/Tdap/DTP (older whole-cell shot)
+- Chickenpox (varicella)
+- Hib
+- Pneumococcal (PCV / Prevnar)
+- Hepatitis A or B
+- Flu
+- Polio (IPV)
+- Rotavirus (oral drops)
+- Other / not listed
+- Vaccines were given, but I don't remember which ones
+- I don't remember whether any vaccines were given
+
+### Was your child receiving vaccines on the standard CDC schedule (or standard schedule in your country) BEFORE onset? *
+Select all that apply (this is BEFORE onset):
+
+- On schedule (strict adherence)
+- On schedule, but not strict adherence
+- Delayed schedule (got everything but spaced out)
+- Reduced schedule (skipped some recommended vaccines)
+- A few vaccines were given early, then stopped
+- No vaccines were ever given
+- Don't know
+
 ### Notes
 Is there anything else you think we should know that you think might be helpful?
 
-### Your email (optional)
-Thank you for participating. If you are open to being contacted by qualified autism researchers about your answers, please enter your email address.
+Also, if you would post the survey to your social media to let people know about it, that helps to spread the word. Thanks!
+
+### Your email (IMPORTANT)
+Would you be willing to share your email address?
+
+This is VERY HELPFUL to enable us to verify answers for quality control purposes. Most people will never be contacted.
+
+Thank you for participating!
 
 ---
 [Clear form] [Submit]
 
 ---
 
-## Changes from v1 (2026-08-26 morning)
+## Changes from v2.2
+- New required check-all after the concerns question: "Which vaccines were given at that visit?" — types (MMR, DTaP/Tdap/DTP, varicella, Hib, PCV, HepA/B, flu, IPV, rotavirus, other), with "None — certain," "given but don't remember which," and "don't remember whether any" as distinct states. Enables the MMR live-virus timing test (days 5–12 window) and cleans the no-shot control; the visit checklist's Vaccination(s) item is retained as a per-respondent consistency probe (type question authoritative; discordant rows flagged).
+- Source list: "Autism Action Network" label repaired.
+
+## Changes from v2.1
+- New required question after Sex: "Has your child been diagnosed with autism?" (specialist / pediatrician / in process / none / not sure) — enables specialist-diagnosed restriction of headline results.
+- Vaccine-schedule question now required.
+- Source list reordered; "susbstack" typo fixed; "Newspaper article" → "Other newspaper article"; Dr. Drew removed. NOTE: "Autism Action Networ" is truncated — should read "Autism Action Network/John Gilmore".
+- Email field reframed as quality-control verification ("Most people will never be contacted"); Notes now asks respondents to share the survey.
+
+## Changes from v1 (2026-08-26 morning) — cumulative
 - Onset definition added (persistent change; resolved reactions excluded).
-- Sequence question rewritten: "unusual" defined, day-0 convention stated, sequence ends with onset, neutral example.
-- "Cause?" now asks for then-vs-now view with reasoning.
-- "Was your child vaccinated within 120 days?" replaced by well-child-visit interval with same-day BEFORE/AFTER split and whole-day bins; far bins 60–89 / 90–120 / >120 / never.
-- Documentation question now targets the visit-to-onset interval and lists vaccination card / doctor records.
-- New: "What happened at the last pediatrician visit" checklist (vaccination as one of eight routine items).
-- New: "Concerns about development or behavior noted at that visit" checklist.
-- Source list: added Dr. Drew post, Nextdoor post.
+- Sequence question rewritten: "unusual" defined, day-0 convention, sequence ends with onset, neutral example.
+- "Cause?" asks then-vs-now view with reasoning.
+- Vaccination-interval question replaced by well-child-visit interval with same-day BEFORE/AFTER split and whole-day bins; far bins 60–89 / 90–120 / >120 / never.
+- Documentation question targets the visit-to-onset interval.
+- "What happened at the last pediatrician visit" checklist (vaccination one of eight routine items).
+- "Concerns about development or behavior" checklist.
+- "Anesthesia" added to 3-days-before checklist.
+- Vaccine schedule BEFORE onset (never-vaccinated denominator; on-schedule vs delayed split).
