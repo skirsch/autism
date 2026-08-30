@@ -24,9 +24,9 @@
 | **P6. Age symmetry** | **Indeterminate** | **Indeterminate** |
 | **P7. Days 0–5 vs 6–59** | **No** | **Yes** |
 
-The matrix contains three kinds of rows:
+The seven core predictions contain three kinds of rows:
 
-- **Discriminating:** P5 and P7 favor H-vax over H-null; P7 is the prespecified primary test.
+- **Discriminating:** P5 and P7 favor H-vax over H-null; P7 is the primary statistical decision test.
 - **Non-discriminating:** P4 is Yes for both models.
 - **Unavailable or incompletely specified:** P1 and P6; P2–P3 do not yet have sufficiently precise H-vax predictions to score every H-vax cell.
 
@@ -46,7 +46,7 @@ The matrix contains three kinds of rows:
 
 | Level | H-null | H-vax | Interpretation |
 |---|:---:|:---:|---|
-| **Numerical evidence** | **No** | **Yes** | P7 is the primary and strongest row: RR=40.5 with an extremely small exact p-value. P2 and P5 also conflict with their simple null predictions, although they are not vaccine-specific by themselves. |
+| **Numerical evidence** | **No** | **Yes** | P7 is the primary statistical decision test and strongest row: RR=40.5 with an extremely small exact p-value. P1–P6 remain core predictions; P2 and P5 also conflict with their simple null predictions, although they are not vaccine-specific by themselves. |
 | **V5 determination under assumed verification** | **No** | **Yes** | Treating all retained responses as verified and correct, the primary result meets every numerical v5 H-vax criterion and strongly rejects H-null. |
 
 ## Bottom line under the exercise assumption

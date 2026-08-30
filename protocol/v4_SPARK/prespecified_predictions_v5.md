@@ -1,7 +1,7 @@
 # Prospective Predictions and Analysis Plan — Verified SOA Survey Data (version 5 draft)
 
 **Drafted:** 2026-08-30, after inspection of the first 270 raw responses.  
-**Status:** Draft for review. Freeze the verification protocol, code, simulations, timestamp, and hash before confirmatory analysis.  
+**Status:** Superseded draft. V6 replaces the separated prose with an explicit H-null-versus-H-vax prediction and decision rule for every P1–P7 row.
 **Primary data:** Responses collected by the live survey and confirmed through the verification procedure below. Raw unverified responses are reported separately and do not determine the primary conclusion.  
 **Outcome:** The survey-defined PARENT-observed sudden and lasting autism-consistent change.
 
@@ -146,7 +146,9 @@ An excess that remains large across age bands and after excluding the modal-age 
 
 If a later verification module collects exact birth dates and complete vaccination dates, a full age-preserving permutation or SCCS may be added as a separately versioned replication. It is not required to execute v5.
 
-## 7. Secondary predictions from the survey
+## 7. Seven core prespecified predictions
+
+P1–P7 are the study's seven core predictions and must all be reported. P7 is the **primary statistical decision test** because it directly tests vaccination-relative timing against the 1:9 proportional-time null. P1–P6 are **core supporting predictions**: they can strengthen, weaken, or qualify the interpretation, but none individually overrides P7.
 
 ### P1. Onset year
 
@@ -160,7 +162,7 @@ The simple calendar null is \(P(weekday)=5/7\), \(P(weekend)=2/7\), and \(P(day)
 
 Report whether there is one modal month, whether each adjacent month is at least 80% of the mode, and whether counts are approximately symmetric around the mode. Before freezing v5, define the symmetry statistic, evaluated span, minimum modal count, and treatment of ties. These are user-proposed diagnostics; they do not override the primary lag test because developmental floors, right tails, rounding, and mixed mechanisms can also change the shape.
 
-### P7. Verified lag concentration
+### P7. Verified lag concentration — primary statistical decision test
 
 This is the primary days 0–5 versus days 6–59 analysis in §3.
 
@@ -218,3 +220,4 @@ Before v5 becomes final:
 ### V5 clarification log
 
 - **2026-08-30:** Clarified that vaccination-at-visit status is supplied by the existing verified `What happened?` → `Vaccination(s)` field. The later vaccine-type field is not required for this binary classification. This clarification does not change the E/R windows, RR=2 threshold, exact test, or the previously calculated 36/8 raw result.
+- **2026-08-30:** Corrected the §7 heading. P1–P7 are the seven core prespecified predictions; P7 is the primary statistical decision test and P1–P6 are core supporting predictions. They are not a separate list of merely optional secondary analyses.

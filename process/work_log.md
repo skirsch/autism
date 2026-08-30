@@ -446,3 +446,74 @@
 - **Outputs:** `protocol/v4_SPARK/predictions_v5_results_matrix_n270.md`.
 - **Results:** Under the counterfactual verified-data assumption, H-null=No and H-vax=Yes overall. P7 is decisive: E=36, R=8, RR=40.5 (95% CI 18.5–100.9), p=7.82e-29, versus null expected counts approximately 4.4 and 39.6. P1 and P6 remain structurally indeterminate; several secondary rows are non-discriminating.
 - **Next steps:** Keep the assumed-verification label distinct from actual verification status; operationalize P6 symmetry before using it in a real frozen analysis.
+
+## 2026-08-30 — Corrected v5 prediction hierarchy
+
+- **What we did:** Corrected §7 so P1–P7 are identified as the seven core prespecified predictions rather than being grouped under “Secondary predictions.”
+- **Command / executable:** Manual `apply_patch`.
+- **Outputs:** Updated `protocol/v4_SPARK/prespecified_predictions_v5.md` and `predictions_v5_results_matrix_n270.md`.
+- **Results:** P7 is now explicitly the primary statistical decision test; P1–P6 are core supporting predictions that must all be reported and can strengthen, weaken, or qualify P7.
+- **Next steps:** Preserve this hierarchy in the frozen version and analysis output.
+
+## 2026-08-30 — Created v6 with explicit predictions for every P1–P7 test
+
+- **What we did:** Marked v5 superseded and created one authoritative table stating the H-null prediction, H-vax prediction, statistic/decision rule, and role for every P1–P7 row.
+- **Command / executable:** Manual `apply_patch`; targeted P1–P7 scan; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/prespecified_predictions_v6.md`.
+- **Results:** P7 now explicitly contrasts null E/R=1/9 and RR=1 with H-vax RR≥2. P1–P3 contain exposure-specific calendar predictions; P4 is identified as potentially non-discriminating; P5 has fixed adjacent-month ratios; and P6 has a draft ±6-month, 20% asymmetry statistic.
+- **Next steps:** Review the substantive validity of each H-vax prediction—especially the P2/P3 visit-calendar direction and P6 threshold—then simulate and freeze v6 prospectively.
+
+## 2026-08-30 — Created mutually exclusive v7 predictions and matrix
+
+- **What we did:** Replaced overlapping H-null/H-vax cells with mutually exclusive null, vaccine, and indeterminate regions for every P1–P7 test; redesigned P4 as a VAX-versus-NEVER modal-age comparison.
+- **Command / executable:** Manual `apply_patch`; mutual-exclusivity scan; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/prespecified_predictions_v7.md` and `predictions_v7_results_matrix_n270.md`; v6 marked superseded.
+- **Results:** Only `(Yes, No)`, `(No, Yes)`, and `(Indeterminate, Indeterminate)` are allowed. Under assumed verification, P1–P6 are indeterminate because NEVER/named-day cells are inadequate or the calendar model is unfrozen; P7 is `(No, Yes)` with RR=40.5 and the overall exercise conclusion is H-null=No, H-vax=Yes.
+- **Next steps:** Approve or replace draft P1–P6 equivalence/effect margins, freeze the P2/P3 calendar model, simulate operating characteristics, and implement a state-pair validator before freezing v7.
+
+## 2026-08-30 — Applied final paired v7 rules to n=270 assumed-verified data
+
+- **What we did:** Reapplied P1–P7 after consolidating affirmative vaccination evidence for VAX and retaining the paired Yes/No, No/Yes, or Indeterminate/Indeterminate rule.
+- **Command / executable:** Read-only pandas/scipy summaries of the latest 270-row Downloads export; manual results-matrix update.
+- **Outputs:** Updated `protocol/v4_SPARK/predictions_v7_results_matrix_n270.md`.
+- **Results:** VAX=185, NEVER=3, unknown=82. P1 shows the visible 2019/2020/2021 dip (all: 5/1/10; VAX: 5/1/5) but remains formally indeterminate because only 2 NEVER records are dated. P2 and age-shape P4–P6 point descriptively in the H-vax direction but are also comparator-limited. P7 remains No/Yes: E=36, R=8, RR=40.5, p=7.82e-29. Overall assumed-verification result is H-null=No, H-vax=Yes.
+- **Next steps:** Obtain enough NEVER observations for P1–P6 comparisons; finalize draft margins and calendar model before freezing v7.
+## 2026-08-30 — Replace comparator-dependent v7 with pooled v8 predictions
+
+- **What we did:** Audited v7, confirmed that it explicitly reintroduced VAX-versus-NEVER interactions into P1–P6, marked v7 superseded, and drafted v8 without those comparisons. Reorganized v8 so each prediction, measurement, window, statistic, cutoff, and paired decision rule is explained in plain English before the summary table.
+- **Command / executable:** Manual Markdown review and `apply_patch`; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/prespecified_predictions_v8.md`; status correction in `protocol/v4_SPARK/prespecified_predictions_v7.md`.
+- **Results:** P1–P6 now use the pooled eligible verified survey records. P7 alone uses confirmed vaccination-at-last-visit records. Every row retains only Yes/No, No/Yes, or Indeterminate/Indeterminate scoring.
+- **Next steps:** Approve or revise the draft P1–P6 thresholds and freeze their interval/bootstrap procedures before treating v8 as confirmatory; then apply the frozen v8 rules to the n=270 export.
+
+## 2026-08-30 — Simplify v9 to one mutually exclusive result
+
+- **What we did:** Marked v8 superseded and created v9 with one result per prediction instead of redundant H-null and H-vax result columns.
+- **Command / executable:** Version copy followed by manual `apply_patch`; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/prespecified_predictions_v9.md`; status correction in `prespecified_predictions_v8.md`.
+- **Results:** Each row can now be only `Null`, `Vaccine`, or `Indeterminate`. Separate Null and Vaccine decision regions remain explicit, preventing a mere failure of the null rule from being treated automatically as vaccine evidence.
+- **Next steps:** Approve or revise the draft P1–P6 thresholds and freeze their interval procedures before applying v9 to the n=270 export.
+
+## 2026-08-30 — Apply v9 to the n=270 assumed-verified export
+
+- **What we did:** Applied the single-state v9 rules to the unchanged latest Downloads export without a VAX-versus-NEVER comparison.
+- **Command / executable:** Read-only pandas/scipy summaries; SHA-256 verification; manual `apply_patch` of the results table.
+- **Outputs:** `protocol/v4_SPARK/predictions_v9_results_matrix_n270.md`.
+- **Results:** Vaccine: P1, P2, P7. Null: none. Indeterminate: P3–P6. P4–P6 have Vaccine-region point estimates but remain formally indeterminate because v9 requires still-unfrozen bootstrap/directional procedures. The v9 overall exercise result is Vaccine favored because primary P7 is Vaccine ($E=36$, $R=8$, $RR=40.5$, $p=7.82e-29$).
+- **Next steps:** Freeze P3's simultaneous procedure and P4–P6 bootstrap/direction rules, then rerun those four classifications without changing their thresholds in response to the results.
+
+## 2026-08-30 — Require separate VAX and NEVER tables in v10
+
+- **What we did:** Marked v9 superseded and created v10 requiring two independently scored tables for every dataset, without restoring a mandatory VAX-minus-NEVER interaction test.
+- **Command / executable:** Version copy followed by manual `apply_patch`; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/prespecified_predictions_v10.md`; status correction in `prespecified_predictions_v9.md`.
+- **Results:** The prespecified fair-test direction is VAX rows only Vaccine/Indeterminate, with VAX P7 Vaccine, and NEVER rows only Null/Indeterminate. A Vaccine-pattern result in NEVER is explicitly a specificity contradiction, not evidence that a vaccine caused an unvaccinated case. NEVER P7 is a negative-control analysis after verified non-vaccination wellness visits.
+- **Next steps:** Apply both v10 tables to the current export, while reporting that the current NEVER group is extremely sparse and therefore likely indeterminate.
+
+## 2026-08-30 — Correct invalid no-vaccine-visit remainder
+
+- **What we did:** Audited the proposed subtraction of vaccination visits from all visit-relative records and rejected it because blank/unknown `What happened?` responses had been implicitly treated as no vaccination.
+- **Command / executable:** Read-only row-level PowerShell review of nonblank `What happened?` values without `Vaccination(s)`; `apply_patch` correction to the v9 result note.
+- **Outputs:** Corrected `protocol/v4_SPARK/predictions_v9_results_matrix_n270.md`.
+- **Results:** Of 17 nonblank rows lacking `Vaccination(s)`, 10 say `Don't remember what happened`. Only three detailed apparent non-vaccination visits have usable P7-window lags; E=0 and R=3. The earlier 89/54 subtraction is invalid and must not be described as a verified no-vaccine control.
+- **Next steps:** Preserve unknown as unknown. Use only affirmatively verified no-vaccination visits in the v10 negative-control table and score the current sparse cell Indeterminate.
