@@ -557,3 +557,43 @@
 - **Outputs:** `outputs/autism_intake_banner/parent_autism_early_development_v1.png` and `generation_notes.md`.
 - **Results:** New image ready for manual upload. Existing source artwork and live Airtable form are unchanged.
 - **Next steps:** Upload the image and adjust the Airtable cover crop to keep faces visible; retain the survey title as native text below the cover.
+
+## 2026-08-31 — Existing-study dataset add-on request v2
+
+- **What we did:** Preserved the existing generic data request and created v2 with explicit available-data scope, no case floor, optional documented vaccination-deferral details, and clarified visit/vaccination timing. Kept it separate from the survey/v10 protocol.
+- **Command / executable:** Targeted document read, `apply_patch`, and `git diff --check`.
+- **Outputs:** `protocol/generic/autism_study_data_requests_v2.md`.
+- **Results:** Request retains four figure types, explicit unknown categories, comparison within visit type, and optional source-population aggregates. No mandated new primary analysis or predetermined result. Source request unchanged.
+- **Next steps:** Review/send the v2 request to the existing-study investigators; report unavailable fields and sparse cells transparently.
+
+## 2026-08-31 — Read-only review of hand-edited dataset request v2
+
+- **What we did:** Read both generic request files and reviewed the hand-edited v2 without changing either document.
+- **Command / executable:** PowerShell document read and targeted line-number scan.
+- **Outputs:** Review feedback only; this work-log entry.
+- **Results:** Main remaining ambiguity is selecting a pre-onset encounter while also requesting same-day encounters after onset. Minor wording issues: `noted` versus `first noticed`, and equating existing retrospective data with post-hoc analysis. These are refinements to the inherited draft, not evidence that the user's edits broke it.
+- **Next steps:** Clarify encounter selection and analysis-timing wording before external use; optional removal of internal survey/protocol reference.
+
+## 2026-08-31 — Apply approved dataset-request refinements
+
+- **What we did:** Applied the four approved review fixes in v3, preserving the hand-edited v2 under the repository versioning rule.
+- **Command / executable:** Targeted document reads, `apply_patch`, and `git diff --check`.
+- **Outputs:** `protocol/generic/autism_study_data_requests_v3.md`.
+- **Results:** Clarified preceding-encounter selection, same-day ordering and figure counts; changed onset to first noticed; clarified disclosure of analysis timing; removed the internal survey-reference sentence. No new sample-size floor or required primary analysis.
+- **Next steps:** Use v3 for the external data request.
+
+## 2026-08-31 — Dataset request v4: regression denominators
+
+- **What we did:** Created v4 with available source-population, assessed-child, qualifying-regression, exact-day, and document-supported-day counts; preserved v3.
+- **Command / executable:** Targeted reads, `apply_patch`, and diff verification.
+- **Outputs:** `protocol/generic/autism_study_data_requests_v4.md`.
+- **Results:** Added a participant-flow table and explicit percentage denominators; separated regression eligibility from date precision, nonresponse from absence, and child counts from parent counts. No new sample-size floor or requirement to collect unavailable data.
+- **Next steps:** Use v4 for the external data request.
+
+## 2026-08-31 — Dataset request v5: date-precision comparison
+
+- **What we did:** Added the agreed available-data comparison of vaccination-before-onset and recent pediatric visits between exact-day and non-exact-day regression cases; preserved v4.
+- **Command / executable:** Targeted reads, `apply_patch`, and diff verification.
+- **Outputs:** `protocol/generic/autism_study_data_requests_v5.md`.
+- **Results:** Explicit unknown/uncertain categories prevent unsupported classification from imprecise onset dates. All other request content retained.
+- **Next steps:** Agreed drafting complete; use v5 for the external data request.
