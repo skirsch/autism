@@ -517,3 +517,43 @@
 - **Outputs:** Corrected `protocol/v4_SPARK/predictions_v9_results_matrix_n270.md`.
 - **Results:** Of 17 nonblank rows lacking `Vaccination(s)`, 10 say `Don't remember what happened`. Only three detailed apparent non-vaccination visits have usable P7-window lags; E=0 and R=3. The earlier 89/54 subtraction is invalid and must not be described as a verified no-vaccine control.
 - **Next steps:** Preserve unknown as unknown. Use only affirmatively verified no-vaccination visits in the v10 negative-control table and score the current sparse cell Indeterminate.
+
+## 2026-08-30 — Updated v10 tables for 289 responses
+
+- **What we did:** Read the 13:10:55 Downloads export, audited the 19 additional IDs 319–337, and calculated separate VAX and NEVER tables under the continuing assumed-verification exercise. Kept missing vaccination status and visit contents unknown.
+- **Command / executable:** Read-only PowerShell CSV/hash checks and inline Python CSV/SciPy exact-binomial summaries. Bundled Python lacked SciPy; used installed system Python for the statistical calculations. Manual `apply_patch` results report; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/predictions_v10_results_matrix_n289.md`. Input SHA-256 `c3d8c507dbd3bc1dbffd3ec796a4907f3b06e268306b581eb7ccc6eacf40e01b`.
+- **Results:** VAX=204, NEVER=3, unknown=82. VAX P2/P7 meet Vaccine criteria; other VAX rows and every NEVER row are Indeterminate. P7 combined E=43/R=12, RR=32.25 (95% exact interval 16.71–67.18), p=1.278e-32; additional batch alone E=7/R=4, RR=15.75, p=2.290e-5. VAX P1 now 5/2/5, p=0.1811; earlier pooled P1 must not be substituted into the VAX table.
+- **Next steps:** Complete the unresolved v10 statistical procedures before prospective use; obtain adequately informative NEVER/no-shot controls and actual record verification. The current signal is conditional on the flat-lag model and does not establish VAX/NEVER specificity.
+
+## 2026-08-30 — Check 14:58 export, 303 responses
+
+- **What we did:** Audited unchanged CSV columns and 14 additional IDs 338–351; recalculated the two v10 tables with the existing mappings and assumed-verification exercise.
+- **Command / executable:** Read-only PowerShell and inline Python CSV/SciPy exact-binomial summaries; `apply_patch` report and log; `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/predictions_v10_results_matrix_n303.md`; input hash `4d7288a6f591330cb26f73838768b4c45f0e20d8464ced54c5d96f7b025679a6`.
+- **Results:** VAX=217, NEVER=4, unknown=82. Combined P7 E=50/R=13, RR=34.62, exact interval 18.53–69.46, p=2.738e-38. New batch E=7/R=1. P2/P7 remain Vaccine; other VAX rows and all NEVER rows Indeterminate. No broad developmental-trajectory field yet.
+- **Next steps:** Correct #350's invalid onset year (excluded from year analysis without changing source); clarify #349's vaccination-at-visit omission versus recent vaccination before classifying that visit. Do not turn missing checklist selections into confirmed no-shot visits.
+
+## 2026-08-30 — Onset-age histogram with CDC reference, n=322
+
+- **What we did:** Plotted monthly parent-onset ages from the 21:20 export and aligned selected CDC 2025 routine-dose age ranges beneath the histogram. Checked USA/VAX-only peak counts and preserved older ages in a separate panel.
+- **Command / executable:** `python outputs/onset_age_n322/plot_onset_age.py`; matplotlib PNG visual inspection; CDC schedule-note lookup; `git diff --check`. Bundled Python lacked matplotlib, so installed system Python was used.
+- **Outputs:** `outputs/onset_age_n322/onset_age_cdc_reference.png`, `summary.json`, `findings.md`, and `docs/executables.md`.
+- **Results:** 322 rows; 321 plotted after excluding #84's implausible 2,212 months without correction. Highest counts: 18 months=47, 15=31, 12=24, 24=20. Top three peaks remain in USA/VAX subset (33/22/17). Partial descriptive overlap with CDC ranges, not a schedule-alignment significance test or causal finding.
+- **Next steps:** Verify #84's onset age and actual vaccination dates; match historical/geographic schedules before formal schedule-alignment analysis.
+
+## 2026-08-30 — Monthly 2–20-month histogram zoom
+
+- **What we did:** Confirmed unchanged 322-row input hash and plotted the requested crop with one-month bins; compared 2/4/6/12/15/18-month counts against both immediately adjacent months.
+- **Command / executable:** `python outputs/onset_age_n322/plot_onset_age_zoom.py`; PNG visual inspection.
+- **Outputs:** `outputs/onset_age_n322/onset_age_2_to_20.png`.
+- **Results:** 232 reports in the cropped view. Local peaks at 6, 12, 15, and 18 months, but not at 2 or 4. The infant local peak is 3 months (14 reports), versus 2 months (10) and 4 months (8). Comparisons are descriptive, not significance tests.
+- **Next steps:** Use actual exposure dates and age-precision information for a formal timing test rather than equating reference ages with observed vaccinations.
+
+## 2026-08-30 — General autism intake banner
+
+- **What we did:** Generated a replacement text-free parent-and-child cover for the broadened Parent Survey of Autism and Early Development, with navy/teal styling and no sudden-onset or vaccine imagery.
+- **Command / executable:** Built-in image generation, visual review, workspace copy; generation prompt retained beside asset.
+- **Outputs:** `outputs/autism_intake_banner/parent_autism_early_development_v1.png` and `generation_notes.md`.
+- **Results:** New image ready for manual upload. Existing source artwork and live Airtable form are unchanged.
+- **Next steps:** Upload the image and adjust the Airtable cover crop to keep faces visible; retain the survey title as native text below the cover.
