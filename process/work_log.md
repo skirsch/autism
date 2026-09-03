@@ -597,3 +597,27 @@
 - **Outputs:** `protocol/generic/autism_study_data_requests_v5.md`.
 - **Results:** Explicit unknown/uncertain categories prevent unsupported classification from imprecise onset dates. All other request content retained.
 - **Next steps:** Agreed drafting complete; use v5 for the external data request.
+
+## 2026-09-01 — Latest Airtable survey export quality-control review
+
+- **What we did:** Read-only review of the newest Downloads export for hostile notes, duplicate/rapid submissions, repeated emails, internal contradictions, implausible dates/ages, and public-note privacy risks.
+- **Command / executable:** Python standard-library CSV scans and targeted record comparisons; no source records changed.
+- **Outputs:** Review findings only; source `C:\Users\stk\Downloads\SOA2-Grid view.csv` (377 rows; SHA-256 `79F1A4515DE95228E8F43E54C9BDA084604F7AE028150B380122C888094469C4`).
+- **Results:** No explicit trolling text or exact duplicate row found. Records 162/172 are a likely duplicate of the same child. Several same-email groups appear to contain multiple children, especially 264–267. Records 84, 342, 361, and 381 contain strong numeric/date errors; 353, 368, and 393 conflict on never-vaccinated status. Public Notes contain contact/identity risks in records 116, 132, 141, 400, and 420. Records 408–410 form a weak no-email time cluster but differ materially and are not evidence of fraud by themselves.
+- **Next steps:** Quarantine—not delete—likely duplicate 172 pending confirmation; contact respondents where possible to correct errors/conflicts; decide a documented family-cluster rule; redact public identifiers from Notes; retain an auditable QC flag column.
+
+## 2026-09-02 — U.S. autism prevalence and vaccine-schedule trend visualization
+
+- **What we did:** Built a two-panel in-conversation chart of CDC ADDM identified autism prevalence and a derived count of distinct routine vaccine series recommended by age 24 months.
+- **Command / executable:** CDC web-source review, targeted HTML/D3 authoring with `apply_patch`, and visualization render validation.
+- **Outputs:** `C:\Users\stk\.codex\visualizations\2026\08\30\01a05316-48ad-73c0-b511-357ba360e101\us-autism-vaccine-schedule-trends.html`.
+- **Results:** Autism panel uses the official 2000–2022 ADDM values. Schedule panel counts vaccine series rather than doses or antigens and excludes maternal, risk-based, catch-up, and repeat annual recommendations; it is descriptive and not a causal comparison.
+- **Next steps:** If used publicly, independently audit each historical schedule milestone and retain the metric definition and ascertainment caveat in the caption.
+
+## 2026-09-02 — Updated Airtable export response review
+
+- **What we did:** Read-only review of the newest Downloads export for response counts, adoption of the new intake funnel, onset/visit timing, vaccination-field completeness, documentation availability, and rapid-submission similarity.
+- **Command / executable:** PowerShell `Import-Csv` summaries plus a Python standard-library CSV consistency scan; no source records changed.
+- **Outputs:** Findings only; source `C:\Users\stk\Downloads\SOA2-Grid view.csv` (391 rows; three already marked `Gamed`).
+- **Results:** Of 388 unflagged rows, 27 contain the new developmental-pattern field and two enter the abrupt/dateable branch. The newly added `vax given?` column is still blank in this export, so its live capture is not yet empirically verified. Among older classified vaccination records with known 0–59-day visit timing, 79 fall at days 0–5 and 26 at days 6–59; only three confirmed-NOSHOT records populate those two windows. No high-similarity pair was found among no-email submissions made within five minutes after excluding flagged rows.
+- **Next steps:** Confirm the next abrupt/dateable submission populates `vax given?`; continue reporting VAX timing descriptively while treating the NOSHOT comparison and new funnel proportions as immature.
