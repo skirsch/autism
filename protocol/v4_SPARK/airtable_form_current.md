@@ -1,15 +1,16 @@
-# Understanding Autism: A Parent Survey of Early Development — v3.1 (live)
+# Understanding Autism: A Parent Survey of Early Development — v3.2 (live)
 
-*Transcription of the live Airtable form as of 2026-09-03: https://airtable.com/appxoW7SrCrtEvPqH/pagzn0t7cDDTh7sKA/form. An asterisk (`*`) marks a required question. Conditional questions are identified below.*
+*Transcription of the published Airtable form as verified on 2026-09-04: https://airtable.com/appxoW7SrCrtEvPqH/pagzn0t7cDDTh7sKA/form. An asterisk (`*`) marks a required question. Conditional questions are identified below.*
 
 ## Question count and branching
 
-- **29 distinct respondent-facing questions** exist across the complete form and all conditional branches.
-- **13 questions** appear on the ordinary non-regression path.
-- **14 questions** appear when `Developmental pattern` is `Mixed`, because `Regression speed` is added. The sudden-onset detail section does not open for `Mixed`, even when abrupt/dateable regression speed is selected.
-- **14 questions** appear when `Developmental pattern` is `Progressed normally, then regressed` but the change was slow or the respondent is unsure.
-- **28 questions** appear for normal-then-regressed plus abrupt/dateable onset when no vaccine was given or vaccination is unknown at the visit.
-- **29 questions** appear on that abrupt/dateable path when vaccines were given, because the vaccine-product checklist appears.
+- **30 distinct respondent-facing questions** exist across the complete form and all conditional branches.
+- **14 questions** appear on the ordinary non-regression path.
+- **15 questions** appear when `Developmental pattern` is `Mixed`, because `Regression speed` is added. In the published form verified on 2026-09-04, the sudden-onset detail section still does not open for `Mixed`, even when abrupt/dateable regression speed is selected.
+- **15 questions** appear when `Developmental pattern` is `Progressed normally, then regressed` but the change was slow or the respondent is unsure.
+- **22 questions** appear for a qualifying abrupt/dateable case when the respondent reports never having had a scheduled well-child pediatrician visit before onset.
+- **29 questions** appear on the qualifying abrupt/dateable path when a prior well-child visit is reported and no vaccine was given or vaccination is unknown at that visit.
+- **30 questions** appear on that path when vaccines were given, because the vaccine-product checklist appears.
 
 ## Introduction
 
@@ -84,7 +85,16 @@ Format: Integer
 - No formal diagnosis
 - Not sure/don't remember
 
-### 7. Current support needs `*`
+### 7. Has your child had genetic testing related to autism or developmental concerns?
+
+- No
+- Yes -- no relevant finding
+- Yes -- a potentially relevant finding
+- Yes -- result was uncertain
+- Yes -- result unknown or not remembered
+- Test results are pending
+
+### 8. Current support needs `*`
 
 Approximately how many hours per day does your child require direct supervision or support beyond what is typical for a child of the same age?
 
@@ -96,7 +106,7 @@ Approximately how many hours per day does your child require direct supervision 
 - More than 12 hours
 - Unsure
 
-### 8. Developmental pattern `*`
+### 9. Developmental pattern `*`
 
 - Progressed more slowly than expected
 - Progressed normally, then plateaued
@@ -104,7 +114,7 @@ Approximately how many hours per day does your child require direct supervision 
 - Mixed
 - Unsure
 
-### 9. Regression speed `*` — conditional
+### 10. Regression speed `*` — conditional
 
 Shown when `Developmental pattern` is `Progressed normally, then regressed` or `Mixed`.
 
@@ -112,13 +122,13 @@ Shown when `Developmental pattern` is `Progressed normally, then regressed` or `
 - The change happened very slowly, too hard to pinpoint a specific onset date
 - Not sure
 
-### 10. Age (in months) when YOU first noticed developmental differences? `*`
+### 11. Age (in months) when YOU first noticed developmental differences? `*`
 
 How old was your child, in months, when you first noticed any developmental difference, plateau, or loss of skills? Enter 0 if differences were present from birth. If uncertain, please provide your best estimate in MONTHS.
 
 Format: Integer
 
-### 11. Possible contributing factors?
+### 12. Possible contributing factors?
 
 What, if anything, do you think may have contributed to your child’s developmental pattern or the first signs you noticed? Please explain why. It is fine to say that you do not know or that there was no identifiable event.
 
@@ -131,7 +141,7 @@ This section appears only when:
 
 It does not appear for `Mixed`, even when the abrupt/dateable regression-speed option is selected.
 
-### 12. On what date did you first notice the developmental plateau or loss of skills? `*`
+### 13. On what date did YOU first notice the developmental plateau or loss of skills? `*`
 
 Enter the best date you can identify. Use the date **you** first noticed the change—not the autism diagnosis date done by a professional.
 
@@ -139,7 +149,7 @@ The **onset date** is the **first day that you** noticed a **clear, unmistakable
 
 Date format: mm/dd/yyyy
 
-### 13. Confidence in onset date `*`
+### 14. Confidence in onset date `*`
 
 Please let us know your confidence level in the date you just entered:
 
@@ -149,7 +159,7 @@ Please let us know your confidence level in the date you just entered:
 - Could be off by a week to up to a month
 - Could be off by a month or more
 
-### 14. Day of week `*`
+### 15. Day of week `*`
 
 Do you remember the day of the week that ONSET happened? Or whether it was a weekday or weekend?
 
@@ -166,7 +176,7 @@ This is surprisingly important if you can try to remember! Select one:
 - It was during a weekday
 - It was during a weekend
 
-### 15. Sequence of events leading up to onset starting 15 days before onset `*`
+### 16. Sequence of events leading up to onset starting 15 days before onset `*`
 
 Briefly describe, in order, any unusual events in the 15 days leading up to onset.
 
@@ -180,7 +190,7 @@ For example, use event (day number) --> next event (day number) --> ....
 
 `moved house (0) → started daycare (3) → stopped responding to name (10)`
 
-### 16. Within 3 days BEFORE the onset date `*`
+### 17. Within 3 days BEFORE the onset date `*`
 
 Tell us what you remember happening during the **3 days BEFORE** onset.
 
@@ -203,7 +213,7 @@ Please **carefully review each option** and check all that apply:
 - None of the above
 - Too long ago don't remember
 
-### 17. Within 14 days AFTER the onset date `*`
+### 18. Within 14 days AFTER the onset date `*`
 
 During the 14 days after the “onset date,” please identify the categories of behavior/skill changes you observed.
 
@@ -219,7 +229,7 @@ Check all that apply.
 - New obsessions (watching the ceiling fan incessantly, ...)
 - Other (specify in Notes at the end)
 
-### 18. How many days after your child's most recent "well-child" regular pediatrician visit did onset happen? `*`
+### 19. How many days after your child's most recent "well-child" regular pediatrician visit did onset happen? `*`
 
 Choose the closest answer, even if you are unsure of the exact interval.
 
@@ -239,9 +249,11 @@ Choose the closest answer, even if you are unsure of the exact interval.
 - 60 to 89
 - 90 to 120 days after the visit
 - More than 120 days after the visit
-- Never had pediatrician visit before onset
+- Never had a scheduled well-child pediatrician visit before onset
 
-### 19. Confidence in pediatrician visit interval `*`
+Questions 20–27 are hidden when the answer above is `Never had a scheduled well-child pediatrician visit before onset`.
+
+### 20. Confidence in pediatrician visit interval `*` — conditional
 
 How certain are you in your previous answer?
 
@@ -252,7 +264,7 @@ How certain are you in your previous answer?
 - Within 4 days to a week
 - Could be off by a week or more
 
-### 20. Produce contemporaneous onset interval documentation? `*`
+### 21. Produce contemporaneous onset interval documentation? `*` — conditional
 
 If we were to reach out to you and ask you for contemporaneous documentation for the interval between onset and the last pediatrician appointment (email, text message, video, photos, post on social media, hand scribbled diary note, calendar entry, doctor phone call, vaccination card, doctor records, etc.) would you be able to provide it?
 
@@ -262,7 +274,7 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - Unlikely
 - Highly unlikely.
 
-### 21. What happened at the last pediatrician visit before onset? Check ALL that you remember: `*`
+### 22. What happened at the last pediatrician visit before onset? Check ALL that you remember: `*` — conditional
 
 - Measurements (height, weight, ...)
 - Vital signs (heart rate, breathing, temperature, ...)
@@ -273,7 +285,7 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - Gave fluoride (topical varnish or supplements)
 - Don't remember what happened
 
-### 22. Which well-child visit was the last one before ONSET?
+### 23. Which well-child visit was the last one before ONSET? — conditional
 
 - Newborn
 - 1 month
@@ -289,14 +301,13 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - 36 months
 - 48 months
 - Another scheduled well-child visit
-- It was not a scheduled well-child visit
 - Don't remember
 
-### 23. Approximately how old was your child, in MONTHS, at that visit?
+### 24. Approximately how old was your child, in MONTHS, at that visit? — conditional
 
 Format: Integer
 
-### 24. Were any concerns about your child's development or behavior noted at that visit? `*`
+### 25. Were any concerns about your child's development or behavior noted at that visit? `*` — conditional
 
 Check all that apply:
 
@@ -307,15 +318,15 @@ Check all that apply:
 - An autism screening test flagged something
 - Don't remember
 
-### 25. To confirm: Were any vaccines given at that visit? `*`
+### 26. To confirm: Were any vaccines given at that visit? `*` — conditional
 
 - Yes
 - No--I am certain no vaccines were given
 - I don't remember whether vaccines were given
 
-### 26. Which vaccines were given at that visit? Check all that apply: `*` — conditional
+### 27. Which vaccines were given at that visit? Check all that apply: `*` — conditional
 
-Shown only when question 25 is answered `Yes`.
+Shown only when question 26 is answered `Yes`.
 
 - MMR (measles-mumps-rubella)
 - DTaP/Tdap/DTP (older whole-cell shot)
@@ -331,7 +342,7 @@ Shown only when question 25 is answered `Yes`.
 
 ## Final questions
 
-### 27. Was your child receiving vaccines on the standard CDC schedule (or standard schedule in your country) BEFORE YOU noticed the first signs of autism? `*`
+### 28. Was your child receiving vaccines on the standard CDC schedule (or standard schedule in your country) BEFORE YOU noticed the first signs of autism? `*`
 
 “First signs” means the earliest developmental difference, plateau, or loss of skills that you noticed—not the diagnosis date.
 
@@ -343,21 +354,15 @@ Shown only when question 25 is answered `Yes`.
 - No vaccines were ever given
 - Don't know
 
-### 28. Notes
+### 29. Notes
 
 Is there anything else you think we should know that you think might be helpful?
 
 Responses will be publicly available. Please use only a first name or nickname, and do not include a last name, exact birth date, address, school, clinic, or other information that could identify your child.
 
-### 29. Your email
+### 30. Please provide your email address below
 
-Thank you for participating!
-
-Would you be willing to share your email address so that we can include your results (but not your email address) in the study that will be submitted for publication?
-
-Here's why we need to do this:
-
-Some people have made fraudulent submissions **so that they can later attack the study as invalid**. They don't want the truth to be known. Because of this, in order for your response to be counted in the study results submitted for publication, we must be able to contact you to verify the information you provided is accurate. The entire verification process takes less than 60 seconds and can be done via email. Thank you!
+Providing your email helps researchers confirm that each response represents a real family and allows us to contact you if clarification or record verification is needed. **Your email will remain confidential, will not be published with your answers, and will not be used for marketing.** It takes only a few seconds and substantially increases the scientific value of your response. Thank you!
 
 ---
 
@@ -379,3 +384,12 @@ Some people have made fraudulent submissions **so that they can later attack the
 - Verified that the required vaccine-at-visit confirmation remains in place with `Yes`, confirmed `No`, and `I don't remember` responses.
 - Removed the obsolete `None - I'm certain no vaccines were given at that visit` and `I don't remember whether any vaccines were given` choices from the conditional vaccine-product checklist.
 - Retained `Vaccines were given, but I don't remember which ones` as the appropriate fallback after a confirmed `Yes`.
+
+## Changes from v3.1
+
+- Added the genetic-testing question and renumbered the complete instrument to 30 distinct questions.
+- Updated the email request to the current neutral verification and confidentiality language.
+- Updated the no-prior-visit response to `Never had a scheduled well-child pediatrician visit before onset` and documented that it hides all visit-detail follow-ups.
+- Removed the obsolete `It was not a scheduled well-child visit` response from the well-child visit sequence.
+- Recalculated question counts for every principal branch.
+- Re-tested the published form after a full reload. Although the editor screenshot shows both `Progressed normally, then regressed` and `Mixed` selected in the developmental-pattern condition, the published form still hides the sudden-onset detail section for `Mixed` plus abrupt/dateable regression as of 2026-09-04.

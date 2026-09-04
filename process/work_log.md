@@ -637,3 +637,28 @@
 - **Outputs:** `protocol/v4_SPARK/airtable_form_current.md` updated to v3.1 (live).
 - **Results:** The required `Yes` / confirmed `No` / `I don't remember` confirmation remains. The `Yes` branch now lists vaccine products plus `Vaccines were given, but I don't remember which ones`; the two contradictory no-vaccine/unknown-vaccine product-list choices are gone. Total remains 29 distinct questions.
 - **Next steps:** No form correction required for this branch.
+# Work log
+
+## 2026-09-04 — Regenerated live Airtable form transcription
+
+- **What we did:** Re-read the published Airtable survey across its ordinary, sudden-onset, no-prior-visit, prior-visit, and vaccine-product branches; regenerated `protocol/v4_SPARK/airtable_form_current.md` as v3.2.
+- **Command / executable:** Live browser inspection plus `apply_patch` and `git diff`.
+- **Outputs:** `protocol/v4_SPARK/airtable_form_current.md`.
+- **Results:** Documented 30 distinct questions, added genetic testing, updated current email and well-child wording, corrected branch counts, and recorded that the published form still excludes `Mixed` plus rapid/dateable regression despite the editor configuration screenshot.
+- **Next steps:** Re-save/publish the section visibility rule and re-test `Mixed` plus rapid/dateable regression; then update the branching note if the published behavior changes.
+
+## 2026-09-04 — Latest public export 0–5 versus 6–89 timing statistic
+
+- **What we did:** Analyzed the newest public export, `C:\Users\stk\Downloads\SOA2-Public view.csv` (408 rows), using the post-well-child-visit interval field.
+- **Command / executable:** PowerShell `Import-Csv` for field/value auditing and Python/Scipy for the conditional-binomial tail and rate-ratio confidence interval.
+- **Outputs:** No new artifact; read-only calculation.
+- **Results:** Excluding same-day-before-visit, blank, unknown, no-prior-visit, and post-day-89 responses, days 0–5 contained 171 reports and days 6–89 contained 95. The per-day rate ratio was 25.20 (95% log-rate CI 19.61–32.38); exact one-sided conditional-binomial p = 1.15e-130. The export's `90 to 120` bin prevents isolating day 90 exactly.
+- **Next steps:** If exact 6–90 reporting is required, split day 90 from the 90–120 response bin in future exports or report the clean prespecified 6–89 comparison.
+
+## 2026-09-04 — Parent autism survey promotional graphic
+
+- **What we did:** Generated a broad, cause-neutral promotional graphic inviting parents of autistic children under age 20 with all developmental histories.
+- **Command / executable:** Built-in image generation.
+- **Outputs:** `outputs/autism_intake_banner/autism-parent-survey-promo-v1.png`.
+- **Results:** Created a wide social-media graphic with exact survey invitation copy, inclusive parent-child artwork, and no vaccine or sudden-onset framing.
+- **Next steps:** Add the live survey URL or a QR code in the publishing platform when deploying the graphic.
