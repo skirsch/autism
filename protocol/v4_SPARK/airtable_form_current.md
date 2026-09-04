@@ -1,108 +1,176 @@
-# Parent Survey on Sudden-Onset Autism (SOA) — v2.3 (live)
+# Understanding Autism: A Parent Survey of Early Development — v3.1 (live)
 
-*Transcription of the live Airtable form as of 2026-08-27 — https://airtable.com/appxoW7SrCrtEvPqH/pagsPs5ANQlU28V4p/form. Asterisk (*) = required. Supersedes earlier transcriptions.*
+*Transcription of the live Airtable form as of 2026-09-03: https://airtable.com/appxoW7SrCrtEvPqH/pagzn0t7cDDTh7sKA/form. An asterisk (`*`) marks a required question. Conditional questions are identified below.*
 
----
+## Question count and branching
 
-Why do some children who are developing normally suddenly experience a rapid and lasting change consistent with autism spectrum disorder (ASD) including:
+- **29 distinct respondent-facing questions** exist across the complete form and all conditional branches.
+- **13 questions** appear on the ordinary non-regression path.
+- **14 questions** appear when `Developmental pattern` is `Mixed`, because `Regression speed` is added. The sudden-onset detail section does not open for `Mixed`, even when abrupt/dateable regression speed is selected.
+- **14 questions** appear when `Developmental pattern` is `Progressed normally, then regressed` but the change was slow or the respondent is unsure.
+- **28 questions** appear for normal-then-regressed plus abrupt/dateable onset when no vaccine was given or vaccination is unknown at the visit.
+- **29 questions** appear on that abrupt/dateable path when vaccines were given, because the vaccine-product checklist appears.
 
-- loses words, communication abilities, or other previously acquired skills;
-- stops responding to their name or making eye contact;
-- becomes socially withdrawn or less engaged;
-- develops new repetitive behaviors or self-injurious behavior;
-- becomes unusually distressed or inconsolable for prolonged periods (e.g., sustained high-pitched screaming or crying);
-- shows marked new sensitivities to sound, touch, food, light, or other sensory experiences; or
-- undergoes another striking change in behavior or development.
+## Introduction
 
-If you have a child that fits this description, please complete this survey. It may help researchers to determine what the cause is.
+*For parents of **autistic children under age 20**—with any developmental history.*
 
-As a public service, your responses (but not your email if you choose to provide it) will be made publicly available without restriction.
+**PURPOSE:** Help researchers understand developmental patterns before and around the first signs of autism.
 
-The survey only takes about 3 minutes to complete.
+**RESULTS:** Survey results will be made publicly available to benefit autism research worldwide.
 
-Note: A number of organization and individuals are collaborating on the effort collect data for this survey which is being collected on a neutral platform (Airtable) so the results will be made publicly available for everyone after 1,000 records have been collected.
+**The survey only takes about 3 minutes to complete.**
 
----
+**The survey is being sponsored by [TrialSite News](https://trialsitenews.com).**
 
-### Consent to participate and publicly disclose answers *
-☐ By checking this box, I confirm that I am at least 18 years old and the child's parent or legal guardian; that I have read the information above; that I voluntarily agree to submit these responses for the purposes described; and that I consent to making all my responses freely publicly available (except my email if I choose to provide it).
+**NOTE: If you have more than one child under age 20 with autism, please randomly select ONE child for the survey.**
 
-### Source *
-Where did you see the link to this survey?
+## Consent
+
+### 1. Consent to participate and publicly disclose answers `*`
+
+By checking this box, I confirm that I am at least 18 years old and the child's parent or legal guardian; that I have read the information above; that I voluntarily agree to submit these responses for the purposes described; and that **I consent to making all my responses freely publicly available (**except my email if I choose to provide it).
+
+- Consent checkbox
+
+## About you
+
+### 2. Where did you hear about the survey?
 
 - TrialSite News (website or email)
-- Autism diagnosis / treatment clinic email
-- NY Times article
-- Pediatrician
-- Other newspaper article
-- Nextdoor post
-- Facebook post
+- Autism support group email request
+- Autism treatment clinic email request
+- Autism diagnosis clinic email request
+- Pediatrician clinic email request
+- Other invite via email
+- Newspaper article
+- Social media post (X, Facebook, ...)
 - Substack article
-- Chris Martenson (X post)
-- Clinic W
-- AutismWarriorMom substack
-- MAHA action email or post
-- Autism Action Network
-- CHD (newsletter, email, posting)
-- Sharyl Attkisson (X post)
-- Lara Logan post
-- Direct invite via email
-- Online ad
 - Other
 
-### Country *
-What country do you live in?
+### 3. Country / Region `*`
 
-- USA · Canada · UK · Europe · South America · Asia · Other continent
+What country / continent do you live in?
 
-### Sex *
+- USA
+- Canada
+- UK
+- Europe
+- South America
+- Asia
+- Australia / New Zealand
+- Other continent
+
+## Tell us about your child under age 20 with autism. If more than one child, pick one at random
+
+### 4. Sex `*`
+
 What is the sex of your child?
 
-- Male · Female
+- Male
+- Female
 
-### Has your child been diagnosed with autism? *
+### 5. Year of birth `*`
+
+Example: 2016
+
+Format: Integer
+
+### 6. Has your child been diagnosed with autism? `*`
+
 - Yes, by a specialist
 - Yes, by our pediatrician
 - Evaluation in process
 - No formal diagnosis
 - Not sure/don't remember
 
-### How long ago did ONSET happen? (includes definition of ONSET DATE) *
-How long ago did you notice a sudden, dramatic behavior/skill change in your child (the "onset date")?
+### 7. Current support needs `*`
 
-The onset date is the first day you noticed a clear, unmistakable change in your child — a skill that was lost (words, eye contact, pointing, play) or a new behavior that appeared (screaming, repetitive movements, withdrawal, new sensitivities) — that did not go away. Use the day the change first appeared, not the day you first worried something might be wrong, and not the day of diagnosis. If the change unfolded over several days, use the first day. A bad night that was back to normal within a few days does not count.
+Approximately how many hours per day does your child require direct supervision or support beyond what is typical for a child of the same age?
 
-- Recently (within 3 months)
-- 3 months to 6 months ago
-- 6 months to 1 year ago
-- 1 to 2 years ago
-- 2 to 5 years ago
-- More than 5 years ago
+- None
+- <1 hour
+- 1-3 hours
+- 4-7 hours
+- 8-12 hours
+- More than 12 hours
+- Unsure
 
-### Do you remember the exact Onset date (date you FIRST noticed the lasting change)?
-If you remember the exact or approximate calendar date when the change happened (the "onset date"), please type the date in mm/dd/yyyy format and hit <tab> when you are done. Otherwise leave this blank. Please double check to make sure all date fields are correct.
+### 8. Developmental pattern `*`
 
-Date format: mm/dd/yyyy
+- Progressed more slowly than expected
+- Progressed normally, then plateaued
+- Progressed normally, then regressed
+- Mixed
+- Unsure
 
-### Day of week *
-Do you remember the day of the week that ONSET happened? Or whether it was a weekday or weekend?
+### 9. Regression speed `*` — conditional
 
-This is surprising important if you can try to remember! Select one:
+Shown when `Developmental pattern` is `Progressed normally, then regressed` or `Mixed`.
 
-- Don't remember
-- Monday · Tuesday · Wednesday · Thursday · Friday · Saturday · Sunday
-- It was during a weekday
-- It was during a weekend
+- There was a rapid change in behavior / skill changes where I CAN identify a SPECIFIC onset DATE
+- The change happened very slowly, too hard to pinpoint a specific onset date
+- Not sure
 
-### Age at onset (in months) *
-What was your child's age in months at onset (the time you FIRST noticed the dramatic change)? e.g., 18 means 18 months old when you first noticed the change
+### 10. Age (in months) when YOU first noticed developmental differences? `*`
+
+How old was your child, in months, when you first noticed any developmental difference, plateau, or loss of skills? Enter 0 if differences were present from birth. If uncertain, please provide your best estimate in MONTHS.
 
 Format: Integer
 
-### Sequence of events leading up to onset starting 15 days before onset *
+### 11. Possible contributing factors?
+
+What, if anything, do you think may have contributed to your child’s developmental pattern or the first signs you noticed? Please explain why. It is fine to say that you do not know or that there was no identifiable event.
+
+## Sudden onset case detail — conditional section
+
+This section appears only when:
+
+1. `Developmental pattern` is `Progressed normally, then regressed`; and
+2. `Regression speed` is `There was a rapid change in behavior / skill changes where I CAN identify a SPECIFIC onset DATE`.
+
+It does not appear for `Mixed`, even when the abrupt/dateable regression-speed option is selected.
+
+### 12. On what date did you first notice the developmental plateau or loss of skills? `*`
+
+Enter the best date you can identify. Use the date **you** first noticed the change—not the autism diagnosis date done by a professional.
+
+The **onset date** is the **first day that you** noticed a **clear, unmistakable change** in your child—a skill that was lost (words, eye contact, pointing, play) or a new behavior that appeared (screaming, repetitive movements, withdrawal, new sensitivities)—**that did not go away**. Use the day the change first appeared, not the day you first worried something might be wrong, and not the day of diagnosis. If the change unfolded over several days, use the first day. A bad night that was back to normal within a few days does not count.
+
+Date format: mm/dd/yyyy
+
+### 13. Confidence in onset date `*`
+
+Please let us know your confidence level in the date you just entered:
+
+- Absolutely certain
+- Within 0 to 2 days
+- Within 2 days to a week
+- Could be off by a week to up to a month
+- Could be off by a month or more
+
+### 14. Day of week `*`
+
+Do you remember the day of the week that ONSET happened? Or whether it was a weekday or weekend?
+
+This is surprisingly important if you can try to remember! Select one:
+
+- Don't remember
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
+- Sunday
+- It was during a weekday
+- It was during a weekend
+
+### 15. Sequence of events leading up to onset starting 15 days before onset `*`
+
 Briefly describe, in order, any unusual events in the 15 days leading up to onset.
 
-"Unusual" means any event that would not normally occur over a typical 30 day time period.
+“Unusual” means any event that would **not normally occur over a typical 30 day time period.**
 
 Day (0) is the first unusual event; count days forward from there.
 
@@ -110,15 +178,13 @@ End the sequence with the onset itself, so we can see how many days apart things
 
 For example, use event (day number) --> next event (day number) --> ....
 
-moved house (0) → started daycare (3) → stopped responding to name (10)
+`moved house (0) → started daycare (3) → stopped responding to name (10)`
 
-### Cause?
-What do you think might have triggered the sudden regression and why? Do you think it was simply a random event with no specific trigger? Please share your thoughts, both what you thought at the time and, if different, what you think now. Please explain your reasoning.
+### 16. Within 3 days BEFORE the onset date `*`
 
-### Within 3 days BEFORE the onset date *
-Tell us what you remember happening during the 3 days BEFORE onset.
+Tell us what you remember happening during the **3 days BEFORE** onset.
 
-Please carefully review each option and check all that apply:
+Please **carefully review each option** and check all that apply:
 
 - Fever
 - Tylenol or acetaminophen taken
@@ -137,8 +203,9 @@ Please carefully review each option and check all that apply:
 - None of the above
 - Too long ago don't remember
 
-### Within 14 days AFTER the onset date *
-During the 14 days after the "onset date," please identify the categories of behavior/skill changes you observed.
+### 17. Within 14 days AFTER the onset date `*`
+
+During the 14 days after the “onset date,” please identify the categories of behavior/skill changes you observed.
 
 Check all that apply.
 
@@ -152,7 +219,8 @@ Check all that apply.
 - New obsessions (watching the ceiling fan incessantly, ...)
 - Other (specify in Notes at the end)
 
-### How many days after your child's most recent "well-child" regular pediatrician visit did onset happen? *
+### 18. How many days after your child's most recent "well-child" regular pediatrician visit did onset happen? `*`
+
 Choose the closest answer, even if you are unsure of the exact interval.
 
 - Don't remember
@@ -173,7 +241,8 @@ Choose the closest answer, even if you are unsure of the exact interval.
 - More than 120 days after the visit
 - Never had pediatrician visit before onset
 
-### Confidence in pediatrician visit interval *
+### 19. Confidence in pediatrician visit interval `*`
+
 How certain are you in your previous answer?
 
 - Absolutely certain
@@ -183,7 +252,8 @@ How certain are you in your previous answer?
 - Within 4 days to a week
 - Could be off by a week or more
 
-### Produce contemporaneous onset interval documentation? *
+### 20. Produce contemporaneous onset interval documentation? `*`
+
 If we were to reach out to you and ask you for contemporaneous documentation for the interval between onset and the last pediatrician appointment (email, text message, video, photos, post on social media, hand scribbled diary note, calendar entry, doctor phone call, vaccination card, doctor records, etc.) would you be able to provide it?
 
 - Yes, absolutely 100% certain
@@ -192,17 +262,44 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - Unlikely
 - Highly unlikely.
 
-### What happened at the last pediatrician visit before onset? Check ALL that you remember: *
+### 21. What happened at the last pediatrician visit before onset? Check ALL that you remember: `*`
+
 - Measurements (height, weight, ...)
 - Vital signs (heart rate, breathing, temperature, ...)
-- Physical exam (eyes, ears, nose, throat, ...)
 - Vaccination(s)
 - Developmental checks (including eye contact, smiling, ASQ or M-CHAT)
+- Physical exam (eyes, ears, nose, throat, ...)
 - Blood work/lab tests
 - Gave fluoride (topical varnish or supplements)
 - Don't remember what happened
 
-### Were any concerns about your child's development or behavior noted at that visit? *
+### 22. Which well-child visit was the last one before ONSET?
+
+- Newborn
+- 1 month
+- 2 months
+- 4 months
+- 6 months
+- 9 months
+- 12 months
+- 15 months
+- 18 months
+- 24 months
+- 30 months
+- 36 months
+- 48 months
+- Another scheduled well-child visit
+- It was not a scheduled well-child visit
+- Don't remember
+
+### 23. Approximately how old was your child, in MONTHS, at that visit?
+
+Format: Integer
+
+### 24. Were any concerns about your child's development or behavior noted at that visit? `*`
+
+Check all that apply:
+
 - No concerns from anyone
 - I had concerns but didn't raise them
 - I raised concerns
@@ -210,8 +307,16 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - An autism screening test flagged something
 - Don't remember
 
-### Which vaccines were given at that visit? Check all that apply: *
-- None - I'm certain no vaccines were given at that visit
+### 25. To confirm: Were any vaccines given at that visit? `*`
+
+- Yes
+- No--I am certain no vaccines were given
+- I don't remember whether vaccines were given
+
+### 26. Which vaccines were given at that visit? Check all that apply: `*` — conditional
+
+Shown only when question 25 is answered `Yes`.
+
 - MMR (measles-mumps-rubella)
 - DTaP/Tdap/DTP (older whole-cell shot)
 - Chickenpox (varicella)
@@ -223,53 +328,54 @@ If we were to reach out to you and ask you for contemporaneous documentation for
 - Rotavirus (oral drops)
 - Other / not listed
 - Vaccines were given, but I don't remember which ones
-- I don't remember whether any vaccines were given
 
-### Was your child receiving vaccines on the standard CDC schedule (or standard schedule in your country) BEFORE onset? *
-Select all that apply (this is BEFORE onset):
+## Final questions
+
+### 27. Was your child receiving vaccines on the standard CDC schedule (or standard schedule in your country) BEFORE YOU noticed the first signs of autism? `*`
+
+“First signs” means the earliest developmental difference, plateau, or loss of skills that you noticed—not the diagnosis date.
 
 - On schedule (strict adherence)
-- On schedule, but not strict adherence
+- Generally on schedule, with minor delays
 - Delayed schedule (got everything but spaced out)
 - Reduced schedule (skipped some recommended vaccines)
 - A few vaccines were given early, then stopped
 - No vaccines were ever given
 - Don't know
 
-### Notes
+### 28. Notes
+
 Is there anything else you think we should know that you think might be helpful?
 
-Also, if you would post the survey to your social media to let people know about it, that helps to spread the word. Thanks!
+Responses will be publicly available. Please use only a first name or nickname, and do not include a last name, exact birth date, address, school, clinic, or other information that could identify your child.
 
-### Your email (IMPORTANT)
-Would you be willing to share your email address?
-
-This is VERY HELPFUL to enable us to verify answers for quality control purposes. Most people will never be contacted.
+### 29. Your email
 
 Thank you for participating!
 
+Would you be willing to share your email address so that we can include your results (but not your email address) in the study that will be submitted for publication?
+
+Here's why we need to do this:
+
+Some people have made fraudulent submissions **so that they can later attack the study as invalid**. They don't want the truth to be known. Because of this, in order for your response to be counted in the study results submitted for publication, we must be able to contact you to verify the information you provided is accurate. The entire verification process takes less than 60 seconds and can be done via email. Thank you!
+
 ---
+
 [Clear form] [Submit]
 
----
+## Changes from v2.3
 
-## Changes from v2.2
-- New required check-all after the concerns question: "Which vaccines were given at that visit?" — types (MMR, DTaP/Tdap/DTP, varicella, Hib, PCV, HepA/B, flu, IPV, rotavirus, other), with "None — certain," "given but don't remember which," and "don't remember whether any" as distinct states. Enables the MMR live-virus timing test (days 5–12 window) and cleans the no-shot control; the visit checklist's Vaccination(s) item is retained as a per-respondent consistency probe (type question authoritative; discordant rows flagged).
-- Source list: "Autism Action Network" label repaired.
+- Replaced the former sudden-onset-only transcription with the current general autism intake and current title.
+- Added the random-child instruction, year of birth, support needs, developmental-pattern funnel, age at first developmental difference, and contributing-factors question.
+- Documented regression-speed and sudden-onset branching.
+- Replaced the relative “how long ago” onset item with a calendar onset-date field for abrupt/dateable regression cases.
+- Added the well-child visit sequence and approximate visit-age questions.
+- Added the explicit vaccine-at-visit confirmation and its conditional product checklist.
+- Updated the final vaccine-schedule question to refer to the first signs of autism.
+- Added the public-response privacy warning to Notes and transcribed the current email-verification explanation.
 
-## Changes from v2.1
-- New required question after Sex: "Has your child been diagnosed with autism?" (specialist / pediatrician / in process / none / not sure) — enables specialist-diagnosed restriction of headline results.
-- Vaccine-schedule question now required.
-- Source list reordered; "susbstack" typo fixed; "Newspaper article" → "Other newspaper article"; Dr. Drew removed. NOTE: "Autism Action Networ" is truncated — should read "Autism Action Network/John Gilmore".
-- Email field reframed as quality-control verification ("Most people will never be contacted"); Notes now asks respondents to share the survey.
+## Changes from v3.0
 
-## Changes from v1 (2026-08-26 morning) — cumulative
-- Onset definition added (persistent change; resolved reactions excluded).
-- Sequence question rewritten: "unusual" defined, day-0 convention, sequence ends with onset, neutral example.
-- "Cause?" asks then-vs-now view with reasoning.
-- Vaccination-interval question replaced by well-child-visit interval with same-day BEFORE/AFTER split and whole-day bins; far bins 60–89 / 90–120 / >120 / never.
-- Documentation question targets the visit-to-onset interval.
-- "What happened at the last pediatrician visit" checklist (vaccination one of eight routine items).
-- "Concerns about development or behavior" checklist.
-- "Anesthesia" added to 3-days-before checklist.
-- Vaccine schedule BEFORE onset (never-vaccinated denominator; on-schedule vs delayed split).
+- Verified that the required vaccine-at-visit confirmation remains in place with `Yes`, confirmed `No`, and `I don't remember` responses.
+- Removed the obsolete `None - I'm certain no vaccines were given at that visit` and `I don't remember whether any vaccines were given` choices from the conditional vaccine-product checklist.
+- Retained `Vaccines were given, but I don't remember which ones` as the appropriate fallback after a confirmed `Yes`.

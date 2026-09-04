@@ -621,3 +621,19 @@
 - **Outputs:** Findings only; source `C:\Users\stk\Downloads\SOA2-Grid view.csv` (391 rows; three already marked `Gamed`).
 - **Results:** Of 388 unflagged rows, 27 contain the new developmental-pattern field and two enter the abrupt/dateable branch. The newly added `vax given?` column is still blank in this export, so its live capture is not yet empirically verified. Among older classified vaccination records with known 0–59-day visit timing, 79 fall at days 0–5 and 26 at days 6–59; only three confirmed-NOSHOT records populate those two windows. No high-similarity pair was found among no-email submissions made within five minutes after excluding flagged rows.
 - **Next steps:** Confirm the next abrupt/dateable submission populates `vax given?`; continue reporting VAX timing descriptively while treating the NOSHOT comparison and new funnel proportions as immature.
+
+## 2026-09-03 — Refresh live Airtable survey transcription
+
+- **What we did:** Read the live Airtable form, exercised its developmental-pattern, regression-speed, and vaccine-confirmation branches without submitting, counted all respondent-facing questions, and replaced the outdated sudden-onset-only Markdown transcription.
+- **Command / executable:** Read-only Chrome form inspection, targeted `apply_patch`, question-heading count, and `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/airtable_form_current.md` updated to v3.0 (live).
+- **Results:** Verified 29 distinct questions; ordinary path 13, mixed or slow/uncertain regression path 14, abrupt/dateable regression path 28 without the vaccine-product checklist and 29 with it. Documented one live inconsistency: the checklist shown after a confirmed `Yes` still offers contradictory no-vaccine/unknown-vaccine options.
+- **Next steps:** Remove the two contradictory options from the conditional vaccine-product checklist, then verify the branch again.
+
+## 2026-09-03 — Verify corrected vaccine-product branch
+
+- **What we did:** Rechecked the live abrupt/dateable regression path after the Airtable correction and updated the live Markdown transcription.
+- **Command / executable:** Read-only Chrome branch inspection, targeted `apply_patch`, question-count check, and `git diff --check`.
+- **Outputs:** `protocol/v4_SPARK/airtable_form_current.md` updated to v3.1 (live).
+- **Results:** The required `Yes` / confirmed `No` / `I don't remember` confirmation remains. The `Yes` branch now lists vaccine products plus `Vaccines were given, but I don't remember which ones`; the two contradictory no-vaccine/unknown-vaccine product-list choices are gone. Total remains 29 distinct questions.
+- **Next steps:** No form correction required for this branch.
