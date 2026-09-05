@@ -686,3 +686,43 @@
 - **Outputs:** No data artifact; verification only.
 - **Results:** The required question appears only after `No--I am certain no vaccines were given` at the visit and provides confirmed No, Yes, and unknown choices. It hides when vaccination at the visit is Yes. Selecting an intervening-vaccination Yes currently produces no date/product follow-up.
 - **Next steps:** The question is sufficient to exclude contaminated no-shot controls; optionally collect the intervening vaccination's approximate date and product for vaccination-interval analysis.
+
+## 2026-09-04 — Current no-vaccination control count
+
+- **What we did:** Audited the newest Downloads public export for confirmed no-vaccination well-child visits and never-vaccinated children with usable onset-to-visit intervals.
+- **Command / executable:** PowerShell `Import-Csv` and field-value cross-tabulation on `C:\Users\stk\Downloads\SOA2-Public view.csv` (408 rows).
+- **Outputs:** No new artifact; read-only calculation.
+- **Results:** Only one response completed the new confirmed-no-vaccine-at-visit field, and its visit interval was unknown. Thirteen children were reported never vaccinated, but only six had a usable visit interval. The older visit checklist had 37 rows without vaccination checked, only 16 with a nonmissing/known interval; these are not confirmed no-shot controls.
+- **Next steps:** Accumulate responses under the new explicit confirmation and intervening-vaccination questions before performing the negative-control timing test.
+
+## 2026-09-04 — Exploratory no-vaccination timing results
+
+- **What we did:** Applied the existing days 0–5 versus days 6–89 person-time comparison separately to never-vaccinated children and older checklist records without vaccination selected.
+- **Command / executable:** PowerShell filtering plus Python exact conditional-binomial calculations with null early-window probability `6/90`.
+- **Outputs:** No new artifact; read-only calculation.
+- **Results:** Never-vaccinated usable cases had 2 early and 4 reference-window reports (RR 7.0; one-sided exact p=0.0557). The unconfirmed checklist-based group had 6 early and 7 reference-window reports after excluding three observations beyond day 89 (RR 12.0; one-sided exact p=9.995e-5). The latter group is vulnerable to exposure misclassification; both results are exploratory.
+- **Next steps:** Report these results rather than suppressing them, but do not label either as the prespecified confirmed no-shot negative-control analysis.
+
+## 2026-09-04 — Same-day vaccination-time field check
+
+- **What we did:** Tested the published same-day onset plus confirmed-vaccination branch for the proposed vaccination-time capture.
+- **Command / executable:** Read-only live Chrome branch inspection; no form submission.
+- **Outputs:** No data artifact; verification only.
+- **Results:** The chronology field asks for visit start/end time and onset time, but not vaccination time. After selecting confirmed vaccination `Yes`, the vaccine-product checklist appears, but no vaccination-time field appears.
+- **Next steps:** Add or publish a vaccination-time field visible when onset is same-day and vaccines at the visit are confirmed Yes.
+
+## 2026-09-04 — Structured same-day time-field verification
+
+- **What we did:** Refreshed and tested the two newly published structured time questions under same-day, confirmed-vaccination, confirmed-no-vaccination, and next-day conditions.
+- **Command / executable:** Read-only live Chrome branch inspection; no form submission.
+- **Outputs:** No data artifact; verification only.
+- **Results:** Both vaccination time and onset time appear for same-day cases and hide for next-day cases. The vaccination-time question incorrectly remains visible and required when the respondent confirms no vaccines were given. Both time picklists currently cover only 8 a.m. through 5 p.m.; the onset-time list therefore cannot represent evening or overnight onset.
+- **Next steps:** Require confirmed vaccination Yes for vaccination-time visibility, and expand onset-time coverage to the full day or use a time field.
+
+## 2026-09-04 — Uncached structured time-field verification
+
+- **What we did:** Bypassed the existing Chrome form instance and opened a fresh published form with a cache-busting query parameter, then repeated the same-day and next-day branch tests.
+- **Command / executable:** Read-only fresh in-app browser inspection; no submission.
+- **Outputs:** No data artifact; corrective verification.
+- **Results:** The current published form is correct. For same-day confirmed No, onset time appears and vaccination time does not. For same-day confirmed Yes, both appear. For next-day onset, both hide. Onset choices now span `7am or earlier` through `10pm or later` plus `Don't remember`. The preceding stale-tab result was superseded.
+- **Next steps:** No correction required for these visibility rules.
