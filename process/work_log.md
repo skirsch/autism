@@ -662,3 +662,27 @@
 - **Outputs:** `outputs/autism_intake_banner/autism-parent-survey-promo-v1.png`.
 - **Results:** Created a wide social-media graphic with exact survey invitation copy, inclusive parent-child artwork, and no vaccine or sudden-onset framing.
 - **Next steps:** Add the live survey URL or a QR code in the publishing platform when deploying the graphic.
+
+## 2026-09-04 — Published Airtable branching verification
+
+- **What we did:** Tested the published form's developmental-pattern, regression-speed, same-day pediatrician timing, no-prior-well-visit, and vaccine-confirmation branches without submitting a record.
+- **Command / executable:** Read-only live Chrome inspection with form controls.
+- **Outputs:** No data artifact; verification only.
+- **Results:** `Mixed` exposes regression speed; slow change hides sudden-onset detail; rapid/dateable change exposes it. The pediatrician timing confirmer appears for both same-day choices and hides for later onset. Selecting no prior well-child visit hides every visit-dependent follow-up. Selecting vaccines `Yes` exposes the vaccine checklist, while confirmed `No` hides it. The referral-code field is visible.
+- **Next steps:** Form logic is ready; optional copy cleanup only.
+
+## 2026-09-04 — Survey record-verification plan
+
+- **What we did:** Created a prespecified plan for validating onset timing, well-child visits, vaccination status, intervening vaccinations, and same-day event order against contemporaneous records.
+- **Command / executable:** Manual Markdown authoring with `apply_patch`.
+- **Outputs:** `protocol/v4_SPARK/survey_record_verification_plan_v1.md`.
+- **Results:** The plan defines sampling, blinded review, evidence standards, independent fact-level classifications, date tolerances, audit trails, and verified-versus-unverified sensitivity reporting.
+- **Next steps:** Freeze the sampling rules and tolerances before beginning record review.
+
+## 2026-09-04 — Intervening-vaccination branch verification
+
+- **What we did:** Refreshed the published Airtable form and tested the new question about vaccinations occurring after the preceding well-child visit and before onset.
+- **Command / executable:** Read-only live Chrome branch inspection; no form submission.
+- **Outputs:** No data artifact; verification only.
+- **Results:** The required question appears only after `No--I am certain no vaccines were given` at the visit and provides confirmed No, Yes, and unknown choices. It hides when vaccination at the visit is Yes. Selecting an intervening-vaccination Yes currently produces no date/product follow-up.
+- **Next steps:** The question is sufficient to exclude contaminated no-shot controls; optionally collect the intervening vaccination's approximate date and product for vaccination-interval analysis.
