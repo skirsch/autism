@@ -726,3 +726,27 @@
 - **Outputs:** No data artifact; corrective verification.
 - **Results:** The current published form is correct. For same-day confirmed No, onset time appears and vaccination time does not. For same-day confirmed Yes, both appear. For next-day onset, both hide. Onset choices now span `7am or earlier` through `10pm or later` plus `Don't remember`. The preceding stale-tab result was superseded.
 - **Next steps:** No correction required for these visibility rules.
+
+## 2026-09-10 — Neutral X survey-ad creative
+
+- **What we did:** Generated a cause-neutral X ad for the parent survey using an autism-explicit early-development framing and no vaccine, sudden-onset, institutional, or compensation claims.
+- **Command / executable:** Built-in image generation.
+- **Outputs:** `assets/ads/x-ad-understanding-autism-neutral-v1.png`.
+- **Results:** Produced a landscape creative with exact survey copy, a parent-child image, and a prominent `TAKE THE SURVEY` call to action.
+- **Next steps:** Test this creative as its own recruitment source and retain source-specific funnel metrics.
+
+## 2026-09-10 — Neutral X ad artifact correction
+
+- **What we did:** Removed the stray mark above the word `researchers` while preserving the ad design.
+- **Command / executable:** Built-in image editing.
+- **Outputs:** `assets/ads/x-ad-understanding-autism-neutral-v2.png`.
+- **Results:** Produced a non-destructive corrected version; v1 remains available.
+- **Next steps:** Use v2 for publication.
+
+## 2026-09-10 — Neutral X ad timing callout and clean typography
+
+- **What we did:** Added `Takes about 2 minutes` above the CTA and regenerated the creative to eliminate the malformed accented `e` and stray dot around `researchers`.
+- **Command / executable:** Built-in image generation and visual review.
+- **Outputs:** `assets/ads/x-ad-understanding-autism-neutral-v3.png`.
+- **Results:** The final v3 uses plain unaccented `researchers`, contains no nearby artifact, and includes the requested completion-time callout.
+- **Next steps:** Use v3 for publication after confirming the two-minute completion claim against observed timings.
