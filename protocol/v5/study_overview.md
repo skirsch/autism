@@ -1,6 +1,6 @@
-# NAA Two-Survey Autism Regression Study Overview
+# Two-Survey Autism Regression Study Overview
 
-**Version:** 1.0 draft  
+**Version:** 2.4 draft
 **Date:** September 25, 2026  
 **Status:** Draft for study-team and IRB development; not approved for recruitment
 
@@ -8,16 +8,16 @@
 
 This study will use two sequential parent surveys and a records-validation phase to identify and investigate sudden-onset regressive autism (SORA): an identifiable onset of developmental change after a child had apparently been developing normally.
 
-The National Autism Association (NAA) will invite approximately 50,000 people on its mailing list to complete Survey 1. Survey 1 is a short, cause-neutral intake survey. It identifies families reporting that a child progressed normally and then had an identifiable date when a clear change in behavior or skills associated with the child's later autism presentation was first noticed by one or both parents. Survey 1 does not ask about vaccination or disclose a preferred exposure hypothesis.
+The study team will first approach large autism membership organizations to ask whether they are willing to invite their members to complete Survey 1. If that approach does not secure a participating organization, the team will approach autism diagnosis and/or treatment clinics. Recruitment will begin only after a partner agrees and the applicable IRB approvals and arrangements are in place. Survey 1 is a short, cause-neutral intake survey. It identifies families reporting that a child progressed normally and then had an identifiable date when a clear change in behavior or skills associated with the child's later autism presentation was first noticed by one or both parents. Its invitation, first-stage purpose statement, consent, and questions will not mention vaccination or disclose a preferred exposure hypothesis. The exact first-stage disclosure and any later staged disclosure require IRB approval.
 
-Eligible parents who agree to follow-up will be invited to Survey 2 in prespecified phases based on their Survey 1 confidence that relevant records are available. The highest-confidence group will be invited first. If that phase produces fewer than 100 usable record sets, the next confidence group will be invited, continuing as needed until the target is reached. Before any named-event prompts, Survey 2 asks the parent to reconstruct, in their own words, the sequence of events during the 15 days before the first clear onset of developmental change. Survey 2 also asks about onset timing, uncertainty, available supporting materials, and willingness to provide records.
+Eligible parents who agree to follow-up will be invited to Survey 2 in prespecified phases based on their Survey 1 confidence that relevant records are available. The highest-confidence group will be invited first. If that phase produces fewer than 100 objectively complete record submissions, the next confidence group will be invited, continuing as needed until the target is reached. Before vaccination or other named candidate events are disclosed in study materials, Survey 2 asks the parent to reconstruct, in their own words, the sequence of events during the 15 days before the first clear onset of developmental change. The narrative must be completed and saved before the participant reaches the additional disclosure and subsequent event-specific questions. Survey 2 also asks about onset timing, uncertainty, available supporting materials, and willingness to provide records.
 
-The study will then seek supporting records from eligible respondents, prioritizing those who reported the greatest confidence that relevant records are available. The study target is 100 usable records. Selection for a records request will be based on prespecified eligibility and record-availability criteria—not on vaccination status, vaccine timing, or whether a parent's account supports any study hypothesis.
+The study will then seek supporting records from eligible respondents, prioritizing those who reported the greatest confidence that relevant records are available. The minimum recruitment target is 100 objectively complete record submissions, counting vaccination and vaccine-free well-visit submissions together. This is a threshold for ending new invitation batches, not a cap on submissions from people already invited. Selection for a records request will be based on prespecified eligibility and record-availability criteria—not on vaccination status, vaccine timing, or whether a parent's account supports any study hypothesis.
 
 This sequence is intended to provide:
 
-1. A large, neutral intake population with a documented recruitment and response funnel.
-2. An unprompted account of events before parents are asked about vaccination or other named exposures.
+1. A broad, cause-neutral intake with a documented recruitment and response funnel, subject to the reach of the participating recruitment source.
+2. An unprompted account of events completed before vaccination or other named candidate events are disclosed or asked about in study materials, subject to IRB approval of the staged disclosure.
 3. A records-supported subset in which onset timing and actual vaccination history can be assessed more accurately.
 4. Transparent reporting of participation, attrition, record availability, and selection into each study stage.
 
@@ -25,23 +25,23 @@ The study can evaluate temporal associations and the quality of parent-reported 
 
 ## 2. Primary research questions
 
-The study will address four questions:
+The study will address five questions:
 
 1. At what ages do parents report the first clearly identifiable onset of developmental change among children who were described as developing normally beforehand?
 2. How closely do parent-reported onset dates agree with contemporaneous records or other dated evidence?
-3. Among participants with adequate records, is the timing of developmental-change onset associated with the documented most recent vaccination before onset more strongly than expected under the prespecified comparison model?
-4. Among participants whose most recent regularly scheduled well-child visit before onset included no vaccination, what is the interval from that visit to onset, and how does its distribution compare with the post-vaccination interval distribution?
+3. Among participants with adequate records, does onset show a short-lag excess after the documented most recent vaccination before onset, overall and in prespecified visit-age and vaccine-product groups, beyond the pattern expected under the prespecified comparison model?
+4. Among participants with no vaccination in the 90 days before onset but a vaccine-free regularly scheduled well-child visit in that window, what is the interval from the most recent such visit to onset, and how does its distribution compare with the post-vaccination interval distribution?
 5. What other illnesses, medical encounters, medications, environmental changes, or acute events are reported or documented shortly before onset?
 
 The primary inferential target is temporal association, not causation. Analyses of particular vaccines, products, age groups, or newly observed patterns will be identified in advance as confirmatory or reported transparently as exploratory.
 
 ## 3. Study population and recruitment
 
-### Initial recruitment source
+### Recruitment partners and sequence
 
-NAA will send the Survey 1 invitation to approximately 50,000 people on its mailing list. The invitation and first survey will use neutral language and will not mention vaccination as the study's focus.
+The study team will first ask large autism membership organizations whether they are willing to participate and distribute the approved Survey 1 invitation to their members. If no such organization agrees, the team will approach autism diagnosis and/or treatment clinics. No recruitment source, mailing-list size, or invitation count is assumed before a partner is confirmed. The invitation, Survey 1 purpose statement and consent, and first survey will use neutral language and will not mention vaccination. The IRB will review whether the proposed first-stage description is adequate or whether an alteration of consent is needed.
 
-The size of the mailing list is an invitation denominator, not the study sample size. The study will separately report, to the extent technically available:
+For each participating source, the number of people actually invited is an invitation denominator, not the study sample size. The study will separately report, to the extent technically available:
 
 - Invitations attempted and successfully delivered.
 - Undeliverable messages and opt-outs.
@@ -50,11 +50,12 @@ The size of the mailing list is an invitation denominator, not the study sample 
 - Respondents meeting each developmental-pattern category.
 - Respondents eligible for Survey 2.
 - Survey 2 invitations, starts, and completions.
+- Survey 2 participants who reach the first vaccination disclosure, continue afterward, decline, or stop without stating a reason; the exact disclosure point and corresponding denominators will be prespecified.
 - Parents willing to provide records.
 - Records requested, submitted, usable, and unavailable.
 - Reasons for noncompletion or exclusion when known.
 
-If the NAA cohort does not yield 100 usable records, the study may solicit participation from up to three additional neutral autism organizations, diagnostic clinics, or treatment clinics. Additional organizations will be added sequentially as needed to reach the target. Each must use the IRB-approved recruitment materials and study instruments. Recruitment source, invitation denominator, response funnel, and record yield will be tracked and reported separately; samples will not be silently pooled.
+If the first participating source does not yield 100 objectively complete record submissions, the study may solicit participation from up to three additional autism membership organizations, diagnostic clinics, or treatment clinics. Additional sources will be added sequentially as needed to reach the target. Each must use the IRB-approved recruitment materials and study instruments. Recruitment source, invitation denominator, response funnel, and record yield will be tracked and reported separately; samples will not be silently pooled.
 
 ### Child-selection rule
 
@@ -63,19 +64,21 @@ Each family will answer about one child. The following rule will be stated ident
 - If the family has more than one autistic child, answer about the youngest child who progressed normally and then had an identifiable date when a clear change in behavior or skills was first noticed by one or both parents.
 - If no child fits that description, answer about the youngest autistic child.
 
-This rule is designed to identify sudden-onset regressive cases while preventing a parent from choosing among multiple qualifying children after seeing later study questions. It creates a selected-child sample and does not estimate the prevalence of regression among all autistic children or in the general population.
+This rule is designed to identify children with a clearly dateable developmental change while preventing a parent from choosing among multiple qualifying children after seeing later study questions. It creates a selected-child sample and does not estimate the prevalence of skill-loss regression or new-behavior onset among all autistic children or in the general population.
 
 ## 4. Key definitions
 
 ### Previously progressing normally
 
-The child had acquired and consistently demonstrated age-appropriate skills or behaviors before the reported change, without a known earlier pattern of developmental regression. The final instrument will collect the specific ability or behavior that was present before onset rather than relying only on the parent's category selection.
+The child had acquired and consistently demonstrated age-appropriate skills or behaviors before the reported change, without a known earlier pattern of developmental regression. The final instrument will collect concrete examples of the child's prior developmental baseline rather than relying only on the parent's category selection. A newly appearing behavior does not require a simultaneous loss of a previously acquired skill.
 
 ### Sudden-onset regressive autism (SORA)
 
-A clear change in behavior or skills associated with the child's later autism presentation, first noticeable on an identifiable date by one or both parents after a period of apparently normal development. The change may include loss or substantial modification of previously acquired skills or the appearance of clear new behavioral features. Eligibility does not require the change to unfold or become fully recognizable within seven days.
+A clear change in behavior or skills associated with the child's later autism presentation, first noticeable on an identifiable date by one or both parents after a period of apparently normal development. Either loss or substantial reduction of a previously acquired skill, or the clear new appearance of a marked behavior without skill loss, can qualify. For example, the first noticeable onset of head banging can qualify as a new-behavior presentation. Eligibility does not require the change to unfold or become fully recognizable within seven days.
 
-For this protocol, “sudden onset” means that the parent can identify when the first clear change became noticeable. It does not mean that every affected behavior changed on one day or that the full regression was completed within a fixed number of days.
+The study will code skill loss/reduction and new-behavior onset as separate, nonexclusive flags, then report mutually exclusive loss-only, new-behavior-only, and mixed groups separately as well as together. The broader study label does not imply that every qualifying child experienced loss of an acquired skill; conventional skill-loss regression will not be inferred from a new behavior alone.
+
+For this protocol, “sudden onset” means that the parent can identify when the first clear change became noticeable. It does not mean that every affected behavior changed on one day or that the full developmental change was completed within a fixed number of days.
 
 Examples of relevant domains include language, social engagement, eye contact, play, motor abilities, adaptive skills, and the appearance of marked repetitive behavior or sensory disturbance. The survey will collect the concrete observation rather than asking the parent to make a clinical judgment that a behavior was intrinsically autistic. A temporary change during an illness that fully resolves is not, by itself, a qualifying developmental change.
 
@@ -85,22 +88,19 @@ The identifiable date on which one or both parents first observed a clear depart
 
 ### Onset uncertainty interval
 
-The interval between:
-
-- The last time the relevant prior skill or behavior was definitely observed; and
-- The first time its persistent loss or substantial reduction was definitely observed.
+For loss or reduction of an established skill, the interval between the last confirmed presence of that skill and the first confirmed persistent loss or substantial reduction. For a newly appearing behavior, the interval between the last adequate observation of the child's prior baseline without that behavior and the first definite observation of the new behavior. If the earlier bound cannot be established, it will be recorded as unknown rather than assumed to be the day before the first observation.
 
 Periods in which the child's usual behavior could not be assessed—for example, because of fever, lethargy, hospitalization, or prolonged distress—may widen this interval. Fever or illness is recorded separately and is not itself defined as regression.
 
-### Usable record set
+### Objectively complete record submission
 
-A submission containing the required 15-day pre-onset narrative, the parent-entered child birthdate, and documentation establishing the actual date and vaccine products administered at the most recent vaccination visit before onset. Documentary proof of the child's birthdate is not required. The final records manual will specify acceptable vaccination evidence, date tolerances, missing-data rules, and adjudication procedures before records are reviewed.
+A submission with all required Survey 2 fields, including the 15-day pre-onset narrative and parent-entered child birthdate, plus the requested document for the most recent vaccination before onset or for a vaccine-free regularly scheduled well-child visit before onset. Administrative staff check that the fields and a relevant document are present; the three reviewers do not decide whether a submission counts toward the 100-record recruitment target. Documentary proof of the child's birthdate is not required. The final records manual will separately define scientific usability and eligibility for each analysis.
 
 ## 5. Study flow
 
 ### Stage 1: Survey 1—neutral intake
 
-Survey 1 will be brief and will be modeled on the existing NAA screener. It will collect:
+Survey 1 will be a brief developmental-pattern screener. It will collect:
 
 - Consent and confirmation that the respondent is an adult parent or legal guardian.
 - The prespecified one-child selection.
@@ -109,6 +109,8 @@ Survey 1 will be brief and will be modeled on the existing NAA screener. It will
 - For possible identifiable-onset cases: age at onset in completed months, onset-date certainty, confidence that relevant records or dated evidence are obtainable, and permission for follow-up.
 
 Survey 1 will not ask about vaccination status, vaccine products, vaccination dates, or the parent's belief about vaccination. Its purpose is to establish the intake cohort, identify the target phenotype, obtain permission for a second survey, and assign eligible respondents to prespecified record-availability confidence groups.
+
+Survey 1 consent will cover this first-stage intake and optional permission to be contacted about a later stage, not advance agreement to answer that stage's questions or provide records. It will accurately describe the developmental-history procedures, data use, privacy risks, and voluntary nature of Survey 1 without naming particular candidate events. The exact language must be approved by the IRB. Participants can decline the later stage when its additional purpose and procedures are disclosed. Stage-specific nonparticipation will be measured, but a person's reason for stopping will not be inferred from the timing alone.
 
 ### Survey 2 invitation phases
 
@@ -122,44 +124,48 @@ Eligible respondents will be assigned to one of four invitation groups using the
 These response choices and their order will be fixed before Survey 1 responses are examined. There will not be a fifth “definitely unavailable” invitation group.
 
 1. Draw an initial random batch of 100 eligible respondents from Group 1 and invite them to Survey 2. If Group 1 contains fewer than 100 eligible respondents, invite all of Group 1 and randomly select the balance from Group 2.
-2. After the two-week response window, record the number invited and the number of scientifically usable records obtained from invitations whose response windows have closed. Keep this batch-yield calculation separate from the objectively complete submission count used for compensation checkpoints.
-3. If the study remains below the 100-record target, calculate the next invitation-batch size as `ceiling(1.20 × (100 − U) ÷ (U_m ÷ I_m))`, where `U` is the total number of usable records obtained, `I_m` is the number of invitations whose two-week response windows have closed, and `U_m` is the number of usable records from those matured invitations. This uses the observed usable-record yield per invitation and a 20% allowance so the expected cumulative yield exceeds 100. Do not count an open invitation batch in the denominator.
+2. After the two-week response window, record the number invited and the number of objectively complete record submissions received from invitations whose response windows have closed. No reviewer assessment is needed for this count.
+3. If the study remains below the 100-submission target, calculate the next invitation-batch size as `ceiling(1.20 × (100 − C) ÷ (C_m ÷ I_m))`, where `C` is the total number of objectively complete submissions received, `I_m` is the number of invitations whose two-week response windows have closed, and `C_m` is the number of objectively complete submissions from those matured invitations. This uses the observed complete-submission yield per invitation and a 20% allowance so the expected cumulative yield exceeds 100. Do not count an open invitation batch in the denominator.
 4. Select each later batch randomly from the highest-confidence group that still contains uninvited eligible respondents. Exhaust a higher-confidence group before drawing from the next group.
-5. Continue through Groups 1, 2, 3, and 4 in order until 100 usable record sets are obtained or all eligible consenting respondents have been invited.
+5. Continue through Groups 1, 2, 3, and 4 in order until 100 objectively complete record submissions are received or all eligible consenting respondents have been invited.
 
-Each invitation batch will have a two-week response window for the initial operational calculation. If `U_m = 0`, the yield rate cannot be estimated; invite another random batch of 100, or all remaining eligible respondents if fewer than 100 remain, then recalculate after its two-week window. Cap every calculated batch at the number of uninvited eligible respondents available. If a batch exceeds the number remaining in the current confidence group, fill the balance from the next group in order. The random-selection method and seed will be fixed before the first Survey 2 invitation is released. Batch-size calculations may use only operational invitation and usable-record counts—not vaccination status, exposure timing, interim histograms, or whether records support a hypothesis.
+Each invitation batch will have a two-week response window for the initial operational calculation. If `C_m = 0`, the yield rate cannot be estimated; invite another random batch of 100, or all remaining eligible respondents if fewer than 100 remain, then recalculate after its two-week window. Cap every calculated batch at the number of uninvited eligible respondents available. If a batch exceeds the number remaining in the current confidence group, fill the balance from the next group in order. The random-selection method and seed will be fixed before the first Survey 2 invitation is released. Batch-size calculations may use only operational invitation and objectively complete submission counts—not reviewer judgments, vaccination status, exposure timing, interim histograms, or whether records support a hypothesis.
 
-Wave assignment and the decision to open another wave will not depend on vaccination status, vaccine timing, vaccine product, causal belief, or interim timing-analysis results. If more than 100 usable submissions are received because an invitation batch is already open, all qualifying submissions will be retained and reported; records will not be discarded to force the analytic sample to exactly 100.
+Wave assignment and the decision to open another wave will not depend on vaccination status, vaccine timing, vaccine product, causal belief, reviewer judgments, or interim timing-analysis results. If more than 100 complete submissions are received because an invitation batch is already open, all submissions will be retained and reported; records will not be discarded to force the analytic sample to exactly 100.
 
 ### Stage 2: Survey 2—unprompted reconstruction followed by structured questions
 
-Survey 2 will first ask the parent, without naming vaccination or any other candidate event, to describe the sequence of events beginning 15 days before onset and ending with the first noticeable developmental change. The narrative should ask for enough concrete detail to help reviewers assess whether the reported onset matches the study definition, including what the child could do before the change, what first changed, who noticed it, and how the change developed afterward.
+Survey 2 will first ask the parent, without naming vaccination or any other candidate event in the invitation, information and consent materials, or survey questions shown so far, to describe the sequence of events beginning 15 days before onset and ending with the first noticeable developmental change. The narrative should ask for enough concrete detail to help reviewers assess whether the reported onset matches the study definition, including what the child could do before the change, what first changed, who noticed it, and how the change developed afterward.
 
-The survey platform will display one question at a time. The unprompted narrative must be completed and saved before the participant can see any named-event questions. Only afterward will Survey 2 ask structured questions about possible preceding events, including illness, fever, medications, pediatric visits, vaccination, anesthesia, environmental changes, and other candidate exposures.
+The survey platform will display one question at a time. The unprompted narrative must be completed and saved before the participant can see any vaccination disclosure or named-event questions. The original narrative will be locked against later edits. Immediately afterward, the participant will receive the IRB-approved additional disclosure explaining that the study examines the timing of medical and other events, including vaccination, and may request relevant records. The participant may decline to continue; no event-specific questions or records request will follow without their affirmative agreement. For those who agree, Survey 2 will then ask structured questions about possible preceding events, including illness, fever, medications, pediatric visits, vaccination, anesthesia, environmental changes, and other candidate exposures.
+
+Delaying the first vaccination disclosure until after the narrative is a fixed design requirement intended to avoid priming recall. The study will seek an explicit IRB determination on whether this sequence requires an alteration of informed consent and, if so, approval of the alteration and any subsequent disclosure. The study will not implement the sequence without that approval; if it is not approved, the protocol must be reconsidered rather than moving vaccination disclosure before the narrative without a study-team decision. The system will log narrative completion, display of the additional disclosure, affirmative continuation, explicit decline, and departure without a recorded choice as distinct states. Use, retention, and any public release of a pre-disclosure narrative from a participant who does not continue must be addressed expressly in the approved protocol and first-stage consent.
 
 Survey 2 will collect or confirm:
 
-- The specific skill or behavior that was present before onset and lost or substantially reduced afterward.
-- Last confirmed presence and first confirmed persistent loss.
+- Whether the first clear change involved loss or substantial reduction of a previously acquired skill, a clearly new behavior, or both.
+- For skill loss or reduction: the specific prior skill, its last confirmed presence, and its first confirmed persistent loss or substantial reduction.
+- For a new behavior: a concrete description and examples (such as head banging), the last adequate observation of the prior baseline without it when known, and its first definite observation.
 - Parent-observed onset date or bounded interval.
 - The onset uncertainty interval.
 - Persistence of the change.
 - The unprompted 15-day event narrative.
 - Records or dated materials believed to be available.
 - Permission to be contacted for the records phase.
-- The date or age of the most recent regularly scheduled well-child visit before onset.
+- The date or age of the most recent regularly scheduled well-child visit within 90 days before onset, if any.
 - Whether any vaccine was actually administered at that visit: Yes, No, or Unknown.
 - Whether any vaccination occurred after that well-child visit but before onset: Yes, No, or Unknown.
+- For a reported vaccination visit before onset: whether any vaccine was given after that visit but before the first noticeable change: Yes, No, or Unsure. If Yes, ask for the date and products of the later, most recent vaccination visit and request its record.
 
 The original unprompted narrative will be saved immediately and preserved as submitted. It may be used, together with the structured before-and-after skill questions, to assess whether the reported event satisfies the onset definition. Later prompts, clarifications, or record review will be stored separately and will not overwrite the original account.
 
-If a participant stops after submitting the narrative but before completing Survey 2, the narrative and all previously submitted answers will be retained and identified as a partial response. The consent presented before any study questions must disclose this partial-response retention and the study's no-revocation policy. The analysis plan will specify which descriptive or eligibility assessments may use partial responses and which analyses require a completed Survey 2 or usable records.
+If a participant stops after submitting the narrative but before completing Survey 2, the proposed policy is to retain the narrative and all previously submitted answers as a partial response, including when the participant declines at the additional disclosure. The consent presented before any study questions must disclose this proposed partial-response retention and the study's no-revocation policy. This treatment of pre-disclosure narratives requires specific IRB approval. The analysis plan will specify which descriptive or eligibility assessments may use partial responses and which analyses require a completed Survey 2 or usable records.
 
 ### Stage 3: records request and validation
 
 Only respondents who meet the prespecified study eligibility definition will enter the Survey 2 invitation pool. Within that eligible pool, invitation-wave assignment will depend only on the respondent's Survey 1 confidence that relevant records or dated evidence can be produced. It will not depend on onset-date precision, vaccination status, reported proximity to vaccination, vaccine product, the parent's causal belief, or whether the record is expected to support a hypothesis. Vaccination status is not collected in Survey 1 and is therefore unknown when wave assignment is made.
 
-The study will seek 100 usable record sets in total. This total includes both records establishing the most recent vaccination before onset and usable records establishing a vaccine-free regularly scheduled well-child visit before onset. It does not require 100 vaccinated cases plus a separate control group. If 100 total usable records are not obtainable from the NAA cohort, recruitment may continue sequentially through as many as three additional approved organizations. Twenty usable record sets is an interim feasibility checkpoint, not a stopping target and not a substitute for the 100-record goal.
+The study will seek at least 100 objectively complete record submissions in total. This count includes submissions with documentation of the most recent vaccination before onset and submissions with documentation of a vaccine-free regularly scheduled well-child visit before onset. Administrative completeness is determined by the presence of the required survey fields and documents, before the three reviewers assess onset or decide which records qualify for each analysis. If the first participating source does not yield 100 complete submissions, recruitment may continue sequentially through as many as three additional approved sources. Every submission received from an open invitation batch will be retained and reviewed, even if the total exceeds 100. The study will report the number of submitted records that are scientifically usable after review; reviewer decisions will not change the recruitment threshold or trigger additional invitations.
 
 Parents who make a good-faith submission of the requested materials by the stated deadline will receive a $25 Amazon gift card under IRB-approved terms. The $25 payment will be issued even if the submitted material is incomplete, cannot be used in the final analysis, establishes a vaccine-free visit, contradicts the parent's recollection, or does not support any study hypothesis.
 
@@ -174,7 +180,7 @@ The IRB submission will request advance approval for the following staged compen
 
 The first two-week checkpoint will run from the date the first Survey 2 invitation wave is released. Each later checkpoint will occur two weeks after the preceding increase. A submission is objectively complete for compensation purposes when the participant has submitted all required Survey 2 fields, including the 15-day narrative and birthdate, plus the requested vaccination or vaccine-free well-visit documentation. This administrative completeness decision concerns only whether the required components are present. It does not depend on reviewer judgments, SORA eligibility, evidentiary strength, vaccination status, temporal proximity, inclusion in an analysis, or whether the submission supports a hypothesis.
 
-The compensation checkpoint and scientific recruitment target are separate. Reaching 100 objectively complete submissions stops further compensation increases, but recruitment and follow-up will continue if necessary until 100 records satisfy the prespecified scientific usability criteria or the approved recruitment sources are exhausted.
+The same objectively complete submission count governs the compensation checkpoints and the recruitment target. Reaching 100 complete submissions stops compensation increases and further invitation batches; submitted records still undergo the prespecified scientific review, and the final number eligible for each analysis will be reported.
 
 The decision to activate a higher amount may use only the count of objectively complete submissions received by the checkpoint. It may not use vaccination status, exposure timing, reviewer judgments, scientific usability, interim histograms, or whether received records support a hypothesis.
 
@@ -186,65 +192,63 @@ The records request will be deliberately narrow. It is expected to include:
 
 - The completed unprompted narrative covering the 15 days before onset through the first noticeable developmental change.
 - The child's birthdate as entered by the parent; separate documentary proof is not required.
-- A record showing the actual date of the most recent vaccination before onset and all vaccine products administered at that visit.
-- When the parent reports that no vaccine was given at the most recent regularly scheduled well-child visit: documentation of the visit date and, when available, the visit note or immunization record supporting that no vaccine was administered.
-- Optional contemporaneous materials that may help assess the reported onset, such as videos, photographs, messages, calendars, daycare records, or clinical notes.
+- If the parent reports vaccination within 90 days before onset: a record showing the actual date and products of the most recent vaccination in that window. If the parent reports a later vaccination before onset, request the record for that later visit instead.
+- If the parent reports no vaccination within 90 days before onset: documentation of the most recent regularly scheduled well-child visit without vaccination in that same window, if any, including the visit date and, when available, the visit note or immunization record supporting that no vaccine was administered.
+- Any available contemporaneous materials that can corroborate or bound the reported onset, such as dated videos, photographs, messages, calendars, daycare records, or clinical notes. These will be actively requested but are not required for administrative completeness; absence of corroboration will be reported and may prevent inclusion in the primary timing analysis.
 
-The study will not require the parent to submit the child's complete vaccination history. The vaccination evidence must reflect actual administration rather than a scheduled appointment or routine age recommendation. The records manual must define how to handle a parent who reports no vaccination before onset, cannot identify the most recent vaccination, or submits a record that does not establish which visit was the most recent before onset.
+The study will not require the parent to submit the child's complete vaccination history. The vaccination evidence must reflect actual administration rather than a scheduled appointment or routine age recommendation. If the parent reports no later vaccination after the submitted visit, the analysis will identify that visit as the parent-confirmed most recent vaccination only if it falls within the 90-day window. If the parent is unsure, the submission remains in the dataset but its most-recent-vaccination interval is flagged as unconfirmed. If the parent reports a later vaccination, the earlier visit will not be treated as most recent; the later visit's date, products, and supporting record will be requested. A vaccination or well-child visit outside the 90-day window may be retained as context but cannot serve as a visit anchor. The records manual will define how to handle reports of no vaccination before onset and missing or conflicting visit records.
 
-Study staff—not the parent—will apply the prespecified abstraction rules. Parent-reported onset, narrative-only reviewer estimates, evidence-informed reviewer estimates, and any final adjudicated estimate will remain separate variables.
+The reviewers—not the parent—will independently extract and assess the key dates and their supporting evidence in one review of all available material. Study staff will then apply prespecified consistency and dataset-construction rules. Parent-reported onset, each reviewer's evidence-informed estimate, and the values accepted by at least two reviewers will remain separate variables.
 
-### Three-reviewer onset assessment and separate exposure abstraction
+### One-pass, three-reviewer assessment
 
-The three designated onset reviewers—Steve Kirsch, Karl Jablonowski, and Brian Hooker—will independently evaluate every candidate record using the same prespecified rubric. “Independently” means that each reviewer completes and locks an assessment without seeing or discussing the other reviewers' assessments; it does not mean that the reviewers are independent of the study team.
+The three designated reviewers—Steve Kirsch, Karl Jablonowski, and Brian Hooker—will each independently evaluate every candidate record once, using the same prespecified rubric and all available material: the original unprompted narrative, later Survey 2 answers, uploaded videos, photographs, messages, clinical records, vaccination records, and other evidence. Each reviewer will decide whether the case meets the study's SORA definition (Yes, No, or Uncertain) and complete the date-and-evidence form below. Vaccination information will not be masked. “Independently” means that each reviewer completes, timestamps, and locks an assessment without seeing or discussing either other reviewer's assessment; it does not mean that the reviewers are independent of the study team. If no evidence beyond the parent's narrative supports onset, that fact will be flagged and the case will not be represented as objectively corroborated onset.
 
-**Pass 1—narrative only:** Before viewing any uploaded evidence files, each reviewer will independently read the parent's original unprompted narrative and record:
+For each case, every reviewer will independently complete the same date-and-evidence form:
 
-- Whether the account meets the study's SORA definition: Yes, No, or Uncertain.
-- The reviewer-derived onset date or onset bounds supported by the narrative.
-- The resulting onset uncertainty interval, if one can be derived.
-- The specific narrative facts supporting the judgment.
-- Whether additional evidence is needed to resolve uncertainty.
+1. Child's birthdate as entered by the parent, with any discrepancy noted. This is a parent-reported date, not a document-verified date unless supporting evidence happens to be available; separate birthdate proof is not required.
+2. The actual date of the most recent documented vaccination within 90 days before the reviewer-derived onset, and every product given on that date; or **none established / unknown**. The reviewer will identify the administration record, not infer a dose from the recommended schedule or a planned visit.
+3. Only if no vaccination occurred in that 90-day period, the date of the most recent regularly scheduled well-child visit without shots **within the same 90-day period**, and the evidence for its date and vaccine-free status; or **no qualifying visit / unknown**. A vaccine-free visit alone does not establish absence of vaccination at another visit; the reviewer will separately code whether the 90-day vaccination history is confirmed complete, parent-reported only, or unknown.
+4. The first clearly noticeable onset date, or **unresolved** if no defensible calendar date can be selected. The reviewer will cite the concrete developmental observation and each contemporaneous dated item supporting or contradicting the proposed date.
+5. The earliest and latest plausible onset dates and their width in days, or **unknown** where a bound cannot be established. A single-date onset has a zero-day uncertainty width; the width will not substitute for its two recorded bounds.
 
-Each reviewer's Pass 1 assessment will be timestamped and locked before that reviewer receives access to uploaded evidence files, later prompted Survey 2 answers, vaccination information, or the other reviewers' judgments.
+Each date or status will have an evidence citation and source classification (contemporaneous document, later parent report, or inference), plus a conflict/insufficiency flag. A 90-day classification will use the reviewer's onset date and will be flagged if the onset uncertainty bounds straddle the 90-day cutoff. Objective corroboration of onset will be an explicitly reported scientific evidence tier, separate from whether the submission is administratively complete and counts toward the 100-record recruitment threshold.
 
-**Pass 2—masked onset evidence:** After all three Pass 1 assessments are locked, each reviewer will independently repeat the same assessment using the narrative plus submitted videos, photographs, messages, clinical records, or other onset-supporting evidence. Vaccination dates, vaccine products, vaccination status, and later prompted exposure answers will remain hidden.
+The primary records-based timing analysis will require an onset date or narrow interval supported by contemporaneous, dateable evidence, plus documentation of the actual vaccination administration date and products or of the qualifying vaccine-free well visit and sufficiently established 90-day vaccination history. The records manual will prespecify what counts as corroboration and adequate precision before review begins. Cases supported only by retrospective parent narrative, or with uncertain vaccination history, remain in descriptive and sensitivity analyses as appropriate but will not be presented as objectively verified primary timing cases.
 
-Before reviewers receive Pass 2 materials, designated study staff will prepare an adjudication copy that removes or masks vaccination information and other information that directly reveals the exposure interval. The original evidence file will remain unchanged in restricted storage. Each reviewer will record the evidence used and the reason for any change from Pass 1. The original Pass 1 values will never be overwritten.
+Each reviewer will record the evidence supporting and contradicting the judgment. All three assessments will be locked before any reviewer sees the others' judgments. Once locked, a judgment may not be revised to create agreement or in response to an interim timing-analysis result.
 
-Each reviewer's Pass 2 assessment will be timestamped and locked before vaccination records, prompted exposure answers, or the other reviewers' assessments are revealed. Once locked, neither Pass 1 nor Pass 2 onset values may be changed in response to vaccination information.
+**Majority-agreement rule:** After all three assessments are locked, a SORA eligibility judgment, any of the five date-form values or statuses, or each numerical onset bound is accepted for subsequent analysis only when at least two reviewers independently agree on that exact judgment or number. Each onset bound is assessed separately, and onset-interval width is calculated from the agreed bounds rather than voted on independently. Agreed lower and upper bounds may form an analysis interval only when they are internally consistent; otherwise the interval remains unresolved. The study will not average disparate dates, invent a compromise number, or change a reviewer's locked answer to manufacture agreement. All three original assessments remain in the audit trail. A case without the agreed values required for a particular analysis is retained and reported but excluded from that analysis.
 
-**Stage 3—exposure abstraction:** Only after all six onset assessments and any required final adjudicated onset value are locked will the actual vaccination record be opened for exposure abstraction. Using prespecified rules, study staff will extract the most recent vaccination date before onset and every vaccine product administered at that visit. The exposure fields will then be linked to the already-locked onset values for analysis.
+**Analysis dataset construction:** After all three assessments and the majority-agreement determinations are locked, study staff will apply prespecified consistency checks and link the agreed onset and birthdate to exactly one visit anchor: (1) the most recent documented vaccination within 90 days before onset, with its products; otherwise (2) the most recent documented vaccine-free regularly scheduled well-child visit within those same 90 days, provided no vaccination occurred in the window. If neither visit exists or the necessary vaccination history is unknown, there is no qualifying visit anchor. Reviewer classifications and source evidence will remain in the dataset. A visit more than 90 days before onset may be retained as contextual history but will not serve as the analysis anchor. This subsequent dataset step does not mean that the reviewers were blind to vaccination information.
 
-If an onset-supporting document also contains vaccination information, reviewers will receive a masked or cropped adjudication copy whenever feasible. If masking would remove information needed to assess onset or is otherwise impossible, the case will be flagged as unblinded before review. The study will report the number of unblinded cases and repeat the primary analysis after excluding them as a sensitivity analysis.
+Because reviewers see vaccination information in their single assessment, the onset judgments are not exposure-blinded. Independent voting can measure disagreement but cannot eliminate a shared influence of exposure information on onset dating. The study will report the evidence supporting each accepted value and the rates of agreement and unresolved judgments.
 
 The study will report:
 
 - Agreement among the three reviewers on SORA eligibility.
 - Agreement among the three reviewer-derived onset dates or bounds.
-- Within-reviewer changes from narrative-only to evidence-informed assessment.
 - The number and proportion of cases with exact three-reviewer agreement.
-- The number requiring adjudication and the reasons for disagreement.
-- The number and proportion of Pass 2 assessments that could not be fully masked to vaccination information.
+- The number and proportion with exact two-of-three agreement on each required judgment or value, and the numbers left unresolved with reasons for disagreement.
+- The number and proportion of original narratives that spontaneously mention vaccination, and the evidence tier supporting each accepted onset value.
 
-Exact agreement among all three reviewers is the preferred outcome, but disagreement will be preserved rather than forced into agreement. A final adjudicated value, when needed, will be created only after all six independent assessments are locked and will remain distinguishable from every original reviewer value. Adjudication will use the masked onset materials and will be completed and locked before exposure abstraction; the exposure date will not be available when the final onset value is selected. The validation manual will define the masking workflow, agreement metrics, date tolerances, adjudication procedure, unblinding flags, and handling of unresolved cases before review begins.
+Exact agreement among all three reviewers is the preferred outcome, but two matching independent assessments are sufficient for a value to survive into analysis. Disagreement will be preserved rather than forced into agreement. The validation manual will define the evidence-access workflow, exact-value and interval-bound formats, agreement metrics, consistency checks, evidence tiers, and handling of unresolved fields before review begins. Accepted values will be selected without the reviewers seeing one another's judgments, but with vaccination information available to each reviewer.
 
 ## 6. Protection against hypothesis-driven selection
 
 The central design safeguard is the separation of recruitment and records selection from vaccination ascertainment.
 
-Before reviewing vaccination information, the study will freeze and retain an auditable record of:
+Before vaccination information can influence any invitation or record-request decision, the study will freeze and retain an auditable record of:
 
 1. Survey 1 eligibility.
-2. Survey 2 phenotype classification.
-3. Record-availability assessment.
-4. Survey 2 invitation group and the reason for its assignment.
-5. The date each invitation group was opened.
-6. Whether Survey 2 and records invitations were sent.
+2. Record-availability assessment.
+3. Survey 2 invitation group and the reason for its assignment.
+4. The date each invitation group was opened.
+5. Whether Survey 2 and records invitations were sent.
 
-The study team will not use vaccination status or timing to choose whom to invite, whom to remind, which records to accept, or which good-faith submissions to compensate. If operational staff must encounter exposure information while receiving files, exposure-blinded eligibility and onset review will be performed by separate reviewers to the extent feasible and specified in the final protocol.
+The study team will not use vaccination status or timing to choose whom to invite, whom to remind, which submissions count toward the 100-record administrative target, or which good-faith submissions to compensate. The later scientific phenotype and onset judgments will be made by the three reviewers with all available evidence, including vaccination information. The study will not describe those judgments as exposure-blinded.
 
-This design reduces selection based on the exposure of interest. It does not eliminate nonresponse, inaccurate recall, incomplete records, differential willingness to participate, or selection associated with NAA membership. Those limitations will be measured and reported where possible.
+This design reduces selection based on the exposure of interest. It does not eliminate nonresponse, inaccurate recall, incomplete records, differential willingness to participate, or selection associated with membership-organization or clinic recruitment. Those limitations will be measured and reported by recruitment source where possible.
 
 ## 7. Planned data elements
 
@@ -255,14 +259,17 @@ The analytic dataset is expected to include:
 - Developmental pattern and prespecified phenotype classification.
 - Original parent-reported onset and confidence.
 - Original unprompted narrative, narrative-based onset assessment, and later structured event responses.
-- Three independent narrative-only onset assessments, three independent evidence-informed assessments, agreement measures, and any separately identified adjudicated value.
-- Last-confirmed-skill-presence and first-confirmed-loss bounds.
+- Three independent evidence-informed assessments, agreement measures, and the separately identified values accepted by at least two reviewers.
+- Phenotype flags for skill loss/reduction and new-behavior onset, including cases with both.
+- Last-confirmed-skill-presence and first-confirmed-loss bounds, or last-observed-baseline-without-new-behavior and first-observed-new-behavior bounds, as applicable.
 - Onset uncertainty interval.
 - Record availability, submission, usability, and evidence tier.
-- Record-supported onset interval and adjudicated onset estimate, if applicable.
+- Agreed onset date, onset interval, and uncertainty interval where at least two reviewers concur, plus an unresolved status for any field without agreement.
+- Each reviewer's birthdate, most recent documented vaccination date within 90 days of onset (if any), last eligible vaccine-free well-visit date (if applicable), onset date and bounds, source citations, evidence tier, and unresolved/conflict flags.
 - Actual date and products for the documented most recent vaccination before onset.
+- Whether the parent reported a later vaccination between the submitted vaccination visit and onset: Yes, No, or Unsure; when Yes, the later visit's date, products, and record status.
 - Whether no prior vaccination was reported, the most recent vaccination could not be established, or the supporting record was insufficient.
-- Date of the most recent regularly scheduled well-child visit before onset, whether vaccination was actually administered at that visit, and whether an intervening vaccination occurred before onset.
+- Date of the most recent regularly scheduled well-child visit within 90 days before onset, whether vaccination was actually administered at that visit, and whether any vaccination occurred in the 90-day window.
 - Other dated acute events and relevant medical encounters.
 
 Absolute dates will be used only in the restricted study environment as required for validation and interval calculation. The public-use dataset will use derived ages and intervals and will exclude direct identifiers and other fields that create unacceptable re-identification risk.
@@ -274,7 +281,9 @@ The statistical analysis plan will be finalized, simulated, and frozen before va
 ### Descriptive analyses
 
 - Recruitment and attrition at every study stage.
+- Continuation and drop-off at the prespecified point when vaccination is first disclosed, with the denominator of participants who reached that point and no assumption about why an individual stopped.
 - Developmental-pattern distribution among Survey 1 respondents.
+- Separate counts and timing summaries for skill-loss/reduction, new-behavior-only, and mixed presentations.
 - Parent-reported age-at-onset histogram.
 - Distribution of onset-date confidence and onset uncertainty.
 - Record availability, retrieval, usability, and agreement with parent reports.
@@ -286,22 +295,27 @@ For participants with an adequate most-recent-vaccination record, analyses may i
 
 - Time from the most recent actual vaccination before onset to the onset estimate or onset interval.
 - Prespecified post-vaccination risk and reference windows.
-- Product- or visit-specific analyses when sample size and multiplicity control permit.
-- Sensitivity analyses using the earliest and latest plausible onset bounds.
+- Separate lag histograms for last vaccinating visits in prespecified age-at-administration groups centered on 15 and 18 months, plus an overall last-vaccination histogram using the same day definitions and binning. Other administration ages will be reported rather than silently excluded. The exact nonoverlapping age-group boundaries will be frozen in the statistical analysis plan.
+- A histogram for each vaccine product administered at the last vaccinating visit, with product-specific analyses when sample size and multiplicity control permit. Each child appears at most once in each plot. A child given several products at the last visit may appear once in each applicable product plot as well as in the overall and applicable visit-age plots; those overlapping plots cannot by themselves attribute an association to one product.
+- Sensitivity analyses using the earliest and latest plausible onset bounds, including the effect of unresolved or weakly corroborated onset dates.
 - Analyses accounting for age, calendar time, vaccination schedule, and multiple products administered at the most recent visit.
+
+The working null for the short-lag analysis is that, absent an acute association with vaccination, the underlying frequency of first noticeable developmental change varies smoothly with age at the scale of days. The age at which that broad curve peaks will not be assumed in advance; it will be estimated from the collected Survey 1 onset-age data under a prespecified smoothing procedure, before the main records-based exposure intervals are examined. For each prespecified visit-age histogram and for the overall histogram, the planned test asks whether documented onsets on days 0–2 after the actual most recent vaccinating visit show a sharp excess above the expected count under that smooth age pattern and the applicable distribution of actual administration ages. Product-specific plots will use the same last-visit anchor and explicitly identify coadministered products. Nominal “15-month” or “18-month” visit labels will not replace actual administration dates.
+
+Estimating a smooth curve from observed onsets does not by itself prove that the curve is a vaccine-free natural history: the observed distribution may include any true exposure effect, recall anchoring, and recruitment or record-selection effects. The final statistical plan must specify the curve-fitting method, eligible age range, day-0 convention, treatment of onset-date uncertainty, expected-count calculation using actual vaccination dates, handling of later or missed visits, and calibration by simulation. If the available data cannot support a valid expected-count model, the short-lag result will be reported as a prespecified descriptive clustering measure rather than a calibrated association test.
 
 ### Vaccine-free well-visit comparison
 
-The study will retain and analyze participants whose most recent regularly scheduled well-child visit before onset did not include vaccination. For these participants, it will plot the interval from the vaccine-free well-child visit to onset using the same interval scale and binning used for the vaccination-to-onset plot where possible.
+The study will retain participants for whom no vaccination was given in the 90 days before onset and who had at least one regularly scheduled well-child visit without vaccination in that same window. For participants whose 90-day vaccination history and well-visit status can be adequately established, it will plot the interval from the most recent qualifying vaccine-free well-child visit to onset using the same interval scale and binning used for the vaccination-to-onset plot where possible. A well-child visit more than 90 days before onset will not be used as the comparison anchor.
 
 The primary vaccine-free well-visit comparison group will require:
 
-1. An identifiable regularly scheduled well-child visit before onset.
+1. An identifiable regularly scheduled well-child visit within 90 days before onset.
 2. Confirmation that no vaccine was administered at that visit.
-3. Confirmation that no vaccination occurred between that visit and onset.
+3. Confirmation that no vaccination occurred in the 90 days before onset and between that visit and onset. A single vaccine-free visit record is insufficient for this classification if other vaccinations could have occurred elsewhere.
 4. A sufficiently precise visit date and onset date or interval for the planned bin.
 
-Cases with unknown vaccination-at-visit status, an intervening vaccination, unknown intervening-vaccination status, or inadequate dates will be retained and reported but will not be silently classified as confirmed vaccine-free controls. Survey-reported and record-confirmed groups will be shown separately.
+Cases with unknown vaccination-at-visit status, an intervening vaccination, unknown 90-day or intervening-vaccination status, or inadequate dates will be retained and reported but will not be silently classified as confirmed vaccine-free controls. Survey-reported and record-confirmed groups will be shown separately.
 
 The plot will be produced even if the confirmed group is small. Exact numerators and denominators will accompany it. A sparse comparison will be labeled descriptive or inconclusive rather than treated as evidence of equivalence or no association.
 
@@ -350,18 +364,18 @@ Final leadership, analysis, data-custody, and operational roles—as well as aff
 
 ### Participating organizations
 
-- National Autism Association as the initial recruitment partner.
-- Up to three additional neutral autism organizations, diagnostic clinics, or treatment clinics, added sequentially if required to reach the records target.
+- Large autism membership organizations will be approached first as potential recruitment partners; if none agrees, autism diagnosis and/or treatment clinics will be approached.
+- Up to three additional approved recruitment sources may be added sequentially if the first source does not reach the records target.
 - IPAK or another IRB-approved repository and research environment for restricted study data and uploaded evidence files, subject to final confirmation of the platform and safeguards.
 
 Partner organizations may administer the approved surveys through their own systems or distribute study links, but they may not add, remove, or reorder research questions without prior study-team and IRB approval. Organization-specific administrative questions must be clearly separated from research variables and documented by version and recruitment source.
 
 ## 11. Study targets
 
-- Approximately 50,000 initial NAA email invitations.
+- An initial invitation denominator determined and documented after a recruitment partner agrees to participate.
 - At least 500 Survey 1 respondents eligible for the prespecified onset-age analysis, if achievable.
-- 100 usable records in total across the documented most-recent-vaccination and vaccine-free well-visit groups.
-- An interim feasibility checkpoint at 20 usable records while recruitment continues toward 100.
+- At least 100 objectively complete record submissions across the documented most-recent-vaccination and vaccine-free well-visit groups; all additional submissions from open batches are retained.
+- The number scientifically usable for each analysis will be determined and reported after the three-reviewer assessment.
 
 These are operational targets, not guaranteed sample sizes. Statistical power and the precision of estimates will depend on response, eligibility, record availability, record quality, and the final analysis model.
 
@@ -370,18 +384,18 @@ These are operational targets, not guaranteed sample sizes. Statistical power an
 1. Exact eligibility, exclusion, child-selection, and phenotype-classification rules.
 2. Final Survey 1 and Survey 2 instruments, one-question-at-a-time presentation, autosave behavior, branching logic, and partial-response rules.
 3. Recruitment invitation, reminder schedule, and complete funnel metrics.
-4. Consent, follow-up contact permission, guaranteed $25 good-faith payment, two-week $25-step adaptive compensation schedule up to $100, retroactive top-ups, and records authorization.
-5. Records-request package, secure submission method, abstraction manual, evidence tiers, three-reviewer onset rubric, masking workflow, separate exposure-abstraction procedure, agreement metrics, and adjudication process.
+4. Survey 1 and Survey 2 consent language, IRB review of the fixed post-narrative vaccination disclosure and any required consent alteration, treatment of narratives from participants who decline at disclosure, follow-up contact permission, guaranteed $25 good-faith payment, two-week $25-step adaptive compensation schedule up to $100, retroactive top-ups, and records authorization.
+5. Records-request package, secure submission method, abstraction manual, evidence tiers, one-pass three-reviewer rubric and independent-review workflow, exact two-of-three agreement metrics, dataset-construction procedure, and unresolved-case rules.
 6. Prespecified record-priority algorithm and safeguards against vaccination-informed selection.
 7. Statistical estimands, null models, risk/reference windows, missing-data rules, multiplicity plan, simulations, and power analysis.
 8. Named data systems, access roles, encryption, audit logging, incident response, retention, destruction, and implementation of the disclosed no-revocation policy.
 9. Public-use and controlled-access datasets, a reproducible narrative-redaction manual, dual-review and quality-control procedures, disclosure-risk review, and data-use terms.
 10. Study-team roles, affiliations, training, funding, compensation, and conflict-of-interest disclosures.
-11. NAA responsibilities, authorization, mailing-list denominator documentation, and data-transfer arrangements.
+11. Participating-source responsibilities, authorization, invitation-denominator documentation, and data-transfer arrangements.
 12. Reviewing-IRB application, regulatory pathway, site/reliance determinations, and all required agreements.
 
 ## 13. Interpretation limits
 
-The NAA mailing list provides an unusually large and valuable recruitment opportunity, but it is not a probability sample of all families with autistic children. The study can calculate response, eligibility, follow-up, and record-retrieval rates within the documented invitation funnel. It cannot use the 50,000-person mailing denominator to estimate autism incidence, population prevalence of identifiable-onset developmental change, or population vaccine risk without additional population-based sampling information.
+Recruitment through an autism membership organization or clinic is not a probability sample of all families with autistic children. The study can calculate response, eligibility, follow-up, and record-retrieval rates within each documented invitation funnel. It cannot use an organization's membership list or a clinic's patient pool to estimate autism incidence, population prevalence of identifiable-onset developmental change, or population vaccine risk without additional population-based sampling information.
 
-Likewise, a temporal concentration of onset after vaccination would be evidence of association under the prespecified model. Its interpretation would still depend on selection, record completeness, age and schedule effects, date accuracy, co-occurring illness and medical care, event-dependent vaccination, and the validity of the comparison periods. Causal conclusions would require converging evidence and designs capable of addressing those alternatives.
+Likewise, a temporal concentration of onset after vaccination would be evidence of association under the prespecified model. Its interpretation would still depend on selection, record completeness, age and schedule effects, date accuracy, co-occurring illness and medical care, event-dependent vaccination, and the validity of the comparison periods. Because reviewers see vaccination information in their one-pass assessments, even two- or three-reviewer agreement does not rule out a shared influence of that information on onset dating. Causal conclusions would require converging evidence and designs capable of addressing those alternatives.

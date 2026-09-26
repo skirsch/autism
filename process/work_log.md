@@ -641,7 +641,7 @@
 
 ## 2026-09-25 — Reorganized v5 two-survey study overview
 
-- **What we did:** Rewrote the v5 overview around the NAA 50,000-person neutral intake, two-survey sequence, exposure-blind records selection, unprompted recall, and records validation.
+- **What we did:** Rewrote the v5 overview around a large membership-organization neutral intake, two-survey sequence, exposure-blind records selection, unprompted recall, and records validation.
 - **Command / executable:** Manual Markdown revision with `apply_patch`; `rg` consistency checks and `git diff --check`.
 - **Outputs:** `protocol/v5/study_overview.md` version 1.0 draft.
 - **Results:** Established a firm goal of 100 usable records, retained 20 only as an interim feasibility checkpoint, stated that vaccination information cannot drive records selection, and clarified that submitted data have no revocation right while coded analytic data may be retained indefinitely. The conflicting 12-month and 18-month source-record destruction periods remain an explicit decision.
@@ -705,7 +705,7 @@
 
 ## 2026-09-25 — Capped supplemental recruitment sources
 
-- **What we did:** Defined the recruitment expansion allowed if NAA does not yield 100 usable records.
+- **What we did:** Defined the recruitment expansion allowed if the initial source does not yield 100 usable records.
 - **Command / executable:** Manual Markdown revision with `apply_patch`.
 - **Outputs:** Updated `protocol/v5/study_overview.md`.
 - **Results:** The study may add up to three approved organizations sequentially as needed. Each source must use the approved materials and will retain separate invitation, response-funnel, and record-yield reporting.
@@ -806,6 +806,30 @@
 - **Outputs:** Updated `protocol/v5/study_overview.md`.
 - **Results:** Later batch size is the ceiling of 1.20 times the remaining usable-record target divided by observed usable-record yield per matured invitation. Open batches are excluded from the yield denominator. If no usable record has yet been obtained, invite another random batch of up to 100 and recalculate after two weeks. Batch size is capped by the remaining eligible pool and fills from confidence groups in order.
 - **Next steps:** Fix the random-selection method and seed, and define when pending record reviews become eligible for the batch-yield count.
+
+## 2026-09-25 — Made recruitment independent of reviewer judgments
+
+- **What we did:** Changed the invitation calculation and stopping rule to use objectively complete record submissions received.
+- **Command / executable:** Manual Markdown revision with `apply_patch`; `rg` consistency review and `git diff --check`.
+- **Outputs:** `protocol/v5/study_overview.md` version 1.1 draft.
+- **Results:** The 100-record operational target, two-week batch-yield formula, compensation checkpoints, and decision to add an organization now use administrative completeness only. Three-reviewer onset assessments determine the later analysis populations, not whether more people are invited. The 20% allowance and zero-yield fallback remain in the batch rule.
+- **Next steps:** Define the exact administrative completeness checklist and random-selection procedure before recruitment.
+
+## 2026-09-25 — Clarified the 100-submission minimum
+
+- **What we did:** Made explicit that 100 complete submissions is a minimum recruitment threshold, not a cap on collected records.
+- **Command / executable:** Manual Markdown revision with `apply_patch` and `git diff --check`.
+- **Outputs:** `protocol/v5/study_overview.md` version 1.2 draft.
+- **Results:** New invitation batches end after at least 100 objectively complete submissions have been received, while every submission from an already-open batch is retained and reviewed, including those above 100.
+- **Next steps:** Define the administrative completeness checklist and random-selection procedure before recruitment.
+
+## 2026-09-25 — Added most-recent-vaccination confirmation
+
+- **What we did:** Added a Survey 2 check for vaccination after the visit the parent initially identifies as most recent before onset.
+- **Command / executable:** Manual Markdown revision with `apply_patch` and `git diff --check`.
+- **Outputs:** `protocol/v5/study_overview.md` version 1.3 draft.
+- **Results:** A reported later dose triggers a request for the later visit's date, products, and record. An Unsure answer is retained with the most-recent interval flagged unconfirmed. The study still requests only the relevant visit record, not a complete vaccination history.
+- **Next steps:** Put the exact conditional question and response options into the Survey 2 instrument.
 
 ## 2026-09-04 — Regenerated live Airtable form transcription
 
