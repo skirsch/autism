@@ -639,6 +639,174 @@
 - **Next steps:** No form correction required for this branch.
 # Work log
 
+## 2026-09-25 — Reorganized v5 two-survey study overview
+
+- **What we did:** Rewrote the v5 overview around the NAA 50,000-person neutral intake, two-survey sequence, exposure-blind records selection, unprompted recall, and records validation.
+- **Command / executable:** Manual Markdown revision with `apply_patch`; `rg` consistency checks and `git diff --check`.
+- **Outputs:** `protocol/v5/study_overview.md` version 1.0 draft.
+- **Results:** Established a firm goal of 100 usable records, retained 20 only as an interim feasibility checkpoint, stated that vaccination information cannot drive records selection, and clarified that submitted data have no revocation right while coded analytic data may be retained indefinitely. The conflicting 12-month and 18-month source-record destruction periods remain an explicit decision.
+- **Next steps:** Resolve the listed design and operational decisions, beginning with the source-record destruction period and exact Survey 1-to-Survey 2 eligibility rule; then draft the two instruments.
+
+## 2026-09-25 — Fixed v5 source-material retention period
+
+- **What we did:** Resolved the conflicting 12-month and 18-month periods for original submitted records.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Original source materials will be securely destroyed 18 months after receipt unless the IRB or applicable law requires longer retention; coded analytic data may be retained indefinitely.
+- **Next steps:** Resolve the Survey 2 invitation rule.
+
+## 2026-09-25 — Fixed phased Survey 2 invitation strategy
+
+- **What we did:** Defined staged Survey 2 invitations based on Survey 1 confidence that relevant records are available.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** The highest-confidence eligible group is invited first; successively lower-confidence groups are opened if fewer than 100 usable record sets have been obtained. Wave assignment and expansion cannot depend on vaccination information or interim timing results. Qualifying records received beyond 100 from an already-open wave are retained rather than discarded.
+- **Next steps:** Fix the qualifying rapid-regression phenotype and the precise Survey 1 confidence categories.
+
+## 2026-09-25 — Revised v5 eligibility and wave-assignment rule
+
+- **What we did:** Removed the seven-day eligibility requirement and clarified the sole basis for phased Survey 2 invitations.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Qualifying children must have progressed normally and then had an identifiable date when one or both parents first noticed a clear behavior or skill change associated with the child's later autism presentation. The change need not unfold within seven days. Among eligible respondents, wave assignment depends only on Survey 1 confidence that relevant records can be produced; vaccination status is unknown and not collected in Survey 1.
+- **Next steps:** Define the exact observable eligibility questions and record-confidence response groups in Survey 1.
+
+## 2026-09-25 — Locked unprompted narrative sequence and partial capture
+
+- **What we did:** Defined the placement, preservation, and methodological role of Survey 2's unprompted narrative.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Survey 2 will display one question at a time; the detailed 15-day narrative is completed and saved before any named-event prompt. The narrative can support onset eligibility assessment, later answers cannot overwrite it, and a submitted narrative is retained as a disclosed partial response if the parent drops out.
+- **Next steps:** Draft the exact narrative prompt and prespecified narrative-based onset rubric in the Survey 2 instrument and validation manual.
+
+## 2026-09-25 — Narrowed the v5 usable-record requirement
+
+- **What we did:** Reduced participant documentation burden and aligned the analysis with the intended records request.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** A usable submission requires the completed 15-day narrative, parent-entered birthdate without documentary proof, and a record establishing the actual date and products at the most recent vaccination before onset. Complete vaccination histories are not required. The overview now limits the resulting design to a most-recent-vaccination timing analysis rather than full SCCS.
+- **Next steps:** Define acceptable evidence and rules for no prior vaccination, unknown vaccination, and records that do not establish which visit was the most recent.
+
+## 2026-09-25 — Added vaccine-free well-visit comparison
+
+- **What we did:** Added retention and analysis of participants whose most recent regularly scheduled well-child visit before onset included no vaccination.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Survey 2 will ask for the visit timing, whether a vaccine was actually given, and whether an intervening vaccination occurred before onset. The analysis will plot visit-to-onset intervals even for a small group, separate survey-reported from record-confirmed controls, and exclude unknown or contaminated cases from the confirmed vaccine-free group without discarding them.
+- **Next steps:** Specify the exact Survey 2 response options and choose common interval bins for vaccination and vaccine-free well-visit plots.
+
+## 2026-09-25 — Clarified the 100-record target
+
+- **What we did:** Defined whether vaccine-free well-visit records are included in the study target.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** The target is 100 usable records total across documented most-recent-vaccination cases and usable vaccine-free regularly scheduled well-child-visit cases; it is not 100 vaccinated cases plus controls.
+- **Next steps:** Define evidence standards and common analysis bins for the two record groups.
+
+## 2026-09-25 — Capped supplemental recruitment sources
+
+- **What we did:** Defined the recruitment expansion allowed if NAA does not yield 100 usable records.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** The study may add up to three approved organizations sequentially as needed. Each source must use the approved materials and will retain separate invitation, response-funnel, and record-yield reporting.
+- **Next steps:** Define evidence standards and the organization activation rule.
+
+## 2026-09-25 — Locked one-child rule and SORA terminology
+
+- **What we did:** Finalized child selection for families with multiple autistic children and aligned the phenotype name with the study objective.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Families answer about the youngest child who developed normally and later had an identifiable onset date; if none qualify, they answer about the youngest autistic child. The overview calls the phenotype sudden-onset regressive autism while defining sudden onset as a dateable first noticeable change, without a seven-day completion criterion.
+- **Next steps:** Translate the rule into exact Survey 1 branching and respondent-facing wording.
+
+## 2026-09-25 — Made redacted narratives a public study output
+
+- **What we did:** Fixed the disposition of Survey 2's unprompted narratives.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Each unprompted narrative will be included in the public-use dataset after trained redaction and disclosure-risk review. Redaction preserves event order, relative timing, and scientific content while removing or generalizing identifying details. Consent will disclose public narrative release and the no-revocation policy.
+- **Next steps:** Create the redaction manual, reviewer workflow, and consent language.
+
+## 2026-09-25 — Corrected the v5 retention boundary
+
+- **What we did:** Distinguished parent-entered survey content from uploaded evidence files for retention purposes.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Parent-entered Survey 1 and Survey 2 content, including original narratives, and the associated study dataset are retained for 20 years. Uploaded videos, photographs, vaccination proof, clinical records, screenshots, messages, and other evidentiary documents are destroyed after 18 months unless longer retention is required.
+- **Next steps:** Carry the same distinction into consent, storage architecture, destruction procedures, and the evidence-submission instructions.
+
+## 2026-09-25 — Added three-reviewer two-pass onset assessment
+
+- **What we did:** Defined independent onset review before and after reviewers see submitted evidence.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Three reviewers independently lock SORA eligibility, onset date or bounds, uncertainty interval, and supporting reasons from the narrative alone, then repeat the assessment with onset-supporting evidence. The study preserves all six assessments and reports inter-reviewer agreement, within-reviewer changes, exact three-reviewer agreement, and adjudication frequency.
+- **Next steps:** Draft the reviewer rubric, masking procedure, date-tolerance rules, and adjudication form.
+
+## 2026-09-25 — Named the three onset reviewers
+
+- **What we did:** Assigned the three reviewers for the two-pass onset assessment.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Steve Kirsch, Karl Jablonowski, and Brian Hooker are the designated onset reviewers. Their assessments are independent in the procedural sense—completed separately and blinded to one another—but the overview does not mischaracterize the reviewers as independent of the study team.
+- **Next steps:** Assign the remaining study leadership, analysis, data-custody, and operational roles.
+
+## 2026-09-25 — Separated onset adjudication from vaccination abstraction
+
+- **What we did:** Strengthened the three-reviewer workflow so vaccination timing cannot influence onset assessment.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Pass 1 uses the narrative alone; Pass 2 uses onset-supporting evidence with vaccination information masked; only after all six onset assessments are locked is vaccination information abstracted and linked. Unavoidably unblinded cases are flagged, counted, and excluded in a prespecified sensitivity analysis.
+- **Next steps:** Create the masking SOP, adjudication copies, exposure-abstraction form, and unblinding log.
+
+## 2026-09-25 — Defined guaranteed and adaptive participant compensation
+
+- **What we did:** Clarified payment for good-faith submissions and added a possible recruitment-response increase.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Every good-faith evidence submission receives $25 regardless of usability or findings. Subject to advance IRB approval, compensation may rise to no more than $100 per complete response under prespecified operational triggers unrelated to vaccination results. Equal work receives equal compensation, including retroactive top-ups for earlier completers if the rate increases.
+- **Next steps:** Fix the adaptive trigger, checkpoint, objective completeness definition, payment increments, and budget before IRB submission.
+
+## 2026-09-25 — Fixed the adaptive compensation increments
+
+- **What we did:** Specified the timing, increment, cap, and equal-payment rule for adaptive compensation.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Complete-response compensation begins at $25 and rises by $25 at two-week checkpoints when fewer than 100 usable records have been obtained, to a maximum of $100. Each increase includes retroactive top-ups for earlier participants who completed the same work. Triggers use operational yield only, never vaccination content or interim results.
+- **Next steps:** Define objective complete-response criteria and the treatment of submissions awaiting usability review at each checkpoint.
+
+## 2026-09-25 — Separated compensation completeness from scientific usability
+
+- **What we did:** Fixed the denominator used at adaptive-compensation checkpoints.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Two-week payment increases depend only on whether 100 objectively complete submissions have been received. Administrative completeness requires the Survey 2 fields, narrative, birthdate, and requested documentation, but does not use reviewer judgments or scientific results. Recruitment remains directed toward 100 scientifically usable records even after payment increases stop.
+- **Next steps:** Translate the completeness checklist into the Survey 2 submission workflow and payment SOP.
+
+## 2026-09-25 — Fixed four Survey 1 record-confidence groups
+
+- **What we did:** Defined the record-availability choices used to phase Survey 2 invitations.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Eligible respondents are grouped as definitely available now; probably available and known how to obtain; might be available but requires investigation; or probably unavailable. Groups are invited sequentially from 1 through 4. No fifth definitely-unavailable group is used.
+- **Next steps:** Draft the respondent-facing Survey 1 question and determine whether each group is invited all at once or in smaller batches.
+
+## 2026-09-25 — Added adaptive Survey 2 invitation batches
+
+- **What we did:** Defined the initial and later Survey 2 invitation-batch strategy.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** The first batch randomly selects 100 eligible respondents from the highest available confidence group. Later batch sizes use observed operational response rates plus a prespecified conservative allowance so expected cumulative yield exceeds 100. Selection is random within confidence groups, higher-confidence groups are exhausted first, and all qualifying records from open batches are retained even above 100.
+- **Next steps:** Freeze the response window, batch-size formula, allowance, randomization method, and seed before recruitment.
+
+## 2026-09-25 — Fixed Survey 2 batch-size calculation
+
+- **What we did:** Added the approved 20% allowance to the adaptive invitation calculation.
+- **Command / executable:** Manual Markdown revision with `apply_patch`.
+- **Outputs:** Updated `protocol/v5/study_overview.md`.
+- **Results:** Later batch size is the ceiling of 1.20 times the remaining usable-record target divided by observed usable-record yield per matured invitation. Open batches are excluded from the yield denominator. If no usable record has yet been obtained, invite another random batch of up to 100 and recalculate after two weeks. Batch size is capped by the remaining eligible pool and fills from confidence groups in order.
+- **Next steps:** Fix the random-selection method and seed, and define when pending record reviews become eligible for the batch-yield count.
+
 ## 2026-09-04 — Regenerated live Airtable form transcription
 
 - **What we did:** Re-read the published Airtable survey across its ordinary, sudden-onset, no-prior-visit, prior-visit, and vaccine-product branches; regenerated `protocol/v4_SPARK/airtable_form_current.md` as v3.2.
@@ -750,3 +918,70 @@
 - **Outputs:** `assets/ads/x-ad-understanding-autism-neutral-v3.png`.
 - **Results:** The final v3 uses plain unaccented `researchers`, contains no nearby artifact, and includes the requested completion-time callout.
 - **Next steps:** Use v3 for publication after confirming the two-minute completion claim against observed timings.
+
+## 2026-09-13 — Draft v10 seven-prediction application to latest public CSV
+
+- **What we did:** Applied the mutually exclusive v10 decision regions to the latest 456-row public export, separately for VAX and NEVER, preserving contradictions and unknown status.
+- **Command / executable:** Read-only Python/Scipy analysis of `C:\Users\stk\Downloads\SOA2-Public view.csv` (SHA-256 `BB11EB80572376062BF8D2359418F8F6C7E06B8EDF520BA4F79FE4EAC636F25B`).
+- **Outputs:** Chat assessment only; source CSV was not modified.
+- **Results:** Eligible sudden-onset cohort: VAX 295, NEVER 12, unknown 87, contradictory 3. VAX P2 and P7 were inconsistent with null; VAX P1 and P3-P6 were indeterminate. All NEVER predictions were indeterminate. No result met the v10 null region.
+- **Next steps:** Freeze the missing P1-P6 bootstrap, multinomial, and directional procedures before treating later data as confirmatory; enlarge the NEVER negative-control cohort.
+
+## 2026-09-13 — Parent-noticed onset age histogram, 4–60 months
+
+- **What we did:** Plotted exact one-month age-at-onset counts from 4 through 60 months for the same sudden-onset cohort used in the seven-prediction analysis (legacy sudden-onset respondents plus newer respondents reporting a rapid, dateable change).
+- **Command / executable:** `python analysis\plot_parent_onset_age_months.py` against the read-only public export.
+- **Inputs:** `C:\Users\stk\Downloads\SOA2-Public view.csv` (456 rows; SHA-256 `BB11EB80572376062BF8D2359418F8F6C7E06B8EDF520BA4F79FE4EAC636F25B`).
+- **Outputs:** `outputs/parent_onset_age_4_to_60_months.png`; reproducible script `analysis/plot_parent_onset_age_months.py`.
+- **Results:** 397 respondents met the sudden-onset cohort rule; 394 had a valid whole-month onset age; 345 were within 4–60 months. Excluded from the displayed range were 32 below 4 months, 17 above 60 months, and 3 missing or invalid. The largest exact-month counts were 18 months (63), 15 months (38), 12 months (31), and 24 months (21).
+- **Next steps:** If this pattern is interpreted analytically, quantify digit/visit-age heaping and stratify by recruitment source rather than treating the raw age histogram as a causal test.
+
+## 2026-09-14 — Onset-age histogram sensitivity to onset-date confidence
+
+- **What we did:** Compared the 4–60-month onset-age profile for the full sudden-onset cohort with respondents selecting an onset-date confidence category no wider than one month. Missing confidence and `Could be off by a month or more` were excluded from the restricted group.
+- **Command / executable:** `python analysis\compare_onset_age_by_date_confidence.py` against the read-only public export.
+- **Outputs:** `outputs/parent_onset_age_confidence_comparison_4_to_60.png`; reproducible script `analysis/compare_onset_age_by_date_confidence.py`.
+- **Results:** The plotted denominator fell from 345 to 154. The normalized exact-month profiles remained similar (Pearson correlation 0.966). The principal 12-, 15-, 18-, and 24-month peaks persisted; 18 months declined from 18.3% to 14.3%, while 20 months rose from 4.9% to 7.8%.
+- **Next steps:** Treat the comparison as a sensitivity analysis because onset-date confidence was unavailable for many legacy records and is self-reported rather than independently validated.
+
+## 2026-09-15 — CloudResearch regression follow-up response audit
+
+- **What we did:** Reviewed all four responses in the CloudResearch/Airtable follow-up export for eligibility contradictions, narrative specificity, repeated language, chronology, and participant-list membership.
+- **Input:** `C:\Users\stk\Downloads\Regression Patterns Follow up-Grid view.csv` (4 rows; SHA-256 `872EA1866BFEFAADE2ACE53119DF58C46855E285EF7A49D6AA5184515FFF90CB`).
+- **Results:** The file does not ask respondents to describe the regression itself, so absence of terms such as lost eye contact, language loss, or stimming cannot establish gaming. None of the four narratives independently establishes a sudden, lasting loss of previously acquired skills. One response explicitly describes gradually increasing behavior, and two describe school/social stress or masking rather than a clearly dated developmental regression. The four responses use differing styles and contain no obvious copied wording. A later review of the 30-row original export confirmed that all four had selected the sudden-regression option; the separate seven-ID `autism_participants.csv` was therefore not a valid completeness check for the follow-up invite list.
+- **Next steps:** Add a neutral open-ended prompt asking what specific ability was present before onset and absent afterward, then assess persistence, chronology, independent observation, and supporting records without revealing a preferred cause.
+
+## 2026-09-15 — Joined original/follow-up CloudResearch audit
+
+- **What we did:** Matched the four follow-up PIDs to the 30-response original regression-pattern export and compared onset age, confidence, claimed record support, and follow-up narrative.
+- **Input:** `C:\Users\stk\Downloads\Regression Patterns-Grid view.csv` (30 rows; SHA-256 `E503BC69368B9A155CFD9F1E620B86044EA73DDA7EDF9740119105C11A4203D0`) joined to the four-row follow-up export by PID.
+- **Results:** Seven of 30 respondents selected sudden dramatic lasting loss; four supplied follow-ups. The 48-month case described a progressive increase in tantrums rather than a sudden skill loss. The 96-month case described bullying, withdrawal, and bottled-up emotions rather than developmental regression. The 8-month case attributed onset to masking becoming overwhelming, an age/concept combination that is difficult to reconcile. The 22-month daycare/crying case is plausible but remains unverified because no lost skill was elicited. No pair of narratives showed obvious copied phrasing.
+- **Next steps:** Do not infer fraud solely from these answers. Freeze a blinded eligibility rubric and collect a concrete before/after lost-skill narrative before determining inclusion in the research cohort.
+
+## 2026-09-16 — Revised screener response check
+
+- **What we did:** Reviewed the eight responses in the revised CloudResearch/Airtable screener for concrete before/after skill loss, chronology, onset precision, and potential documentary corroboration.
+- **Input:** `C:\Users\stk\Downloads\screener.csv` (8 rows; latest export reviewed read-only).
+- **Results:** The three responses collected after the added evidence and symptom questions were substantially more discriminating. Record 18 is a strong, specific, documentable candidate; record 19 is plausible and potentially documentable but describes a change unfolding over more than one month; record 20 is sparse and approximate despite claiming before-and-after records. Earlier record 6 contains a chronology contradiction: diagnosis at 13 months precedes reported onset at 50 months.
+- **Next steps:** Apply a prespecified eligibility rubric rather than judging authenticity by writing style; automatically flag diagnosis before onset, missing diagnosis age, approximate-only onset, and unsupported or nonspecific skill loss for manual review.
+
+## 2026-09-16 — Six revised-form screener records
+
+- **What we did:** Reloaded `screener.csv` and reviewed the six revised-form submissions (record numbers 18–23) for concrete loss, timing, persistence, diagnosis chronology, and documentary support.
+- **Input:** `C:\Users\stk\Downloads\screener.csv` (11 total rows; six revised-form records).
+- **Results:** Records 18 and 23 are the clearest candidates, with concrete acquired abilities, specific losses, and dated video support. Record 19 has potentially strong timing corroboration but a less sharply defined skill-loss phenotype and change over more than one month. Records 20 and 22 have approximate, memory-based onset; record 21 cannot determine onset precision, speed, or persistence. All six report diagnosis after onset. None reports an initial noticeable change within seven days; three report 8–30 days, two more than one month, and one cannot determine.
+- **Next steps:** Preserve all six paid responses, but use a prespecified tiered invitation rule; verify claimed records without conditioning payment or inclusion on any suspected cause.
+
+## 2026-09-16 — Pediatric-visit interval by onset age
+
+- **What we did:** Reloaded the latest `screener.csv` and tabulated the parent-recalled interval from the most recent pediatric visit to onset, stratified at onset age 20 months.
+- **Input:** `C:\Users\stk\Downloads\screener.csv` (13 total rows; modified 2026-09-16 12:16 local time).
+- **Results:** Five children had onset at 20 months or younger; one older-form response lacked the interval. Among four usable responses, one each reported 7–29, 30–59, 60–89, and 90+ days. Among four usable responses with onset above 20 months, one reported 0–6 days and three reported 90+ days. Thus 90+ days was 25% in the younger group versus 75% in the older group, but each denominator was only four.
+- **Next steps:** Continue collecting responses and report exact counts with percentages; do not infer a visit-schedule effect from this very small convenience sample.
+
+## 2026-09-16 — Latest screener eligibility and narrative audit
+
+- **What we did:** Audited the latest 19-row `screener.csv`, focusing on the 14 revised-form records (18–31), against the 4–60-month onset rule, diagnosis chronology, developmental plausibility, and agreement between open-ended narratives and the prompted symptom checklist.
+- **Input:** `C:\Users\stk\Downloads\screener.csv` (modified 2026-09-16 16:34 local time).
+- **Results:** Records 24, 29, and 30 reported onset beyond 60 months. Records 29, 30, and 31 reported diagnosis in the same whole-month age as onset; this is a review flag but not proof of impossibility because ages are rounded to months. Record 25 reported diagnosis before onset and its freshman-year narrative conflicts with a 13-month onset, while record 27 describes normal speech/social skills before a claimed four-month onset and likely reflects year/month entry confusion. Several records selected many prompted symptoms not evident in their open narratives, especially records 20, 21, 25–30; records 18, 23, and 31 showed better narrative/checklist agreement.
+- **Next steps:** Add hard range validation and unit-safe age entry, treat open-ended acquired-skill loss as the primary phenotype evidence, and use checklist selections only as secondary prompts requiring later verification.
