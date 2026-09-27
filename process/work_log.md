@@ -1033,3 +1033,35 @@
 - **Outputs:** `protocol/v5/study_overview.md` version 2.15 draft.
 - **Results:** The two dates are not interchangeable and will have separately labeled analyses and denominators.
 - **Next steps:** Carry this priority into the statistical analysis plan and plot specifications.
+
+## 2026-09-26 — v5 paired Onset 1 and Onset 2 timing displays
+
+- **What we did:** Revised `protocol/v5/study_overview.md` to make the continuous baseline-break date (Onset 1) the primary histogram anchor and the first definite developmental-change date (Onset 2) a separately required companion for overall, visit-age, and vaccine-product histograms. This supersedes the immediately preceding primary-date decision.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.16 draft.
+- **Results:** Defined uncertainty days as the calendar-day gap between the two accepted dates, so Onset 1 lag = Onset 2 lag minus that gap. Visit records are ascertained in the 90 days before Onset 2; Onset 1 can be negative and remains plotted. The same children are used for directly paired displays. An acute baseline-break spike is not, by itself, evidence of a vaccine effect on autism-related developmental change.
+- **Next steps:** Carry the neutral pre-disclosure continuity question into Survey 2, specify both endpoints and their separate null models in the statistical analysis plan, and test negative-lag and missing-date cases before IRB submission.
+
+## 2026-09-26 — Standard names for paired timing measures
+
+- **What we did:** Standardized the paired timing terms in `protocol/v5/study_overview.md`: baseline-break lag, definite-change lag, and transition gap; retired Onset 1/Onset 2 shorthand from the active overview.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.17 draft.
+- **Results:** The identity is baseline-break lag = definite-change lag − transition gap. Negative baseline-break lags remain valid; the transition gap is distinguished from the broader plausible-onset uncertainty interval.
+- **Next steps:** Use the same labels in Survey 2, reviewer forms, plots, and the statistical analysis plan.
+
+## 2026-09-26 — Primary paired-timing endpoint
+
+- **What we did:** Clarified in `protocol/v5/study_overview.md` that baseline-break lag is the single planned primary day-0–2 timing endpoint, while definite-change lag is a required prespecified secondary endpoint; this supersedes the earlier best-estimate-onset primary designation.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.18 draft.
+- **Results:** Adjacency is judged from the record rather than vaccination proximity. Separate null models are required because acute post-vaccination symptoms could concentrate baseline breaks even under no vaccine effect on the later developmental change. Until the baseline-break null is valid and frozen, its day-0–2 result remains descriptive.
+- **Next steps:** Specify the adjacency rubric and primary null model in the records manual and statistical analysis plan before IRB submission.
+
+## 2026-09-26 — Continuous baseline-break duration rule
+
+- **What we did:** Recorded the agreed rule that an evidence-supported continuous episode adjacent to the definite developmental change has no fixed maximum transition gap; a full return to the prior baseline breaks adjacency regardless of duration.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.19 draft.
+- **Results:** The primary paired analysis retains otherwise eligible long-gap cases. Transition-gap lengths will be reported, paired analyses repeated with gaps of 30 days or less, and cases over 30 days reported separately.
+- **Next steps:** Specify the reviewer evidence/continuity rubric and exact sensitivity displays before review or exposure-linked analyses.
