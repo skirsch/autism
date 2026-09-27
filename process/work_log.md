@@ -1065,3 +1065,11 @@
 - **Outputs:** `protocol/v5/study_overview.md` version 2.19 draft.
 - **Results:** The primary paired analysis retains otherwise eligible long-gap cases. Transition-gap lengths will be reported, paired analyses repeated with gaps of 30 days or less, and cases over 30 days reported separately.
 - **Next steps:** Specify the reviewer evidence/continuity rubric and exact sensitivity displays before review or exposure-linked analyses.
+
+## 2026-09-26 — Parent-assessed continuity questions
+
+- **What we did:** Simplified the pre-disclosure Survey 2 timing sequence to ask when the clear developmental change began, then whether an immediately preceding uncertain period occurred and how long it lasted. The parent's judgment determines whether there was an intervening full return to normal.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.20 draft.
+- **Results:** An approximate duration will not be forced into a precise calendar date; reviewer evidence tiers and objectively verified analysis requirements remain separate from the parent's report.
+- **Next steps:** Draft the exact one-question-at-a-time Survey 2 wording and branch logic, then test it for neutral phrasing and date precision.
