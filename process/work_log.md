@@ -1009,3 +1009,27 @@
 - **Input:** `C:\Users\stk\Downloads\screener.csv` (modified 2026-09-16 16:34 local time).
 - **Results:** Records 24, 29, and 30 reported onset beyond 60 months. Records 29, 30, and 31 reported diagnosis in the same whole-month age as onset; this is a review flag but not proof of impossibility because ages are rounded to months. Record 25 reported diagnosis before onset and its freshman-year narrative conflicts with a 13-month onset, while record 27 describes normal speech/social skills before a claimed four-month onset and likely reflects year/month entry confusion. Several records selected many prompted symptoms not evident in their open narratives, especially records 20, 21, 25–30; records 18, 23, and 31 showed better narrative/checklist agreement.
 - **Next steps:** Add hard range validation and unit-safe age entry, treat open-ended acquired-skill loss as the primary phenotype evidence, and use checklist selections only as secondary prompts requiring later verification.
+
+## 2026-09-26 — v5 Survey 2 vaccination-visit spacing decision
+
+- **What we did:** Updated `protocol/v5/study_overview.md` to ask about routine versus delayed/alternative vaccination timing and the immediately preceding vaccination visit for every parent reporting a pre-onset vaccination, after the locked unprompted narrative.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.13 draft.
+- **Results:** The preceding visit is recorded by date when known, otherwise approximate spacing or unknown; multiple products on one date count as one visit. No additional prior-visit document is required, and unsupported dates remain parent-reported.
+- **Next steps:** Carry these items into the Survey 2 instrument and prespecify the descriptive check for multiple vaccination visits within 90 days before onset.
+
+## 2026-09-26 — v5 quarter-start companion histograms
+
+- **What we did:** Added calendar-quarter-start lag companion histograms for the overall last-vaccination plot, every prespecified visit-age group, and every plotted vaccine-product group; specified one- and two-month-shifted quarterly grids as sensitivity displays.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.14 draft.
+- **Results:** Each companion uses the exact child subset and date basis of its vaccination plot, with explicit denominators and an overflow bin for quarter lengths beyond the common comparison range. The calendar-anchor displays are described as descriptive, not as an uncalibrated formal null test.
+- **Next steps:** Freeze exact bin endpoints, display specifications, and any inferential use in the statistical analysis plan before examining the records-based lag plots.
+
+## 2026-09-26 — v5 primary date for day-0–2 analysis
+
+- **What we did:** Recorded the decision that reviewers' agreed best-estimate onset date is primary for the planned day-0–2 post-vaccination analysis; the earliest documented post-change date is a separate secondary documentation-date analysis.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.15 draft.
+- **Results:** The two dates are not interchangeable and will have separately labeled analyses and denominators.
+- **Next steps:** Carry this priority into the statistical analysis plan and plot specifications.
