@@ -1073,3 +1073,91 @@
 - **Outputs:** `protocol/v5/study_overview.md` version 2.20 draft.
 - **Results:** An approximate duration will not be forced into a precise calendar date; reviewer evidence tiers and objectively verified analysis requirements remain separate from the parent's report.
 - **Next steps:** Draft the exact one-question-at-a-time Survey 2 wording and branch logic, then test it for neutral phrasing and date precision.
+
+## 2026-09-27 — Retain submitted partial responses
+
+- **What we did:** Clarified that stopping or declining at the later disclosure does not cause any already submitted survey answer or narrative to be discarded. Proposed redacted public release includes these partial narratives, subject to explicit advance consent, IRB approval, and disclosure-risk review.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.21 draft.
+- **Results:** Partial-response status and departure point remain available for analysis. The separate 18-month destruction rule for uploaded evidence files is unchanged.
+- **Next steps:** Put the partial-response and public-release policy into consent language for IRB review.
+
+## 2026-09-27 — Retain all submitted source evidence for re-review
+
+- **What we did:** Superseded the earlier 18-month destruction policy for uploaded evidence. The v5 draft now proposes retaining all submitted survey content, source evidence, contact information, and study records for 20 years after study closure, with restricted originals separate from public-use data.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.22 draft.
+- **Results:** Source files will be encrypted from receipt and available to additional qualified researchers only through an IRB-approved controlled-access process; raw evidence will not be public. Consent, access/key controls, eventual destruction, and the no-revocation policy remain subject to IRB approval.
+- **Next steps:** Specify the custodian, systems, key recovery, audit procedures, access-review workflow, consent text, and IRB submission details.
+
+## 2026-09-27 — Keep records phase focused on regression cases
+
+- **What we did:** Recorded the decision not to recruit a separate non-regression comparison cohort or add its questions to Survey 1. Nonqualifying intake responses remain in funnel reporting, but the records phase stays focused on qualifying regression cases.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.23 draft.
+- **Results:** A post-vaccination baseline-break spike alone remains insufficient to infer vaccine-caused regression; without a valid frozen null model it is descriptive.
+- **Next steps:** Develop the separate null models and interpretation rules in the statistical analysis plan without expanding Survey 1 to a non-regression cohort.
+
+## 2026-09-27 — Recovery-gap and weekday displays
+
+- **What we did:** Added a prompted, post-disclosure question and prespecified secondary display for vaccination followed by fever or another acute symptom, full parent-assessed recovery, X complete normal days, and later definite developmental change. Added derived weekday of the baseline-break date with vaccination weekday for context. Allowed Onset 1/Onset 2 as short figure labels while retaining precise definitions.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.24 draft.
+- **Results:** A recovered earlier fever episode does not qualify as an adjacent baseline break. An X greater than zero would refute an absolute never-occurs claim; equal counts over X are not a valid uncalibrated no-effect expectation, so the display is descriptive unless a separate expected distribution is frozen and calibrated.
+- **Next steps:** Draft exact Survey 2 branch wording and prespecify evidence, denominator, missingness, and X-bin rules in the analysis plan.
+
+## 2026-09-27 — Required X and Onset 1 weekday figures
+
+- **What we did:** Made the X-day distribution an explicit required integer-day histogram and the reviewer-agreed Onset 1 weekday distribution an explicit required seven-bar figure with a vaccination-weekday companion panel.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.25 draft.
+- **Results:** The X histogram distinguishes a full return with X = 0 from no full return, and reports the symptom, recovery, measurable-X, and unknown denominators. A zero count of X > 0 will receive a confidence bound, not a claim of impossibility or causation. Weekdays are derived without added parent questions.
+- **Next steps:** Specify exact display conventions and missingness/evidence tiers in the statistical analysis plan.
+
+## 2026-09-28 — Correct X denominator and zero category
+
+- **What we did:** Corrected X to count complete normal days after the post-vaccination acute period and before the definite change among all cases with the reported symptom and adequate timing, including continuous no-return cases as X = 0. Kept no-return and brief-return zeros separately coded.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.26 draft.
+- **Results:** The prior X histogram denominator had incorrectly required a full return. A large well-ascertained sample with all X = 0 is now explicitly recognized as noteworthy, but no-effect does not imply a uniform X distribution or exclude shared causes of the symptom and change.
+- **Next steps:** Define the exact eligible denominator, evidence tiers, uncertainty treatment, and any calibrated null before data review.
+
+## 2026-09-28 — Scope X to uncertainty plus regression
+
+- **What we did:** Corrected the overall X figure to include only regression cases with a prior uncertain-functioning period, whether or not the period followed vaccination; removed an implicit 90-day or immediate-adjacency limit from the neutral Survey 2 question. No age-group X panels are planned.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and sensitive-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.27 draft.
+- **Results:** Survey 2 now asks about the most recent uncertain period even if full normal functioning resumed before the clear change, allowing X greater than zero (including more than 100 days) to be observed rather than excluded by question wording. X = 0 includes no-return cases; those and brief-return cases remain separately coded.
+- **Next steps:** Draft exact neutral branching and reviewer forms so the X denominator and earlier-period dates can be verified without confusing them with Onset 1.
+
+## 2026-09-28 — Parent-reported autism at exploratory intake
+
+- **What we did:** Clarified that Survey 1 relies on parent-reported autism without requiring a professional diagnosis or proof; the smaller Survey 2/records subset can collect diagnostic history and optional documentation.
+- **Command / executable:** Manual Markdown edit; `git diff --check`.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.28 draft.
+- **Results:** Missing diagnostic documentation does not automatically exclude a submitted case; parent-reported and clinically verified status remain distinct.
+- **Next steps:** Draft the exact low-burden Survey 2 diagnosis-status question and records-review coding rule.
+
+## 2026-09-28 — Focus detailed cohort on onset ages 6–24 completed months
+
+- **What we did:** Set Survey 2 and records-phase eligibility at 6–24 completed months at the first definite developmental change, while retaining all Survey 1 responses in the intake counts.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.29 draft.
+- **Results:** The operational 100-record target applies to age-screened invitations; the primary timing analysis uses reviewer-agreed change age in range. Out-of-range or unresolved cases remain retained and reported separately.
+- **Next steps:** Reflect the age screen, boundary handling, and child-selection rule in the Survey 1 and Survey 2 instruments and statistical analysis plan.
+
+## 2026-09-28 — Count later age discrepancies toward 100 submissions
+
+- **What we did:** Clarified that a respondent screened as 6–24 months at Survey 1 remains in the operational 100-record count after an objectively complete submission, even if Survey 2 dates or reviewer assessment later place onset outside that range.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.30 draft.
+- **Results:** Such cases remain retained and paid under the ordinary good-faith rules; age discrepancies are reported separately and do not enter the age-restricted primary timing analysis. The 100-submission target is distinct from the final analytic sample size.
+- **Next steps:** Implement separate operational-count and final-analysis eligibility flags in the survey and analysis specifications.
+
+## 2026-09-28 — Draft v5 Survey 1 and Survey 2 instruments
+
+- **What we did:** Inspected the live short survey and the v5 overview; created separate respondent-facing working drafts and implementation notes for the dateable-onset intake and staged follow-up, and updated the v5 document guide.
+- **Command / executable:** `Invoke-WebRequest https://www.skirsch.com/autism/survey.htm`; manual Markdown edits; `git diff --check` and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/survey1.md` version 1.0 draft, `protocol/v5/survey2.md` version 1.0 draft, and updated `protocol/v5/document_guide.md`.
+- **Results:** Survey 1 retains the brief developmental-pattern format but removes the seven-day cutoff and requires a determinable first-clear-change date for follow-up screening. Survey 2 places a locked 15-day narrative and neutral continuity questions before staged event disclosure, then specifies structured dates, records, partial responses, and routing. No confidential recruitment organization is named in the new active drafts.
+- **Next steps:** Resolve exact consent/disclosure wording with the IRB, reconcile field definitions with the records manual and statistical plan, then test every screen and branch before deployment.

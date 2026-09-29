@@ -1,0 +1,76 @@
+# Survey 2: unprompted reconstruction and documented follow-up
+
+**Version:** 1.0 draft  
+**Date:** September 28, 2026  
+**Status:** Working instrument for IRB review; not approved for recruitment  
+**Controlling design:** [study_overview.md](study_overview.md)
+
+Survey 2 is offered only to Survey 1 respondents selected under the prespecified age, dateability, follow-up, and records-confidence rules. It is displayed **one question at a time**. The original 15-day narrative is completed, saved, and locked before any named candidate event appears. The later disclosure and all consent/retention wording are proposed for IRB review, not approved text.
+
+## Part A: before any named-event disclosure
+
+### Invitation and information screen — draft respondent text
+
+You previously reported a clear, dateable change in your child's behavior or skills. This follow-up asks you to describe what your child was like before the change, what happened in the days leading up to it, and what changed afterward. We will also ask about the timing of any earlier period when your child's usual functioning was hard to assess. Later in the survey, we will explain additional questions and possible records requests; you may decide then whether to continue.
+
+Participation is voluntary. [Insert IRB-approved investigator/contact information, privacy risks, estimated time, compensation schedule, and secure-submission information.] The proposed study retains every submitted answer, including a partial response if you stop, for 20 years after study closure. It plans to release coded data and a carefully redacted version of submitted narratives publicly; direct contact information and uploaded evidence will not be public. Under the proposed policy, submitted information cannot be withdrawn after submission. These terms, including possible public release of a partial narrative, require explicit consent and IRB approval before use.
+
+**Consent:** I am at least 18 years old and the child's parent or legal guardian. I understand the above and agree to submit answers under these terms. [Agree / Do not agree; if no, end without study questions.]
+
+### Question A1 — original unprompted narrative (first substantive question; required)
+
+Think back to the first day when you or the other parent **clearly noticed a lasting change** in your child's behavior or skills. In your own words, tell us what your child was like before that change and what happened **on each of the 15 days leading up to it and on the first clear-change day**, as best you can remember. Describe what you directly observed, what others told you, what changed, who noticed it, and what happened next. Include anything that seemed relevant to you at the time. It is fine to say that a day is not remembered. Please do not consult the later questions while writing this account.
+
+[Long text; required before advancing. Save on submission; preserve the original verbatim text and timestamp; lock it against editing when the participant advances. Do not display named-event suggestions, examples, or prompts on this screen. The interface may supply neutral day labels without inserting events.]
+
+### Question A2 — first definite developmental change
+
+What calendar date did you or the other parent first **clearly notice the lasting change** described above? [Date / approximate date / cannot determine; show the Survey 1 answer only if doing so cannot bias the original narrative, which is already locked.] What specific behavior or skill change made that day clear? [Brief text.] If the date may be off, what are the earliest and latest plausible dates? [Dates or unknown.] This is the parent-reported **Onset 2** candidate, not a final reviewer decision.
+
+### Question A3 — earlier uncertain-functioning period and normal interval
+
+Before that first clear change, was there a period when you could not tell whether your child was functioning normally—even if your child later seemed completely back to normal? If there were several such periods, tell us about the **most recent** one before the clear change. [Yes / No / Unsure.]
+
+**If Yes:** About when did that period begin and end? [Dates, approximate dates, or unknown; do not limit the lookback to 15 or 90 days.] What was it like? [Free text without suggested causes.] In your judgment, did your child return **fully** to their prior normal behavior and skills before the clear change? [Yes / No / Unsure.] If Yes, when did that full return begin, and how many **complete days** of normal behavior and skills passed before the first clear change? [Integer 0 or greater / approximate / unknown; allow more than 100.] If No, record no full return; do not turn that answer into an inferred cause. A brief full return of less than one complete day is distinct from no full return, although each can have zero complete normal days.
+
+This question is cause-neutral. A prior uncertain period separated from Onset 2 by a full parent-reported return is **not** automatically the adjacent baseline break (Onset 1).
+
+## Part B: additional disclosure and choice
+
+**Only after A1–A3 have been saved:**
+
+The next part asks about events and medical care before the change, including illness, medications, healthcare visits, and **vaccination**. We may ask you to share existing records or dated materials so researchers can check dates and descriptions. The study examines timing and documentation; a sequence in time by itself does not show that any event caused the developmental change. You may decline this part. Answers you already submitted will be handled as described in the consent above. [IRB must approve the exact staged-disclosure and consent approach.]
+
+**Do you agree to continue to these questions and a possible records request?** [Yes / No. If No, end without event-specific questions. Record explicit decline separately from closing the survey without answering.]
+
+## Part C: structured questions after affirmative continuation
+
+The following is respondent-facing question content and branching, not a final screen layout. Each prompt appears separately. All date fields allow “unknown” or approximate answers without forcing a guessed exact date. Do not prefill uncertain dates from event dates.
+
+1. **Child's date of birth:** What is your child's birthdate? [Month/day/year, parent report; no documentary proof required.] Confirm that this is the same child as in Survey 1. Preserve both entries if inconsistent.
+2. **What changed:** Did the first clear change include loss or substantial reduction of a skill the child had already demonstrated, a clearly new marked behavior, or both? [Loss/reduction / new behavior / both / unsure.] Describe the specific skill or behavior, its prior baseline, the last time it was definitely present or absent as appropriate, the first definite changed observation, and whether the change persisted. For new behavior, ask for concrete examples. Do not equate a fever or illness alone with autism-related change.
+3. **Uncertainty clarification:** Were there days between the last definitely normal observation and the first definitely changed observation when the child's usual skills or behaviors could not be assessed? [Yes / No / Unsure.] Record earliest/latest plausible change dates, rather than replacing Onset 2 with an uncertain-period date. Keep later clarifications separate from the locked A1 account.
+4. **Diagnosis status:** Has a professional diagnosed this child with autism? [Yes / No / Evaluation in progress / Unsure.] If Yes, ask approximate date and clinician type, if known. Documentation is welcome but not required to participate; parent report and documented diagnosis must be distinguishable.
+5. **Other preceding events:** In the period you described, do you recall illness or fever, medication, anesthesia, a medical encounter, environmental change, or another event you consider relevant? [For each: Yes / No / Unsure; date or duration; short description. Do not imply any answer is preferred.] Later prompted answers never overwrite A1.
+6. **Regularly scheduled well-child visit:** Was there a regularly scheduled well-child visit in the **90 days before the first clear change date**? [Yes / No / Unsure.] If Yes, give the most recent such visit date (or approximate date). Were any vaccinations actually given at that visit? [Yes / No / Unsure.] Was there any later vaccination between that visit and the clear change? [Yes / No / Unsure; if Yes, obtain later visit details below.]
+7. **Most recent vaccination:** Was any vaccination given in the **90 days before the first clear change date**, including after a possible earlier break from normal? [Yes / No / Unsure.] If Yes, what was the **most recent actual vaccination date** in that window, and which products were given **on that date**? [Date; product names as documented or remembered; “unsure” allowed.] Was another vaccination given after the visit you first identified but before the clear change? [Yes / No / Unsure; if Yes, update the most recent date/products and preserve the correction.] Do not ask for a full immunization history as a participation requirement.
+8. **Previous vaccination spacing:** If a pre-change vaccination was reported, did you understand the child to be following the routine recommended schedule, a delayed/alternative plan, or are you unsure? [Three choices.] Regardless of that answer, when was the immediately **previous vaccination visit on a different date**? [Date if known / approximate interval in days, weeks, or months / no earlier vaccination / don't know.] This spacing answer is parent-reported unless independently supported; multiple products on one date are one visit.
+9. **Lifetime vaccination status:** To your knowledge, has the child **ever** received a vaccination? [Yes / No / Unsure.] A No is coded as parent-reported never vaccinated, not independently verified. If no vaccination and no well-child visit occurred in the 90-day window, record both absences and do not force an artificial visit date.
+10. **Acute symptoms and return to baseline:** If a vaccination was reported and fever or another acute symptom followed before the clear change, when did the symptom begin and end? Did the child then return **fully** to their previous normal behavior and skills, in your judgment? [Yes / No / Unsure.] If Yes, how many **complete normal days** elapsed before the first clear change? [0 or more / approximate / unknown.] Symptom resolution alone is not automatically a full developmental return. Keep this prompted sequence distinct from A3.
+11. **Available dated materials:** What existing materials could help check the timing or description of the change, the uncertain period, the most recent vaccination, or a vaccine-free well-child visit? [Select all available plus free text: medical/therapy/school/daycare record, dated message/email, diary/calendar, lawfully recorded call or contemporaneous call note, photograph/video, visit/immunization record, other, none/unsure.] An after-only video may establish an earliest **documented post-change observation**, not necessarily the day change began. No document proving the child's birthdate is requested.
+12. **Records contact and upload:** May we contact you to request the available materials? [Yes / No.] If Yes, present an IRB-approved secure request/upload path and records authorization. Request the actual date/products of the **most recent** vaccination in the 90-day window; if none, the most recent vaccine-free regular well-child visit in that window; and any available dated onset evidence. When neither visit exists, request only relevant dated onset evidence. Do not ask parents to prove that no vaccination ever occurred. [Payment amount and objective completion rules displayed under approved language before upload.]
+
+### Closing screen
+
+Thank you for the time you spent describing your child's experience. We will preserve what you submitted as explained in the consent. [Show approved contact, payment, correction, and privacy information.]
+
+## Implementation, retention, and analysis safeguards
+
+- The narrative is the first substantive question after consent. Show one question at a time; save A1 and A2–A3 before Part B, lock A1, and never show vaccination or other named candidate events before Part B. Track A1 completion, Part B display, affirmative continuation, explicit decline, abandonment, and all partial-response states separately.
+- Preserve raw answers and correction history. Do not discard a submitted account merely because it lacks a visit, lacks diagnostic documentation, conflicts with later answers, or does not fit an analysis. Keep Survey 1 eligibility, 100-submission administrative count, full-payment eligibility, and final scientific eligibility as **separate flags**.
+- Record parent-reported full return explicitly. For the planned X display, complete normal days can be zero either because there was **no full return** or because a full return lasted **less than one complete day**; keep those categories distinct. Do not infer that all X values are equally likely under a no-vaccine-effect hypothesis.
+- Onset 1 (first break from prior normal baseline in a continuous episode leading directly to the definite change) and Onset 2 (first definite developmental change) are **reviewer-assessed dates**, not mechanically set by survey answers. The earliest documented post-change date is a separate evidence field. No event or vaccination date is substituted for an unresolved onset date.
+- The three reviewers make independent one-pass judgments using the narrative and available evidence, blinded to one another's answers. The study overview and future records manual govern exact agreement, evidence tiers, and analysis eligibility; this questionnaire does not confer verification on a parent's answer.
+- A good-faith materials submission earns the guaranteed $25 under the proposed IRB-approved schedule. Full-response compensation may increase in $25 steps at two-week checkpoints up to $100, with retroactive equalization for equivalent completed work. Payment and invitations never depend on vaccination status, timing, or hypothesis support. The survey must display the **currently active** amount and exact requirements before a participant undertakes the records task.
+- All submitted answers, including partial responses, and all uploaded evidence are proposed for encrypted, controlled-access retention for 20 years after study closure. Only appropriately redacted narratives and coded data are proposed for public release; uploaded evidence and direct identifiers stay restricted. Consent, staged disclosure, non-revocation, partial-response use, payment, and release require explicit IRB approval and an operational privacy plan.
+- Before deployment, turn this draft into a screen-by-screen tested instrument with required-field behavior, neutral autosave/lock behavior, accessible date entry, branch tests, multilingual handling if applicable, and a reconciliation of every field with the records manual and statistical analysis plan.
