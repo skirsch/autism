@@ -1,7 +1,7 @@
 # Survey 1: developmental-timing intake
 
-**Version:** 1.0 draft  
-**Date:** September 28, 2026  
+**Version:** 1.1 draft
+**Date:** September 29, 2026
 **Status:** Working instrument for IRB review; not approved for recruitment  
 **Controlling design:** [study_overview.md](study_overview.md)
 
@@ -44,12 +44,11 @@ If you have more than one autistic child, answer about the **youngest child who 
 
 3. **How old was your child when you first clearly noticed that change?** Enter age in **completed months** (for example, 18 if the child had turned 18 months but not yet 19 months). [Integer months; allow “unsure.”]
 
-4. **Can you identify the calendar date when you or the other parent first clearly noticed the change?**
-   - Yes, I know the date or can determine it from information I have.
-   - I can narrow it to a few possible dates, but not one date.
-   - No, I cannot determine a calendar date.
-
-   **If Yes:** What was that date? [Month/day/year; “I need to check” allowed only if the participant has said a specific date is determinable. Do not force a guess.] How certain are you? [Certain / date can be checked against materials / best estimate with possible error / unsure.] This is the first clear change date, not necessarily the first day of any preceding illness or uncertain period.
+4. **How confident are you that you could determine the calendar date when you or the other parent first clearly noticed the change?** You do not need to look it up or enter the date in this short survey. [Select one.]
+   - I know the date now.
+   - I am confident I could determine the date by checking information I have.
+   - I might be able to narrow it to a few possible dates, but not one date.
+   - I do not think I could determine a calendar date.
 
 5. **How confident are you that you have, or could obtain, records or dated materials that may help establish when the change first occurred?** Examples include medical or therapy records, dated messages, calendar entries, photographs, or videos. [Select one; these four choices determine invitation order.]
    - Definitely available now.
@@ -71,8 +70,8 @@ Thank you. If you agreed to follow-up, the study team may contact you with more 
 
 - Survey 1 invitation, purpose statement, consent, and questions must not name vaccination or disclose a preferred exposure hypothesis. Recruitment source is recorded by an internal source code, not named in this instrument.
 - Present one child-selection rule before the child questions. Retain and count all submitted patterns, including nonqualifying and uncertain answers; do not silently discard them.
-- Preliminary Survey 2 invitation eligibility requires adult parent/guardian consent, the previously normal/identifiable-date pattern, a determinable first-clear-change calendar date, reported age **6–24 completed months inclusive**, and permission/contact information for follow-up. Missing or inconsistent answers are flagged rather than imputed. The precise treatment of “I need to check” must be fixed before launch.
+- Preliminary Survey 2 invitation eligibility requires adult parent/guardian consent, the previously normal/identifiable-date pattern, **parent-reported confidence that a specific first-clear-change date is known or can be determined** (either of the first two choices in question 4), reported age **6–24 completed months inclusive**, and permission/contact information for follow-up. The parent need not enter or prove the date in Survey 1. Missing or inconsistent answers are flagged rather than imputed; actual dateability and evidence quality are assessed later.
 - Assign one of the four records-confidence groups from question 5 only. Invitation waves must not use any later exposure information. The initial and subsequent batch algorithm is in the overview.
-- Store the raw parent-entered date and certainty separately from derived age, screening flags, invitation status, and later Survey 2/reviewer dates. Survey 1's reported date is a screening value, not a reviewer-verified onset date.
+- Store the parent's date-confidence answer separately from the reported onset age, screening flags, invitation status, and later Survey 2/reviewer dates. Survey 1 collects **no actual onset date**. Do not infer one from the reported age or another event.
 - Track invitations, starts, consent decisions, completions, follow-up permission, and missingness by recruitment source. Do not infer a reason when someone stops.
 - This is a **draft**, not a finalized consent or deployment-ready survey. Final privacy/public-use language and the ability to use partial responses require specific IRB review.

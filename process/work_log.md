@@ -1161,3 +1161,59 @@
 - **Outputs:** `protocol/v5/survey1.md` version 1.0 draft, `protocol/v5/survey2.md` version 1.0 draft, and updated `protocol/v5/document_guide.md`.
 - **Results:** Survey 1 retains the brief developmental-pattern format but removes the seven-day cutoff and requires a determinable first-clear-change date for follow-up screening. Survey 2 places a locked 15-day narrative and neutral continuity questions before staged event disclosure, then specifies structured dates, records, partial responses, and routing. No confidential recruitment organization is named in the new active drafts.
 - **Next steps:** Resolve exact consent/disclosure wording with the IRB, reconcile field definitions with the records manual and statistical plan, then test every screen and branch before deployment.
+
+## 2026-09-29 — Make Survey 1 date confidence sufficient for follow-up screening
+
+- **What we did:** Removed the actual onset-date entry from Survey 1 and clarified that a parent who is confident they can determine the date later remains eligible for Survey 2, subject to the existing pattern, age, consent, and contact screens.
+- **Command / executable:** Manual Markdown edit; `git diff --check` and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/survey1.md` version 1.1 draft and `protocol/v5/study_overview.md` version 2.31 draft.
+- **Results:** Survey 1 records date-confidence and record-availability confidence separately; the latter alone sets the order of Survey 2 invitation waves. Survey 2 remains the point where the actual parent-reported date is requested.
+- **Next steps:** Test the screening and invitation branches and confirm the final question wording with the IRB.
+
+## 2026-09-29 — Review separate X follow-up form
+
+- **What we did:** Inspected the live Airtable form for the separate rapid-regression follow-up that measures a normal interval after vaccination and before the sudden change. This was a read-only review; no response was submitted.
+- **Command / executable:** Opened the supplied form URL in a browser, inspected its displayed options and conditional day-count field, and tested unsubmitted negative and fractional entries.
+- **Outputs:** No study files or form settings changed.
+- **Results:** The form distinguishes no full return, a return under 24 hours, and a return of at least 24 hours; the last branch displays a required day-count field. The field was labeled Decimal and visibly retained `-1` and `1.5` after focus left it. The email field appeared optional, so matching to an earlier response needs another reliable key if email is omitted. The form lacks a clear path for a known full return whose duration cannot be estimated.
+- **Next steps:** Configure nonnegative integer validation (and at least 1 day on the 24-hour-plus branch), ensure reliable record linkage, and add an unknown-duration option before treating the X values as analyzable.
+
+## 2026-09-29 — Analyze early normal-interval follow-up export
+
+- **What we did:** Read the existing Downloads CSV for the separate X follow-up sent to parents who previously reported sudden onset regardless of vaccination status. Counted response categories and checked non-identifying note content for timing qualifications. No source data were changed.
+- **Command / executable:** PowerShell `Import-Csv` on `C:/Users/stk/Downloads/Normal interval-Grid view.csv`, grouped `Normal period?`, and inspected Notes without email addresses.
+- **Outputs:** Analysis in chat; no derived dataset or edits to the CSV.
+- **Results:** 29 responses: 24 vaccination/no full return, 2 vaccination/full return under 24 hours, 2 unsure about full return, and 1 no vaccination before change. The `Interval` column is blank in every row, so X=0 for the first 26 is derived from categorical choices rather than entered day counts. Several notes describe gradual or prolonged changes despite the prior sudden-onset screen. The export has no vaccination/onset dates, invitation denominator, or verified records; it does not calibrate a no-causal-effect null or distinguish it from a vaccine-causal model.
+- **Next steps:** Link responses to the original screener, audit the sudden-onset classification and event dates, obtain response denominators, and prespecify a comparison distribution before using X inferentially.
+
+## 2026-09-29 — Test linkage and null calibration for the normal-interval follow-up
+
+- **What we did:** Read both Downloads CSV exports without editing them, checked identifier overlap and field completeness, and calculated a binomial sensitivity range for 26 categorical X=0 responses.
+- **Command / executable:** PowerShell `Import-Csv` and grouped/count summaries of `Normal interval-Grid view.csv` and `SOA2-Public view.csv`; exact-email text-overlap check; `Math.Pow` sensitivity calculations.
+- **Outputs:** Aggregate analysis in chat only; no row-level joined file was created.
+- **Results:** The follow-up has 29 rows: 24 no full return, 2 return under 24 hours, 2 unsure, 1 no preceding vaccination; all 26 determinate vaccinated responses code X=0, and all numeric `Interval` cells are blank. The original public view has 499 rows and no email column; its `number` values are 46–577 versus follow-up record numbers 6–34, so there is no reliable shared key. One follow-up email appears somewhere in free text of the original export, insufficient for systematic linkage. In the newer explicit regression-speed field, 33 rows select rapid/dateable change, 32 have an onset date, and 17 check vaccination in the prior three days. The original export contains no structured individual vaccination-date field; pediatrician-visit intervals cannot substitute for vaccination intervals. If the null probability of X>0 were 5%, 10%, or 20%, the probability of observing 0 of 26 is 26.4%, 6.46%, or 0.302%, respectively; these are sensitivity assumptions, not null estimates from these files.
+- **Next steps:** Obtain a privacy-preserving stable key or authorized email-bearing original export and individual vaccination/uncertain-period/onset dates; then audit rapid-onset eligibility and define a defensible comparison model before formal inference.
+
+## 2026-09-29 — Link normal-interval responses to the newly downloaded SOA2 grid export
+
+- **What we did:** Repeated the read-only linkage against `SOA2-Grid view.csv`, which includes parent email, and summarized the matched original responses without exporting identifiers or narratives.
+- **Command / executable:** PowerShell `Import-Csv`; lowercase/trim exact-email index with duplicate-key rejection; categorical cross-tabs and missingness counts; `git diff --check`.
+- **Outputs:** Aggregate results in chat only; source CSVs unchanged and no joined row-level file created.
+- **Results:** The new grid has 509 rows, 402 nonblank email cells and 386 distinct normalized emails; 12 emails appear on multiple original rows. Of 29 normal-interval follow-ups, 21 link to exactly one original row, 1 email is ambiguous, 5 emails have no match, and 2 have no email. The 21 uniquely linked cases comprise 17 vaccination/no full return, 2 vaccination/return under 24 hours, 1 unsure, and 1 no preceding vaccination. Among the 19 linked determinate vaccinated X=0 responses, 13 checked vaccination in the three days before onset in the original response; 12 have an onset-date field and 15 report onset age 6–24 months. The grid has no structured per-child vaccination date or uncertain-period dates, so it cannot supply exact vaccination-to-onset lags or a calibrated null distribution for X. Most linked rows predate the newer explicit regression-speed question; blank speed values are not evidence of slow regression.
+- **Next steps:** Resolve ambiguous and unmatched links with a child-level key; obtain exact vaccination and transition dates and a comparison population measured by the same X instrument before formal inference.
+
+## 2026-10-01 — Refine Survey 2 recovery timeline and normal-days analysis
+
+- **What we did:** Updated the Survey 2 draft and study overview to ask about wellness and behavior/skill baseline just before vaccination, preserve a separate post-disclosure event-by-event narrative through the clear change, distinguish new behaviors from reduced or missing skills on that day, and directly record post-vaccination symptom-resolution lag and complete normal days.
+- **Command / executable:** Read the current v5 Markdown and relevant methods literature; edited with `apply_patch`; checked `git diff --check` and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/survey2.md` version 1.1 draft and `protocol/v5/study_overview.md` version 2.32 draft.
+- **Results:** The overall X histogram remains required, with a separately labeled post-vaccination-symptom normal-days histogram and its own denominator. A zero spike and approximately flat positive tail are documented as predictions of a specific uniform-onset, fixed-recovery comparison model, not of vaccine safety in general. Symptom resolution is not assumed to equal full return to prior behavior and skills; direct normal-day answers remain separate from date-derived lags and from the locked unprompted narrative.
+- **Next steps:** Convert the draft into screen-by-screen branching and a frozen statistical analysis plan, including recovery-duration uncertainty, day-count conventions, and sensitivity models; obtain IRB review before recruitment.
+
+## 2026-10-01 — Retain the 90-day vaccination lookback and document its limit
+
+- **What we did:** Confirmed the user's final choice to keep the existing 90-day vaccination-record and histogram window; reversed an in-progress expansion to all earlier vaccinations and added an explicit interpretation limit.
+- **Command / executable:** Inspected v5 references with `rg`; edited with `apply_patch`; ran `git diff --check` and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.33 draft; `protocol/v5/survey2.md` remains version 1.1 draft.
+- **Results:** The instrument still asks for the most recent vaccination within 90 days of the first definite change. Earlier vaccinations do not become a plotted visit anchor; their absence from the requested records is stated as a limitation, not evidence that no earlier vaccination occurred. The 15-day unprompted narrative remains unchanged. Checks passed; the partner-name scan found no matches.
+- **Next steps:** In the statistical analysis plan, define the 0–90-day histogram denominator, outside-window reporting, and appropriate comparison model before analysis.
