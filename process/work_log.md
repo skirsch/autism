@@ -1217,3 +1217,11 @@
 - **Outputs:** `protocol/v5/study_overview.md` version 2.33 draft; `protocol/v5/survey2.md` remains version 1.1 draft.
 - **Results:** The instrument still asks for the most recent vaccination within 90 days of the first definite change. Earlier vaccinations do not become a plotted visit anchor; their absence from the requested records is stated as a limitation, not evidence that no earlier vaccination occurred. The 15-day unprompted narrative remains unchanged. Checks passed; the partner-name scan found no matches.
 - **Next steps:** In the statistical analysis plan, define the 0–90-day histogram denominator, outside-window reporting, and appropriate comparison model before analysis.
+
+## 2026-10-01 — Add child age-quarter companion histograms
+
+- **What we did:** Added the agreed descriptive comparator based on each child's 12-, 15-, or 18-month age milestone for the 12–18-completed-month subgroup; left the Survey 2 questions unchanged.
+- **Command / executable:** Reviewed the existing calendar-quarter analysis, edited `study_overview.md` with `apply_patch`, and checked the resulting Markdown diff.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.34 draft.
+- **Results:** The same children and date metrics used in paired vaccination plots will also have lags from a common child-specific age-quarter anchor. The plot is labeled descriptive, not a calibrated null or causal test; negative baseline-break lags remain visible.
+- **Next steps:** Freeze exact subgroup and month-anniversary boundary conventions and the inferential null model in the statistical analysis plan before exposure-linked results are inspected.
