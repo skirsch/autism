@@ -1225,3 +1225,139 @@
 - **Outputs:** `protocol/v5/study_overview.md` version 2.34 draft.
 - **Results:** The same children and date metrics used in paired vaccination plots will also have lags from a common child-specific age-quarter anchor. The plot is labeled descriptive, not a calibrated null or causal test; negative baseline-break lags remain visible.
 - **Next steps:** Freeze exact subgroup and month-anniversary boundary conventions and the inferential null model in the statistical analysis plan before exposure-linked results are inspected.
+
+## 2026-10-01 — Replace startup tasks with IRB completion checklist
+
+- **What we did:** Converted the v5 startup list into ten stable, numbered remaining items with explicit closure criteria, separating scientific decisions, participant/records workflow, and submission/governance work.
+- **Command / executable:** Compared `protocol/v5/task_list.md` with the overview's Section 12 and document guide; edited with `apply_patch`; checked the Markdown diff and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/task_list.md`.
+- **Results:** Existing overview and survey drafts are recognized as the core design, while the analysis plan, eligibility rules, final instruments, operational procedures, consent, reviewer manual, privacy plan, partner arrangements, IRB package, and prelaunch testing remain open. R01 is identified as the next item to close.
+- **Next steps:** Work through R01–R10 in order, logging each decision and updating the relevant document before checking an item complete.
+
+## 2026-10-01 — Prespecify two overlapping short-lag windows
+
+- **What we did:** Added days 0–2 and 0–5 as equally prespecified displays for both timing dates, made their overlap explicit, and added the 12-, 15-, and 18-month administration-age groups to the planned plots. Confirmed that vaccination lags, Onset 1 weekday, normal-day counts, calendar-quarter anchors, and child age-quarter anchors remain in the overview.
+- **Command / executable:** Checked current schedule wording and the v5 analysis sections; edited `study_overview.md` and `task_list.md` with `apply_patch`; ran `git diff --check` and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.35 draft; updated `protocol/v5/task_list.md` R01.
+- **Results:** No window will be selected post hoc as the preferred short lag; days 3–5 are shown separately so the incremental portion of 0–5 is visible. The two overlapping counts are not treated as independent confirmations. Whether either supports formal inference remains an open R01 decision pending a defensible null model and multiplicity rule.
+- **Next steps:** Draft the statistical analysis plan with precise age-bin boundaries, denominator and reference-time definitions, both windows, calibrated-null feasibility, and simulation scenarios.
+
+## 2026-10-01 — Make age-at-onset plots explicit
+
+- **What we did:** Added separate records-based Onset 1 and Onset 2 age histograms alongside the existing Survey 1 reported-age display, plus a same-child distribution of actual age at the last documented vaccination.
+- **Command / executable:** Reviewed v5 analysis text and primary research on prospective versus recalled onset timing; edited `study_overview.md` and `task_list.md` with `apply_patch`; ran `git diff --check` and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.36 draft; updated `protocol/v5/task_list.md` R01.
+- **Results:** Planned figures mark 12-, 15-, and 18-month ages without treating a nominal age as an actual vaccination date. Smooth underlying age-specific onset is framed as a candidate null assumption, not a guaranteed shape of the observed selected or recalled-age histogram. Formal age-peak testing still requires prespecified bins, selection assumptions, calibration, and multiplicity rules.
+- **Next steps:** Include age-at-onset plots and peak-model simulations in the R01 statistical analysis plan; keep parent-reported and reviewer-agreed ages distinct.
+
+## 2026-10-01 — Frame v5 as a reusable data study
+
+- **What we did:** Updated the overview and R01 to make collection, adjudication, privacy review, and release the first study's deliverables. Kept timing plots and simulated benchmarks as possible analyses the data paper can explain, with hypothesis-driven results reserved for a separate analysis paper.
+- **Command / executable:** Edited `protocol/v5/study_overview.md` and `protocol/v5/task_list.md` with `apply_patch`; checked the diff and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.37 draft; updated `protocol/v5/task_list.md` R01.
+- **Results:** The approved public-use data are planned for release regardless of the observed timing pattern. Post-data analytic choices must be identified as exploratory; listing possible uses in the data paper does not turn them into confirmatory tests. No IRB approval or publication acceptance is implied.
+- **Next steps:** Complete the R01 versioned data dictionary, construction/missingness rules, disclosure-risk criteria, and reproducible processing specification before enrollment.
+
+## 2026-10-01 — Draft R01 data and suppression rules
+
+- **What we did:** Recorded the decision to retain an unsafe-to-publish narrative or case row in the restricted dataset while withholding it from public release, with a suppression flag when a row is safe and otherwise safe aggregate counts. Drafted R01 data layers, required dictionary groups, provenance and missingness categories, case/visit construction, processing checks, and release package.
+- **Command / executable:** Reviewed the current overview and both survey drafts; edited `data_specification.md`, `study_overview.md`, `document_guide.md`, and `task_list.md` with `apply_patch`; checked Markdown diff and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/data_specification.md` version 1.0 draft; `protocol/v5/study_overview.md` version 2.38 draft; updated document guide and R01 checklist.
+- **Results:** The proposal preserves all submitted material under restricted controls while making public release conditional on consent, IRB approval, and case-specific disclosure-risk review. R01 remains open; no public data were released.
+- **Next steps:** Finalize R02/R03/R06/R07 dependencies, machine-readable dictionary, processing code and test fixtures, then validate against fictitious edge cases before enrollment.
+
+## 2026-10-03 — Evaluate scheduled-date and symptom-end timing displays
+
+- **What we did:** Reviewed the proposal to compare onset lags from actual vaccination, reported end of post-vaccination symptoms, and an ideal CDC schedule date against the current v5 timing definitions and CDC schedule guidance.
+- **Command / executable:** Read `protocol/v5/study_overview.md` and `data_specification.md`; checked CDC child schedule and catch-up guidance using primary-source web search. No protocol text was changed.
+- **Outputs:** Methodological recommendation in this discussion; no new analysis or data output.
+- **Results:** Actual-dose and symptom-end lags are distinct descriptive quantities. The latter is undefined without a dated symptom episode and may be negative for Onset 1 or if symptoms continue after the definite change. Nominal CDC schedule dates are useful age-anchor sensitivity displays, but actual and schedule-anchored lag histograms need not match under no vaccine effect when real administration dates differ from nominal dates or the last eligible visit changes.
+- **Next steps:** Clarify whether the proposed symptom-end lag refers to Onset 1 or Onset 2, and decide whether to add it as a candidate descriptive display. Treat any modeled no-effect benchmark as an explicit simulation with age, scheduling variation, and the same eligibility/90-day rules rather than assuming the ideal schedule is a null control.
+
+## 2026-10-03 — Define post-vaccination return to observed baseline
+
+- **What we did:** Tightened the post-disclosure Survey 2 question so “normal” means return to the child's directly observed pre-vaccination behavior and skills, not merely resolution of acute symptoms. Kept the cause-neutral pre-disclosure X field separate.
+- **Command / executable:** Edited `protocol/v5/survey2.md`, `study_overview.md`, and `data_specification.md` with `apply_patch`; checked the Markdown diff and confidential-partner-name scan.
+- **Outputs:** `survey2.md` version 1.2 draft, `study_overview.md` version 2.39 draft, and `data_specification.md` version 1.1 draft.
+- **Results:** The intended descriptive field counts consecutive complete days back at the pre-vaccination behavior-and-skill baseline immediately before Onset 2. No return, less-than-one-day return, earlier-only return, uncertain pre-vaccination baseline, unknown response, and no post-vaccination symptoms remain distinguishable. The symptom-end date remains a separate measure and is not treated as return to baseline.
+- **Next steps:** In R03/R06, finalize exact respondent screen wording, branching, and reviewer coding for repeated normal/uncertain periods and test those paths with fictitious cases before enrollment.
+
+## 2026-10-03 — Add six nonactual-date sensitivity anchors
+
+- **What we did:** Added candidate fixed 30-, 60-, and 90-day grids and nominal CDC-schedule anchors shifted by 0, 7, or 14 days earlier for a later descriptive analysis, while preserving actual-vaccination dates as the exposure-timing fields.
+- **Command / executable:** Reviewed current v5 comparator definitions and CDC schedule guidance; edited `protocol/v5/study_overview.md` and `task_list.md` with `apply_patch`; checked the diff and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.40 draft; updated R01 examples in `task_list.md`.
+- **Results:** The proposed fixed-grid origin is child birthdate, with the most recent anchor on or before Onset 2 and the same 90-day convention. The six plots are related sensitivity displays, not independent controls; different grid lengths have different supports. A flat pseudo-anchor histogram or mismatch with the actual-vaccination histogram is not automatically the no-effect expectation or evidence of causation.
+- **Next steps:** A later analysis plan must finalize historical schedule versions, nominal visit/product mapping, eligible denominators, grid-origin choice, binning/phase display, and any explicit no-effect simulation before interpreting observed contrasts.
+
+## 2026-10-03 — Clarify the fixed-grid null expectation
+
+- **What we did:** Corrected the wording for fixed 30/60/90-day anchors to state the simple uniform-phase expectation explicitly and identify the limited conditions that can break it without implying a calendar-day effect on autism.
+- **Command / executable:** Reviewed the grid definition, CDC developmental-screening guidance, and primary research on parent-reported onset timing; edited `protocol/v5/study_overview.md` with `apply_patch`; checked the diff and confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.41 draft.
+- **Results:** Under constant daily onset hazard, accurate dates, phase-independent inclusion, and complete cycles, fixed-grid phases are uniform. A broad smooth age curve should leave the 30-day phase approximately uniform; boundaries, date heaping, age-linked recognition, and study selection can create departures. This does not turn the grid into a calibrated no-effect distribution for actual-vaccination lags.
+- **Next steps:** If used in the later analysis paper, quantify the expected phase distribution under the actual age window, date precision, and selection process rather than assuming exact flatness.
+
+## 2026-10-03 — Consolidate the core A/B/C measures
+
+- **What we did:** Recorded the user's core summary as age at onset, A (actual vaccination-to-onset days), B (complete normal days), and C (reference-to-onset days), with calendar-quarter start and unshifted nominal CDC schedule as the two core references. Kept the other grids and shifted schedules as optional sensitivity displays. Added a remained-normal option to Survey 2 so a child who maintained baseline after vaccination is not coded as failing to return.
+- **Command / executable:** Reviewed the current overview, Survey 2, and R01 draft; edited with `apply_patch`; ran `git diff --check` and the confidential-partner-name scan.
+- **Outputs:** `protocol/v5/study_overview.md` version 2.42 draft; `data_specification.md` version 1.2 draft; `survey2.md` version 1.3 draft.
+- **Results:** Age, A, and C preserve separate Onset 1/Onset 2 values, and Onset 1 remains the preferred lead display. B retains the previously agreed consecutive complete days at the observed pre-vaccination baseline immediately before Onset 2, with maintained/returned/unknown sequence status. CDC nominal-age choices and historical versions remain implementation details to specify; no formal test was added to the data paper.
+- **Next steps:** Finalize the historical nominal schedule and field map in the later analysis/R03 implementation, reconcile normal-period edge cases in R06, and complete the outstanding R01 dependencies before enrollment.
+
+## 2026-10-03 — Clarify B as the adjacent consecutive normal-day count
+
+- **What we did:** Updated Survey 2, the overview, and R01 to define B as consecutive complete normal days immediately before Onset 2, retaining the user's explicit pre-vaccination behavior-and-skill baseline definition. Removed the vaccination-date start/truncation from the count; preserved the separate cause-neutral earlier-period questions.
+- **Command / executable:** Edited the three drafts with `apply_patch`; checked `git diff --check`, document wording, and the confidential-partner-name scan.
+- **Outputs:** `study_overview.md` version 2.43 draft; `survey2.md` version 1.4 draft; `data_specification.md` version 1.3 draft.
+- **Results:** B can include pre-vaccination days and exceed A. Exact, approximate, lower-bound, unknown, and baseline-unestablished answers remain distinct; disconnected periods are not summed and symptom resolution is not substituted for developmental baseline. Children without reported vaccination retain a separately flagged analogous prior-usual-baseline count. No causal conclusion is implied.
+- **Next steps:** Finalize screen routing and reviewer coding for these statuses in R03/R06 before enrollment.
+
+## 2026-10-03 — Add the observed boundary for B
+
+- **What we did:** Added a Survey 2 follow-up describing the observation that stops the backward normal-day count, with free text before symptom categories, date precision, observer, and unknown-boundary options; synchronized overview and R01.
+- **Command / executable:** Reviewed current drafts and shared instructions; edited with `apply_patch`; ran `git diff --check` and confidential-name scan.
+- **Outputs:** `survey2.md` 1.5 draft; `study_overview.md` 2.44 draft; `data_specification.md` 1.4 draft.
+- **Results:** Vaccination alone cannot stop B; observed symptoms or inability to assess baseline are recorded without causal attribution. Zero, unknown, and lower bounds remain separate.
+- **Next steps:** Test boundary, zero, and unknown paths in the final R03 instrument and R06 reviewer manual.
+
+## 2026-10-03 — Adopt single ONSET and vaccination-window normal-day count
+
+- **What we did:** Recorded the user's revised single parent-first-notice ONSET endpoint and B as all complete normal days between vaccination and ONSET, including disconnected periods; replaced the core overview table and Survey 2 B prompts.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; checked whitespace and confidential-name scan.
+- **Outputs:** Overview 2.45, Survey 2 1.6, R01 specification 1.5 drafts.
+- **Results:** Known counts obey 0 ≤ B ≤ A; unknown and no-anchor cases remain distinct. Calendar-day counting excludes ONSET day and counts vaccination day only if normal throughout. Earlier two-onset and backward-count details are explicitly superseded, not silently operative.
+- **Next steps:** Reconcile the remaining legacy overview, reviewer, dictionary, and instrument wording with the controlling amendment before deployment.
+
+## 2026-10-03 — Include B's normal periods in the prompted narrative
+
+- **What we did:** Made Survey 2's vaccination-to-ONSET narrative explicitly cover all normal periods counted in B, including disconnected stretches, alongside non-normal, unassessable, and unremembered periods; added R01 provenance and reconciliation rules.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.7 draft; data specification 1.6 draft.
+- **Results:** Parents describe observed baseline behavior/skills, dates or duration, and observers for the normal periods. B can be checked against the timeline without overwriting raw answers or inferring normal days from silence. The locked 15-day narrative remains separate.
+- **Next steps:** Reconcile legacy two-onset wording and implement timeline/count discrepancy handling in R03/R06 before deployment.
+
+## 2026-10-03 — Reconcile active v5 drafts and expand the tracked R01 checklist
+
+- **What we did:** Removed superseded two-onset endpoints, negative baseline-departure lag rules, transition-gap displays, backward-count B definitions, and the separate X-histogram requirement from active v5 drafts. Retained earlier illness/uncertainty and return-to-normal observations as timeline context. Reconciled reviewer rules, evidence fields, plots and construction rules to one parent-first-notice ONSET, A/B/C, and 0 ≤ B ≤ A.
+- **Command / executable:** Read shared instructions and current v5 files; edited with `apply_patch`; compared saved files with reviewed revisions; ran `git diff --check`, stale-definition scans and confidential-recruitment-name checks across `protocol/v5`.
+- **Outputs:** `study_overview.md` 2.46 draft; `survey2.md` 1.8 draft; `data_specification.md` 1.7 draft; updated `task_list.md` and `document_guide.md`.
+- **Results:** No superseded onset labels or old B instructions remain in active v5 drafts. Original first-notice report, reviewer assessments, accepted date, date precision and separate documentation date remain distinct. Neutral intake, locked 15-day narrative, confidence-only invitation waves, 100-record administrative target, payment rules, three independent one-pass reviews and controlled retention/public-release safeguards are preserved. R01 has explicit completed core/cleanup items and eight open implementation sub-items mapped to R02/R03/R05/R06/R07/R09/R10; it is not marked complete.
+- **Next steps:** Complete R01.1–R01.8 as the field map/dictionary, eligibility, evidence/reviewer manual, normal-day edge cases, nominal-reference construction, governance and processing/tests are finalized. Historical decision entries in this log remain archival, not active study instructions.
+
+## 2026-10-04 — Finalization Q1: preserve unknown-day counts and B bounds
+
+- **What we did:** Recorded the user's approval to retain definitely normal, definitely non-normal, and unknown/unassessable counts in the vaccination-to-ONSET window; added respondent prompts and construction rules.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.9 and data specification 1.8 drafts; updated task list with Q1 marked agreed.
+- **Results:** Reconciled N + D + U = A; with U > 0, B ranges from N to N + U rather than treating N as exact. Unknown/unassessable days are not abnormal. Raw counts and conflicts remain auditable; approximate values stay approximate.
+- **Next steps:** Confirm partial-day handling, then complete the remaining R01.4 decisions and implementation tests. R01 is still open.
+
+## 2026-10-04 — Finalization Q2: complete days and partial returns
+
+- **What we did:** Recorded the user's approval that B counts complete normal calendar days only, with partial-day returns retained separately.
+- **Command / executable:** Read current versions and shared instructions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.10 draft; data specification 1.9 draft; Q2 marked agreed in the task list.
+- **Results:** No fractional addition or rounding into B. Definite non-normal portions prevent a complete-day count; genuinely unassessable periods remain uncertain. B = 0 does not imply no brief return to baseline.
+- **Next steps:** Settle approximate-date handling and continue the remaining finalization questions; R01 remains open.

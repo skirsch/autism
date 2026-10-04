@@ -1,6 +1,45 @@
-## tasks to do
-- see the document_guide.md
-- clean up the study_overview.md doc so we can give that out to tell people about the study
-- create the survey 1 and 2 markdown documents
-- read the IRB feedback 
-- create the IRB submission in the form requested
+# V5 Study Completion Checklist
+
+**Updated:** October 4, 2026
+**Status:** Working checklist; the study has not been submitted to or approved by an IRB.
+
+The core two-survey and records-review design is described in [study_overview.md](study_overview.md). Draft instruments exist in [survey1.md](survey1.md) and [survey2.md](survey2.md). The items below are the remaining work needed to turn that design into a coherent IRB submission and tested implementation. Close one numbered item at a time; record the final decision, document version, and verification in the work log. A checked item means the study team has completed its part, not that the IRB has approved it.
+
+## R01 progress and tracked implementation work
+
+- [x] Core measures agreed: one parent-first-notice ONSET; A = vaccination-to-ONSET days; B = total complete normal days in that window, including disconnected periods, with 0 ≤ B ≤ A; C = reference-to-ONSET days.
+- [x] Prompted chronology explicitly includes all normal periods counted in B; the original 15-day unprompted narrative remains locked and separate.
+- [x] Active v5 drafts reconciled to the current single-ONSET and B definitions; superseded instructions removed. Decision history remains in the dated work log.
+- [x] Finalization Q1 — Preserve definitely normal, definitely non-normal, and unknown/unassessable day counts. With uncertain days, B is a lower bound rather than an exact count; unknown days are not coded abnormal. R01.4 remains open for the other day-coding decisions and implementation tests.
+- [x] Finalization Q2 — B includes complete normal calendar days only. Partial-day returns remain separate, with no fractional-day addition or rounding; B = 0 does not mean no brief return. Ordinary parent observations suffice, with unassessable periods flagged uncertain.
+- [ ] R01.1 — Final field-level dictionary and screen-to-export map, including types, units, status/precision codes, public/restricted disposition, and transformations (R03).
+- [ ] R01.2 — Reproducible eligibility and administrative/scientific flags, including no-anchor, partial-response, age-boundary and 90-day-window edge cases (R02).
+- [ ] R01.3 — Evidence tiers, support for the parent-first-notice date, reviewer form, exact two-of-three acceptance, conflicts and unresolved-value handling (R06).
+- [ ] R01.4 — Normal-day coding and reconciliation: full/partial days, disconnected periods, unassessable days, count precision, A = 0, raw B > A, and narrative discrepancies (R03/R06).
+- [ ] R01.5 — Reproducible nominal CDC reference construction: historical version, dates within recommended ranges, visit grouping, calendar arithmetic, and no-anchor flags. Optional later models are not required data-paper tests.
+- [ ] R01.6 — Public/restricted output schemas, consent permissions, repository, disclosure-risk reviewers/thresholds, controlled access, security and retention implementation (R05/R07).
+- [ ] R01.7 — Versioned processing code, fictitious edge-case fixtures, validation outputs, checksums/dictionary/release manifest, and end-to-end tests (R10).
+- [ ] R01.8 — Final cross-document/IRB-package consistency review after dependent instruments and manuals are completed (R09).
+
+R01 remains open until these dependencies are completed; agreement on core metrics is not deployment or IRB approval. Every unresolved item below remains tracked. Completed document cleanup does not close the dictionary, review, governance, or testing work.
+
+## Scientific decisions
+
+- [ ] **R01 — Data-collection and release specification.** The working draft is [data_specification.md](data_specification.md). This is a data-resource study, not a formal vaccine-effect test. Before enrollment, fix the public-use and restricted variable dictionaries, source/provenance and evidence-quality fields, case and 90-day visit-anchor construction, eligibility and missing-data flags, de-identification and release rules, and reproducible processing code. The data paper may describe possible downstream analyses—single parent-first-notice ONSET age, time since the last vaccination or well visit, vaccine-product and age-at-visit groups, weekday, normal-days, calendar-quarter, child age-quarter, fixed 30/60/90-day grids, and nominal or shifted CDC-schedule benchmarks—without prespecifying or performing hypothesis tests. Analyses selected after viewing the data belong in a separate, explicitly exploratory paper. Release the approved dataset regardless of whether any timing pattern appears; withhold any narrative or case row that cannot be safely de-identified, preserving the restricted original and safe aggregate counts. **Done when:** a versioned specification makes collection, adjudication, data release, and technical validation reproducible without outcome-driven choices.
+- [ ] **R02 — Eligibility and analysis populations.** Freeze the Survey 1 screen, 6–24-completed-month detailed-cohort rule, sudden-regression phenotype, one-child rule, administrative 100-record count, evidence-supported analysis tiers, and handling of uncertain dates, partial responses, out-of-range cases, and children with no in-window visit. **Done when:** the same case would receive the same eligibility and counting flags from written rules without consulting an interim histogram.
+
+## Participant and records workflow
+
+- [ ] **R03 — Final survey instruments and screen behavior.** Turn both Markdown drafts into exact respondent-facing screens with one-question-at-a-time display, required/optional fields, branching, accessible date entry, autosave, the locked 15-day unprompted narrative, and separately logged disclosure/decline/drop-off states. **Done when:** a field map and scripted test cases reproduce every intended path without showing named-event prompts before the narrative is locked.
+- [ ] **R04 — Recruitment and compensation operations.** Finalize neutral invitation and reminders, invitation and response denominators by source, confidence-based waves, the record-priority and batch-size algorithm, objective submission checks, and the proposed $25-to-$100 payment and retroactive-top-up workflow. **Done when:** staff can run invitations and payments from a written procedure without viewing vaccination status or results to choose invitees or payment, subject to IRB approval.
+- [ ] **R05 — Consent and staged disclosure.** Draft Survey 1 and Survey 2 consent and the post-narrative disclosure for IRB review, covering partial-response retention, choice to continue, records authorization, no-revocation terms, 20-year restricted retention, proposed redacted public narratives and coded data, privacy risks, and compensation. **Done when:** the consent and all survey screens say the same thing and the IRB has a specific request to evaluate the delayed named-event disclosure and associated use of pre-disclosure answers.
+- [ ] **R06 — Records and reviewer manual.** Specify the narrow evidence request, secure upload, date/product extraction, contemporaneous evidence tiers, single ONSET and separate earliest-documented-post-change rules, independent one-pass assessments by three reviewers, two-of-three exact agreement, conflicts, unresolved cases, and audit trail. **Done when:** a test set can be abstracted independently and the accepted analysis fields are reproducible from the locked reviews.
+
+## Governance and submission
+
+- [ ] **R07 — Data protection and release plan.** Name the systems, access roles, encryption/key recovery, audit logs, backup and incident procedures, independent re-review path, 20-year retention and final destruction process, narrative redaction, disclosure-risk review, public-use versus restricted datasets, and data-use terms. **Done when:** a data-flow and access matrix reconcile with the consent and can be reviewed by the IRB.
+- [ ] **R08 — Team and recruitment-source arrangements.** Confirm investigator roles, training, funding and conflicts, participating organization's or clinic's responsibilities, invitation-count reporting, data transfers, and any site/reliance agreements. **Done when:** named parties and responsibilities are documented for submission, with required source and reviewing-body approvals tracked before launch.
+- [ ] **R09 — IRB feedback and application package.** Read the prior feedback in `irb_submission/feedback`, map each comment to a response, and prepare the current parent-survey application in the requested form with the overview, instruments, data-collection and release specification, consent, recruitment materials, records manual, privacy plan, and agreements. State that public-use data will be released regardless of the observed timing patterns, subject to approved privacy safeguards. A later analysis paper may be exploratory; any confirmatory claim would need a separately fixed analysis protocol or independent validation data. Do not substitute the older clinic-record packet for this design. **Done when:** every feedback point and form field is addressed and the package passes an internal consistency review before submission.
+- [ ] **R10 — Prelaunch verification.** After required approvals, test the live survey branches, narrative lock, partial-response capture, exports, secure record upload, payment triggers, reviewer isolation, and redaction workflow using fictitious records. **Done when:** failures are fixed, the approved versions match the deployed versions, and a launch signoff is recorded.
+
+**Next item to close:** R01. It defines the released dataset, provenance and quality flags, and technical validation; a later hypothesis-driven analysis paper is outside this data-collection protocol's planned results.
