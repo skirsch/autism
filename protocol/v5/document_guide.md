@@ -1,10 +1,14 @@
 # Relevant documents
 
+Start with [submission_checklist.md](submission_checklist.md) for the assembled current package and unresolved external confirmations. [irb_application.md](irb_application.md) follows the supplied IPAK Form 1/Form 2 structure; it is not signed/submitted. Twelve supporting operational drafts were added October 4, 2026: eligibility/construction, typed dictionary, screen map, consent/disclosure, recruitment/payment, records review, privacy/security/release, governance, application, prior-feedback responses, submission index and validation plan. All remain subject to institutional review and implementation verification.
+
+Run local document/reference checks with `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1` from the repository root. This read-only helper checks local Markdown links and fictitious calendar/count/majority examples; it is not a production dataset pipeline or live survey/security test.
+
 ## study_overview.md
 Controlling overview: one parent-first-notice ONSET date; A vaccination-to-ONSET days; B total complete normal days in that window, including disconnected periods; C calendar-quarter and nominal CDC-reference lags.
 
 ## survey1.md
-Draft of the short, cause-neutral, dateable-onset intake survey. Modeled on the structure of https://www.skirsch.com/autism/survey.htm, with the v5 eligibility rule and no seven-day cutoff.
+Draft of the partner's two-question possible-sudden-onset/contact-interest screen. The partner keeps individual answers and transfers only authorized emails with administrative metadata. All authorized possible-case referrals may complete Survey 2; records-confidence is collected there and used only for later supporting-material request phases.
 
 ## survey2.md
 Draft of the one-question-at-a-time follow-up instrument, with a locked unprompted narrative before staged disclosure and structured records questions. Requires IRB approval and implementation testing.

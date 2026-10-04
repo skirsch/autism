@@ -1361,3 +1361,269 @@
 - **Outputs:** Survey 2 1.10 draft; data specification 1.9 draft; Q2 marked agreed in the task list.
 - **Results:** No fractional addition or rounding into B. Definite non-normal portions prevent a complete-day count; genuinely unassessable periods remain uncertain. B = 0 does not imply no brief return to baseline.
 - **Next steps:** Settle approximate-date handling and continue the remaining finalization questions; R01 remains open.
+
+## 2026-10-04 — Finalization Q3: separate date verification and uncertainty
+
+- **What we did:** Recorded approval to retain approximate-date cases and the user's requirement to track verification and associated uncertainty separately for vaccination and ONSET.
+- **Command / executable:** Read current versions and shared instructions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.11 and data specification 1.10 drafts; Q3 marked agreed in the task list.
+- **Results:** Evidence status, date precision, source and plausible bounds remain distinct for each date; no midpoint or zero-uncertainty imputation. Parent report, reviewer assessments and accepted values are preserved. Unresolved dates do not supply definite exact-day histogram/window classifications.
+- **Next steps:** Agree verification criteria in R06, then continue other finalization decisions. R01 remains open.
+
+## 2026-10-04 — Finalization Q4: evidence-based date verification
+
+- **What we did:** Recorded approval of separate vaccination and parent-first-notice ONSET verification criteria, including the limits of after-only evidence and reviewer agreement.
+- **Command / executable:** Read current versions and shared instructions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.11 draft; Q4 marked agreed in the task list.
+- **Results:** Actual administration records support vaccination dates; contemporaneous first-notice content supports ONSET only at its justified precision. Documentation dates and history completeness remain separate. After-only evidence does not automatically establish first notice, and majority agreement does not create verification.
+- **Next steps:** Decide handling of materially conflicting sources, then finalize R06 tier codes and reviewer instructions. R01 remains open.
+
+## 2026-10-04 — Finalization Q5/Q6: distinct evidence dates and clarification workflow
+
+- **What we did:** Recorded approval of conflict clarification and the user's explicit requirement to store evidence dates separately from claimed ONSET and parental certainty. Added the approved one-request/day-7-reminder/14-day clarification workflow.
+- **Command / executable:** Read shared instructions and current drafts; corrected a read-only PowerShell path-list syntax error and reran the inspection; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.12 and data specification 1.12 drafts; Q5/Q6 marked agreed in task list.
+- **Results:** A document two days after claimed ONSET retains both dates rather than moving or automatically verifying ONSET. Delayed documentation is not itself contradiction. Unresolved conflicts and nonresponses stay in the dataset, with raw accounts, flags and late clarifications preserved without changing locked reviews or imposing compensation penalties.
+- **Next steps:** Decide B review/acceptance handling and finalize the remaining reviewer manual, dictionary and implementation dependencies. R01 remains open.
+
+## 2026-10-04 — Finalization Q7: retain parent and independent reviewer B values
+
+- **What we did:** Recorded approval to preserve the parent's B count alongside independent B assessments from all three reviewers, with exact two-of-three acceptance.
+- **Command / executable:** Read shared instructions and current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 and data specification 1.13 drafts; Q7 marked agreed in task list.
+- **Results:** Parent, reviewer-specific and accepted B values/statuses remain separate, with bounds, precision, evidence and conflicts preserved. Disagreement is not averaged away; agreement alone does not establish objective verification or exactness.
+- **Next steps:** Select or confirm the survey/secure-upload platform, then finalize forms, field map and tests. R01 remains open.
+
+## 2026-10-04 — Finalization Q8: intended IPAK EDU platform
+
+- **What we did:** Recorded the user's choice of the IPAK EDU research platform for both surveys and evidence uploads.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks. No platform access or live capability check was performed.
+- **Outputs:** Data specification 1.14 and study overview 2.47 drafts; Q8 marked selected in the task list.
+- **Results:** Platform choice is distinct from verified configuration, security, functionality, approvals and public-release repository. Capability and workflow validation remain explicit R03/R06/R07/R10 dependencies.
+- **Next steps:** Confirm platform administrator/data-custodian responsibilities and obtain deployment/security details for the operational plan. R01 remains open.
+
+## 2026-10-04 — Q8 clarification: partner-hosted Survey 1
+
+- **What we did:** Corrected the platform assignment following the user's clarification: Survey 1 may be administered by the partner, with IPAK EDU intended for Survey 2 and evidence uploads.
+- **Command / executable:** Read shared instructions and current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.15 and study overview 2.48 drafts; corrected Q8 and added explicit open Q9 custody item in the task list.
+- **Results:** Actual Survey 1 host/version and partner consent/custody/transfer/linkage roles remain implementation requirements. No contact-data handoff permission or security capability was inferred. Stage-specific custodians are still undecided.
+- **Next steps:** Resolve Q9 by naming responsible custody contacts for the partner and IPAK EDU environments, then document their data-flow and access responsibilities.
+
+## 2026-10-04 — Finalization Q9: IPAK-designated custody is an external dependency
+
+- **What we did:** Recorded that the intended Survey 2/evidence custodian is someone designated by IPAK, outside the user's appointment/control.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks. No external communication or confirmation was performed.
+- **Outputs:** Data specification 1.16 draft; Q9 user-facing choice marked resolved, with operational confirmation tracked separately.
+- **Results:** No individual or acceptance/security controls are assumed. IPAK's designated contact and responsibilities remain external R07/R08 dependencies; partner Survey 1 custody/handoff remain separate.
+- **Next steps:** Continue user-controllable decisions; obtain external custody details during preparation of the governance and application package.
+
+## 2026-10-04 — Finalization Q10: public parent-report and accepted metrics
+
+- **What we did:** Recorded approval to include separately labeled parent-report-based and reviewer-accepted A/B/C values and uncertainty/verification flags in the proposed public dataset.
+- **Command / executable:** Read shared instructions and current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.17 draft; Q10 marked agreed in the task list.
+- **Results:** Parent-report A/C are derived from reported dates; B retains its direct count/status. Accepted values remain separate, with provenance and missingness. Consent, IRB and disclosure-risk safeguards still control release; no absolute dates or source files are made public.
+- **Next steps:** Decide whether individual anonymized reviewer judgments also belong in the public-use file, then finalize output schemas and disclosure review. R01 remains open.
+
+## 2026-10-04 — Finalization Q11: individual coded reviewer judgments
+
+- **What we did:** Recorded approval to include individual Reviewer A/B/C coded judgments in the proposed public dataset, not only majority results.
+- **Command / executable:** Read shared instructions and current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.18 draft; Q11 marked agreed in the task list.
+- **Results:** Reviewer-specific safe derived metrics, uncertainty/evidence and disagreement statuses remain separately visible, without absolute dates, identifying notes or source files. Labels are pseudonymous, not a guarantee of anonymity. Disclosure review and approval dependencies remain unchanged.
+- **Next steps:** Decide the release timing commitment and complete public/restricted schemas, disclosure review, and operational dependencies. R01 remains open.
+
+## 2026-10-04 — Finalization Q12: release independent of journal acceptance
+
+- **What we did:** Recorded the user's explicit agreement that approved public dataset/documentation release is independent of journal acceptance.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.19 draft; Q12 marked agreed and Q13 deadline listed open in task list.
+- **Results:** Publication decisions and timing-result direction cannot gate release. Consent, IRB, validation and privacy prerequisites remain. The proposed 90-day deadline was not inferred from the user's narrower confirmation of independence.
+- **Next steps:** Confirm the release deadline/clock start, then complete repository and governance arrangements and other implementation dependencies.
+
+## 2026-10-04 — Finalization Q13: 90-day public-release deadline
+
+- **What we did:** Recorded approval of release within 90 calendar days after review-dataset finalization, subject to required privacy, validation and approval safeguards.
+- **Command / executable:** Read shared instructions and current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.20 draft; Q13 marked agreed in task list.
+- **Results:** The dated finalization milestone starts the clock independently of publication or later privacy signoff. Necessary blocking delays require documented reasons/status and a revised target, not result-dependent withholding or unsafe release.
+- **Next steps:** Assign public-repository selection responsibility and complete release/governance implementation details. R01 remains open.
+
+## 2026-10-04 — Q14: OSF preference and verified transition limitation
+
+- **What we did:** Checked the user's OSF preference against current official guidance before finalizing the repository choice.
+- **Command / executable:** Browsed OSF's official transition/repository guidance; read shared instructions; edited drafts with `apply_patch`; checked whitespace and confidential names.
+- **Outputs:** Data specification 1.21 draft; Q14 listed open with OSF preference and feasibility limitation.
+- **Results:** OSF stops new Projects November 16, 2026 and makes existing Projects read-only February 19, 2027; registrations/preprints continue. Future dataset deposit/version corrections may not fit that workflow. No repository was created or substituted.
+- **Next steps:** Explain the verified limitation and obtain the user's choice of a feasible versioned-data repository or another OSF workflow after checking its suitability.
+
+## 2026-10-04 — Finalization Q14: Zenodo selected for public release
+
+- **What we did:** Recorded the user's approval of Zenodo for the public dataset, documentation and processing code, replacing the earlier OSF preference.
+- **Command / executable:** Read shared instructions/current drafts; relied on the official repository guidance verified in the preceding turn; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.22 and study overview 2.49 drafts; Q14 marked agreed and earlier repository-status references reconciled in the task list.
+- **Results:** Public and restricted repositories remain separate; source evidence stays at IPAK. No account or deposit was created and no data published. Release approval, deadline, ownership, licensing, account configuration and testing obligations remain tracked.
+- **Next steps:** Agree public-use licensing, then assign deposit ownership and finish repository implementation tasks. R01 remains open.
+
+## 2026-10-04 — Finalization Q15: CC BY 4.0 public data/documentation license
+
+- **What we did:** Recorded approval of CC BY 4.0 for the approved public dataset and documentation on Zenodo, distinct from the hosting choice.
+- **Command / executable:** Read shared instructions/current drafts; used official Creative Commons terms verified in the preceding turns; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.23 draft; Q15 marked agreed in the task list.
+- **Results:** Public reuse may include commercial use with attribution and change notices. Rights/licensing authority, narrative permissions and disclosure review remain prerequisites; no restricted evidence or participant data were published/licensed through this editing step. Software licensing remains separate.
+- **Next steps:** Confirm the proposed processing-code license, then continue deposit ownership and remaining operational decisions. R01 remains open.
+
+## 2026-10-04 — Finalization Q16: MIT processing-code license
+
+- **What we did:** Recorded approval of MIT for study-authored processing code, separate from CC BY 4.0 for public data/documentation.
+- **Command / executable:** Read shared instructions/current drafts; used official MIT terms verified in the preceding turn; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.24 draft; Q16 marked agreed and Q15 code-status reference reconciled in the task list.
+- **Results:** Copyright/licensing authority, full license notices and dependency compatibility remain release checks. No existing repository/platform code was relicensed and no deposit made.
+- **Next steps:** Assign Zenodo deposit/maintenance responsibility and complete outstanding governance, reference construction, dictionary and testing work. R01 remains open.
+
+## 2026-10-04 — Finalization Q17: public-release ownership
+
+- **What we did:** Recorded Steve Kirsch as primary Zenodo deposit/maintenance owner, otherwise another study-team member as backup.
+- **Command / executable:** Read shared instructions/current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.25 draft; Q17 marked agreed in the task list.
+- **Results:** Public-deposit responsibility is separate from IPAK restricted-data custody. The backup's name, role acceptance/account access, continuity and correction workflow remain implementation tasks; no account was created or credentials shared.
+- **Next steps:** Settle independent disclosure-review signoff, then complete remaining governance/reference/dictionary/testing requirements. R01 remains open.
+
+## 2026-10-04 — Finalization Q18: two-person release privacy signoff
+
+- **What we did:** Recorded approval of two-person privacy signoff on every public release, including a checker who did not prepare the redactions.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.26 draft; Q18 marked agreed in task list.
+- **Results:** Signoff applies to the complete package, identifying combinations and later corrections, with documented version/checksum and resolutions. It remains separate from scientific voting; no reviewers were appointed or actual release approved.
+- **Next steps:** Specify correction/disclosure-incident handling and complete checker assignments, reference construction, dictionary and testing work. R01 remains open.
+
+## 2026-10-04 — Finalization Q19: versioned corrections and privacy incidents
+
+- **What we did:** Recorded approval of new-version corrections with a public change log and prompt handling of accidental disclosures through IPAK's incident workflow.
+- **Command / executable:** Read shared instructions/current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.27 draft; Q19 marked agreed in the task list.
+- **Results:** Correction history remains visible without silent changes or identifying public notices. Privacy containment is distinct from routine correction releases; repository capabilities, contacts and notification requirements remain operational dependencies. No released file was changed or incident action taken.
+- **Next steps:** Finalize nominal-reference schedule choices and complete remaining dictionary, governance and test dependencies. R01 remains open.
+
+## 2026-10-04 — Finalization Q20: fixed nominal-age grid, no historical customization
+
+- **What we did:** Recorded approval to use the same birthdate-based nominal vaccination-age grid for all children instead of reconstructing each birth-year CDC schedule.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.28 and study overview 2.50 drafts; Q20 agreed and exact grid ages Q21 tracked open; R01.5 updated.
+- **Results:** Core C retains consistent age anchors, grid-version/calendar rules and 90-day/no-anchor handling. Exact grid ages are not yet assumed. This does not infer actual doses/products, invariant biological timing or a flat causal-null histogram. Optional historical simulations remain separate later uses, not core implementation requirements.
+- **Next steps:** Confirm Q21 exact nominal ages, then finalize arithmetic/flags and remaining implementation dependencies.
+
+## 2026-10-04 — Finalization Q21: exact grid ages and younger-child exclusion
+
+- **What we did:** Recorded approval of nominal grid ages 2/4/6/12/15/18 months and clarified that the existing Survey 2 onset-age cohort stays 6–24 completed months; children below 2 months and aged 2–5 months remain excluded from detailed follow-up.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.29 and study overview 2.51 drafts; Q21 agreed and R01.5 implementation tasks updated.
+- **Results:** Reference ages do not broaden eligibility. Select the most recent grid point on/before ONSET within 90 days, otherwise no anchor; month dates are calculated from original birthdate with a month-end fallback. No additional grid points are assumed.
+- **Next steps:** Implement/test month-end and 90-day boundary cases; settle geographic intake/context fields and finish remaining dictionary/governance/implementation work.
+
+## 2026-10-04 — Finalization Q22: country-only Survey 2 context
+
+- **What we did:** Recorded approval to collect country of residence at vaccination and ONSET in Survey 2, without city or address.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Survey 2 1.14 and data specification 1.30 drafts; Q22 marked agreed in task list.
+- **Results:** Different/unknown residence countries remain visible; vaccination branch is not applicable without an eligible vaccination. No country-specific grid customization or inferred administration location. Public country fields/combinations remain subject to disclosure-risk review.
+- **Next steps:** Resolve duplicate submissions for the same child, then complete the field map/dictionary, reviewer forms, governance and tests. R01 remains open.
+
+## 2026-10-04 — Finalization Q23: confirmed duplicate child submissions
+
+- **What we did:** Recorded approval to link confirmed duplicate submissions into one child-level case while retaining all original accounts and disagreements.
+- **Command / executable:** Read shared instructions/current versions; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.31 draft; Q23 marked agreed in task list; response-layer definition reconciled to permit multiple immutable submissions per confirmed child.
+- **Results:** Unique children count once toward the administrative target and each plot; response-level funnel counts remain separate. Suspected duplicates are not automatically merged. Restricted matching, confirmation, audit/review packet, operational and payment procedures remain to be finalized; no actual participant data was linked or changed.
+- **Next steps:** Resolve duplicate-response compensation without changing guaranteed good-faith payment commitments, then complete remaining operational/dictionary/reviewer/governance/test work.
+
+## 2026-10-04 — Finalization Q24: child-level payment and existing promises
+
+- **What we did:** Recorded approval of normally one full-response payment entitlement per confirmed child, with no additional payment for repeat uploads or corrections and existing separate-parent promises honored.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Data specification 1.32 draft; Q24 marked agreed in task list.
+- **Results:** Child-level compensation and applicable top-ups require advance disclosure and restricted payment auditing; existing guaranteed good-faith and separately promised payments are not clawed back. Suspected duplicates alone do not justify denial, and scientific voting remains independent of payment.
+- **Next steps:** Reconcile participant-facing payment terms in R04/R05, confirm instrument language scope, and complete remaining dictionary/governance/reviewer/test dependencies.
+
+## 2026-10-04 — Finalization Q25: English-only administration
+
+- **What we did:** Recorded English-only initial surveys, participant information and consent, and the associated participation limitation.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; checked whitespace and confidential-name references.
+- **Outputs:** Survey 1 1.2, Survey 2 1.15 and data specification 1.33 drafts; Q25 checked in task list.
+- **Results:** Later translated versions require review/approval; submitted non-English material remains retained and flagged for review. Core measurement decisions are settled; leadership/contact and funding/conflict details remain, alongside external confirmations and implementation work.
+- **Next steps:** Complete administrative details, field dictionary, reviewer manual, consent/security documentation and prelaunch tests; do not treat the drafts as IRB-ready.
+
+## 2026-10-04 — Funding source and PI recommendation
+
+- **What we did:** Recorded the user's confirmation that Children's Health Defense funds the v5 study; assessed PI responsibilities and Brian Hooker's published affiliation without appointing him.
+- **Command / executable:** Read shared instructions/current governance drafts; consulted HHS investigator guidance and CHD's Hooker biography; edited with `apply_patch` and checked the diff.
+- **Outputs:** Overview 2.52 and specification 1.34; funding note in completion checklist.
+- **Results:** Funder identity is confirmed, but funding terms/conflicts and PI acceptance/institutional eligibility remain pending. Earlier alternative submission drafts are not treated as current v5 appointments.
+- **Next steps:** Confirm the PI choice and acceptance, participant contact, and funding/conflict details before finalizing governance materials.
+
+## 2026-10-04 — Proposed leadership approved
+
+- **What we did:** Recorded the user's approval of Brian Hooker as proposed PI and Steve Kirsch as co-investigator/project lead.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Overview 2.53 and specification 1.35; leadership status synchronized in task list.
+- **Results:** Brian's acceptance and IPAK eligibility/training confirmation remain pending; no external appointment or communication was made. Reviewer independence rules remain unchanged. CHD funding and Brian's CHD relationship require documented disclosure and conflict management.
+- **Next steps:** Confirm participant contact, funding terms/conflicts and external roles; complete remaining IRB documentation and implementation tests.
+
+## 2026-10-04 — Participant contact assigned
+
+- **What we did:** Recorded Steve Kirsch as the participant contact for study questions or concerns and synchronized the consent draft contact placeholders.
+- **Command / executable:** Read shared instructions and current drafts; edited with `apply_patch`; checked whitespace and confidential-name references.
+- **Outputs:** Overview 2.54, specification 1.36, Survey 1 1.3 and Survey 2 1.16 drafts; checklist contact note.
+- **Results:** Contact person is settled; actual contact details and any separate IRB participant-rights contact remain pending. PI responsibility and restricted-data custody remain unchanged.
+- **Next steps:** Supply contact details, confirm funding/conflict terms and external roles, and complete the remaining IRB documents and tests.
+
+## 2026-10-04 — Dedicated participant-contact mailbox plan
+
+- **What we did:** Recorded approval of a dedicated study mailbox, preferably provided by IPAK, monitored by Steve with an authorized backup; synchronized survey contact placeholders.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Overview 2.55, specification 1.37, Survey 1 1.4 and Survey 2 1.17; updated checklist.
+- **Results:** Address, provisioning, access, backup and correspondence retention require IPAK confirmation. No mailbox was created or outside party contacted. Evidence submission remains through secure upload rather than ordinary email.
+- **Next steps:** Obtain external operational confirmations and funding/conflict terms; complete remaining documents and tests.
+
+## 2026-10-04 — Funding-independence proposal approved
+
+- **What we did:** Recorded organizer approval of no result-dependent CHD suppression/veto of dataset release, with privacy/IRB safeguards retained and funding/team interests disclosed.
+- **Command / executable:** Read shared instructions/current drafts; edited with `apply_patch`; ran whitespace and confidential-name checks.
+- **Outputs:** Overview 2.56 and specification 1.38; checklist funding-independence note.
+- **Results:** This is the organizer-approved proposed arrangement, not a confirmed CHD contract. Amount, recipients, actual terms, funder acceptance and individual conflict disclosures remain pending.
+- **Next steps:** Consolidate drafts and complete IRB materials/tests while obtaining external operational and funding confirmations.
+
+## 2026-10-04 — V5 operational documents and IPAK application assembled
+
+- **What we did:** Created twelve supporting Markdown drafts: eligibility/construction, logical typed dictionary, screen/branch map, stage-specific consent/disclosure, recruitment/compensation, evidence/reviewer manual, privacy/security/release, governance/confirmations, IPAK Form 1/Form 2 application, full earlier-feedback response matrix, submission index and fictitious validation plan. Read the prior DOCX feedback and supplied IPAK PDF template; explicitly distinguished the changed linked-source design from older anonymity/unlinking assumptions. Reconciled survey consent references, same-day/90-day visits, normal-day discrepancy capture and English-only implementation; updated overview/specification/guide/checklist/README.
+- **Command / executable:** Read shared instructions and relevant memory, current v5 drafts, DOCX XML and `wsl pdftotext -layout` for the supplied PDF; checked HHS consent/withdrawal/child guidance; authored via `apply_patch`. Added/run `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1`; ran `git diff --check` and active-v5 confidentiality/superseded-terminology scans.
+- **Outputs:** Twelve new supporting drafts version 1.0; overview 2.57, specification 1.39, Survey 1 1.5, Survey 2 1.18; read-only local reference helper and executable guide. Package starts at `protocol/v5/submission_checklist.md` and `protocol/v5/irb_application.md`.
+- **Results:** Initial local helper passed 127 checks including 68 relative links, zero failures. Whitespace and confidential-name/superseded endpoint scans clean. These are document/reference checks, not production-export, live platform, security, payment, reviewer-calibration or regulatory verification. Required institutional/funder contacts/terms, PI acceptance/training, permissions/geography, official statements/signatures and deployed workflow remain tracked. No real participant data processed, external message/submission/deposit made or commit/push performed.
+- **Next steps:** Study-team review of proposed operational defaults and full consent; obtain external confirmations/official attachments; implement production export/build and test approved live versions before enrollment. R01–R10 remain open at their verification/approval gates rather than being checked off merely for creating drafts.
+
+- **Final verification:** After the last cross-reference was added, the local helper passed 128 checks including 69 relative links, zero failures; whitespace and active-v5 confidentiality/superseded-term scans remained clean.
+
+## 2026-10-04 — Current-age and consent clarification
+
+- **What we did:** Checked whether the participant's child must currently be under 18, distinguishing onset age from current legal consent status.
+- **Command / executable:** Read current governance/consent clauses and HHS OHRP research-with-children FAQs, including now-adult consent/waiver guidance.
+- **Outputs:** Advice only; no new age restriction or protocol eligibility change.
+- **Results:** No universal research requirement excludes adults. Parental permission alone does not automatically authorize research on an adult child's identifiable records; applicable adult consent, legally authorized representation or IRB-approved waiver must be established. A minor-only restriction is a possible design choice, not an assumed IRB mandate; current-age-at-majority transition also matters during retained identifiable research.
+- **Next steps:** Seek IPAK's current-age/authority and consent-transition determination before choosing any minor-only restriction; retain the existing 6–24-month onset criterion.
+
+## 2026-10-04 — Recruitment target 100 and validated minimum 25
+
+- **What we did:** Recorded the user's clarification that 100 is the target and 25 fully validated unique-child cases is sufficient to proceed if the target cannot be achieved.
+- **Command / executable:** Read shared instructions/current target and tier rules; edited with `apply_patch`; reran local document/reference checks and whitespace/confidential-name scans.
+- **Outputs:** Overview 2.58, specification 1.40, eligibility/application/recruitment/submission checklist 1.1; updated master checklist.
+- **Results:** Kept scientific validation distinct from administrative receipt and payment; did not change wave/compensation rules to stop at 25 or make causal-power claims. Exact validated-count handling for no-anchor and approximate-date cases is explicitly pending before enrollment, not silently invented. Approved-data release/payments remain independent of the achieved validation count and result direction.
+- **Next steps:** Freeze that count definition with the evidence/manual rules and approved recruitment end conditions; obtain remaining institutional confirmations and tests.
+
+## 2026-10-04 — Partner email referrals and confidence-free Survey 2 access
+
+- **What we did:** Implemented the user's confirmed revision: partner keeps its two-question possible-sudden-onset/contact-interest screen and transfers authorized emails only, with administrative source/batch/permission attestations and available aggregate counts. Every authorized possible-case referral may complete Survey 2, including best estimates, low confidence and unknowns. Moved date-confidence and neutral records-confidence collection into Survey 2 after the locked original narrative; phased selection now applies only to later supporting-material requests.
+- **Command / executable:** Read shared instructions, relevant memory and current v5 drafts; edited via `apply_patch`. Ran `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1`, `git diff --check`, active-v5 confidential-name and retired-invitation-rule scans. Added ten local text-contract checks to the existing helper, without claiming production/live verification.
+- **Outputs:** Overview 2.59; Survey 1 1.6; Survey 2 1.19; specification 1.41; reconciled eligibility, dictionary, screen map, consent, recruitment, privacy, governance, IRB application/feedback, validation, submission index, guide and master checklist. Updated executable guide.
+- **Results:** Local helper passed 135 checks including 66 relative links, zero failures. Whitespace and active-v5 confidential-name scans clean. Retired partner confidence/eligibility columns and confidence-selected Survey 2 rules removed from active prose; the helper names a retired field only to assert its absence. Survey and records-request denominators are distinct; request selectors use a minimized exposure-free queue. Kept the existing payment-checkpoint clock at the first Survey 2 invitation batch; request yield matures from each records request. No participant data processed, partner contacted, deployment/submission/deposit made or commit/push performed.
+- **Next steps:** Confirm partner privacy/retention, institutional role and permission/secure-handoff arrangements; verify aggregate counts and Survey 2 enrollment/end rules. Implement/test the revised all-referral invitations, A4, deferred record screens, selection queue and export/consent linkage before launch. Partner-owned screening is not asserted exempt or outside IRB oversight. R01–R10 remain open at their approval/verification gates.

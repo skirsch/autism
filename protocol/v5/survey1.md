@@ -1,77 +1,52 @@
-# Survey 1: developmental-timing intake
+# Survey 1: partner contact-interest screen
 
-**Version:** 1.1 draft
-**Date:** September 29, 2026
-**Status:** Working instrument for IRB review; not approved for recruitment  
+**Version:** 1.6 draft
+**Date:** October 4, 2026
+**Status:** Proposed partner wording for IRB and source review; not approved for recruitment
 **Controlling design:** [study_overview.md](study_overview.md)
 
-This is a short, cause-neutral intake modeled on the structure of the [existing short survey](https://www.skirsch.com/autism/survey.htm). It deliberately replaces that survey's “less than 7 days” regression rule with an identifiable **calendar date** of first clear change. No recruitment partner is named in this instrument. All respondent-facing text below, including consent, remains subject to IRB review. Bracketed items require implementation decisions before use.
+The partner administers this brief screen for its own records. It identifies a possible sudden-onset child and obtains explicit permission to share an email address for a study invitation. The study receives authorized email referrals, not the partner's individual screening answers. Partner custody/retention and its regulatory role require confirmation; “for its own records” is not an automatic exemption or nonengagement determination.
 
 ## Respondent-facing draft
 
-### About this survey
+### About this brief screen
 
-We are studying how children developed before and around the first noticeable changes associated with their later autism presentation. We are especially interested in children who appeared to develop normally and then had a clear change in behavior or skills that a parent can place on a calendar date. The change need not have been complete in one day.
+We are helping a research team contact parents of autistic children who appeared to develop normally and then had a clear, lasting change in behavior or skills that a parent can place on a date. The entire change need not have happened overnight. This English-language screen asks whether that description fits and whether you would like an invitation to learn about the study. No records or dates are requested here.
 
-This brief survey asks about one child. You may be invited to a separate follow-up study about the timing and documentation of that change. Saying yes to follow-up now does not obligate you to complete another survey or provide records.
+[Partner identifies itself to its members and supplies its approved privacy notice, including what it keeps and for how long. Identify the receiving study team and include truthful study/funding/interest information required by the IRB-approved recruitment materials. Do not name candidate events or suggest a cause.]
 
-Participation is voluntary. [Insert IRB-approved investigator/contact information, privacy notice, estimated completion time, and any required institutional language.] The study plans to retain submitted answers for 20 years after study closure. A coded dataset may be made public; direct contact information will not. Submitted answers cannot be withdrawn after submission under the proposed study policy. These terms require IRB approval before this survey is used.
+### Question 1 — possible sudden-onset child
 
-### Consent
+**Do you have an autistic child who appeared to develop normally and then had a clear, lasting loss or reduction of a skill, a clearly new marked behavior, or both, whose first-noticed date you can identify or try to estimate?**
 
-I am at least 18 years old and the child's parent or legal guardian. I have read the information above and voluntarily agree to submit my answers for this study.
+- Yes.
+- No.
+- Unsure.
 
-- I agree and wish to continue.
-- I do not agree. [End survey; collect no study answers.]
+A professional diagnosis document is not needed for this screen. It is fine to be unsure of the exact date; the study can collect your best estimate and confidence later. If more than one child fits, the study will explain which child to answer about.
 
-### Which child should you answer about?
+### Question 2 — interest and email-sharing permission
 
-If you have more than one autistic child, answer about the **youngest child who progressed normally and then had an identifiable date, at age 6 through 24 completed months, when a clear change in behavior or skills was first noticed by one or both parents**. If no child fits that description, answer about your youngest autistic child. Please answer about only that child throughout this survey. A parent's report that the child has autism is sufficient here; a diagnostic record is not required.
+**Would you like an invitation to learn about the study, and may we share your email address with [identified study team] so they can contact you?**
 
-1. **What year was this child born?** [Four-digit year; allow “unsure” if required by IRB/implementation.]
+- Yes, I would like an invitation and authorize sharing my email.
+- No.
 
-2. **Which description best fits this child's development?** [Select one.]
-   - Development was slower than expected from early on, without a clear later loss of skills or new marked behavior.
-   - Development progressed normally, then plateaued without a clear dated change.
-   - Development progressed normally, then changed gradually; I cannot identify a first clear day of change.
-   - Development progressed normally, then I noticed a clear loss or substantial reduction of a skill on an identifiable date.
-   - Development progressed normally, then I noticed a clearly new, marked behavior on an identifiable date, even if no skill was lost.
-   - Development progressed normally, then both a skill changed and a clearly new, marked behavior appeared on an identifiable date.
-   - A different or mixed pattern.
-   - Unsure.
+**If Yes:** Enter or confirm the email address you authorize us to share. [Contact field, not an additional research question.]
 
-**If one of the three identifiable-date options is selected, show questions 3–5.** Do not require the entire change to occur within seven days. A first noticed behavior such as head banging may qualify even without skill loss.
-
-3. **How old was your child when you first clearly noticed that change?** Enter age in **completed months** (for example, 18 if the child had turned 18 months but not yet 19 months). [Integer months; allow “unsure.”]
-
-4. **How confident are you that you could determine the calendar date when you or the other parent first clearly noticed the change?** You do not need to look it up or enter the date in this short survey. [Select one.]
-   - I know the date now.
-   - I am confident I could determine the date by checking information I have.
-   - I might be able to narrow it to a few possible dates, but not one date.
-   - I do not think I could determine a calendar date.
-
-5. **How confident are you that you have, or could obtain, records or dated materials that may help establish when the change first occurred?** Examples include medical or therapy records, dated messages, calendar entries, photographs, or videos. [Select one; these four choices determine invitation order.]
-   - Definitely available now.
-   - Probably available; I know how to obtain them.
-   - Might be available; I would need to investigate.
-   - Probably unavailable.
-
-6. **May the study team contact you about a possible follow-up survey or request for relevant records?** A Yes answer does not commit you to future participation or record sharing. [Ask everyone.]
-   - Yes.
-   - No.
-
-   **If Yes:** What email address should we use? [Email, stored separately from research answers.] [Optional alternative contact method only if approved and needed.]
+An invitation does not commit you to taking part, answering another survey or sharing records. The study team will explain its research and ask for consent before collecting research answers. Participation or refusal will not affect your membership, services or benefits.
 
 ### Thank you
 
-Thank you. If you agreed to follow-up, the study team may contact you with more information. You may decline any future invitation.
+Thank you. If you authorized contact and indicated Yes or Unsure to the first question, the study team may send you an invitation. You can decline that invitation or ask not to be contacted again.
 
-## Routing and data rules for implementation
+## Partner administration and handoff
 
-- Survey 1 invitation, purpose statement, consent, and questions must not name vaccination or disclose a preferred exposure hypothesis. Recruitment source is recorded by an internal source code, not named in this instrument.
-- Present one child-selection rule before the child questions. Retain and count all submitted patterns, including nonqualifying and uncertain answers; do not silently discard them.
-- Preliminary Survey 2 invitation eligibility requires adult parent/guardian consent, the previously normal/identifiable-date pattern, **parent-reported confidence that a specific first-clear-change date is known or can be determined** (either of the first two choices in question 4), reported age **6–24 completed months inclusive**, and permission/contact information for follow-up. The parent need not enter or prove the date in Survey 1. Missing or inconsistent answers are flagged rather than imputed; actual dateability and evidence quality are assessed later.
-- Assign one of the four records-confidence groups from question 5 only. Invitation waves must not use any later exposure information. The initial and subsequent batch algorithm is in the overview.
-- Store the parent's date-confidence answer separately from the reported onset age, screening flags, invitation status, and later Survey 2/reviewer dates. Survey 1 collects **no actual onset date**. Do not infer one from the reported age or another event.
-- Track invitations, starts, consent decisions, completions, follow-up permission, and missingness by recruitment source. Do not infer a reason when someone stops.
-- This is a **draft**, not a finalized consent or deployment-ready survey. Final privacy/public-use language and the ability to use partial responses require specific IRB review.
+- Ask only the two questions above plus the permitted email field. Do not collect birth year, onset age/date, date confidence, records-confidence or vaccination information for this referral workflow.
+- Refer Yes/Unsure possible cases with affirmative email-sharing permission and a usable email. Do not exclude referrals because a date or evidence may be uncertain.
+- All authorized possible-case referrals receive a Survey 2 invitation within the approved recruitment window; records-confidence does not control that invitation.
+- Transfer only the authorized email list through the approved secure route. Source/batch identifiers and transfer-permission audit attestations accompany the handoff as administrative metadata, not individual answers. The study assigns its own referral/invitation IDs.
+- The partner retains its individual screening answers under its disclosed policy; they are not research rows in the study dataset or included in the study's public release. Do not impose the study's 20-year retention or public licensing on partner records.
+- Request aggregate attempted/delivered invitations, responses, Yes/No/Unsure and authorized-referral counts where available. Record unavailable counts rather than inferring them from referrals.
+- Permission to pass an email is permission for contact, not research consent, parental permission/adult-child authority or authorization to disclose source evidence. Confirm partner role, screening text, privacy notice, secure handoff and applicable IRB/site determinations before use.
+- Survey 2 supplies the one-child rule, research consent, onset-age/date/uncertainty and records-confidence fields. Its unprompted narrative remains the first substantive research question; phased records requests occur afterward.
