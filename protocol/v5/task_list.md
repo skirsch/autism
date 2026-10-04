@@ -63,6 +63,10 @@ Proposed operational defaults to confirm/freeze before use: first-completed pare
 
 R01 remains open until these dependencies are completed; agreement on core metrics is not deployment or IRB approval. Every unresolved item below remains tracked. Completed document cleanup does not close the dictionary, review, governance, or testing work.
 
+## October 4 Form 2 submission draft
+
+The canonical [IPAKIRB Form 2 proposal](../../irb_submission/IPAKIRB_Form_2_v5.md) now follows the supplied template's exact section order. Appendices include all earlier-feedback topics, a consolidated TBD register and proposed participant information/disclosure/records authorization. Form 1 intake remains in `irb_application.md`. The 25-case validation-count definition remains TBD; no unanswered recommendation has been adopted. R09 drafting is advanced, not closed: signatures, official statements, institutional determinations and final attachments remain pending. No IRB transmission or enrollment has occurred.
+
 ## October 4 revision — partner email referrals and all-referral Survey 2
 
 - [x] Partner Survey 1 asks only about a possible sudden-onset child and interest/explicit permission to share email. Partner keeps individual responses; study receives authorized emails and administrative source/batch/permission attestations, plus available aggregate counts.

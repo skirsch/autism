@@ -1,10 +1,10 @@
 # Submission package index and remaining confirmations
 
-**Version:** 1.2 draft
+**Version:** 1.3 draft
 **Date:** October 4, 2026
 **Status:** Working package assembled; external attachments and approvals pending
 
-Start with [irb_application.md](irb_application.md), organized to IPAK Form 1 and Form 2. This directory contains the current editable proposal and attachments. It is not a signed, institution-approved or submitted application. Actual source identities/personal contacts/signatures/agreements belong in a restricted regulatory copy; never place participant data in this public repository.
+Start with the canonical [IPAKIRB Form 2 proposal](../../irb_submission/IPAKIRB_Form_2_v5.md), following the supplied PDF's exact section order with earlier-feedback responses, proposed participant text and a TBD register. [irb_application.md](irb_application.md) retains the working Form 1 intake and points to Form 2; the operational attachments remain in this directory. None is signed, institution-approved or submitted. Actual source identities/personal contacts/signatures/agreements belong in a restricted regulatory copy; never place participant data in this public repository.
 
 ## Draft attachment index
 
