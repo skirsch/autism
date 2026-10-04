@@ -1,6 +1,6 @@
 # Survey screen and branch specification
 
-**Version:** 1.1 draft
+**Version:** 1.2 draft
 **Date:** October 4, 2026
 **Status:** Proposed implementation specification; platform behavior not verified
 
@@ -54,8 +54,9 @@ All compound prompts below become separate screens, with neutral screen labels. 
 | C04 | Date/uncertainty and last-normal/first-changed clarification | All; context not replacement onset |
 | C05 | Diagnosis status, then approximate date and clinician type if Yes | All status; conditional details |
 | C06 | Free-text other events, then one event type per screen and conditional dates/descriptions | All; yes/no/unsure, no preferred answer |
-| C07a–d | Regular well visit in window; most recent date; shots actually given; later vaccination | All presence; conditional details |
-| C08a–d | Vaccination in window; most recent date; products on that date; any later vaccination; same-day administration/notice order if applicable | All presence; conditional details; allow same-day/date uncertainty |
+| C07a–d | Regular well visit within 90 days; most recent date; shots actually given; later vaccination | All presence; conditional details; separate well-comparator eligibility |
+| C08a–d | Any vaccination on/before ONSET; most recent date with no maximum lookback; products on that date; later vaccination; same-day order | All presence; conditional details; allow approximate/unknown dates; `vax_on_or_before_onset` |
+| C08e | Any vaccination within 90 days of ONSET? Yes / No / Unsure | All; `vaccination_within_90_days`, independent well-comparator assessment; no cutoff on vaccination request |
 | C01b | Country living in at selected eligible vaccination | Eligible reported vaccination only; same as ONSET/unknown allowed |
 | C09a–e | Illness/unusual observations before vaccination; description; observed pre-vaccination baseline; usual functioning immediately before; last usual date if not clearly Yes | Eligible reported vaccination only |
 | C10a/b | Routine/modified/unsure plan; immediately previous distinct vaccination date or interval/no earlier/unknown | Every reported eligible vaccination, not modified-plan-only |
@@ -72,7 +73,7 @@ All compound prompts below become separate screens, with neutral screen labels. 
 | C14d–h | Per-item creation date; event date described; parent first notice; certainty/bounds; documentation delay explanation | Submitted items; unknown allowed |
 | S2-END | Submit, retained-data/payment/contact reminder and thanks | All completers; no payment promise based on scientific result |
 
-Repeat C08 date/products when a later visit is identified; retain prior entry and change link. Unsure history does not branch automatically to confirmed vaccine-free well visit. No-vaccination/no-well cases still reach lifetime history, materials, authorization and closing; A/B are not applicable. Conflicting birthdate/ONSET values trigger a neutral review warning and later clarification, not loss of submitted material.
+Repeat C08 date/products when a later visit is identified; retain prior entry and change link. Unsure history does not branch automatically to confirmed vaccine-free well visit. An older vaccination remains the A/B anchor even when a separate well-visit lag applies; never substitute the well date. No known vaccination on/before ONSET means A/B are not applicable or unresolved as appropriate, not zero. All routes still reach lifetime history, materials, authorization and closing. C02 and B cover the full vaccination-to-ONSET period; allow approximate periods and unknown days rather than forced precision for long lookbacks. Conflicting birthdate/ONSET values trigger a neutral review warning and clarification, not loss of submitted material.
 
 ## Partial and operational states
 

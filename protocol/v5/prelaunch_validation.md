@@ -1,6 +1,6 @@
 # Validation fixtures and prelaunch acceptance plan
 
-**Version:** 1.1 draft
+**Version:** 1.2 draft
 **Date:** October 4, 2026
 **Status:** Test plan with fictitious cases; live platform and production pipeline tests not yet performed
 
@@ -11,8 +11,8 @@ Use no actual families or identifying documents in testing. This plan tests proc
 | ID | Fictitious input | Required result |
 | --- | --- | --- |
 | F01 | ONSET and vaccination both 2024-07-01 | A=0; B=0 under complete-day convention; intraday order unknown unless supplied |
-| F02 | ONSET 2024-07-01; administration 2024-04-02 | Lag 90 eligible |
-| F03 | Same ONSET; administration 2024-04-01 | Lag 91; outside actual visit window, retained context |
+| F02 | ONSET 2024-07-01; administration 2024-04-02 | Vaccination lag 90 eligible; no maximum vaccination lookback |
+| F03 | Same ONSET; administration 2024-04-01 | Vaccination lag 91 remains eligible for A/B and minimum/target if other criteria met |
 | F04 | Administration 2024-07-02 | Future relative to ONSET; no eligible anchor |
 | F05 | Quarter reference for 2024-03-31 | 2024-01-01, C=90; quarter reference is not actual vaccination |
 | F06 | Quarter reference for 2024-09-30 | 2024-07-01, C=91 allowed; no false 90-day quarter truncation |
@@ -26,7 +26,7 @@ Use no actual families or identifying documents in testing. This plan tests proc
 | F14 | Exact A=20; N=5,D=10,U=5 | B bounds 5–10; lower bound not exact B=5; U not abnormal |
 | F15 | Exact A=3; one partial-day return and two unknown days | No rounding partial day into B; N=0,D=1,U=2; B bounds 0–2, not proven exact zero |
 | F16 | Parent B=12 with exact A=10 | Preserve raw discrepancy, clarify; no clamping to 10 |
-| F17 | No eligible vaccination; vaccine-free well visit | Well-to-ONSET defined as appropriate; A/B not applicable, not zero |
+| F17 | No known vaccination on/before ONSET; qualifying vaccine-free well visit | Well-to-ONSET defined as appropriate; A/B not applicable, not zero |
 | F18 | Never-vaccinated parent report; no visit; dated onset item submitted | Retain no-anchor/parent-never label; full-payment eligible with complete tasks; not target-complete |
 | F19 | Visit document supplied, onset not corroborated | Administrative count may qualify; scientific evidence-supported tier does not automatically qualify |
 | F20 | Review dates June 1 / June 1 / June 3 | Majority date June 1; two agreement; no averaging |
@@ -44,6 +44,9 @@ Use no actual families or identifying documents in testing. This plan tests proc
 | F32 | Partner handoff contains individual screen answers or no permission attestation | Quarantine/resolve transfer authority; do not import as approved research rows |
 | F33 | Survey 2 complete; records phase not opened | Completed survey retained; no automatic records request/upload or materials payment; request state separate |
 | F34 | A4 recorded before disclosure; exposure answers later present | Selection queue exports permission/reported eligibility/original confidence only, not exposure/timing/reviewer fields |
+| F35 | Most recent vaccination 200 days before ONSET; B partly unknown | A=200 eligible; retain B bounds/unknown, not zero; no long-lag exclusion from target/minimum if other criteria met |
+| F36 | Most recent vaccination >90 days earlier; vaccine-free regular well visit 20 days earlier; no later vaccination established | Both vaccination A/B and independent well lag=20 may apply; once per child in each plot |
+| F37 | Vaccine-free regular well visit 90 / 91 days before ONSET, with no vaccination in prior 90 days | Well anchor eligible at 90, not 91; vaccination lookback and nominal reference rules remain distinct |
 
 ## Survey and custody tests
 

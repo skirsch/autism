@@ -5,9 +5,10 @@
 - Script: `protocol/v5/validation/validate_drafts.ps1`.
 - Run from repository root: `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1`.
 - Requires PowerShell 7; no external packages, network, secrets or participant files.
-- Reads the Markdown files in `protocol/v5` and checks required documents, version headers and relative links; tests a subset of fictitious calendar/lag/count/exact-majority examples in `prelaunch_validation.md`. Also checks text contracts for the two-question partner screen, all-referral Survey 2 access, pre-disclosure confidence fields, deferred material requests and minimized selection queue. These are not live routing or permission tests.
+- Reads the Markdown files in `protocol/v5` and checks required documents, version headers and relative links; tests a subset of fictitious calendar/lag/count/exact-majority examples in `prelaunch_validation.md`. Also checks text contracts for the two-question partner screen, all-referral Survey 2 access, pre-disclosure confidence fields, deferred material requests, minimized selection queue and the vaccinated-case minimum flag. These are not live routing, evidence adjudication or permission tests.
 - Prints JSON with check/link/failure counts; exits nonzero on failures. Does not write files, transform production exports, inspect security configuration or submit anything.
 - This is a local document/reference helper, not the production processing pipeline or proof that a platform workflow/IRB requirement is satisfied.
+- Vaccination arithmetic has no maximum lookback; fixtures include 91- and 200-day lags. Separate well-visit and nominal-age reference checks retain 90-day limits. The dual-anchor fixture tests date arithmetic, not vaccination-history evidence or production selection.
 
 ## Onset-age histogram and CDC reference
 

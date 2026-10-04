@@ -1,6 +1,6 @@
 # Participant information consent and staged disclosure
 
-**Version:** 1.1 draft
+**Version:** 1.2 draft
 **Date:** October 4, 2026
 **Status:** Proposed respondent text and explicit IRB requests; not approved consent
 
@@ -53,7 +53,7 @@ I understand and agree to the initial account and timing questions, saved-partia
 
 ## Additional disclosure after A1 lock and A2–A4 saving
 
-The next part asks about events and medical care before the change, including illness, medications, healthcare visits and vaccination. We may request existing records or dated materials to check dates and descriptions. We will ask about the most recent vaccination within 90 days before the first noticed change, products given on that date, and any normal or uncertain periods between that visit and the change. If none occurred, we ask about a regular well-child visit without vaccination in that window, if any. We do not require a complete vaccination history. Families with neither visit can still share onset-related evidence.
+The next part asks about events and medical care before the change, including illness, medications, healthcare visits and vaccination. We may request existing records or dated materials to check dates and descriptions. We will ask about the most recent actual vaccination on or before the first noticed change, even if more than 90 days earlier, products given on that date, and normal or uncertain periods between that visit and the change. Separately, if no vaccination occurred within 90 days of the change, we ask about a regular well-child visit without vaccination within that period, if any. We do not require a complete vaccination history. Families with neither visit can still share onset-related evidence.
 
 Events occurring near one another do not, by themselves, show that one caused the other. The study will report the limitations of parent recall, selection and documentation. You may decline these questions or the records request. Your already submitted account and timing answers will remain retained and may be used/publicly shared as described in the information you accepted. If this additional information raises concerns, you can contact the study team or IRB.
 
@@ -66,7 +66,7 @@ Closing without answering is a departure without a recorded choice, not a stated
 
 ## Records-sharing authorization and current payment screen
 
-This screen and upload route are sent only when your supporting-material request phase is opened, after your permission for records contact. Other participants may complete Survey 2 without receiving an immediate request. Please share only existing materials you are authorized to provide. For a reported vaccination within 90 days, we request the actual date/products record for the most recent vaccination on/before the first-notice date. If no vaccination occurred, share the most recent regular vaccine-free well-visit document within that window, if one exists. Also share any existing dated material about first notice, such as a message, diary entry, clinical note or video. A video after the change can help document what was present then; you do not need a before-video. No separate proof of birthdate or full vaccination history is required. If neither visit exists, share onset-related material if available.
+This screen and upload route are sent only when your supporting-material request phase is opened, after your permission for records contact. Other participants may complete Survey 2 without receiving an immediate request. Please share only existing materials you are authorized to provide. We request the actual date/products record for the most recent vaccination on/before the first-notice date, with no maximum lookback. Separately, if no vaccination occurred within 90 days of first notice, share the most recent regular vaccine-free well-visit document within that period, if one exists. Also share any existing dated material about first notice, such as a message, diary entry, clinical note or video. A video after the change can help document what was present then; you do not need a before-video. No separate proof of birthdate or full vaccination history is required. If neither visit exists, share onset-related material if available.
 
 Before uploading, remove unrelated pages and unnecessary identifiers when feasible without altering relevant dates or content. Tell us what was removed and preserve original context when necessary for interpretation. Do not alter evidence to match your account. Use [confirmed secure upload route], not email. Provide each item's creation date, event date it describes, your reported first-notice date and certainty if known; those dates need not match.
 

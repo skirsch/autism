@@ -1,6 +1,6 @@
 # Data dictionary and export contract
 
-**Version:** 1.1 draft
+**Version:** 1.3 draft
 **Date:** October 4, 2026
 **Status:** Proposed logical schema; platform export names and machine-readable implementation remain to be tested
 
@@ -76,8 +76,9 @@ Study-collected consent attestations, selected-child rule, reported-age/phenotyp
 | `preceding_events` | repeating event enum illness/fever/medication/anesthesia/medical/environment/other; yes/no/unsure; dates/durations/text | C06 | P safe codes/relative; R dates; T text |
 | `well_visit_in_window`, `well_visit_parent` | yes/no/unsure; date object | C07a/b | P status; R date |
 | `shots_at_well_visit`, `later_vax_after_well` | yes/no/unsure | C07c/d | P |
-| `vax_in_window`, `vax_parent`, `vax_products_raw` | yes/no/unsure; date object; text/set | C08a–c | P status/standardized products; R dates/raw |
+| `vax_on_or_before_onset`, `vax_parent`, `vax_products_raw` | yes/no/unsure; date object; text/set | C08a–c; no maximum vaccination lookback | P status/standardized products; R dates/raw |
 | `later_vax_after_selected`, `selected_visit_corrections` | yes/no/unsure; amendment links | C08d | P flag; R links |
+| `vaccination_within_90_days` | yes/no/unsure; reported/derived status and uncertainty; separate from unbounded vaccination selection | C08e; well-comparator eligibility only | P safe status |
 | `vax_onset_same_day_order` | administration_before_notice / administration_after_notice / unknown / not_applicable | C08 same-day follow-up | P subject to risk review |
 | `pre_vax_unusual`, `pre_vax_unusual_text`, `pre_vax_baseline_text` | yes/no/unsure; text | C09a–c | P flag; T text |
 | `baseline_at_vax`, `last_usual_before_vax` | yes/no/could_not_assess/unsure; date object | C09d/e | P status; R date |
@@ -95,7 +96,7 @@ Repeated timeline periods export `period_id`, `submission_id`, `source_screen`, 
 
 ## Visits, evidence, review and acceptance
 
-Each visit exports `visit_id`, `type` (vaccination / regular_well / other / unknown), `administration_date` date object, `actual_administration_status`, `shots_at_visit`, `latest_visit_confirmation`, `history_90_status` (parent_only_absence / record_supported_window / unknown / conflicting), `coverage_text`, `products`, `evidence_ids`. Products export remembered/documented name, normalized label, mapping version and unknown flag. Do not infer product from child age or nominal grid. Raw product strings remain restricted until reviewed for identifiers.
+Each visit exports `visit_id`, `type` (vaccination / regular_well / other / unknown), `administration_date` date object, `actual_administration_status`, `shots_at_visit`, `latest_visit_confirmation`, `vaccination_within_90_days` (yes / no / unsure; separate well-comparator status), `history_90_status` (parent_only_absence / record_supported_window / unknown / conflicting), `coverage_text`, `products`, `evidence_ids`. Products export remembered/documented name, normalized label, mapping version and unknown flag. Do not infer product from child age or nominal grid. Raw product strings remain restricted until reviewed for identifiers.
 
 Each evidence item exports `receipt_at`, `media_type`, `file_hash`, `storage_pointer`, `provenance` (original / copy / screenshot / unknown), `created_date`, `described_event_date`, `parent_claimed_onset`, `parent_certainty`, `date_support`, `content_support`, `alteration_concern`, `legibility`, `tier`, `review_notes`. All R; only safe coded tier/concern summaries may be public. Never equate recording date with described event date.
 
@@ -109,7 +110,7 @@ For each series `parent`, `reviewer_a`, `reviewer_b`, `reviewer_c`, `accepted`, 
 
 Public files may include `public_child_id`, safe developmental/diagnosis/history classifications, source-generalization code, safe derived series, evidence/verification precision, agreement/conflict/duplicate flags, narrative suppression flags and redacted text. A released approximate interval must retain precision and bounds, never masquerade as exact. Country/product/source/age combinations may require suppression/generalization. A derived interval is not inherently anonymous.
 
-Keep `admin_target_complete`, `full_payment_eligible`, final scientific flags and public approval separate. Payment amounts/payees are restricted; report safe aggregate totals only. Public narrative and row suppression reasons are coarse privacy/permission categories, not identifying explanations. Full reviewer notes remain restricted.
+Keep `admin_target_complete`, `full_payment_eligible`, final scientific flags and public approval separate. Export `validated_minimum_eligible` as eligible/ineligible/unresolved with reason codes and rule version: confirmed uniqueness, majority phenotype/age, contemporaneous first-notice corroboration and documented selected most recent vaccination on/before ONSET, with no maximum lookback, supported dates/bounds and no material unresolved contradiction. Well-only/no-anchor records are ineligible for this count, not deleted; uncertain anchor selection stays unresolved. Report exact-date and bounded-date contributors separately. Parent confirmation of no later vaccination is distinct from documentary administration evidence and not proof of complete history. Safe coded eligibility/reasons may be public after privacy review; underlying evidence/absolute dates remain restricted. Payment amounts/payees are restricted; report safe aggregate totals only. Public narrative and row suppression reasons are coarse privacy/permission categories, not identifying explanations. Full reviewer notes remain restricted.
 
 ## Screen events and corrections
 

@@ -1,6 +1,6 @@
 # Recruitment records requests and compensation procedures
 
-**Version:** 1.2 draft
+**Version:** 1.3 draft
 **Date:** October 4, 2026
 **Status:** Proposed staff procedure and participant messages; requires IRB and operational approval
 
@@ -52,7 +52,7 @@ Only administrative request/receipt counts inform batch sizing or adding up to t
 
 ## Record request draft after authorization
 
-Thank you. Please use [approved secure route] to share the narrow set described on your authorized records screen: the most recent actual vaccination date/products record within 90 days before first notice, or if none occurred, the most recent regular well-visit document without shots in that window, if available; plus any existing dated onset-related material. If neither visit exists, relevant dated onset material is still welcome. No full immunization history or birthdate proof is required. Provide dates and certainty as remembered, even when a document was made later. Do not change evidence to match an answer. Deadline: [actual approved date]. Current full-response payment: [amount and objective criteria]. Scientific conclusions do not determine payment.
+Thank you. Please use [approved secure route] to share the narrow set described on your authorized records screen: the most recent actual vaccination date/products record on/before first notice, with no maximum lookback; separately, if no vaccination occurred within 90 days, the most recent qualifying regular well-visit document without shots within that period, if available; plus any existing dated onset-related material. If neither visit exists, relevant dated onset material is still welcome. No full immunization history or birthdate proof is required. Provide dates and certainty as remembered, even when a document was made later. Do not change evidence to match an answer. Deadline: [actual approved date]. Current full-response payment: [amount and objective criteria]. Scientific conclusions do not determine payment.
 
 If material clarification is necessary, send one consolidated request and one day-7 reminder, allowing 14 calendar days from that request. Ask neutral factual questions about conflicts/dateability; do not suggest an onset date or preferred answer. Preserve nonresponse and late clarifications. Late data become auditable additions, not silent changes to locked reviews. Stop-contact requests end research requests.
 
@@ -60,7 +60,7 @@ If material clarification is necessary, send one consolidated request and one da
 
 The first two-week compensation checkpoint is 14 calendar days after the first Survey 2 invitation batch. At each checkpoint with C < 100, increase full-response compensation by $25: $25 to $50 to $75 to $100. Subsequent increase checkpoints are 14 days after the previous increase. Do not increase after C >=100 or beyond $100. Log actual activation times/counts; the amount displayed to participants is a deployed approved value, never a placeholder. Even if there is no new wave, earlier equivalent completions are eligible for the activated top-up.
 
-Full payment requires all routed required answers/narratives and parent-entered birthdate plus either a qualifying in-window visit item OR an apparently dateable contemporaneous item with onset-related content. No-visit submissions with onset evidence receive full payment but do not count toward 100. Scientific strength and reviewers' conclusions do not matter. A good-faith requested-material submission failing full-response criteria receives $25. Do not imply all unpaid survey-only responses earn a gift card.
+Full payment requires all routed required answers/narratives and parent-entered birthdate plus either a qualifying most-recent vaccination item on/before ONSET (any lag) or vaccine-free well-visit item within 90 days OR an apparently dateable contemporaneous item with onset-related content. No-visit submissions with onset evidence receive full payment but do not count toward 100. Scientific strength and reviewers' conclusions do not matter. A good-faith requested-material submission failing full-response criteria receives $25. Do not imply all unpaid survey-only responses earn a gift card.
 
 Normally there is one full-response entitlement per confirmed child. Link repeated uploads/corrections and top-ups to that entitlement, not another full payment. Honor separate promises already made to separately invited parents and all guaranteed good-faith commitments; do not claw back issued/promised payments. Unconfirmed duplication is not an automatic reason to deny payment. Document exceptional honored promises and avoid soliciting unnecessary financial identifiers.
 

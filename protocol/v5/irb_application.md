@@ -1,6 +1,6 @@
 # IPAK application for the two survey autism regression data resource
 
-**Version:** 1.3 draft
+**Version:** 1.5 draft
 **Date:** October 4, 2026
 **Status:** Draft responses organized to the supplied IPAK Forms 1 and 2; not submitted, signed or approved
 
@@ -8,7 +8,7 @@ This application describes the current v5 parent-survey/source-evidence study. T
 
 ## Part A Form 1 intake
 
-**Target and feasibility minimum:** Aim for 100 administratively complete documented-visit unique-child submissions; the organizer accepts 25 fully validated unique-child cases as the minimum for proceeding with the evidence-supported resource if the target cannot be achieved. Validation follows frozen evidence/reviewer criteria, not receipt alone or timing results. Exact validation-count handling is a pre-enrollment specification item. This is not a statistical-power claim or a stop-at-25 rule; existing recruitment, payment and result-independent approved-data release commitments remain unchanged. Every applicable table/subset reports its own achieved denominator.
+**Target and feasibility minimum:** Aim for 100 administratively complete documented-visit unique-child submissions. The 25-case minimum requires confirmed unique-child cases meeting the phenotype and 6–24-completed-month ONSET-age criteria, with contemporaneous evidence corroborating first notice (exact day or defensible bounded range) AND documentary evidence of the most recent actual vaccination on/before ONSET, with no maximum lookback. At least two reviewers must agree on the required classification, dates/bounds and corroboration status, with no material unresolved contradiction. Approximate dates may count only at their supported precision when age/anchor eligibility is established; they do not supply exact-day histogram values. Vaccine-free well-visit and no-anchor cases remain retained and may qualify for payment or other summaries, but do not count toward this minimum. Parent confirmation of no later vaccination is retained separately from documentary proof of administration; a full registry/history is not required or implied. No particular lag, vaccine product, B value or causal interpretation is required. These are distinct counts, not a statistical-power guarantee or a stop-at-25 rule; payment and approved-data release remain result-independent.
 
 **Title:** Two Survey Autism Regression Data Resource Study.
 
@@ -32,4 +32,4 @@ The overview also describes an aspirational Survey 2 parent-report yield of at l
 
 The canonical Form 2 proposal is now [IPAKIRB_Form_2_v5.md](../../irb_submission/IPAKIRB_Form_2_v5.md). It follows the supplied PDF's exact section order, includes the current three-stage referral/survey/records workflow, explicitly addresses the earlier feedback, reproduces the proposed participant information/disclosure/authorization, and uses a consolidated TBD register.
 
-Use that file for Form 2 review and completion; this file retains only the working Form 1 intake above. The historical clinic-record packets are not controlling attachments. Final consent/signatures, institutional confirmations, fixed validated-count criteria and live safeguards remain pending. Draft preparation does not authorize submission or enrollment.
+Use that file for Form 2 review and completion; this file retains only the working Form 1 intake above. The historical clinic-record packets are not controlling attachments. Final consent/signatures, institutional confirmations, implementation of the agreed vaccinated-case minimum criteria and live safeguards remain pending. Draft preparation does not authorize submission or enrollment.

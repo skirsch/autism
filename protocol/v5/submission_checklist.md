@@ -1,6 +1,6 @@
 # Submission package index and remaining confirmations
 
-**Version:** 1.3 draft
+**Version:** 1.5 draft
 **Date:** October 4, 2026
 **Status:** Working package assembled; external attachments and approvals pending
 
@@ -42,7 +42,7 @@ Some approvals may be issued as review conditions rather than pre-application fa
 
 ## Implementation and prelaunch gates
 
-- [ ] Freeze the scientific fully-validated case count for the 25-case feasibility minimum, including no-anchor and date-precision handling. Keep it separate from the 100 administrative recruitment target and from payment/public release. No result-dependent stopping or suppression.
+- [ ] Implement/test the agreed `validated_minimum_eligible` flag: unique child, majority qualifying phenotype/age, corroborated first notice and documented most recent actual vaccination on/before ONSET, with no maximum lookback; exact or supported bounded dates with established eligibility and no material unresolved contradiction. Well-only/no-anchor cases do not count toward 25, but remain retained/payment-eligible as applicable. Keep scientific count separate from administrative 100 and privacy/payment flags.
 
 - [ ] Versioned platform field/export adapters and machine-readable dictionary; tested processing code/fixtures/build and release manifest.
 - [ ] Live single-screen sequence, narrative server lock, saved-partial/decline/resume states, unknown/date input/accessibility and consent-copy/documentation tests.

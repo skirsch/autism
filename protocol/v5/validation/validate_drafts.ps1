@@ -27,7 +27,11 @@ function Get-Lag([string]$Onset, [string]$Anchor) {
     [int]((Get-DateValue $Onset) - (Get-DateValue $Anchor)).TotalDays
 }
 
-function Test-VisitEligible([string]$Onset, [string]$Anchor) {
+function Test-VaccinationEligible([string]$Onset, [string]$Anchor) {
+    (Get-Lag $Onset $Anchor) -ge 0
+}
+
+function Test-WellVisitEligible([string]$Onset, [string]$Anchor) {
     $lag = Get-Lag $Onset $Anchor
     $lag -ge 0 -and $lag -le 90
 }
@@ -70,9 +74,16 @@ function Get-ExactMajority($Votes) {
 }
 
 Assert-Equal 'F01 lag zero' (Get-Lag '2024-07-01' '2024-07-01') 0
-Assert-Equal 'F02 day 90' (Test-VisitEligible '2024-07-01' '2024-04-02') $true
-Assert-Equal 'F03 day 91' (Test-VisitEligible '2024-07-01' '2024-04-01') $false
-Assert-Equal 'F04 future' (Test-VisitEligible '2024-07-01' '2024-07-02') $false
+Assert-Equal 'F02 vaccination day 90' (Test-VaccinationEligible '2024-07-01' '2024-04-02') $true
+Assert-Equal 'F03 vaccination day 91' (Test-VaccinationEligible '2024-07-01' '2024-04-01') $true
+Assert-Equal 'F04 future vaccination' (Test-VaccinationEligible '2024-07-01' '2024-07-02') $false
+Assert-Equal 'F35 vaccination day 200' (Test-VaccinationEligible '2024-07-01' '2023-12-14') $true
+Assert-Equal 'F35 exact lag 200' (Get-Lag '2024-07-01' '2023-12-14') 200
+Assert-Equal 'F36 older vaccination eligible' (Test-VaccinationEligible '2024-07-01' '2024-04-01') $true
+Assert-Equal 'F36 separate well anchor eligible' (Test-WellVisitEligible '2024-07-01' '2024-06-11') $true
+Assert-Equal 'F37 well day 90' (Test-WellVisitEligible '2024-07-01' '2024-04-02') $true
+Assert-Equal 'F37 well day 91 excluded' (Test-WellVisitEligible '2024-07-01' '2024-04-01') $false
+Assert-Equal 'future well visit excluded' (Test-WellVisitEligible '2024-07-01' '2024-07-02') $false
 Assert-Equal 'F05 quarter date' (Get-Quarter '2024-03-31') '2024-01-01'
 Assert-Equal 'F05 quarter lag' (Get-Lag '2024-03-31' (Get-Quarter '2024-03-31')) 90
 Assert-Equal 'F06 quarter 91 allowed' (Get-Lag '2024-09-30' (Get-Quarter '2024-09-30')) 91
@@ -118,6 +129,12 @@ Assert-Equal 'deferred material requests' ($followupSurvey.Contains('A Yes answe
 Assert-Equal 'request-selection minimized queue' ($recruitmentProcedure.Contains('not exposure fields, causal beliefs or reviewer judgments')) $true
 Assert-Equal 'records confidence schema moved to study' ($logicalDictionary.Contains('`records_confidence_s2`')) $true
 Assert-Equal 'retired partner records-confidence schema' ($logicalDictionary.Contains('`records_confidence_s1`')) $false
+
+$minimumRules = Get-Content -LiteralPath (Join-Path $draftRoot 'eligibility_and_construction.md') -Raw
+Assert-Equal 'validated minimum flag exists' ($minimumRules.Contains('`validated_minimum_eligible`')) $true
+Assert-Equal 'minimum requires vaccination evidence' ($minimumRules.Contains('actual-administration evidence supporting the selected most recent vaccination date')) $true
+Assert-Equal 'well-only cases not minimum contributors' ($minimumRules.Contains('Well-only/no-anchor cases do not qualify')) $true
+Assert-Equal 'minimum does not require preferred lag' ($minimumRules.Contains('B verification or a preferred lag is not required')) $true
 
 $linkCount = 0
 foreach ($file in Get-ChildItem -LiteralPath $draftRoot -Filter '*.md' -File) {
