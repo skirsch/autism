@@ -1,7 +1,7 @@
 # Data protection retention and release plan
 
-**Version:** 1.1 draft
-**Date:** October 4, 2026
+**Version:** 1.3 draft
+**Date:** October 6, 2026
 **Status:** Required controls and proposed procedures; not a platform security attestation
 
 This plan covers linked parent surveys, identifiable child source materials, review, correspondence, payment and public release. The study is not anonymous. Controls below must be documented, configured and tested; platform branding and encryption claims alone do not establish compliance.
@@ -10,8 +10,8 @@ This plan covers linked parent surveys, identifiable child source materials, rev
 
 | Stage | Data and system | Authorized role | Restriction |
 | --- | --- | --- | --- |
-| Partner invitations/Survey 1 | Partner host; individual screen answers and permission retained under partner notice | Authorized partner administrators; study does not receive individual answers | Secure authorized email-only handoff with administrative permission/source/batch metadata; aggregate counts if available |
-| Study referrals | Authorized email, permission attestation and study-assigned ID/crosswalk | Authorized study contact staff | Research consent before Survey 2; no public contacts; no invented partner-answer export |
+| Partner member survey/research-interest list | Partner host; all individual answers/emails/opt-ins retained under its own notice | Partner administrators only; no individual export to study | Partner sends approved invitation/common source-batch link; safe aggregate counts only |
+| Study entry and direct contacts | Non-person-identifying source/batch link; contact supplied directly after consent | Authorized study staff; no partner roster | No research answers/contact collection before consent; permission before follow-up; no public contacts |
 | Survey 2 | Intended IPAK EDU environment; consent, locked narrative and later answers | IPAK custodian; authorized research/operations roles | No event prompts before narrative lock; no third-party research reuse of raw data |
 | Source evidence | IPAK-designated restricted file store, distinct from public files | Custodian and authorized three reviewers; packet preparer as needed | Encrypted receipt/storage/backups; audit access; originals immutable |
 | Contacts/payments | Separate contact/entitlement stores and restricted crosswalk | Steve as contact; named backup/payment staff/custodian as authorized | No contacts in analytic export; vendor minimum necessary data |
@@ -26,7 +26,7 @@ PI retains overall oversight; IPAK must designate and accept custody responsibil
 
 Partner-held individual screen records have their own disclosed retention policy; the study's 20-year/public-release terms apply only to authorized study-held data. Obtain the IRB determination of the actual partner role rather than assuming the screen is outside research. Minimize records-request selection queues to permission, reported eligibility and original A4 confidence; do not expose vaccination/timing or reviewer outcomes to selection staff.
 
-Before deployment, obtain actual system names/locations, vendor/subprocessor/data-region details, data-flow diagram, contracts and these confirmations from IPAK and any Survey 1 partner:
+Before deployment, obtain actual system names/locations, vendor/subprocessor/data-region details, data-flow diagram, contracts and these confirmations from IPAK and any partner invitation sender:
 
 - Encryption in transit and at rest from receipt, including backups, viewing copies and temporary exports; algorithms/configuration and accountable key custody/recovery. Keys are not embedded in scripts, source files or public repositories. Three researchers personally holding a key is not by itself a complete security plan.
 - Named authorized roles, least-privilege grants, multifactor authentication, no shared reviewer login, access logging/review, removal on role departure and continuity if a key holder is unavailable.
@@ -72,3 +72,8 @@ Correct through a new version with a nonidentifying change log and repeated vali
 Anyone detecting lost credentials, unintended sharing, participant-identifying public text, unauthorized access or malware notifies the confirmed IPAK incident contact and PI promptly. Stop affected transfers/release, restrict access/links where possible, preserve logs/evidence in restricted storage, and coordinate vendor containment/key revocation. Custodian leads technical assessment; PI/institution determine applicable IRB/legal/participant notification duties and deadlines. Do not invent deadlines or make a blanket promise of no disclosure. Steve handles authorized participant communications; rights concerns go to the independent IRB contact. Record discovery, affected scope/versions, actions, notifications, recovery and prevention. Test a fictitious incident before launch and before public deposit.
 
 This data-resource study has no emergency clinical intervention. For urgent health/safety concerns advise ordinary emergency/local clinical services, not a study diagnosis. Document unexpected research distress/privacy events under the confirmed institutional reporting procedure.
+
+
+## October 6 confirmation status
+
+US-only respondent enrollment does not establish US-only storage or remove child/adult authority requirements. IPAK EDU will supply the study mailbox; actual address/access/backup remain pending. Ask Brian to propose two privacy checkers, with at least one not the redaction preparer; appointments, acceptance and release backup remain unconfirmed. Steve's Substack newsletter and VSRF board roles are investigator disclosure, not participant data.

@@ -119,9 +119,9 @@ $recruitmentProcedure = Get-Content -LiteralPath (Join-Path $draftRoot 'recruitm
 $logicalDictionary = Get-Content -LiteralPath (Join-Path $draftRoot 'data_dictionary.md') -Raw
 # Text-contract checks only: these do not implement referral permission or
 # prove deployed routing, custody, eligibility or queue isolation.
-Assert-Equal 'partner screen exactly two question headings' ([regex]::Matches($partnerScreen, '(?m)^### Question [12]').Count) 2
-Assert-Equal 'partner individual answers not transferred' ($partnerScreen.Contains('not the partner''s individual screening answers')) $true
-Assert-Equal 'all-referral follow-up access' ($followupSurvey.Contains('every authorized possible-case email referral')) $true
+Assert-Equal 'general partner opt-in' ($partnerScreen.Contains('May we contact you about research studies relevant to your child')) $true
+Assert-Equal 'partner individual contacts not transferred' ($partnerScreen.Contains('The study receives no partner contact list')) $true
+Assert-Equal 'partner-forwarded follow-up access' ($followupSurvey.Contains('partner-forwarded invitation')) $true
 Assert-Equal 'follow-up date confidence collected' ($followupSurvey.Contains('Separate date-confidence screen after A2')) $true
 Assert-Equal 'records confidence follows narrative' ($followupSurvey.IndexOf('### Question A4') -gt $followupSurvey.IndexOf('### Question A1')) $true
 Assert-Equal 'records confidence precedes disclosure' ($followupSurvey.IndexOf('### Question A4') -lt $followupSurvey.IndexOf('## Part B:')) $true
@@ -129,6 +129,19 @@ Assert-Equal 'deferred material requests' ($followupSurvey.Contains('A Yes answe
 Assert-Equal 'request-selection minimized queue' ($recruitmentProcedure.Contains('not exposure fields, causal beliefs or reviewer judgments')) $true
 Assert-Equal 'records confidence schema moved to study' ($logicalDictionary.Contains('`records_confidence_s2`')) $true
 Assert-Equal 'retired partner records-confidence schema' ($logicalDictionary.Contains('`records_confidence_s1`')) $false
+
+Assert-Equal 'partner stage not automatic nonresearch' ($partnerScreen.Contains('This does not determine that the partner survey is nonresearch')) $true
+Assert-Equal 'direct study contact permission' ($logicalDictionary.Contains('`study_contact_permission`')) $true
+Assert-Equal 'no active transferred email field' ($logicalDictionary.Contains('| `referral_email`')) $false
+Assert-Equal 'aggregate comparison limitations' ($partnerScreen.Contains('not population representativeness, individual verification or causation')) $true
+Assert-Equal 'no promised child benefit' ($partnerScreen.Contains('no direct benefit is promised')) $true
+
+$confirmationGovernance = Get-Content -LiteralPath (Join-Path $draftRoot 'governance_and_confirmations.md') -Raw
+Assert-Equal 'six-month maximum selected' ($confirmationGovernance.Contains('six calendar months from the first approved study-specific invitation')) $true
+Assert-Equal 'US enrollment declaration schema' ($logicalDictionary.Contains('`us_residence_at_enrollment`')) $true
+Assert-Equal 'CHD funding ceiling supplied' ($confirmationGovernance.Contains('up to $70,000 from CHD''s own funds')) $true
+Assert-Equal 'Steve affiliations disclosed' ($confirmationGovernance.Contains('Vaccine Safety Research Foundation (VSRF)')) $true
+Assert-Equal 'recruitment closure implemented in draft' ($recruitmentProcedure.Contains('stop new study invitations, recruitment reminders, new enrollment and new records-request batches')) $true
 
 $minimumRules = Get-Content -LiteralPath (Join-Path $draftRoot 'eligibility_and_construction.md') -Raw
 Assert-Equal 'validated minimum flag exists' ($minimumRules.Contains('`validated_minimum_eligible`')) $true

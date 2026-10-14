@@ -1,7 +1,7 @@
 # Data dictionary and export contract
 
-**Version:** 1.3 draft
-**Date:** October 4, 2026
+**Version:** 1.5 draft
+**Date:** October 6, 2026
 **Status:** Proposed logical schema; platform export names and machine-readable implementation remain to be tested
 
 This dictionary maps the v5 instruments and evidence workflow to research records. Read with [survey_screen_map.md](survey_screen_map.md), [eligibility_and_construction.md](eligibility_and_construction.md) and [records_review_manual.md](records_review_manual.md). It defines a logical export contract, not an assertion that IPAK implements it.
@@ -21,9 +21,9 @@ P = proposed public after permission and risk review; R = restricted; A = safe a
 | Entity | Row and key | Relationships | Release |
 | --- | --- | --- | --- |
 | `sources` | one source code | batches; restricted identity agreement | A or risk-reviewed generalized code |
-| `batches` | one `batch_id` and stage (`partner_screen`, `s2_invitation`, `records_request`) | source; invitations/requests; stage-specific checkpoint calculations | A |
+| `batches` | one `batch_id` and stage (`partner_member_survey_aggregate`, `partner_study_invitation`, `records_request`) | source; invitations/requests; stage-specific checkpoint calculations | A |
 | `contacts` | one `respondent_id` | contact permission, child/submission links | R |
-| `submissions` | one `submission_id` per study response | authorized referral; study invitation; respondent; confirmed child; no raw partner response | R IDs; safe derived fields P |
+| `submissions` | one `submission_id` per study response | source/batch if supplied; consenting respondent; confirmed child; no raw partner response | R IDs; safe derived fields P |
 | `screen_events` | one event ID | submission; screen; state; timestamp | R; stage counts A |
 | `child_cases` | one `child_id` | all confirmed duplicate submissions | P with new ID |
 | `timeline_periods` | one period ID | submission/child; narrative source | R; safe relative summary P |
@@ -34,25 +34,23 @@ P = proposed public after permission and risk review; R = restricted; A = safe a
 | `payments` | one transaction/entitlement ID | restricted payee/child/submission | R; safe totals A |
 | `release_decisions` | one object + version | approvals, suppression, redactions | R audit; safe flags P |
 
-## Partner referrals and aggregate screen counts — no individual answer export
+## Partner-held invitation sources — no individual export
 
 | Name | Type / allowed values | Source | Release |
 | --- | --- | --- | --- |
-| `referral_id`, `source_code`, `referral_batch_id` | study-assigned ID; restricted source/batch IDs | authorized email handoff | R |
-| `referral_email`, `contact_validation` | email; usable/invalid/correction_needed | permitted contact transfer | R |
-| `transfer_permission_attestation`, `permission_notice_version` | partner administrative attestation/version/reference; no raw screening answer | confirmed partner audit | R |
-| `partner_aggregate_counts` | attempted/delivered/started/completed/possible_yes/no/unsure/authorized_referred counts with available/missing status | aggregate partner report | A |
+| `source_code`, `partner_invitation_batch_id` | non-person-identifying source/batch code | approved common invitation link / aggregate batch record | R; safe generalized counts A |
+| `partner_optin_notice_version`, `relevance_rule_version`, `invitation_message_version` | source procedure/version references, no individual permission answers | partner/institution documentation | R; safe descriptions P |
+| `partner_aggregate_counts` | surveyed/opted_in/relevance_selected/attempted/delivered/undeliverable counts, available/missing status; opt-outs safely aggregated | partner report | A |
+| `study_contact_email`, `study_contact_permission`, `contact_validation` | directly supplied email; yes/no/version; usable/invalid/correction_needed | consenting parent after S2-C; never partner handoff | R |
 
-Partner individual screening responses remain with the partner and are not study research rows. No Survey 1 birth year, age/date, date-confidence, records-confidence or phenotype field is expected. Absence of a transferred field is not an unknown answer imputed to a parent. Referral permission is not research consent.
-
-Study-collected consent attestations, selected-child rule, reported-age/phenotype flags and uncertainty are collected in Survey 2. Legacy `*_s1` research columns from prior drafts are not expected or silently repurposed; document any separately approved legacy import instead.
+The partner keeps all individual questionnaire answers, emails and selection/permission records. No individual partner age, phenotype, date/confidence or identifying roster is imported, inferred from an invitation, or licensed publicly. Partner-held recalled ages are referral information only. General contact permission is not research consent. Survey 2 collects its own authority, child selection, reported-age/phenotype and uncertainty fields. No new study-held contact details or research answers before affirmative consent; unavoidable minimized security metadata is distinct. Retired referral-email/permission-transfer and `*_s1` research fields are not expected. Individual anonymous partner invitations cannot be linked to nonresponders; report this denominator limit rather than reconstructing a roster.
 
 ## Survey 2 and timeline fields
 
 | Name | Type and allowed values | Screen or source | Release |
 | --- | --- | --- | --- |
 | `s2_initial_consent`, `consent_version` | affirmative / decline; version string | S2-C | R; counts A |
-| `adult_parent_guardian`, `english_materials_understood`, `subject_authority_status` | attestations and approved authority/permission status; not inferred from referral | S2-C / approved legal-authority workflow | R; counts A |
+| `adult_parent_guardian`, `english_materials_understood`, `subject_authority_status` | attestations and approved authority/permission status; not inferred from partner invitation | S2-C / approved legal-authority workflow | R; counts A |
 | `selected_child_rule_version` | fixed string `youngest_qualifying_v1` | S2 instructions | P |
 | `date_confidence_s2` | confidently_exact / uncertain_best_estimate / range_only / cannot_determine | A2 confidence screen | P |
 | `records_confidence_s2` | available_now / probably_obtainable / might_obtain / probably_unavailable; unsure/missing status separately | A4 before disclosure | P |
@@ -117,3 +115,20 @@ Keep `admin_target_complete`, `full_payment_eligible`, final scientific flags an
 Events export `event_id`, `submission_id`, `screen_id`, `action` (shown / saved / confirmed / locked / declined / resumed / stopped / operationally_closed), `timestamp`, `version`, `save_success`. Lock must be server-enforced. Before consent collect no research answers; any unavoidable security metadata is separately minimized and disclosed. Do not retain unsent keystrokes as answers. On the narrative screen, explicit Save transmits content after consent and notifies the parent that saved partial answers are retained. Edits before Confirm/lock stay auditable; after lock, corrections are new records linked to the original.
 
 Amendments export original record ID, new value/status, reason, requester, saved time and approval; never replace raw data. Retain original batch/target counts and corrected duplicate or clerical counts. Publication transformations export package version, source build hash, field transformations, suppression/generalization rules, checker approvals and checksums. The final platform export adapters, machine-readable dictionary and end-to-end tests are prelaunch requirements, not completed by this Markdown schema.
+
+
+### Aggregate comparison across recruitment stages
+
+Where the partner's permissions, privacy review and IPAKIRB determination permit, request only non-identifying aggregate summaries of its survey answers, alongside aggregate opt-in, relevance-selection and invitation counts. Compare comparable variables across the partner-survey respondents, consenting study respondents and records-submitting/validated subsets; keep the 100-record target distinct from achieved counts. Specify the question wording, age units/bins, unknowns, source/batch, time period, child-selection rule and denominator for every summary. Suppress small or identifying cells and avoid overlapping tables that reveal individuals. No individual partner answers, emails or linkage keys are imported. These comparisons describe recruitment/selection and recall differences, not population representativeness, individual verification or causation. Different questions, denominators or ascertainment may prevent direct comparison; report that rather than silently treating stages as equivalent. Do not alter confidence waves to match partner age peaks. Any planned analysis of partner aggregates is a disclosed research use, not automatically outside oversight because the survey is partner-owned. Obtain the appropriate determination/permission before acquisition or use; availability is a dependency, not a guaranteed dataset.
+
+Safe aggregate-answer tables are source/batch-level supplementary files with their own variable definitions and denominators, not child/submission rows or linked parent records. Preserve received and withheld/unknown counts, bin edges, source wording/version, selection stage, coverage period and disclosure-review status. No record-level linkage to the validated subset is possible from these partner aggregates.
+
+
+## Current residence and recruitment eligibility
+
+| Field | Values | Meaning and access |
+| --- | --- | --- |
+| `us_residence_at_enrollment` | yes/no/unknown | Adult respondent's current US-residence declaration; distinct from historical child residence and citizenship; restricted eligibility record |
+| `recruitment_open_at_consent` | yes/no with gate version and timestamp | New enrollment allowed only while recruitment is open; existing consented completions are not recoded as new enrollment |
+
+The deployment must apply the approved authority/consent rules to any retained screen logs; a declined or non-US visitor does not become an enrolled research record. Recruitment closes at the earlier six-calendar-month limit or administrative C >= 100. Preserve separate administrative target, scientific minimum, payment and release flags.

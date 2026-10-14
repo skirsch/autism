@@ -8,7 +8,7 @@ Run local document/reference checks with `pwsh -NoProfile -File protocol/v5/vali
 Controlling overview: one parent-first-notice ONSET date; A vaccination-to-ONSET days; B total complete normal days in that window, including disconnected periods; C calendar-quarter and nominal CDC-reference lags.
 
 ## survey1.md
-Draft of the partner's two-question possible-sudden-onset/contact-interest screen. The partner keeps individual answers and transfers only authorized emails with administrative metadata. All authorized possible-case referrals may complete Survey 2; records-confidence is collected there and used only for later supporting-material request phases.
+Stage guide for the partner's independently controlled member survey and general research-contact opt-in, not a fixed study-authored instrument. The partner retains individual answers/contacts and forwards approved invitations; our consent precedes study questions and direct contact collection. Safe aggregate stage comparisons require appropriate determination, compatible variables and denominators. Records-confidence is study-collected and used only for later materials-request phases.
 
 ## survey2.md
 Draft of the one-question-at-a-time follow-up instrument, with a locked unprompted narrative before staged disclosure and structured records questions. Requires IRB approval and implementation testing.

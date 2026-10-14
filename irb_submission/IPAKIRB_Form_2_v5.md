@@ -1,11 +1,11 @@
 # IPAKIRB Form 2 Proposal
 
 **Proposal title:** Two Survey Autism Regression Data Resource Study  
-**Version:** 1.2 draft
-**Date:** October 4, 2026  
+**Version:** 1.5 draft
+**Date:** October 6, 2026
 **Status:** Prepared for study-team review; not signed, submitted or approved
 
-This proposal follows Part B of the supplied [IPAKIRB Forms 1 & 2_v5.pdf](<IPAK IRB forms/IPAKIRB Forms 1 & 2_v5.pdf>), pages 4-16, last updated June 19, 2024. It describes the current v5 parent-survey and source-evidence design, not the earlier clinic-record submission. We request review of the design and the determinations identified below. TBD denotes information, an agreement or a decision that must be resolved; it does not assert an existing approval or safeguard.
+This proposal follows Part B of the supplied [IPAKIRB Forms 1 & 2_v5.pdf](<IPAK IRB forms/IPAKIRB Forms 1 & 2_v5.pdf>), pages 4-16, last updated June 19, 2024. It describes the current v5 parent-survey and source-evidence design, not the earlier clinic-record submission. We request review of the design and the determinations identified below. TBD denotes genuinely missing information. Appendix B separates recorded decisions and source-supported investigator details from outstanding institutional approvals, administrative fields and prelaunch tests. An approval request or planned control is not an existing approval or implemented safeguard.
 
 The supplied template requires approval of Part A before proceeding with Part B. **Acceptance of the current/revised Form 1 and permission to proceed: TBD.** The current validity of this template and submission instructions must also be confirmed with IPAK. Actual recruitment-source identities, private contact details, signatures and agreements will be supplied in a restricted regulatory copy, not this public working file.
 
@@ -13,24 +13,26 @@ The supplied template requires approval of Part A before proceeding with Part B.
 
 **Study ID:** TBD — assigned by IPAKIRB.  
 **Proposal Title:** Two Survey Autism Regression Data Resource Study.  
-**Principal Investigator (PI) Name:** Brian Hooker, proposed; acceptance and institutional eligibility TBD.  
-**PI Affiliation:** TBD — exact institutional affiliations and titles, including his relationship with Children's Health Defense.  
-**PI Address:** TBD.
+**Principal Investigator (PI) Name:** Brian S. Hooker, Ph.D., selected by the project lead; his study-specific acceptance and IPAK eligibility remain pending.
+**PI Affiliation:** Children's Health Defense, Chief Science Officer, as identified in his August 14, 2026 protocol; confirm unchanged at signature.
+**PI Address:** Institutional address supplied in the August 14, 2026 protocol; insert in the restricted regulatory copy after confirmation. It is not missing source information.
 
 **PI Contact Information**
 
-- Email: TBD.
-- Phone: TBD.
+- Email: CHD work email supplied in the August 14, 2026 protocol; insert in the restricted regulatory copy after confirmation.
+- Phone: PI contact number supplied in the August 14, 2026 protocol; confirm preferred study use and insert in the restricted regulatory copy.
 
 **Administrative Contact Information (if different from PI)**
 
 - Name: Steve Kirsch, co-investigator and project lead.
-- Email: TBD — dedicated study mailbox, preferably provisioned by IPAK.
+- Email: TBD — dedicated study mailbox, to be provided through IPAK EDU.
 - Phone: TBD.
 
 Steve Kirsch will be the participant study contact, with an authorized backup whose name and access arrangements are TBD. The independent participant-rights contact is the reviewing IRB or designated institutional office; name, email and phone are TBD.
 
-The three scientific reviewers are Steve Kirsch, Karl Jablonowski and Brian Hooker. IPAK is expected to designate the Survey 2/source-evidence custodian; identity, acceptance and operational responsibilities are TBD. Investigator credentials, affiliations, training, CVs and individual interest declarations will accompany the final proposal.
+The three scientific reviewers are Steve Kirsch, Karl Jablonowski and Brian Hooker. IPAK is expected to designate the Survey 2/source-evidence custodian; identity, acceptance and operational responsibilities are TBD. Brian's degree/title and Karl's CHD role are supplied by the earlier protocol. Current CVs, required training certificates, study-specific acceptance and individual interest declarations still need to accompany the final proposal.
+
+**Investigator information source:** Brian's [August 14, 2026 CHD protocol](<IRB submission other studies/CHD Cancer Genomic Project PROTOCOL DRAFT  REV_HR . 8.14.26. v0.5 cmw.docx>) identifies Brian S. Hooker, Ph.D., as CHD Chief Science Officer and Karl Jablonowski as CHD Senior Research Scientist. It also supplies Brian's institutional address/work email and a contact number. These source-supported details are recorded, not new organizer questions. The earlier study's other investigators, laboratory, resources, contacts for participant rights and approvals are not adopted here. Steve Kirsch's co-investigator/project-lead and participant-contact roles are organizer decisions; no additional degree or affiliation is inferred.
 
 **Study type:** Observational data-resource study involving consenting adult parent respondents and voluntarily supplied existing information about their children. There is no intervention, biological sampling, new clinical examination, request to create new recordings, or direct interaction with the child. Identifiable child/adult-child source records may be received; their subject status and consent requirements are submitted for IRB determination.
 
@@ -38,7 +40,7 @@ The three scientific reviewers are Steve Kirsch, Karl Jablonowski and Brian Hook
 
 ### Funding and budget
 
-Children's Health Defense (CHD) is the funding organization identified by the project lead. Exact legal funder and recipient entities, funding amount, agreement, disbursement and termination terms, and in-kind contributions are TBD.
+Funding ceiling reported by Steve Kirsch on October 6, 2026: up to $70,000 from CHD's own funds. This records the identified source and maximum, not receipt of funds or an executed funding commitment. CHD must confirm the authorized amount, legal funder/recipient entities, itemized allocation, staffing/in-kind support, payment fulfillment and long-term support/contract terms.
 
 | Budget category | Amount and basis |
 | --- | --- |
@@ -50,13 +52,15 @@ Children's Health Defense (CHD) is the funding organization identified by the pr
 | IRB fees and required reviews | TBD; confirm current IPAK fees rather than assuming the historic template fee schedule applies |
 | Twenty-year restricted retention, key management, backups and incident response | TBD |
 | Public deposit, documentation and maintenance | TBD |
-| Total and approved funding commitment | TBD |
+| Total funding ceiling | Up to $70,000, from CHD's own funds, reported October 6, 2026; authorized amount, allocation and executed commitment pending CHD confirmation |
 
 No source reimbursement will depend on response rate, qualifying cases, vaccination history, timing patterns or study findings. Exact arrangements and fair-value documentation are TBD. Participant compensation is separate and is specified in Section 8.
 
 ### Funding roles and conflicts of interest
 
-Brian Hooker holds a position with CHD. His exact role and all relevant team financial and nonfinancial interests, payments and organizational relationships are TBD for individual disclosure. CHD's actual roles in design, recruitment, operations, access, review, manuscript preparation and publication are TBD and will be disclosed. We do not describe scientific reviewers who are team members as independent of the study or funder merely because their assessments are made separately.
+Steve Kirsch reports no financial or nonfinancial interest in the study outcome. He writes Steve Kirsch's newsletter on Substack and is a board member of Vaccine Safety Research Foundation (VSRF). These roles are disclosed as relevant organizational/publication relationships; the declaration is not a determination that no potential conflict exists. His study compensation, personal funding contribution and any role-related remuneration have not been separately established by this statement. Brian/CHD/IPAK declarations and applicable conflict-management review remain separate.
+
+Brian S. Hooker, Ph.D., is identified as CHD Chief Science Officer in the August 14, 2026 source protocol; Karl Jablonowski is identified there as CHD Senior Research Scientist. Both relationships will be disclosed and confirmed unchanged at signature. Study-specific team financial/nonfinancial interests, payments and other organizational relationships still require individual declarations. CHD's actual roles in design, recruitment, operations, access, review, manuscript preparation and publication are TBD and will be disclosed. We do not describe scientific reviewers who are team members as independent of the study or funder merely because their assessments are made separately.
 
 The project lead has approved a proposed commitment against result-dependent suppression or veto of the approved dataset's release. CHD acceptance and executed contract terms are TBD. Privacy, consent and IRB safeguards remain prerequisites to release. Access will be role-based rather than granted simply because an organization funds the study. Definitions and construction rules will be fixed prospectively; request selection and payment will not depend on timing results. Reviewers will not see one another's judgments or interim group timing summaries while completing their assessments. Institutional conflict-management requirements are TBD.
 
@@ -76,17 +80,11 @@ The project lead has approved a proposed commitment against result-dependent sup
 
 ## SECTION 4: EXECUTIVE ABSTRACT
 
-We propose to create a documented research resource about parent-observed sudden developmental changes associated with a child's later autism presentation. The study will preserve parent accounts, timing estimates, uncertainty, supporting evidence and reviewer disagreement, and publish safely coded data and redacted narratives for reuse. It is not designed to estimate population incidence, vaccinated-versus-unvaccinated autism risk, vaccine-attributable risk or a causal effect.
+We propose an observational data resource documenting parent-observed sudden developmental changes associated with later autism presentation. We will preserve original accounts, timing estimates, uncertainty, existing evidence and reviewer disagreement, and publish privacy-approved coded data and redacted narratives. This selected-case study does not estimate population incidence or vaccine-attributable risk and does not establish causation.
 
-Recruitment has three stages. First, a participating autism membership organization, or a diagnosis/treatment clinic if membership recruitment is unavailable, administers a brief neutral contact-interest screen for its own records. The screen asks whether a possible sudden-onset child is present and whether the parent wants an invitation and authorizes sharing an email with the study team. The partner retains individual screening answers; the study receives authorized emails, administrative source/batch/permission attestations and available aggregate recruitment counts. The partner's regulatory role and privacy/retention arrangements require review.
+Recruitment has three stages: an independently controlled partner member survey and general research-contact opt-in; a partner-forwarded approved link to our consented survey; and direct records requests in confidence-based waves. Partners retain individual answers/emails. Our survey saves and locks a 15-day unprompted narrative before event-specific disclosure, then collects relevant chronology and records-confidence. The focused records cohort concerns ONSET at 6–24 completed months. The administrative target is 100 documented-visit unique-child submissions; the agreed 25-case scientific minimum requires corroborated first notice and documented most recent actual vaccination, with no maximum lookback, plus the specified phenotype/age and reviewer-agreement requirements. Target, payment, scientific eligibility and release are separate.
 
-Second, every authorized possible-case referral may complete Survey 2, regardless of date confidence or perceived record availability. After research consent and the required legal authority are established, the first substantive question collects an unprompted account of the 15 days before the first clear developmental change through that day. The account is saved and locked before named candidate events are disclosed. Neutral timing, date-confidence, uncertain-functioning and records-confidence questions follow. An additional disclosure then explains questions about illness, medications, medical visits and vaccination. Only participants affirming continuation receive event-specific questions. Best estimates, unknowns and partial responses remain separately labeled.
-
-Third, the study progressively requests existing supporting materials from consenting respondents in four records-confidence groups, beginning with the most confident. The focused records cohort concerns first-noticed changes at 6-24 completed months. The target is 100 administratively complete documented-visit unique-child submissions; 25 fully validated cases is the project lead's minimum for proceeding if recruitment falls short. The agreed minimum requires corroborated first notice and documentary evidence of the most recent actual vaccination on/before ONSET, with no maximum lookback, alongside the phenotype/age and independent-majority requirements detailed in Section 8.4; well-only/no-anchor cases are retained but do not count toward 25. The target, scientific eligibility, compensation and public-release eligibility are distinct.
-
-Three reviewers independently assess each case in one pass using all available information. They are blinded to one another's judgments, not to exposure. Field-level exact agreement by at least two reviewers supports accepted values; original reports, uncertainty and disagreements are retained. The resource includes one parent-first-notice ONSET, age at ONSET, vaccination-to-ONSET lag, normal-day counts within that window and descriptive reference-date lags where inputs support them.
-
-The intended study platform is IPAK EDU, with deployment and security details TBD. Authorized study data and uploaded evidence will be retained encrypted under restricted access for 20 years after closure, subject to approval and applicable requirements. Source files will not be public. Privacy-approved coded data and redacted narratives will be deposited on Zenodo independently of findings or journal acceptance, with controlled re-review of source evidence available under approved access arrangements. Exact staged consent, partial-response use, authority, retention and public-sharing terms are submitted for IRB determination.
+Steve Kirsch, Karl Jablonowski and Brian S. Hooker independently review each packet, blinded to one another's judgments but not exposure. The intended platform is IPAK EDU. Authorized submitted data and source evidence are proposed for encrypted restricted retention for 20 years after closure; source evidence will not be public. Safely coded data/redacted narratives will be deposited on Zenodo independently of findings or journal acceptance. Consent, legal authority, partner role, permitted aggregate comparisons and operational protections require the reviewing body's determinations and confirmed deployment arrangements.
 
 ## SECTION 5: SPECIFIC AIMS
 
@@ -104,7 +102,7 @@ The intended study platform is IPAK EDU, with deployment and security details TB
 
 Earlier parent surveys informed feasibility and question development. Their instruments, recruitment and response patterns differ from this proposal, and respondents may overlap. Those surveys are not automatically enrolled v5 data, a representative population sample, a validated null comparator or independent confirmation of a proposed effect.
 
-**Audited preliminary numbers/figures selected for submission:** TBD. Any included result must identify the source instrument, recruitment denominator when known, missingness, definitions, verification and overlap limitations. No earlier response count or purported timing signal is used here to claim power, a causal conclusion or a guaranteed records yield. Records-request batch sizes will use prospective administrative yield from the current study.
+This draft submits feasibility context only, with no preliminary numerical findings or figures. No earlier count or timing pattern is used to claim power, causation or guaranteed records yield. Adding preliminary results later requires an audited source, definitions, denominators, missingness and overlap limitations. Records-request batch sizes use prospective administrative yield from this study.
 
 ## SECTION 8: METHODS
 
@@ -112,7 +110,7 @@ Earlier parent surveys informed feasibility and question development. Their inst
 
 This is an observational, English-language parent-report and existing-source-evidence resource. Adult respondents must understand the consent and have the appropriate authority for the information and records involved. A parent's autism report is sufficient for survey participation; a professional diagnosis document is not required. Survey 2 records professional diagnosis status, approximate date and clinician type when known, with documentary status distinguished from parent report.
 
-All authorized possible-case referrals are offered Survey 2 during the approved recruitment window, including uncertain dates, low records-confidence and subsequently out-of-range reports. The focused records cohort uses ONSET at 6 through 24 completed months inclusive. The 25-month anniversary is outside this range. Current child/adult status is separate from onset age and requires the determinations in Section 9.
+All partner-invited possible-case parents are offered Survey 2 during the approved recruitment window, including uncertain dates, low records-confidence and subsequently out-of-range reports. The focused records cohort uses ONSET at 6 through 24 completed months inclusive. The 25-month anniversary is outside this range. Current child/adult status is separate from onset age and requires the determinations in Section 9.
 
 One child is selected per family: the youngest autistic child who appeared to develop normally and had an identifiable first clear change at 6-24 completed months; if no child fits or the parent is unsure, the youngest autistic child. This instruction precedes the narrative but is not a screening question. Records requests focus on eligible reports; other study-collected answers remain retained with their dispositions.
 
@@ -126,9 +124,9 @@ ONSET is the single date either parent first noticed the qualifying lasting chan
 
 ### 8.3 Three-stage collection sequence
 
-**Stage 1 — partner contact-interest screen.** The partner asks two questions: whether a possible sudden-onset child is present, allowing Yes/No/Unsure, and interest/explicit authorization to share an email with the identified study team. No birth year, age/date, date confidence, records-confidence or candidate-event questions are asked. Refer authorized Yes/Unsure possible cases. The partner's individual answers remain with it under its disclosed policy. Only authorized emails and administrative transfer metadata reach the study; available aggregate attempted/delivered/response/referral counts are requested. Partner-owned screening does not itself establish exemption or nonengagement. Screen text and transfer agreements are submitted for review.
+**Stage 1 — partner-held interest list and forwarded invitation.** The partner retains individual member-survey answers, emails and general opt-ins, applies a documented cause-neutral possible/uncertain-case relevance rule, and forwards approved invitations and one day-7 reminder. No individual roster, answers or identifying referral tokens transfer. The opt-in permits partner contact, not study enrollment or record sharing. We will disclose actual purposes and planned aggregate uses and obtain the appropriate partner/IRB determination; partner authorship alone does not establish nonresearch status. Parents follow a non-identifying source/batch link and consent before study answers or direct contact collection. See the partner-stage guide and recruitment attachment for wording, selection mapping and opt-out procedures.
 
-**Stage 2 — our research survey.** Every authorized possible-case referral receives an invitation without confidence-based selection. Research consent and approved authority precede substantive answers. A1 is the first substantive question: an unprompted description of baseline, each of the 15 days preceding first notice and first notice itself, including direct observations, who noticed and subsequent course. Named-event examples do not appear in invitations, titles, help or pre-disclosure questions. Parents can explicitly report inability to recall a day.
+**Stage 2 — our research survey.** Every partner-invited possible-case parent receives an invitation without confidence-based selection. Research consent and approved authority precede substantive answers. A1 is the first substantive question: an unprompted description of baseline, each of the 15 days preceding first notice and first notice itself, including direct observations, who noticed and subsequent course. Named-event examples do not appear in invitations, titles, help or pre-disclosure questions. Parents can explicitly report inability to recall a day.
 
 After A1 confirmation/server lock, A2 records first-notice date, precision/bounds and date confidence; A3 records the most recent earlier uncertain-functioning period and any full return to baseline, without a forced 15/90-day lookback; A4 obtains neutral records-confidence. Additional disclosure and affirmative continuation follow A1-A4 saving. Later structured questions collect birthdate without requiring proof, residence country at ONSET/selected vaccination, phenotype/diagnosis, prompted full-window chronology, medical/other events, visits, actual vaccine products, illness/recovery and normal-day information. Prompted answers cannot overwrite A1.
 
@@ -138,13 +136,13 @@ After A1 confirmation/server lock, A2 records first-notice date, precision/bound
 
 The four ordered groups are: definitely available now; probably available/know how to obtain; might be available/need to investigate; probably unavailable. Unsure/missing confidence is unclassified, not a fifth ranked group or a survey exclusion; clarify neutrally where possible. Date confidence does not control survey access or ranking within a records group.
 
-Initially request materials from a random 100 eligible consenting candidates in the highest-confidence group, filling from subsequent groups if needed and capping at the available pool. Use a recorded seed, deterministic input ordering, archived pool snapshot/hash and versioned draw. At the close of a request batch's 14-day window, let I_m be its matured request count, C_m its administratively complete documented-visit unique-child yield, and C the corresponding total received. If C < 100 and C_m > 0, the next request count is `ceil(1.20 * (100-C) / (C_m/I_m))`. With zero/unestimable yield, use 100 or the remaining pool. Exhaust confidence groups in order. The request denominator is not the Survey 2 invitation denominator.
+Initially request materials from a random 100 eligible consenting candidates in the highest-confidence group, filling from subsequent groups if needed and capping at the available pool. Archive the input and reproducible random selection. After each 14-day request window, estimate the next batch from observed administrative completion yield and the remaining target, with a 20% margin; use 100 or the remaining pool if yield cannot be estimated. Exhaust confidence groups in order. The exact formula and zero-yield rules are in the recruitment and eligibility attachments. The request denominator is distinct from the survey-invitation denominator.
 
 Selection staff use a minimized queue containing permission, original confidence and receipt-time reported eligibility, excluding exposure timing/status/products, causal beliefs, reviewer judgments and interim plots. Those fields cannot determine invitations, requests, batch sizes or payment. Stop opening new records-request batches once C reaches 100; retain and review already requested submissions beyond 100. Later scientific exclusion does not trigger replacement recruitment. Confirmed duplicates/clerical errors may amend administrative counts through an audit.
 
 If yield is inadequate, approach up to three additional approved organizations or clinics sequentially, with separate funnels. Reaching 25 is not an automatic recruitment stop or power claim. **Fully validated minimum-count definition, agreed October 4, 2026:** The 25-case minimum requires confirmed unique-child cases meeting the phenotype and 6–24-completed-month ONSET-age criteria, with contemporaneous evidence corroborating first notice (exact day or defensible bounded range) AND documentary evidence of the most recent actual vaccination on/before ONSET, with no maximum lookback. At least two reviewers must agree on the required classification, dates/bounds and corroboration status, with no material unresolved contradiction. Approximate dates may count only at their supported precision when age/anchor eligibility is established; they do not supply exact-day histogram values. Vaccine-free well-visit and no-anchor cases remain retained and may qualify for payment or other summaries, but do not count toward this minimum. Parent confirmation of no later vaccination is retained separately from documentary proof of administration; a full registry/history is not required or implied. No particular lag, vaccine product, B value or causal interpretation is required. Below 25 report feasibility shortfall without suppressing permitted data or withholding owed payments. The scientific count is not used to replace cases or alter exposure-independent request waves.
 
-**Recruitment start/end dates, Survey 2 enrollment ceiling, overall duration, closure milestone and support commitments:** TBD. These must be fixed before deployment; confidence-free survey invitations remain subject to that approved window, not an indefinite obligation to enroll.
+Recruitment is limited to six calendar months from the first approved study-specific invitation, ending earlier when the existing administrative count reaches at least 100 complete documented-visit unique-child submissions. At closure stop new study invitations, recruitment reminders, new enrollment and new records-request batches; already-consented responses and already-open records tasks may finish under their disclosed deadlines. Retain all authorized submitted material, including overflow beyond 100, and honor payment/top-up commitments. Neither reviewer conclusions nor reaching the scientific minimum of 25 changes this recruitment stopping rule. The actual first-invitation date, review timetable and final study-closure milestone are recorded separately; six months is not the retention or overall study duration.
 
 ### 8.5 Narrow evidence request and date provenance
 
@@ -196,9 +194,13 @@ There is no population incidence denominator, randomized exposure comparison or 
 
 Versioned code will check screen/consent links, eligibility, date arithmetic, exact-majority fields, consistency, safe outputs and checksums. Fictitious fixtures and live end-to-end tests precede launch. Existing local Markdown/reference tests are not proof of deployed security, routing or scientific reproducibility. Production pipeline, export adapters and signed validation are TBD.
 
+### 8.11 Aggregate comparison across recruitment stages
+
+Subject to appropriate permissions, privacy review and IPAKIRB determination, request non-identifying aggregate partner-survey answers and funnel counts. Compare compatible variables across partner-survey respondents, our consenting respondents and records-submitting/validated subsets, with question versions, bins, child-selection rules, source/time coverage, unknowns and denominators stated. No individual partner data or linkage keys transfer. Small/identifying cells are withheld. This describes selection and recall differences, not representativeness, individual verification or causation; incompatible measures are not treated as interchangeable. The planned research use is disclosed, not presumed outside oversight. Detailed aggregate specifications are in the data dictionary and recruitment attachments.
+
 ## SECTION 9: INFORMED CONSENT
 
-The partner's email-sharing permission is not research consent or permission to disclose a child's records. Our research consent precedes Survey 2 answers. The proposed initial participant information, additional disclosure and records authorization are reproduced in Appendix C and maintained in the consent attachment. The initial screen identifies the study/funder/team, purpose, activities, risks, benefits, payment conditions, retained partials, public redacted narratives/data, licensing, contact routes and withdrawal/retention limits without naming candidate events.
+The partner's permission for its own future invitations is not study research consent or permission to disclose contact details/child records. No study research-consent form is attached to the independently controlled partner questionnaire under this proposed model. Our research consent and required authority assessment precede Survey 2 answers and study-held contact collection. Appendix C and the consent attachment give the proposed wording; initial study information covers purpose, activities, risks, benefits, payment, partial retention, public sharing/licensing and contacts without naming candidate events.
 
 A1 is saved/confirmed/locked before A2-A4 and the additional named-event disclosure. We request an explicit IRB determination whether this sequence is an alteration of consent and, if so, whether the applicable criteria are satisfied. The recall-priming rationale is not asserted to prove approval criteria. If the fixed sequence is not approved, the team will revise through a documented decision before deployment rather than silently disclose events earlier.
 
@@ -220,7 +222,7 @@ Identifiable videos/private documents and rich public narratives prevent a claim
 
 ### Collection, storage and access
 
-The partner stores individual screening answers under its own disclosed policy; the study receives only authorized contacts and administrative attestations/aggregate counts. IPAK EDU is intended for research answers and source uploads. Actual deployment names/versions, host/vendor/subprocessors, regions, unavoidable operational metadata and contracts are TBD.
+The partner keeps all individual member-survey answers, contacts and opt-in/matching records under its own notice. The study receives safe aggregate source/batch counts and parents' direct submissions only after research consent; no individual partner-held recalled age is imported as a verified child-level measurement. Separately permitted safe aggregate answers may support the descriptive stage comparison in Section 8, with their ascertainment and denominator limitations. IPAK EDU remains intended for study answers/uploads. Actual deployments, vendors/regions/metadata and contracts are TBD.
 
 Study contacts, payment records, linkage/crosswalks, originals, reviewer forms and coded analytic/public data will be separated by access role. No participant records belong in this public repository. Secure authenticated upload, encryption in transit/at rest, MFA, least-privilege permissions, audit logs, key recovery, encrypted backups, tested restore and safe file handling are required planned controls; actual configuration/verification is TBD. Advertising, profiling, session replay, device fingerprinting and unrelated analytics must be disabled or excluded; settings and necessary security metadata are TBD for documented verification, not assumed from the platform's name.
 
@@ -248,7 +250,7 @@ Clinical emergencies are directed to local emergency/clinical services; no study
 
 ## SECTION 12: INTERNATIONAL RESEARCH CONSIDERATIONS:
 
-English-only instruments do not establish US-only enrollment. Country of residence at ONSET/vaccination is collected as context and is not proof of administration location or applicable consent jurisdiction. **Approved source/participant geography: TBD.** Before recruiting in a jurisdiction, determine required local ethics/site approvals, current child/adult permission, record-sharing/privacy law and cross-border storage/public licensing. Document vendor regions and any provider authorization requirements. No blanket compliance claim or unagreed geographic exclusion is made.
+US-only enrollment is selected: adult parent respondents must report US residence at enrollment. This is not a citizenship requirement or a restriction on historical ONSET/vaccination residence. Obtain a non-identifying current-residence eligibility declaration at the initial consent/authority screen; no street address or proof of citizenship is requested. A non-US/unknown response does not establish eligibility and is routed to an ineligible/clarification end without new research enrollment. Retain inadvertent submissions under applicable consent/institutional direction, not by silently deleting them. Current child/adult legal authority, required state/site permissions, vendor regions and cross-border processing still need institutional/IRB determination; US-only participants do not establish US-only storage.
 
 ## SECTION 13: FEEDBACK AND COMMUNICATION PLAN
 
@@ -260,9 +262,9 @@ Summaries will explain selection, uncertain/verified dates, exposure-visible rev
 
 Approach large autism membership organizations first to ask whether they will participate. If none agrees, approach autism diagnosis/treatment clinics. If the initial source does not produce the needed documented submissions, solicit up to three additional approved sources sequentially. No partner identity, reach or mailing-list number is assumed or disclosed here. Private identities/agreements are TBD in restricted regulatory attachments.
 
-Use the attached exact partner screen, neutral source invitation, Survey 2 invitation/day-7 reminder and authorized records request/clarification messages. Do not name vaccination or another candidate event in partner/initial survey recruitment materials before the narrative/disclosure sequence. Funder/team disclosures remain truthful; this does not guarantee absence of prior beliefs or expectations. Partner members/patients are free to decline without effects on membership, services or care.
+Use the suggested final general partner-contact question, documented relevance mapping and approved partner-sent study invitation/day-7 reminder, then study-authorized records request/clarification messages. The partner independently controls its questionnaire; appropriate oversight is not presumed absent. Ask IPAK whether it needs the partner notice/questionnaire and what nonmaterial adaptations of the study invitation it permits. No named candidate events or causal claims in our pre-disclosure recruitment. Membership/services/care are unaffected by refusal.
 
-All authorized possible-case referrals receive Survey 2 invitations in the approved window. Confidence only phases later supporting-material requests. Keep attempted/delivered, opt-out, aggregate screen/referral, survey start/lock/disclosure/continue/decline/departure, request/receipt and scientific counts separate by source/batch. Record technically unavailable counts; delivery is not evidence of reading. Forwarded links and overlapping sources receive permission/link checks, not an assumed random-invitation label. Source agreements, lawful transfer, reminder/contact suppression and any fair-cost reimbursement are TBD for approval.
+The partner invites all opted-in possible/uncertain cases under the documented cause-neutral rule within the approved window; confidence only phases later study evidence requests. Keep safe aggregate partner selection/invitation counts, voluntary consent/start/lock/disclosure states, records-request/receipt and scientific counts separate. No individual nonresponder roster or direct transfer is assumed; source-link/overlap checks preserve privacy. Source agreements, actual opt-in/relevance mapping, partner reminders/opt-outs and any fair-cost reimbursement remain TBD for approval.
 
 ## SECTIONS 15-?: ASSURANCES, CERTIFICATES, AND DOCUMENTATION
 
@@ -274,12 +276,12 @@ The current linked documents below are draft attachments to this proposal. Freez
 | Informed Consent Document | Appendix C below and [consent/disclosure](../protocol/v5/consent_and_disclosure.md); Part C adaptation/documentation approval TBD |
 | Data Collection Tools / Forms | [Partner screen](../protocol/v5/survey1.md), [Survey 2](../protocol/v5/survey2.md), [screen map](../protocol/v5/survey_screen_map.md), [data dictionary](../protocol/v5/data_dictionary.md), [records review form/manual](../protocol/v5/records_review_manual.md) |
 | Marketing Materials | [Recruitment/request/reminder text](../protocol/v5/recruitment_and_compensation.md); source-specific approved copies TBD |
-| Principal Investigator CV | TBD — Brian Hooker's current CV and acceptance/affiliation |
+| Principal Investigator CV | Brian S. Hooker, Ph.D.; identity/CHD title supported by prior protocol. Current CV, training and study-specific acceptance pending. |
 | Ethical Assurances | Sections 9-12; [privacy/security/release](../protocol/v5/privacy_security_and_release.md); signed institutional assurances TBD |
 | Certificates | TBD — current required human-subject training and other IPAK-required certificates for each role; no animal procedures proposed |
 | Conflict of interest and funding documentation | [Governance/confirmations](../protocol/v5/governance_and_confirmations.md); individual declarations, funding contract and itemized budget TBD |
 | Retention/destruction and controlled re-review | Section 11 and privacy attachment; operational custody/continuity/access confirmations TBD |
-| Cultural sensitivity/geography/accessibility | English-only limitation and Section 12; final geography and tested accessible interface TBD |
+| Cultural sensitivity/geography/accessibility | English-language, US-resident enrollment selected; Section 12 authority/site/vendor determinations and tested interface remain pending |
 | Earlier-feedback response | Appendix A and [detailed response matrix](../protocol/v5/irb_feedback_responses.md) |
 | Technical validation and launch gates | [Data specification](../protocol/v5/data_specification.md), [prelaunch validation](../protocol/v5/prelaunch_validation.md), [submission checklist](../protocol/v5/submission_checklist.md); live signoff TBD |
 | Official indemnification/non-accountability statements | TBD — verbatim IPAK templates, PI signatures and dates |
@@ -306,31 +308,49 @@ Source reviewed: [irb feedback.docx](<feedback/irb feedback.docx>). Its anonymou
 | CHD role, funding/interests and protections | Sections 2-3 disclose funder/PI relationship, prospective rules, result-independent selection/release, review isolation and controlled re-review | TBD — declarations, contract/role details and institutional COI requirements |
 | Scientific boundaries | Sections 4-8 restrict claims to creation/characterization; no incidence, vaccine-attributable risk or causal inference promised | Final submission/public-summary consistency check |
 
-## Appendix B: TBD register
+## Appendix B: Decisions and remaining confirmations
 
-| Item | Resolution needed | Responsible party |
+### Recorded decisions and supplied information
+
+These are settled organizer choices or supported source information, not remaining questions. Proposed study policies still require IRB/institutional acceptance.
+
+| Item | Recorded decision or information | Remaining acceptance or implementation |
 | --- | --- | --- |
-| B01 | Current Form 1 acceptance, Form 2 template/process and review pathway | IPAKIRB / proposed PI |
-| B02 | PI acceptance, exact affiliations/contacts, CV and required training | Brian Hooker / IPAK |
-| B03 | CHD legal entities, budget/contract, roles, interests and release commitment | Funder / PI / project lead |
-| B04 | Official verbatim liability/non-accountability statements and signatures | IPAKIRB / PI |
-| B05 | Organizer decision resolved October 4: onset corroboration AND documented most recent vaccination on/before ONSET without a maximum lookback; well-only/no-anchor cases excluded from the 25 minimum, supported bounded dates permitted if eligible. Implementation tests and IRB acceptance pending, not a remaining organizer-choice TBD. | Study team / technical staff / IRB |
-| B06 | Recruitment dates/end/ceiling, review timetable and closure milestone | PI / project lead / IPAK |
-| B07 | Partner role/privacy/retention, transfer permission audit, source agreements and aggregate counts | Each partner / PI / IPAKIRB |
-| B08 | Custodian, actual hosts/vendors/regions, controls, backup/key/incident procedures | IPAK / PI |
-| B09 | Current legal authority/child-adult status, geography and required permissions/waivers | PI / IPAKIRB / institutional legal review |
-| B10 | Staged disclosure, partial/public narrative scope, nondeletion/retention and consent documentation decisions | IPAKIRB / PI |
-| B11 | Study/backup mailbox and independent participant-rights/incident contacts | IPAK / project lead / IRB |
-| B12 | Measured participant time estimates, active records deadlines, gift-card vendor and payment timing | Operations / IPAK / funder |
-| B13 | Export adapter/production code, live branches/lock/reviewer isolation and fictitious validation | Technical staff / reviewers / PI |
-| B14 | Privacy checkers, approved risk thresholds, licensing authority and Zenodo continuity | PI / custodian / release owner |
-| B15 | Frozen attachment manifest, signatures, approvals and operational launch signoff | PI / IPAK / study team |
+| Investigator identity and affiliation | Brian S. Hooker, Ph.D., CHD Chief Science Officer; Karl Jablonowski, CHD Senior Research Scientist, in the August 14, 2026 protocol. Brian's address/email/phone supplied there. | Confirm unchanged, study-specific acceptance, CV/training; copy contacts only to restricted submission |
+| Leadership and reviewers | Brian proposed PI; Steve co-investigator/project lead/contact/release owner; Steve, Karl and Brian the three reviewers | PI/institution acceptance, role-based access and training |
+| Sponsor and intended host | CHD funding; IPAK EDU intended study platform | Executed funding and actual hosting/custody arrangements |
+| B05 — minimum definition | 100 administrative target; minimum 25 eligible unique-child cases with corroborated ONSET and documented most recent actual vaccination, no maximum lookback, and required majority agreement | IRB acceptance and tested count flags; not a remaining definition question |
+| Core collection and review | Single parent-first-notice ONSET, A/B/C, 6–24-month focus, locked 15-day narrative, staged event disclosure, one-pass independent reviews, confidence-phased records requests | Approval, calibration and deployed routing/locks |
+| Payments and retention | $25 good-faith materials guarantee; full-response tiers up to $100 with equalization; 20-year restricted retention after closure | Funder/vendor commitment and lawful approved consent/custody |
+| Public resource | Zenodo release independent of findings/journal acceptance; CC BY 4.0 data/narratives and MIT code; no public source evidence | Licensing authority, privacy review and repository continuity |
+| Partner workflow | Partner holds individual survey answers/emails and forwards approved invitations; possible safe aggregate stage comparison | Actual partner notice/relevance mapping, permissions and oversight determination |
 
-TBDs may be submitted for preliminary discussion if IPAK permits, but unresolved required permissions, signatures or safeguards do not authorize enrollment. External determinations are not silently filled from investigator preferences.
+### Outstanding workstreams
+
+There are **14 open confirmation/workstreams**, not 15 unanswered organizer questions. B05 is closed as a design decision above. Several workstreams combine a recorded choice with institutional acceptance or implementation that cannot be checked off from a different study.
+
+| Item | Current status and remaining action | Responsible party |
+| --- | --- | --- |
+| B01 | Approval/process: confirm current Form 1 acceptance, template and review pathway | IPAKIRB / proposed PI |
+| B02 | Partly supplied: identity, degree, CHD role and contacts recorded; obtain current confirmation, PI acceptance, CV and required training | Brian Hooker / IPAK |
+| B03 | CHD own-funds ceiling $70,000 and Steve's reported interests/roles supplied; confirm authorized funding/allocation/contract, actual roles, other declarations and release commitment | Funder / PI / project lead |
+| B04 | Approval/execution: obtain official verbatim liability/non-accountability statements and signatures | IPAKIRB / PI |
+| B06 | Six-month maximum and early closure at administrative C >= 100 selected; record launch date and confirm review/closure timetable and completion of open tasks | PI / project lead / IPAK |
+| B07 | Partner confirmation: actual survey purpose/oversight/privacy/retention/opt-in, relevance mapping, forwarded messages, agreements and safe aggregate uses/counts | Each partner / PI / IPAKIRB |
+| B08 | Platform confirmation: designated custodian, actual hosts/vendors/regions and access/backup/key/incident arrangements | IPAK / PI |
+| B09 | US-resident enrollment selected; confirm current child/adult authority, state/site/vendor arrangements and necessary permissions/assent/waivers | PI / IPAKIRB / institutional legal review |
+| B10 | Approval: proposed staged disclosure, saved partial/public narrative use, retention/nondeletion and consent documentation | IPAKIRB / PI |
+| B11 | Administrative provisioning: dedicated study/backup mailbox and independent participant-rights/incident contacts; investigator source contacts are already available | IPAK / project lead / IRB |
+| B12 | Operations: measure participant time, confirm records deadline, actual gift-card fulfillment and payment timing; payment tiers already decided | Operations / IPAK / funder |
+| B13 | Prelaunch verification: production export/code, branches/locks/reviewer isolation and end-to-end fictitious tests; local draft tests are not deployment evidence | Technical staff / reviewers / PI |
+| B14 | Brian to propose privacy checkers; appointments/acceptance, release backup, approved privacy criteria, licensing authority and Zenodo continuity pending | PI / custodian / release owner |
+| B15 | Execution: frozen attachment manifest, signed assurances, approvals and operational launch signoff | PI / IPAK / study team |
+
+TBD fields may be included in preliminary discussion if IPAK permits. Signatures and participant-specific dates are execution fields, not unresolved protocol choices. The protocol specifies required protections now; configuration/testing records belong in the operational attachments and must be completed before launch. No acceptance, certificate, institutional capacity or approval from the earlier cancer study is presumed to carry over.
 
 ## Appendix C: Proposed participant information, staged disclosure and records authorization
 
-**Study title:** Two Survey Autism Regression Data Resource Study. The proposed participant text below reflects consent attachment version 1.2; synchronize both at the final version freeze. TBD fields and implementation annotations must be resolved into approved participant screens before use. This appendix is not an assertion that IPAK's Part C signature template has already been approved for electronic/staged use.
+**Study title:** Two Survey Autism Regression Data Resource Study. The proposed participant text below reflects consent attachment version 1.5; synchronize both at the final version freeze. TBD fields and implementation annotations must be resolved into approved participant screens before use. This appendix is not an assertion that IPAK's Part C signature template has already been approved for electronic/staged use.
 
 ### Potential benefits
 
@@ -340,7 +360,7 @@ There is no expected direct clinical benefit to you or your child. The informati
 
 #### Purpose and activities
 
-You authorized a participating organization to share your email so we could invite you to learn about a study of a possible sudden change in your child's behavior or skills. You may respond even if dates or materials are uncertain; we ask for your best recollection, date confidence and uncertainty. This follow-up asks for your account of the 15 days before the first clear change, what changed and who noticed it, followed by neutral timing and records-confidence questions. Confidence affects only the order of later supporting-material requests, not your access to this survey. You will then see more information about specific questions and a possible request for existing dated materials. You may decide at that point whether to continue. We are creating a parent-reported, documented research resource, not providing medical care or determining what caused your child's condition. Children's Health Defense funds the study; the proposed principal investigator, Brian Hooker, holds a position with the funder. Steve Kirsch is co-investigator/project lead. [TBD — Insert confirmed affiliations, interests and host information.]
+A participating organization sent you this invitation because you agreed that it may contact you about research relevant to your child. It has not given us your email address or individual survey answers. You may respond even if dates or records are uncertain; we ask for best recollection, confidence and uncertainty. We invite you to describe your child's usual behavior and skills, the 15 days before the first clear lasting change, and when it was first noticed. Read our study information and decide whether to consent before answering. Additional information and optional questions/materials requests follow; you may decide then whether to continue. Confidence only determines later supporting-material request order. Participation is voluntary. Children's Health Defense funds this study; the proposed principal investigator Brian S. Hooker, Ph.D., is identified in the August 14, 2026 CHD protocol as Chief Science Officer; scientific reviewer Karl Jablonowski is identified there as CHD Senior Research Scientist, and Steve Kirsch is co-investigator/project lead. We are creating a documented research resource, not providing medical care or determining what caused your child's condition. [Insert final study-specific interests, confirmed host and participant contact information.]
 
 The initial account takes about [TBD — measured pre-disclosure time] minutes; the full follow-up takes about [TBD — measured full time] minutes, plus time to locate any existing materials. We will not ask you to create new recordings of your child or change medical care. Please avoid including other people's names, contact details or unnecessary identifying information.
 
@@ -366,7 +386,7 @@ A good-faith submission of requested materials by the disclosed deadline earns a
 
 Contact Steve Kirsch at [TBD — confirmed dedicated study mailbox] for study questions or concerns. Contact [TBD — independent IRB/institution contact] about participant rights. Please do not email evidence files; use the study's secure upload route if you later choose to share them.
 
-I understand and agree to the initial account and timing questions, saved-partial retention, the proposed public use of safely redacted answers/written accounts, and the limits described above. I can decline the later part without deleting answers already submitted. I am an adult parent/legal guardian who understands the English information. [TBD — Add the approved child/adult-subject permission language.]
+I understand and agree to the initial account and timing questions, saved-partial retention, the proposed public use of safely redacted answers/written accounts, and the limits described above. I can decline the later part without deleting answers already submitted. I am an adult parent/legal guardian residing in the United States who understands the English information. [TBD — Add the approved child/adult-subject permission language.]
 
 - I agree and wish to continue.
 - I do not agree. [TBD — End before A1.]

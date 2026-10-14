@@ -1,14 +1,14 @@
 # Eligibility and dataset construction
 
-**Version:** 1.4 draft
-**Date:** October 4, 2026
+**Version:** 1.6 draft
+**Date:** October 6, 2026
 **Status:** Proposed operational rules for study-team and IRB review; not approved for enrollment
 
 This manual implements the single-ONSET design in [study_overview.md](study_overview.md). It separates screening, receipt, compensation, scientific review and public-release decisions. No eligibility rule is chosen from an interim timing plot.
 
 ## Population and phenotype
 
-The partner keeps its two-question contact screen and transfers only authorized possible-case email referrals. Every such referral may receive Survey 2 within the approved recruitment window, without age, date-confidence or records-confidence screening. An adult parent or legal guardian who understands the English research consent and has the required legal authority may complete Survey 2 according to the stated one-child rule. Autism is parent-reported at intake; a diagnosis document is not required. Select the youngest child meeting the previously normal, identifiable-change and 6–24-completed-month description; if none meets it, select the youngest autistic child. Retain other, out-of-range and uncertain study-collected reports in the Survey 2 dataset; partner individual screening answers are not transferred.
+The partner keeps its independently controlled member survey and contact list and forwards approved study invitations to opted-in possible/uncertain cases under the documented cause-neutral relevance rule. No individual answers/emails reach the study. Every invited parent who chooses to visit may consider Survey 2 without confidence/precision selection. An adult parent/legal guardian must understand the English consent and have required authority before research answers. Study-collected phenotype/date/age/uncertainty determine the focused records pool, not partner ages. Apply the existing youngest-qualifying-child rule; if none qualifies, use the youngest autistic child. Retain out-of-range/uncertain consenting responses.
 
 The target phenotype is apparent normal development followed by a dateable first notice of a substantial loss/reduction of an acquired skill, a clearly new marked behavior, or both, associated with the child's later autism presentation. A new behavior without skill loss can qualify. Fever, transient distress or illness alone does not qualify. There is no seven-day cutoff and no requirement that the whole change develop overnight.
 
@@ -22,7 +22,7 @@ The target remains 100 administratively complete documented-visit submissions; 2
 
 | Flag | Operational rule |
 | --- | --- |
-| `s2_invitation_authorized` | Authorized possible-case email referral with usable contact and no stop-contact request; every such referral is invited within the approved recruitment window. No confidence or age gate. |
+| `s2_invitation_authorized` | Partner-held opt-in plus documented possible/uncertain-case relevance rule and no partner opt-out; partner sends invitation. No study-held email or individual partner-answer eligibility record is required. This is a source procedure; individual roster remains partner-held. |
 | `records_request_eligible` | Affirmative research/required authority and records-contact permission; receipt-time parent-reported qualifying phenotype and onset age 6–24 completed months. Uncertain ages remain unresolved; exact-date confidence is not a gate. Four A4 confidence groups determine request order, not survey access. |
 | `s2_complete` | Every routed required screen has an explicit submitted answer, including allowed unknown/not-applicable answers; narrative submitted and locked; affirmative continuation; date of birth entered or explicit inability recorded; ending submitted. Required screens do not force invented dates or evidence. |
 | `admin_target_complete` | Receipt-time reported phenotype/age eligible in Survey 2; required Survey 2 fields submitted including birthdate and narratives; at least one apparently dateable document for a reported most-recent vaccination on/before ONSET (any lag) or qualifying regular vaccine-free well visit within 90 days. Administrative staff inspect presence/dateability, not proof of SORA or first notice. |
@@ -70,3 +70,10 @@ Calendar-quarter C uses the latest January 1, April 1, July 1 or October 1 on/be
 ## Subsets and denominators
 
 Report separately intake responses, invited responses, consenting Survey 2 starts, locked narratives, disclosure shown, explicit continuation/decline, abandonment, submitted evidence, administratively complete unique children, payment eligibility and evidence-supported cases. Denominators are defined by the screen/field reached, not by available favorable answers. Retain partials and uncertain cases; use only fields they support. Lower bounds do not enter exact-count bins. Each later plot states parent/reviewer/majority source, evidence/precision tier, selected-child/sample restrictions and its own missing/no-anchor counts. Product-specific plots overlap and are not independent cohorts. These data do not estimate population incidence or causal risk.
+
+
+## US residence and recruitment closure
+
+US-only enrollment is selected: adult parent respondents must report US residence at enrollment. This is not a citizenship requirement or a restriction on historical ONSET/vaccination residence. Obtain a non-identifying current-residence eligibility declaration at the initial consent/authority screen; no street address or proof of citizenship is requested. A non-US/unknown response does not establish eligibility and is routed to an ineligible/clarification end without new research enrollment. Retain inadvertent submissions under applicable consent/institutional direction, not by silently deleting them. Current child/adult legal authority, required state/site permissions, vendor regions and cross-border processing still need institutional/IRB determination; US-only participants do not establish US-only storage.
+
+Recruitment is limited to six calendar months from the first approved study-specific invitation, ending earlier when the existing administrative count reaches at least 100 complete documented-visit unique-child submissions. At closure stop new study invitations, recruitment reminders, new enrollment and new records-request batches; already-consented responses and already-open records tasks may finish under their disclosed deadlines. Retain all authorized submitted material, including overflow beyond 100, and honor payment/top-up commitments. Neither reviewer conclusions nor reaching the scientific minimum of 25 changes this recruitment stopping rule. The actual first-invitation date, review timetable and final study-closure milestone are recorded separately; six months is not the retention or overall study duration.

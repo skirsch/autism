@@ -1,15 +1,15 @@
 # Survey 2: unprompted reconstruction and documented follow-up
 
-**Version:** 1.20 draft
-**Date:** October 4, 2026
+**Version:** 1.22 draft
+**Date:** October 6, 2026
 **Status:** Working instrument for IRB review; not approved for recruitment  
 **Controlling design:** [study_overview.md](study_overview.md)
 
-Survey 2 is offered to every authorized possible-case email referral from the partner within the approved recruitment window, irrespective of date or records-confidence. Research consent and applicable legal authority precede answers. Parent estimates, approximate dates and unknowns are retained; the 6–24-month detailed subset and evidence tiers are determined from study-collected answers, not the partner screen. It is displayed **one question at a time**. The original 15-day narrative is completed, saved, and locked before any named candidate event appears. The later disclosure and all consent/retention wording are proposed for IRB review, not approved text.
+Any parent who follows a partner-forwarded invitation may consider our study survey within the approved invitation window. Obtain research consent/authority before research answers or direct study contact collection. No individual partner answers or emails are imported. ONSET, age/phenotype, date-confidence and records-confidence are collected here; records-confidence controls later materials-request order, not access to the survey.
 
 ## Part A: before any named-event disclosure
 
-Initial administration is English-only, including participant information and consent. Participation requires understanding the English materials. Any later translated instrument requires separate review and approval before use.
+Initial administration is English-only, including participant information and consent. Eligibility requires US residence at enrollment, checked on the initial consent/authority screen; historical residence questions remain separate. Participation requires understanding the English materials. Any later translated instrument requires separate review and approval before use.
 
 ONSET is the single date when either parent first noticed the qualifying lasting change, collected in A2. Earlier illness or uncertain functioning remains timeline context. B, asked after disclosure, is the total complete normal-day count between the selected vaccination and ONSET, including disconnected normal periods.
 
@@ -108,7 +108,7 @@ Thank you for the time you spent describing your child's experience. We will pre
 
 - Retain the parent's direct B count/status and timeline separately from three independently locked reviewer B assessments and any exact two-of-three accepted reviewer value/status. Preserve count bounds, precision, evidence citations, conflicts and parent-versus-reviewer differences; never overwrite the parent answer. Review agreement does not by itself establish verification or turn a lower bound into an exact count.
 - The narrative is the first substantive question after consent. Show one question at a time; save A1 and A2–A4 before Part B, lock A1, and never show vaccination or other named candidate events before Part B. Track A1 completion, Part B display, affirmative continuation, explicit decline, abandonment, and all partial-response states separately.
-- Preserve raw answers and correction history. Do not discard a submitted account merely because it lacks a visit, lacks diagnostic documentation, conflicts with later answers, or does not fit an analysis. Keep referral/contact permission, Survey 2 reported-age/phenotype flags, records-request status, 100-submission administrative count, full-payment eligibility, and final scientific eligibility as **separate flags**.
+- Preserve raw answers and correction history. Do not discard a submitted account merely because it lacks a visit, lacks diagnostic documentation, conflicts with later answers, or does not fit an analysis. Keep direct study contact permission and consent, Survey 2 reported-age/phenotype flags, records-request status, 100-submission administrative count, full-payment eligibility, and final scientific eligibility as **separate flags**.
 - B counts all complete normal days in the selected vaccination-to-ONSET window, including disconnected periods, using directly observed pre-vaccination behavior/skills as baseline. Exclude pre-vaccination and ONSET-day observations; known values obey 0 ≤ B ≤ A. Preserve exact, approximate, lower-bound, unknown and baseline-unestablished answers. Keep non-normal versus unassessable days distinct. Without an eligible vaccination, B is not applicable, not zero. Check B against normal periods in the prompted narrative without rewriting raw responses. A3 remains separate timeline context.
 - ONSET is the parent-first-notice date, with parent report, reviewer-specific assessment, accepted value and precision kept separately. Earliest documented post-change date is a separate evidence field, not another onset date. No symptom, vaccination or documentation date substitutes for unresolved ONSET.
 - The three reviewers make independent one-pass judgments using the narrative and available evidence, blinded to one another's answers. [records_review_manual.md](records_review_manual.md) and [eligibility_and_construction.md](eligibility_and_construction.md) specify exact agreement, evidence tiers and scientific subset rules; this questionnaire does not confer verification on a parent's answer.

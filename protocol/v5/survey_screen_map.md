@@ -1,7 +1,7 @@
 # Survey screen and branch specification
 
-**Version:** 1.2 draft
-**Date:** October 4, 2026
+**Version:** 1.4 draft
+**Date:** October 6, 2026
 **Status:** Proposed implementation specification; platform behavior not verified
 
 Question wording comes from [survey1.md](survey1.md), [survey2.md](survey2.md) and the stage-specific text in [consent_and_disclosure.md](consent_and_disclosure.md). This map splits compound drafting prompts into individual screens. Dictionary names are defined in [data_dictionary.md](data_dictionary.md).
@@ -14,17 +14,18 @@ Each routed question offers a substantive answer and, where appropriate, an expl
 
 Save acknowledged answers after affirmative consent; show that saved partials are retained. Do not record unsent keystrokes. On A1 provide Save draft and Confirm original account. Confirm locks the original server-side; later corrections use a separate clarification record. A parent can revisit A1 read-only, but not undo the lock after disclosure. If a platform cannot provide the lock, consent audit, partial capture or reviewer isolation, do not deploy it as compliant.
 
-## Survey 1 — partner contact-interest screen
+## Partner-controlled member survey and opt-in
 
-| Screen | Partner content | Route / custody |
+No study-authored two-question questionnaire is imposed. The partner controls its independent survey, keeps all individual answers/contacts and offers the suggested final opt-in in [survey1.md](survey1.md). No study research-consent form is placed there under the proposed model; actual partner oversight is separately determined.
+
+| Partner stage | Content / custody | Route |
 | --- | --- | --- |
-| S1-P | Partner information/privacy notice; identified receiving study team | Approved source-specific notice; not study research consent |
-| S1-01 | Possible sudden-onset child: Yes / No / Unsure | Partner retains answer; no child data transferred |
-| S1-02 | Interest and explicit permission to share email: Yes / No | Permission for contact, not research participation |
-| S1-E | Email entry/confirmation | Yes permission only |
-| S1-END | Submit and thanks | Yes/Unsure possible case plus authorized usable email enters referral list |
+| P-OPTIN | “May we contact you about research studies relevant to your child, including studies that may offer payment for participation?”; partner privacy/opt-out notice | Yes permits partner invitations, not email/answer transfer or research participation |
+| P-MATCH | Written cause-neutral possible/uncertain-case relevance mapping | Partner applies internally; no vaccination/age-spike/precision/confidence ranking; no individual flags exported |
+| P-INVITE | IRB-approved study-specific invitation | Partner sends common source/batch link; no identifying tokens or partner-answer payload |
+| P-REMIND | Approved day-7 reminder | Partner sends/suppresses using its own contact permission and opt-outs |
 
-The study receives authorized emails only, with source/batch administrative metadata and a permission attestation. Partner individual answers remain partner-held; aggregate screen/recruitment counts are requested where available. Survey 1 asks no age, birth year, date, date confidence, records-confidence or candidate-event information. Its privacy/retention and institutional role require review. Every authorized possible-case referral receives a Survey 2 invitation within the approved recruitment window.
+Only safe aggregate source/batch counts and procedure versions reach the study. All parents following an invitation can consider participation. S2-C precedes research answers or study-held contacts; parents then supply contact information directly if they consent to contact. A1 remains the first substantive research question; administrative contacts are not a developmental question and disclose no candidate events.
 
 ## Survey 2 before disclosure
 
@@ -77,12 +78,21 @@ Repeat C08 date/products when a later visit is identified; retain prior entry an
 
 ## Partial and operational states
 
-Distinguish invited, opened, consent declined, consented start, A1 draft saved, A1 locked, A2/A3/A4 saved, disclosure displayed, affirmative continuation, explicit decline, departed without choice, completed, records requested and records received. Each state has a timestamp/version in restricted logs. A closed browser alone does not establish deliberate decline or its reason.
+Distinguish aggregate partner invitations, study-page opened, consent declined, consented start, A1 draft saved, A1 locked, A2/A3/A4 saved, disclosure displayed, affirmative continuation, explicit decline, departed without choice, completed, records requested and records received. Each state has a timestamp/version in restricted logs. A closed browser alone does not establish deliberate decline or its reason.
 
 Survey 2 invitation tracking and supporting-material request batches are separate stages. Record request phase/group/permission, request sent, request deadline, authorization and receipt independently of survey completion; C14b–h may occur in a separate secure follow-up after S2-END. Do not mark a completed survey incomplete merely because its records phase has not opened.
 
-For survey disposition calculations, mark an uncompleted session operationally open until its invitation's 14-day response window closes; then mark `operationally_closed_incomplete` without deletion. Later resumptions/submissions are amendments to disposition, remain accepted under approved deadlines, and are not double-counted. This is a proposed administrative convention; IPAK must confirm resume-token expiration, security session timeout, data-saving and retention behavior. Security timeout is separate from the 14-day research window. Stop-contact requests suppress future research reminders without deleting existing authorized answers or blocking an owed payment.
+For survey disposition calculations, mark an uncompleted session operationally open until its source/batch invitation's 14-day response window closes; then mark `operationally_closed_incomplete` without deletion. Later resumptions/submissions are amendments to disposition, remain accepted under approved deadlines, and are not double-counted. This is a proposed administrative convention; IPAK must confirm resume-token expiration, security session timeout, data-saving and retention behavior. Security timeout is separate from the 14-day research window. Stop-contact requests suppress future research reminders without deleting existing authorized answers or blocking an owed payment.
 
 For records-batch yield, mature the denominator from the records request's own 14-day window, not its Survey 2 invitation. Stop new records requests at the administrative target; Survey 2 access is not ranked by confidence.
 
 Before launch measure completion times on fictitious participants and insert realistic estimates in consent/invitations. Freeze screen text, IDs, branches, dictionary/export adapter and approval version together. Live tests in [prelaunch_validation.md](prelaunch_validation.md) are mandatory; this map is not a completed platform deployment.
+
+
+## October 6 enrollment eligibility and closure
+
+US-only enrollment is selected: adult parent respondents must report US residence at enrollment. This is not a citizenship requirement or a restriction on historical ONSET/vaccination residence. Obtain a non-identifying current-residence eligibility declaration at the initial consent/authority screen; no street address or proof of citizenship is requested. A non-US/unknown response does not establish eligibility and is routed to an ineligible/clarification end without new research enrollment. Retain inadvertent submissions under applicable consent/institutional direction, not by silently deleting them. Current child/adult legal authority, required state/site permissions, vendor regions and cross-border processing still need institutional/IRB determination; US-only participants do not establish US-only storage.
+
+Record `us_residence_at_enrollment` and `recruitment_open_at_consent` with the consent/authority screen, without presenting named candidate events. Confirm eligibility before A1; do not import individual partner answers or collect a street address. Consented parents already in progress at recruitment closure may complete under disclosed deadlines; implement a closed-recruitment landing message for new visitors.
+
+Recruitment is limited to six calendar months from the first approved study-specific invitation, ending earlier when the existing administrative count reaches at least 100 complete documented-visit unique-child submissions. At closure stop new study invitations, recruitment reminders, new enrollment and new records-request batches; already-consented responses and already-open records tasks may finish under their disclosed deadlines. Retain all authorized submitted material, including overflow beyond 100, and honor payment/top-up commitments. Neither reviewer conclusions nor reaching the scientific minimum of 25 changes this recruitment stopping rule. The actual first-invitation date, review timetable and final study-closure milestone are recorded separately; six months is not the retention or overall study duration.

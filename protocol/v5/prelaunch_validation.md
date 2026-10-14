@@ -1,7 +1,7 @@
 # Validation fixtures and prelaunch acceptance plan
 
-**Version:** 1.2 draft
-**Date:** October 4, 2026
+**Version:** 1.4 draft
+**Date:** October 6, 2026
 **Status:** Test plan with fictitious cases; live platform and production pipeline tests not yet performed
 
 Use no actual families or identifying documents in testing. This plan tests procedures, not a vaccine hypothesis or statistical effect. Record tester/date, approved version, environment, fictitious input, actual output, expected output, pass/fail, issue and rerun proof. Writing an expected result does not count as passing a test.
@@ -40,8 +40,8 @@ Use no actual families or identifying documents in testing. This plan tests proc
 | F28 | Three majority fields individually agree but B's window differs from accepted A | Flag inconsistent-window B; no validated B/A pair |
 | F29 | ONSET reported only as month | Store range/precision; no invented midpoint/exact weekday or definite exact-lag classification |
 | F30 | Survey 2 receipt-time reported age eligible, reviewer later out of range | Preserve administrative target/payment if independently complete; scientific cohort flag out of range |
-| F31 | Authorized possible-case referral; low date confidence or probable record unavailability | Receives Survey 2; best estimate/unknown retained; no confidence access gate |
-| F32 | Partner handoff contains individual screen answers or no permission attestation | Quarantine/resolve transfer authority; do not import as approved research rows |
+| F31 | Partner-invited parent visits; low date confidence or probable record unavailability | Can consider Survey 2 and consent; best estimate/unknown retained; no confidence gate |
+| F32 | Partner sends an individual email/answer roster or identifying invitation token | Reject/quarantine unauthorized handoff; use partner-held invitations with non-person-identifying links; no import into research rows |
 | F33 | Survey 2 complete; records phase not opened | Completed survey retained; no automatic records request/upload or materials payment; request state separate |
 | F34 | A4 recorded before disclosure; exposure answers later present | Selection queue exports permission/reported eligibility/original confidence only, not exposure/timing/reviewer fields |
 | F35 | Most recent vaccination 200 days before ONSET; B partly unknown | A=200 eligible; retain B bounds/unknown, not zero; no long-lag exclusion from target/minimum if other criteria met |
@@ -58,7 +58,7 @@ Use no actual families or identifying documents in testing. This plan tests proc
 - No-vaccination/no-well and unsure-history paths reach applicable questions without forcing dates/A/B zero. Routine-plan parents still receive spacing question.
 - Each date can be exact/range/week/month/unknown, with bounds and verification distinct. Raw B>A/category conflicts are retained, not rejected/clamped out of the exported data.
 - Saved partials versus unsent text, security timeout, operational day-14 closure and late resumption are distinguishable. Stop contact blocks reminders, not an owed payment.
-- Partner handoff contains only authorized emails and administrative source/batch/permission attestations; no individual screen answer export or unauthorized contact lists. Aggregate counts are availability-labeled. Partner retention is not mislabeled as study retention. Forwarded tokens cannot expose existing submissions.
+- Partner does not transmit individual answers, contacts, permission responses or selected-person flags. Invitation links contain source/batch only, not identities. Verify partner opt-out suppresses its reminder; after consent study contact permission governs study follow-up. Check safe aggregate/missing denominators, no research answers or study-held contacts before consent, no identifying metadata leak to partner, and no imported onset-age histogram.
 - Evidence inventory preserves bytes/hash, creation/described-event dates, parent claim and amendments; malware-safe handling/preview, backup restore and restricted export/access are tested.
 - Each reviewer cannot view either other's forms before all locks. Shared login or administrator-visible review results are documented and access-limited, not called blinding.
 - Consent copy available in approved form; keyboard/date-entry/screen-reader behavior and mobile rendering tested. English-only limitation is explicit.
@@ -67,7 +67,7 @@ Use no actual families or identifying documents in testing. This plan tests proc
 
 At C=20, I_m=100, C_m=20, requested next batch is `ceil(1.2*80/0.2)=480`, capped to available pool. With zero mature yield, fallback batch is 100 or remainder, not division by zero. I_m is supporting-material requests, not Survey 2 invitations. Open records-request waves do not enter the mature denominator. Confidence pools exhaust in order; seeded membership is reproducible from archived input/version without exposure fields. Count confirmed child duplicates once and separately log prior submitted/attributed counts.
 
-At first checkpoint below 100, tier rises $25→$50, with $25 top-up owed for equivalent previously completed work; no-anchor full completions also qualify. Subsequent shortfall checkpoints activate $75/$100, never above $100. C>=100 stops increases/new records-request batches, not confidence-free Survey 2 access within its approved recruitment window or retention/payment for already requested work. Late scientific exclusion does not replace a child to obtain an analytic target. Good-faith incomplete materials remain $25. Failed delivery stays unpaid; duplicate exceptions/prior promises are auditable.
+At first checkpoint below 100, tier rises $25→$50, with $25 top-up owed for equivalent previously completed work; no-anchor full completions also qualify. Subsequent shortfall checkpoints activate $75/$100, never above $100. C>=100 stops increases/new records-request batches, not already-consented Survey 2 completion under disclosed deadlines or retention/payment for already requested work. Late scientific exclusion does not replace a child to obtain an analytic target. Good-faith incomplete materials remain $25. Failed delivery stays unpaid; duplicate exceptions/prior promises are auditable.
 
 ## Public build and incident tests
 
@@ -75,6 +75,11 @@ Build proposed public outputs from a frozen fictitious raw export and locks. Che
 
 ## What has and has not been verified
 
-Local check executed October 4, 2026: `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1` passed 128 document/reference checks, including 69 relative Markdown links, with zero failures at the final assembled-package check. The arithmetic/agreement checks cover a subset of the fictitious fixtures; unimplemented workflow fixtures are not reported as passed. Subsequent edits require rerunning this helper and the separate whitespace/confidential-name scans.
+Local check executed October 4, 2026: `pwsh -NoProfile -File protocol/v5/validation/validate_drafts.ps1` passed 151 document/reference checks, including 66 relative Markdown links, with zero failures at the final assembled-package check. The arithmetic/agreement checks cover a subset of the fictitious fixtures; unimplemented workflow fixtures are not reported as passed. Subsequent edits require rerunning this helper and the separate whitespace/confidential-name scans.
 
 Local Markdown link/whitespace/confidential-name and consistency scans may be run now and recorded in the work log. A local reference-check helper, if supplied, tests specified arithmetic/rules against fictitious values only; it is not the production raw-export adapter or a platform security test. Actual platform, reviewer calibration, payment vendor, backup/incident, redaction and approved live-version tests remain pending. R10 closes only after those pass and the PI/custodian record launch signoff.
+
+
+## October 6 residence and recruitment fixtures
+
+Test US yes/no/unknown eligibility at the initial consent screen without named-event prompts; historical residence/citizenship must not substitute. Test closure at administrative C=100 even if validated count differs, and at six calendar months from the first approved study invitation. Closure disables new study invitations/recruitment reminders, enrollment and requests, but preserves completion of already-consented/open tasks, submitted data and owed payments. Test overflow and simultaneous receipts without selecting records by scientific findings. Six months does not trigger evidence destruction.
